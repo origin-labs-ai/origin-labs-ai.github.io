@@ -1,0 +1,394 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "./anthropic.css";
+@import "./anthropic-pages.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-cream: #f0eee6;
+  --color-cream-light: #faf9f5;
+  --color-oat: #e3dacc;
+  --color-sand: #d1cfc5;
+  --color-ink: #141413;
+  --color-ink-soft: #1f1e1d;
+  --color-ink-muted: #3d3d3a;
+  --color-clay: #d97757;
+  --color-clay-deep: #bf5b3b;
+  --color-clay-ink: #a04527;
+  --color-olive: #788c5d;
+  --color-sky: #6a9bcc;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --font-sans: var(--anthropic-sans);
+  --font-mono: var(--anthropic-mono);
+  --font-serif: var(--anthropic-serif);
+  --font-heading: var(--anthropic-serif);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: #faf9f5;
+  --foreground: #141413;
+  --card: #faf9f5;
+  --card-foreground: #141413;
+  --popover: #faf9f5;
+  --popover-foreground: #141413;
+  --primary: #141413;
+  --primary-foreground: #faf9f5;
+  --secondary: #e8e6dc;
+  --secondary-foreground: #141413;
+  --muted: #e8e6dc;
+  --muted-foreground: #5e5d59;
+  --accent: #e8e6dc;
+  --accent-foreground: #141413;
+  --destructive: #b3392b;
+  --border: #d1cfc5;
+  --input: #d1cfc5;
+  --ring: #d97757;
+  --radius: 0.75rem;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ------------------------------------------------------------------ */
+/* Anthropic homepage runtime layer                                    */
+/* ------------------------------------------------------------------ */
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+#main-content {
+  display: flow-root;
+}
+
+#main-content > article {
+  display: block;
+}
+
+/* pages with a separately captured mobile DOM */
+.page-variants > .page-variant-mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .page-variants[data-mobile="true"] > .page-variant-desktop {
+    display: none;
+  }
+
+  .page-variants[data-mobile="true"] > .page-variant-mobile {
+    display: block;
+  }
+}
+
+body:where(:has(> #main-content ~ footer)) > * {
+  flex-shrink: 0;
+}
+
+/* header dropdowns */
+.nav-dropdown {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-dropdown-popup {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: -8px;
+  z-index: 1000;
+}
+
+.nav-dropdown-popup[data-align="right"] {
+  left: auto;
+  right: -8px;
+}
+
+.nav-dropdown-popup[data-direction="up"] {
+  top: auto;
+  bottom: calc(100% + 8px);
+}
+
+.menu-cta-dropdown {
+  display: flex;
+}
+
+/* report card server-side grow defaults */
+.rLIPjq_card {
+  --scroll-grow: 0.7233333333333334;
+}
+
+@media (max-width: 767px) {
+  .rLIPjq_card {
+    --scroll-grow: 0.1225296442687747;
+  }
+}
+
+/* site menu scrolling */
+.A1YAyq_scrollArea {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.A1YAyq_content {
+  min-height: 100%;
+}
+
+/* menu featured carousel */
+.menu-featured-track {
+  transform: translate3d(
+    calc(var(--menu-featured-index, 0) * -1 * (75.2632vw + 16px)),
+    0,
+    0
+  );
+}
+
+@media (min-width: 640px) and (max-width: 1279.98px) {
+  .menu-featured-track {
+    transform: translate3d(
+      calc(var(--menu-featured-index, 0) * -1 * (59.375vw + 16px)),
+      0,
+      0
+    );
+  }
+}
+
+@media (min-width: 1280px) {
+  .menu-featured-track {
+    transform: translateY(286.5px);
+  }
+
+  .menu-featured-last {
+    transform: translateY(-2501px);
+  }
+}
+
+/* keep footer logo svgs inline like the source (Tailwind preflight forces block) */
+.dU5k9q_logo svg {
+  display: inline;
+  vertical-align: baseline;
+}
+
+/* the source site has no preflight reset: media elements stay inline by default */
+@layer base {
+  .cloned-page main img,
+  .cloned-page main svg,
+  .cloned-page main video,
+  .cloned-page main canvas {
+    display: inline;
+    vertical-align: baseline;
+  }
+}
+
+/* header wordmark collapses to the A mark after scrolling (source Lottie morph) */
+@media (min-width: 1400px) {
+  .UTJ3Tq_logo {
+    position: relative;
+  }
+
+  .ZrbDXq_logo-wrapper {
+    transition: transform 0.633s, opacity 0.25s ease-out;
+  }
+
+  .UTJ3Tq_logo a > svg:last-child {
+    display: block;
+    position: absolute;
+    left: 71.6px;
+    top: 2.49px;
+    width: 27.7px;
+    height: 19.02px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-out, visibility 0.2s;
+  }
+
+  .UTJ3Tq_root[data-scrolled="true"] .ZrbDXq_logo-wrapper {
+    transform: translateX(71.6px);
+    opacity: 0;
+  }
+
+  .UTJ3Tq_root[data-scrolled="true"] .UTJ3Tq_logo a > svg:last-child {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* dropdown popups size to their content like the source portal */
+.nav-dropdown-popup {
+  width: max-content;
+}
+
+/* source search input has no focus ring */
+.TGeX9W_input:focus,
+.TGeX9W_input:focus-visible {
+  outline: none;
+}
+
+/* learn-more carousel scroll reveal (source GSAP fade) */
+.xiAwRW_carousel {
+  opacity: 0;
+  transition: opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.xiAwRW_carousel[data-revealed="true"] {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .xiAwRW_carousel {
+    opacity: 1;
+    transition: none;
+  }
+}
+
+/* article pages hide the header until the reader scrolls up */
+.UTJ3Tq_root[data-article="true"] {
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+}
+
+.UTJ3Tq_root[data-article="true"][data-revealed="true"] {
+  transform: none;
+}
+
+/* article pages keep the header hidden at the top even when a hero is flagged "over" */
+body:has([data-hero-nav]) .UTJ3Tq_root[data-article="true"][data-hidden="true"]:not([data-revealed="true"]) {
+  transform: translateY(-100%);
+}
+
+/* economic index renders as a full-viewport app with an overlaid header */
+.cloned-page[data-slug="economic-index"] .UTJ3Tq_root[data-overlay="true"] {
+  position: absolute;
+  inset-inline: 0;
+}
+
+.cloned-page[data-slug="economic-index"] main {
+  height: 100vh;
+}
+
+/* next/font variable applied by the source body class */
+:root {
+  --jetbrains-mono: "JetBrainsMono", "JetBrainsMono Fallback";
+}
+
+/* Webflow events pages are served as self-contained static HTML in an iframe.
+   Use viewport units so the embedded page gets the same content width as the
+   live site: the iframe's own scrollbar then matches the live page scrollbar. */
+.webflow-frame {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  border: 0;
+}
+
+/* leadership bios start collapsed like the live site */
+.SoxqZG_bodyText > p:not(:first-child) {
+  display: none;
+}
+
+.SoxqZG_bodyText[data-expanded="true"] > p:not(:first-child) {
+  display: block;
+}
+
+/* the source <main> establishes a block formatting context */
+.cloned-page main {
+  display: flow-root;
+}
+
+@media (max-width: 767px) {
+  /* mobile model pages show the header at the top; hide-on-scroll still applies.
+     The Opus launch intro is the exception: its header stays hidden until the
+     scroll transition resolves the hero. */
+  body:has([data-hero-nav=away]:not([data-opus-hero])) .UTJ3Tq_root:not(:focus-within) {
+    transform: none;
+  }
+
+  body:has([data-hero-nav=away]) .UTJ3Tq_root[data-hidden="true"] {
+    transform: translateY(-100%);
+  }
+
+  /* the Haiku tile hero is positioned by desktop JS; use the captured mobile hero */
+  .cloned-page[data-slug="claude-haiku-5-5"]
+    .page-variant-desktop
+    .WHJwZW_moo-hero {
+    height: 100svh;
+    background-image: url("/sites/anthropic/pages-assets/haiku-mobile-hero.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .cloned-page[data-slug="claude-haiku-5-5"]
+    .page-variant-desktop
+    .WHJwZW_moo-hero
+    > .stage {
+    visibility: hidden;
+  }
+
+  .cloned-page[data-slug="claude-haiku-5-5"]
+    .page-variant-desktop
+    .WHJwZW_moo-hero
+    h1 {
+    visibility: visible;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  /* listing tables render eight rows per page on mobile */
+  .cloned-page .bxgyUW_row:nth-child(n + 9) {
+    display: none;
+  }
+
+  /* project-deal avatar cards are resized by the source JS at this breakpoint */
+  .S5McGq_avatarCard {
+    width: 113px !important;
+  }
+
+  .S5McGq_avatarImageWrap {
+    height: 113px !important;
+  }
+}

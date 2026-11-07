@@ -1,0 +1,323 @@
+{
+  "title": "Home \\ Anthropic",
+  "height": 4491,
+  "body": {
+    "tag": "body",
+    "cls": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 375,
+      "height": 4491
+    },
+    "bg": "rgb(250, 249, 245)",
+    "color": "rgb(20, 20, 19)",
+    "fontFamily": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24.48px",
+    "letterSpacing": "normal",
+    "padding": "0px",
+    "radius": "0px",
+    "text": "Skip to main contentNewsResearchPolicyCommitmentsCompanyTry ClaudeCookie SettingsWe use cookies to deliver and improve our services, analyze site usage, and if you agree, to custom"
+  },
+  "header": {
+    "tag": "header",
+    "cls": "UTJ3Tq_root",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 375,
+      "height": 84
+    },
+    "bg": "rgb(250, 249, 245)",
+    "color": "rgb(20, 20, 19)",
+    "fontFamily": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24.48px",
+    "letterSpacing": "normal",
+    "padding": "0px",
+    "radius": "0px",
+    "text": "NewsResearchPolicyCommitmentsCompanyTry Claude"
+  },
+  "navPill": {
+    "tag": "a",
+    "cls": "f9ZZrG_button f9ZZrG_corner-full f9ZZrG_variant-tertiary f9ZZrG_size-small",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 0,
+      "height": 0
+    },
+    "bg": "rgb(245, 244, 237)",
+    "color": "rgb(61, 61, 58)",
+    "fontFamily": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+    "fontSize": "13px",
+    "fontWeight": "400",
+    "lineHeight": "20.02px",
+    "letterSpacing": "0.13px",
+    "padding": "8px 16px",
+    "radius": "999999px",
+    "text": "News"
+  },
+  "h1": {
+    "tag": "h1",
+    "cls": "LOCOdG_text",
+    "rect": {
+      "x": 32,
+      "y": 108,
+      "width": 311,
+      "height": 293
+    },
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 20, 19)",
+    "fontFamily": "anthropicSerif, \"anthropicSerif Fallback\", serif",
+    "fontSize": "25px",
+    "fontWeight": "400",
+    "lineHeight": "32.5px",
+    "letterSpacing": "-0.25px",
+    "padding": "0px",
+    "radius": "0px",
+    "text": "AI research and products that put safety at the frontier. AI will have a vast impact on the world. Anthropic is a public benefit corporation dedicated to securing its benefits and "
+  },
+  "h1HTML": "<h1 class=\"LOCOdG_text\" style=\"visibility: visible; translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;\"><span class=\"LOCOdG_lead\">AI research and products that put safety at the frontier.</span> <span class=\"LOCOdG_statement\">AI will have a vast impact on the world. Anthropic is a public benefit corporation dedicated to securing its benefits and mitigating its risks.</span></h1>",
+  "sections": [
+    {
+      "tag": "article",
+      "cls": "",
+      "rect": {
+        "x": 0,
+        "y": 84,
+        "width": 375,
+        "height": 3270
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(20, 20, 19)",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24.48px",
+      "letterSpacing": "normal",
+      "padding": "0px",
+      "radius": "0px",
+      "text": "AI research and products that put safety at the frontier. AI will have a vast impact on the world. Anthropic is a public benefit corporation dedicated to securing its benefits and "
+    }
+  ],
+  "allSections": [
+    {
+      "tag": "section",
+      "cls": "ZSMdoa_root ZSMdoa_flushBottom ZSMdoa_flushTop",
+      "rect": {
+        "x": 0,
+        "y": 84,
+        "width": 375,
+        "height": 317
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(20, 20, 19)",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24.48px",
+      "letterSpacing": "normal",
+      "padding": "0px",
+      "radius": "0px",
+      "text": "AI research and products that put safety at the frontier. AI will have a vast impact on the world. Anthropic is a public benefit corporation dedicated to securing its benefits and "
+    },
+    {
+      "tag": "section",
+      "cls": "theme-ivory ZSMdoa_root",
+      "rect": {
+        "x": 0,
+        "y": 401,
+        "width": 375,
+        "height": 824
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(20, 20, 19)",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24.48px",
+      "letterSpacing": "normal",
+      "padding": "32px 0px",
+      "radius": "0px",
+      "text": "<style>.rLIPjq_card .rLIPjq_toggle { display: none !important; }</style><style>._8i4M7a_copy { opacity: 1 !important; pointer-events: auto !important; }</style>2026 Public Benefit "
+    },
+    {
+      "tag": "section",
+      "cls": "ZSMdoa_root ZSMdoa_flushTop",
+      "rect": {
+        "x": 0,
+        "y": 1225,
+        "width": 375,
+        "height": 1423
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgb(20, 20, 19)",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24.48px",
+      "letterSpacing": "normal",
+      "padding": "0px 0px 32px",
+      "radius": "0px",
+      "text": "AnnouncementsOct 7, 2026Introducing Claude Haiku 5.5Claude Haiku 5.5 is our fastest, most capable small model. Built for high-volume work like summarization, subagents, and browser"
+    },
+    {
+      "tag": "section",
+      "cls": "xiAwRW_root",
+      "rect": {
+        "x": 0,
+        "y": 2679,
+        "width": 375,
+        "height": 675
+      },
+      "bg": "rgb(250, 249, 245)",
+      "color": "rgb(20, 20, 19)",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24.48px",
+      "letterSpacing": "normal",
+      "padding": "0px 0px 48px",
+      "radius": "0px",
+      "text": "Learn moreLearn moreInstituteThe Anthropic InstituteOur effort to confront the most significant challenges that powerful AI will pose to our societies.AlignmentClaude's Constitutio"
+    }
+  ],
+  "announcementCard": {
+    "tag": "html",
+    "cls": "tEBbKW_variable uImRTq_variable SNqwhG_variable j_XgJq_variable",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 375,
+      "height": 4491
+    },
+    "bg": "rgba(0, 0, 0, 0)",
+    "color": "rgb(20, 20, 19)",
+    "fontFamily": "system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\"",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "18.4px",
+    "letterSpacing": "normal",
+    "padding": "0px",
+    "radius": "0px",
+    "text": "Home \\ AnthropicSkip to main contentNewsResearchPolicyCommitmentsCompanyTry ClaudeCookie SettingsWe use cookies to deliver and improve our services, analyze site usage, and if you "
+  },
+  "announcementHTML": "<html lang=\"en\" class=\"tEBbKW_variable uImRTq_variable SNqwhG_variable j_XgJq_variable\" style=\"--site-header-width: 375px; --site-header-height: 84px;\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel=\"preload\" href=\"/_next/static/media/AnthropicMono_Italic_Web-s.p.0x1wr-4z1xgw3.woff2\" as=\"font\" crossorigin=\"\" type=\"font/woff2\"><link rel=\"preload\" href=\"/_next/static/media/AnthropicMono_Roman_Web-s.p.16xhthj2n-pap.woff2\" as=\"font\" crossorigin=\"\" type=\"font/woff2\"><link rel=\"preload\" href=\"/_next/static/media/AnthropicSans_Italic_Web-s.p.212cqpul8-axk.woff2\" as=\"font\" crossorigin=\"\" type=\"font/woff2\"><link rel=\"preload\" href=\"/_next/static/media/AnthropicSans_Roman_Web-s.p.1e3n6bt4oqimz.woff2\" as=\"font\" crossorigin=\"\" type=\"font/woff2\"><link rel=\"preload\" href=\"/_next/static/media/AnthropicSerif_Italic_Web-s.p.1fjksu1uimpf3.woff2\" as=\"font\" crossorigin=\"\" type=\"font/woff2\"><link rel=\"preload\" href=\"/_next/static/media/AnthropicSerif_Roman_Web-s.p.0twp0vwi-lncj.woff2\" as=\"font\" crossorigin=\"\" type=\"font/woff2\"><link rel=\"preload\" href=\"/_next/static/media/JetBrainsMono_VF-s.p.3-7d89st7id7n.ttf\" as=\"font\" crossorigin=\"\" type=\"font/ttf\"><link rel=\"stylesheet\" href=\"/_next/static/chunks/3lfhvsoi4d4vt.css\" data-precedence=\"next\"><link rel=\"stylesheet\" href=\"/_next/static/chunks/3qqnupncb8_ko.css\" data-precedence=\"next\"><link rel=\"stylesheet\" href=\"/_next/static/chunks/32emdk4340wk8.css\" data-precedence=\"next\"><link rel=\"stylesheet\" href=\"/_next/static/chunks/3ea_gbe9nm9sb.css\" data-precedence=\"next\"><link rel=\"stylesheet\" href=\"/_next/static/chunks/1truc2pmzfi10.css\" data-precedence=\"next\"><link rel=\"stylesheet\" href=\"/_next/static/chunks/1fjaco-vw_stj.css\" data-precedence=\"next\"><link rel=\"stylesheet\" href=\"/_next/static/chunks/14-pxwlnemch-.css\" data-precedence=\"next\"><link rel=\"stylesheet\" href=\"/_next/static/chunks/1m01ouczgcv7_.css\" data-precedence=\"next\"><link rel=\"stylesheet\" href=\"/_next/static/chunks/2jjd9hdb2dskl.css\" data-precedence=\"next\"><link rel=\"stylesheet\" href=\"/_next/static/chunks/26j-1-_pbxgby.css\" data-precedence=\"next\"><link rel=\"stylesheet\" href=\"/_next/static/chunks/20vcr_kui006v.css\" data-precedence=\"next\"><link rel=\"preload\" as=\"script\" fetchpriority=\"low\" href=\"/_next/static/chunks/2jjnafy-v_mvn.js\"><script src=\"/_next/static/chunks/242x7dx0zu3hf.js\" async=\"\"></script><script src=\"/_next/static/chunks/22v-ehdsv9f6c.js\" async=\"\"></script><script src=\"/_next/static/chunks/0fh_xdopmb9o9.js\" async=\"\"></script><script src=\"/_next/static/chunks/turbopack-2c3mg3r-05n1w.js\" async=\"\"></script><script src=\"/_next/static/chunks/1mlczai5z_i3f.js\" async=\"\"></script><script src=\"/_next/static/chunks/3t8o33da1i6rx.js\" async=\"\"></script><script src=\"/_next/static/chunks/3t0tfpm9ml2v4.js\" async=\"\"></script><script src=\"/_next/static/chunks/41uzdv2ow-8z1.js\" async=\"\"></script><script src=\"/_next/static/chunks/1s-7zf9h-9ih8.js\" async=\"\"></script><script src=\"/_next/static/chunks/0d4wpzl_ky0n9.js\" async=\"\"></script><script src=\"/_next/static/chunks/43wp9agwclk70.js\" async=\"\"></script><script src=\"/_next/static/chunks/3lzxfkmxeyqd-.js\" async=\"\"></script><script src=\"/_next/static/chunks/04dvx88f8ucin.js\" async=\"\"></script><script src=\"/_next/static/chunks/2tsf03572xl_x.js\" async=\"\"></script><script src=\"/_next/static/chunks/2x-b_noq-c31z.js\" async=\"\"></script><script src=\"/_next/static/chunks/0_3hwja1spzc2.js\" async=\"\"></script><script src=\"/_next/static/chunks/1_j8bw7lggwt1.js\" async=\"\"></script><script src=\"/_next/static/chunks/2q41w0-xfka2l.js\" async=\"\"></script><script src=\"/_next/static/chunks/21-4fkt6rtlw0.js\" async=\"\"></script><script src=\"/_next/static/chunks/15unzwlgj4nlk.js\" async=\"\"></script><script src=\"/_next/static/chunks/1ppjblpyoneat.js\" async=\"\"></script><script src=\"/_next/static/chunks/1za_d88wmjt5d.js\" async=\"\"></script><script src=\"/_next/static/chunks/1nrphyg455hrm.js\" async=\"\"></script><script src=\"/_next/static/chunks/05462r18dsow4.js\" async=\"\"></script><script src=\"/_next/static/chunks/3pow79w607dvk.js\" async=\"\"></script><script src=\"/_next/static/chunks/3_9_k2h4oog8a.js\" async=\"\"></script><script src=\"/_next/static/chunks/2ohy_x3ml90jz.js\" async=\"\"></script><script src=\"/_next/static/chunks/2hajs4xf75f4x.js\" async=\"\"></script><script src=\"/_next/static/chunks/13gxn23nb18aq.js\" async=\"\"></script><script src=\"/_next/static/chunks/0s4gapj8--uv9.js\" async=\"\"></script><script src=\"/_next/static/chunks/3bkbu2nw81sh1.js\" async=\"\"></script><script src=\"/_next/static/chunks/0_jdvntsuojmh.js\" async=\"\"></script><script src=\"/_next/static/chunks/42d_j2uu2fkig.js\" async=\"\"></script><script src=\"/_next/static/chunks/21m5u_p1kqapx.js\" async=\"\"></script><script src=\"/_next/static/chunks/2hszzpoqcni-z.js\" async=\"\"></script><script src=\"/_next/static/chunks/2rzmcyu5bev06.js\" async=\"\"></script><script src=\"/_next/static/chunks/2quarmitu8eqw.js\" async=\"\"></script><script src=\"/_next/static/chunks/3d72pny881zaq.js\" async=\"\"></script><link rel=\"preload\" href=\"/_next/static/chunks/1coou840t4trg.css\" as=\"style\"><meta name=\"theme-color\" content=\"#141413\"><meta name=\"next-size-adjust\" content=\"\"><title>Home \\ Anthropic</title><meta name=\"description\" content=\"Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.\"><meta name=\"msapplication-TileColor\" content=\"141413\"><meta name=\"msapplication-config\" content=\"/browserconfig.xml\"><link rel=\"canonical\" href=\"https://www.anthropic.com\"><meta name=\"google-site-verification\" content=\"BqiAW_sWOg-KrPk-Accxm6ge9dtnFEyV6DB6vzVZSGs\"><meta property=\"og:title\" content=\"Home\"><meta property=\"og:description\" content=\"Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.\"><meta property=\"og:url\" content=\"https://www.anthropic.com\"><meta property=\"og:image\" content=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg\"><meta property=\"og:image:alt\" content=\"Anthropic logo\"><meta property=\"og:type\" content=\"website\"><meta name=\"twitter:card\" content=\"summary_large_image\"><meta name=\"twitter:site\" content=\"@AnthropicAI\"><meta name=\"twitter:creator\" content=\"@AnthropicAI\"><meta name=\"twitter:title\" content=\"Home\"><meta name=\"twitter:description\" content=\"Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.\"><meta name=\"twitter:image\" content=\"https://www-cdn.anthropic.com/images/4zrzovbb/website/6d4a0d28992ade92d6fa63646fd9c9d318245c6c-2400x1260.jpg\"><meta name=\"twitter:image:alt\" content=\"Anthropic logo\"><link rel=\"shortcut icon\" href=\"/favicon.ico\"><link rel=\"icon\" href=\"/images/icons/favicon-32x32.png\"><link rel=\"apple-touch-icon\" href=\"/images/icons/apple-touch-icon.png\"><link rel=\"apple-touch-icon\" href=\"/images/icons/apple-touch-icon.png\" sizes=\"180x180\"><link rel=\"mask-icon\" href=\"/images/icons/safari-pinned-tab.svg\" color=\"141413\"><script src=\"/_next/static/chunks/0cz1d0mv5g_q7.js\" nomodule=\"\"></script><script src=\"/_next/static/chunks/1dsa6q3h2-m8w.js\"></script><script src=\"/_next/static/chunks/3gtd-vcj57dua.js\"></script><script src=\"/_next/static/chunks/0-c74pgbjyzf4.js\"></script></head><body style=\"\"><div hidden=\"\"><!--$--><!--/$--></div><svg aria-hidden=\"true\" focusable=\"false\" class=\"hN4zBq_icons\"><symbol id=\"tiny-more-button-close\" viewBox=\"0 0 8 8\"><path d=\"M7.14668 0.146596C7.34188 -0.048598 7.65844 -0.0484601 7.85372 0.146596C8.04899 0.341858 8.04899 0.658366 7.85372 0.853629L4.7072 4.00012L7.85372 7.14662C8.04898 7.34188 8.04898 7.65839 7.85372 7.85365C7.6828 8.02457 7.4189 8.0464 7.22481 7.9181L7.14668 7.85365L4.00016 4.70716L0.853637 7.85365C0.658368 8.04885 0.341842 8.04889 0.146597 7.85365C-0.0484415 7.65839 -0.0485411 7.34181 0.146597 7.14662L3.29312 4.00012L0.146597 0.853629L0.0821432 0.775504C-0.0458462 0.581447 -0.0241979 0.31739 0.146597 0.146596C0.317393 -0.0241977 0.581452 -0.0",
+  "learnMoreHeading": null,
+  "footer": {
+    "tag": "footer",
+    "cls": "theme-slate dU5k9q_footer",
+    "rect": {
+      "x": 0,
+      "y": 3353,
+      "width": 375,
+      "height": 1138
+    },
+    "bg": "rgb(20, 20, 19)",
+    "color": "rgb(250, 249, 245)",
+    "fontFamily": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "24.48px",
+    "letterSpacing": "normal",
+    "padding": "0px",
+    "radius": "0px",
+    "text": "ResearchPolicyCommitmentsCompanyProductsModelsSolutionsHelp and securityTerms and policiesOur missionAnthropic is a Public Benefit Corporation. Our mission is to ensure the world s"
+  },
+  "images": [
+    {
+      "tag": "img",
+      "cls": "",
+      "rect": {
+        "x": 32,
+        "y": 2802,
+        "width": 229,
+        "height": 287
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgba(0, 0, 0, 0)",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24.48px",
+      "letterSpacing": "normal",
+      "padding": "0px",
+      "radius": "0px",
+      "text": "",
+      "src": "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F1a9fa9ce10043f39139b19fef810307d8fe53c99-1712x2139.jpg&w=640&q=75",
+      "alt": ""
+    },
+    {
+      "tag": "img",
+      "cls": "",
+      "rect": {
+        "x": 277,
+        "y": 2802,
+        "width": 229,
+        "height": 287
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgba(0, 0, 0, 0)",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24.48px",
+      "letterSpacing": "normal",
+      "padding": "0px",
+      "radius": "0px",
+      "text": "",
+      "src": "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F38139f03740c55031bb6a3cc17f3eed4436751a6-642x803.png&w=640&q=75",
+      "alt": ""
+    },
+    {
+      "tag": "img",
+      "cls": "",
+      "rect": {
+        "x": 523,
+        "y": 2802,
+        "width": 229,
+        "height": 287
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgba(0, 0, 0, 0)",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24.48px",
+      "letterSpacing": "normal",
+      "padding": "0px",
+      "radius": "0px",
+      "text": "",
+      "src": "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F5796088217c9da0352eca894fbb8331f6f207bc6-1712x2139.jpg&w=640&q=75",
+      "alt": ""
+    },
+    {
+      "tag": "img",
+      "cls": "",
+      "rect": {
+        "x": 768,
+        "y": 2802,
+        "width": 229,
+        "height": 287
+      },
+      "bg": "rgba(0, 0, 0, 0)",
+      "color": "rgba(0, 0, 0, 0)",
+      "fontFamily": "anthropicSans, \"anthropicSans Fallback\", sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24.48px",
+      "letterSpacing": "normal",
+      "padding": "0px",
+      "radius": "0px",
+      "text": "",
+      "src": "https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F63773c39b7f3875c5a497e9f3549bdb5dc7c58fa-1712x2139.jpg&w=640&q=75",
+      "alt": ""
+    }
+  ],
+  "videos": [],
+  "backgrounds": []
+}

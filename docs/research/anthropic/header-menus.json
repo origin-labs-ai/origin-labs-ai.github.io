@@ -1,0 +1,730 @@
+{
+ "Research": {
+  "pop": {
+   "info": {
+    "r": [
+     149,
+     64,
+     384.5,
+     178.1
+    ],
+    "p": "10px",
+    "m": "0px",
+    "g": "normal 8px",
+    "d": "grid",
+    "gc": "177.234px 177.234px",
+    "bg": "rgb(255, 255, 255)",
+    "fs": "16.6863px",
+    "c": "rgb(20, 20, 19)",
+    "br": "16px",
+    "b": "1px solid rgb(222, 220, 209)",
+    "sh": "rgba(0, 0, 0, 0.05) 0px 4px 24px 0px"
+   },
+   "html": "<div data-side=\"bottom\" data-align=\"start\" data-open=\"\" data-instant=\"click\" tabindex=\"-1\" data-base-ui-focusable=\"\" id=\"_R_2taq6btbH1_\" role=\"menu\" aria-labelledby=\"base-ui-_R_3ataq6btb_\" aria-orientation=\"vertical\" data-rootownerid=\"_R_2taq6btb_\" class=\"_4mzI4G_popup\" style=\"--nav-dropdown-columns: 2;\"><div role=\"group\" class=\"_4mzI4G_column\"><a role=\"menuitem\" id=\"base-ui-_r_1_\" tabindex=\"0\" class=\"_4mzI4G_item\" href=\"/research\" data-highlighted=\"\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Overview</span></a><a role=\"menuitem\" id=\"base-ui-_r_2_\" tabindex=\"-1\" class=\"_4mzI4G_item\" href=\"/research/team/alignment\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Alignment</span></a><a role=\"menuitem\" id=\"base-ui-_r_3_\" tabindex=\"-1\" class=\"_4mzI4G_item\" href=\"/research/team/interpretability\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Interpretability</span></a><a role=\"menuitem\" id=\"base-ui-_r_4_\" tabindex=\"-1\" class=\"_4mzI4G_item\" href=\"/engineering\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Engineering</span></a><a role=\"menuitem\" id=\"base-ui-_r_5_\" tabindex=\"-1\" class=\"_4mzI4G_item\" href=\"/science\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Science</span></a></div><div role=\"group\" class=\"_4mzI4G_column\"><a role=\"menuitem\" id=\"base-ui-_r_6_\" tabindex=\"-1\" class=\"_4mzI4G_item\" href=\"/institute\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">The Anthropic Institute</span></a><a role=\"menuitem\" id=\"base-ui-_r_7_\" tabindex=\"-1\" class=\"_4mzI4G_item\" href=\"/research/team/economics\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Economics</span></a><a role=\"menuitem\" id=\"base-ui-_r_8_\" tabindex=\"-1\" class=\"_4mzI4G_item\" href=\"/research/team/frontier-red-team\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Frontier Red Team</span></a><a role=\"menuitem\" id=\"base-ui-_r_9_\" tabindex=\"-1\" class=\"_4mzI4G_item\" href=\"/research/team/societal-impacts\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Societal Impacts</span></a></div></div>",
+   "links": [
+    {
+     "text": "Overview",
+     "href": "/research",
+     "info": {
+      "r": [
+       160,
+       75,
+       177.2,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgb(232, 230, 220)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "Alignment",
+     "href": "/research/team/alignment",
+     "info": {
+      "r": [
+       160,
+       107,
+       177.2,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "Interpretability",
+     "href": "/research/team/interpretability",
+     "info": {
+      "r": [
+       160,
+       139,
+       177.2,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "Engineering",
+     "href": "/engineering",
+     "info": {
+      "r": [
+       160,
+       171,
+       177.2,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "Science",
+     "href": "/science",
+     "info": {
+      "r": [
+       160,
+       203.1,
+       177.2,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "The Anthropic Institute",
+     "href": "/institute",
+     "info": {
+      "r": [
+       345.2,
+       75,
+       177.2,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "Economics",
+     "href": "/research/team/economics",
+     "info": {
+      "r": [
+       345.2,
+       107,
+       177.2,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "Frontier Red Team",
+     "href": "/research/team/frontier-red-team",
+     "info": {
+      "r": [
+       345.2,
+       139,
+       177.2,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "Societal Impacts",
+     "href": "/research/team/societal-impacts",
+     "info": {
+      "r": [
+       345.2,
+       171,
+       177.2,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    }
+   ]
+  }
+ },
+ "Policy": {
+  "pop": {
+   "info": {
+    "r": [
+     266,
+     64,
+     227.3,
+     82
+    ],
+    "p": "10px",
+    "m": "0px",
+    "g": "normal 8px",
+    "d": "grid",
+    "gc": "205.266px",
+    "bg": "rgb(255, 255, 255)",
+    "fs": "16.6863px",
+    "c": "rgb(20, 20, 19)",
+    "br": "16px",
+    "b": "1px solid rgb(222, 220, 209)",
+    "sh": "rgba(0, 0, 0, 0.05) 0px 4px 24px 0px"
+   },
+   "html": "<div data-side=\"bottom\" data-align=\"start\" data-open=\"\" data-instant=\"click\" tabindex=\"-1\" data-base-ui-focusable=\"\" id=\"_R_3taq6btbH1_\" role=\"menu\" aria-labelledby=\"base-ui-_R_3btaq6btb_\" aria-orientation=\"vertical\" data-rootownerid=\"_R_3taq6btb_\" class=\"_4mzI4G_popup\" style=\"--nav-dropdown-columns: 1;\"><div role=\"group\" class=\"_4mzI4G_column\"><a role=\"menuitem\" id=\"base-ui-_r_b_\" tabindex=\"0\" class=\"_4mzI4G_item\" href=\"/policy\" data-highlighted=\"\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Overview</span></a><a role=\"menuitem\" id=\"base-ui-_r_c_\" tabindex=\"-1\" class=\"_4mzI4G_item\" href=\"/policy-on-the-ai-exponential\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Policy on the AI Exponential</span></a></div></div>",
+   "links": [
+    {
+     "text": "Overview",
+     "href": "/policy",
+     "info": {
+      "r": [
+       277,
+       75,
+       205.3,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgb(232, 230, 220)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "Policy on the AI Exponential",
+     "href": "/policy-on-the-ai-exponential",
+     "info": {
+      "r": [
+       277,
+       107,
+       205.3,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    }
+   ]
+  }
+ },
+ "Commitments": {
+  "pop": {
+   "info": {
+    "r": [
+     361,
+     64,
+     421.4,
+     146.1
+    ],
+    "p": "10px",
+    "m": "0px",
+    "g": "normal 8px",
+    "d": "grid",
+    "gc": "195.719px 195.719px",
+    "bg": "rgb(255, 255, 255)",
+    "fs": "16.6863px",
+    "c": "rgb(20, 20, 19)",
+    "br": "16px",
+    "b": "1px solid rgb(222, 220, 209)",
+    "sh": "rgba(0, 0, 0, 0.05) 0px 4px 24px 0px"
+   },
+   "html": "<div data-side=\"bottom\" data-align=\"start\" data-open=\"\" data-instant=\"click\" tabindex=\"-1\" data-base-ui-focusable=\"\" id=\"_R_4taq6btbH1_\" role=\"menu\" aria-labelledby=\"base-ui-_R_3ctaq6btb_\" aria-orientation=\"vertical\" data-rootownerid=\"_R_4taq6btb_\" class=\"_4mzI4G_popup\" style=\"--nav-dropdown-columns: 2;\"><div role=\"group\" class=\"_4mzI4G_column\"><a role=\"menuitem\" id=\"base-ui-_r_e_\" tabindex=\"0\" class=\"_4mzI4G_item\" href=\"/constitution\" data-highlighted=\"\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Claude’s Constitution</span></a><a role=\"menuitem\" id=\"base-ui-_r_f_\" tabindex=\"-1\" class=\"_4mzI4G_item\" href=\"/beneficial-deployments\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Beneficial Deployments</span></a><a role=\"menuitem\" id=\"base-ui-_r_g_\" tabindex=\"-1\" class=\"_4mzI4G_item\" href=\"/responsible-scaling-policy\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Responsible Scaling Policy</span></a><a role=\"menuitem\" id=\"base-ui-_r_h_\" tabindex=\"-1\" class=\"_4mzI4G_item\" href=\"/responsible-scaling-policy/roadmap\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Frontier Safety Roadmap</span></a></div><div role=\"group\" class=\"_4mzI4G_column\"><a role=\"menuitem\" id=\"base-ui-_r_i_\" tabindex=\"-1\" class=\"_4mzI4G_item\" href=\"/transparency\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Transparency</span></a><a role=\"menuitem\" id=\"base-ui-_r_j_\" tabindex=\"-1\" class=\"_4mzI4G_item\" href=\"/threat-intelligence\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Threat Intelligence</span></a></div></div>",
+   "links": [
+    {
+     "text": "Claude’s Constitution",
+     "href": "/constitution",
+     "info": {
+      "r": [
+       372,
+       75,
+       195.7,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgb(232, 230, 220)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "Beneficial Deployments",
+     "href": "/beneficial-deployments",
+     "info": {
+      "r": [
+       372,
+       107,
+       195.7,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "Responsible Scaling Policy",
+     "href": "/responsible-scaling-policy",
+     "info": {
+      "r": [
+       372,
+       139,
+       195.7,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "Frontier Safety Roadmap",
+     "href": "/responsible-scaling-policy/roadmap",
+     "info": {
+      "r": [
+       372,
+       171,
+       195.7,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "Transparency",
+     "href": "/transparency",
+     "info": {
+      "r": [
+       575.7,
+       75,
+       195.7,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "Threat Intelligence",
+     "href": "/threat-intelligence",
+     "info": {
+      "r": [
+       575.7,
+       107,
+       195.7,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    }
+   ]
+  }
+ },
+ "Company": {
+  "pop": {
+   "info": {
+    "r": [
+     634,
+     64,
+     522.1,
+     146.1
+    ],
+    "p": "10px",
+    "m": "0px",
+    "g": "normal 8px",
+    "d": "grid",
+    "gc": "161.375px 161.375px 161.375px",
+    "bg": "rgb(255, 255, 255)",
+    "fs": "16.6863px",
+    "c": "rgb(20, 20, 19)",
+    "br": "16px",
+    "b": "1px solid rgb(222, 220, 209)",
+    "sh": "rgba(0, 0, 0, 0.05) 0px 4px 24px 0px"
+   },
+   "html": "<div data-side=\"bottom\" data-align=\"end\" data-open=\"\" data-instant=\"click\" tabindex=\"-1\" data-base-ui-focusable=\"\" id=\"_R_anaq6btbH1_\" role=\"menu\" aria-labelledby=\"base-ui-_R_6qnaq6btb_\" aria-orientation=\"vertical\" data-rootownerid=\"_R_anaq6btb_\" class=\"_4mzI4G_popup\" style=\"--nav-dropdown-columns: 3;\"><div role=\"group\" class=\"_4mzI4G_column\" aria-labelledby=\"base-ui-_r_l_\"><div id=\"base-ui-_r_l_\" role=\"presentation\" class=\"_4mzI4G_columnHeading\"><span class=\"tOQyXa_caption-1\" data-component=\"Caption\">Who we are</span></div><a role=\"menuitem\" id=\"base-ui-_r_m_\" tabindex=\"0\" class=\"_4mzI4G_item\" href=\"/company\" data-highlighted=\"\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">About us</span></a><a role=\"menuitem\" id=\"base-ui-_r_n_\" tabindex=\"-1\" class=\"_4mzI4G_item\" href=\"/company/leadership\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Leadership</span></a><a role=\"menuitem\" id=\"base-ui-_r_o_\" tabindex=\"-1\" class=\"_4mzI4G_item\" href=\"/public-benefit-report\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Public benefit report</span></a></div><div role=\"group\" class=\"_4mzI4G_column\" aria-labelledby=\"base-ui-_r_p_\"><div id=\"base-ui-_r_p_\" role=\"presentation\" class=\"_4mzI4G_columnHeading\"><span class=\"tOQyXa_caption-1\" data-component=\"Caption\">Join us</span></div><a role=\"menuitem\" id=\"base-ui-_r_q_\" tabindex=\"-1\" class=\"_4mzI4G_item\" href=\"/careers\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Careers</span></a><a role=\"menuitem\" id=\"base-ui-_r_r_\" tabindex=\"-1\" class=\"_4mzI4G_item\" href=\"/events\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Events</span></a></div><div role=\"group\" class=\"_4mzI4G_column\" aria-labelledby=\"base-ui-_r_s_\"><div id=\"base-ui-_r_s_\" role=\"presentation\" class=\"_4mzI4G_columnHeading\"><span class=\"tOQyXa_caption-1\" data-component=\"Caption\">Programs</span></div><a role=\"menuitem\" id=\"base-ui-_r_t_\" tabindex=\"-1\" class=\"_4mzI4G_item\" href=\"/claude-corps\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Claude Corps</span></a><a role=\"menuitem\" id=\"base-ui-_r_u_\" tabindex=\"-1\" class=\"_4mzI4G_item\" href=\"/economic-futures\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Economic Futures</span></a></div></div>",
+   "links": [
+    {
+     "text": "About us",
+     "href": "/company",
+     "info": {
+      "r": [
+       645,
+       107,
+       161.4,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgb(232, 230, 220)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "Leadership",
+     "href": "/company/leadership",
+     "info": {
+      "r": [
+       645,
+       139,
+       161.4,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "Public benefit report",
+     "href": "/public-benefit-report",
+     "info": {
+      "r": [
+       645,
+       171,
+       161.4,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "Careers",
+     "href": "/careers",
+     "info": {
+      "r": [
+       814.4,
+       107,
+       161.4,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "Events",
+     "href": "/events",
+     "info": {
+      "r": [
+       814.4,
+       139,
+       161.4,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "Claude Corps",
+     "href": "/claude-corps",
+     "info": {
+      "r": [
+       983.8,
+       107,
+       161.4,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "Economic Futures",
+     "href": "/economic-futures",
+     "info": {
+      "r": [
+       983.8,
+       139,
+       161.4,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    }
+   ]
+  }
+ },
+ "Try Claude": {
+  "pop": {
+   "info": {
+    "r": [
+     1148,
+     64,
+     162,
+     82
+    ],
+    "p": "10px",
+    "m": "0px",
+    "g": "normal 8px",
+    "d": "grid",
+    "gc": "140px",
+    "bg": "rgb(255, 255, 255)",
+    "fs": "16.6863px",
+    "c": "rgb(20, 20, 19)",
+    "br": "16px",
+    "b": "1px solid rgb(222, 220, 209)",
+    "sh": "rgba(0, 0, 0, 0.05) 0px 4px 24px 0px"
+   },
+   "html": "<div data-side=\"bottom\" data-align=\"start\" data-open=\"\" data-instant=\"click\" tabindex=\"-1\" data-base-ui-focusable=\"\" id=\"_R_cnaq6btbH1_\" role=\"menu\" aria-labelledby=\"base-ui-_R_6snaq6btb_\" aria-orientation=\"vertical\" data-rootownerid=\"_R_cnaq6btb_\" class=\"_4mzI4G_popup\" style=\"--nav-dropdown-columns: 1;\"><div role=\"group\" class=\"_4mzI4G_column\"><a role=\"menuitem\" id=\"base-ui-_r_10_\" tabindex=\"0\" class=\"_4mzI4G_item\" target=\"_blank\" rel=\"noopener\" href=\"https://claude.ai/\" data-highlighted=\"\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Claude AI</span></a><a role=\"menuitem\" id=\"base-ui-_r_11_\" tabindex=\"-1\" class=\"_4mzI4G_item\" target=\"_blank\" rel=\"noopener\" href=\"https://platform.claude.com/login?returnTo=%2F%3F\"><span class=\"tOQyXa_caption-1 _4mzI4G_itemLabel\" data-component=\"Caption\">Console</span></a></div></div>",
+   "links": [
+    {
+     "text": "Claude AI",
+     "href": "https://claude.ai/",
+     "info": {
+      "r": [
+       1159,
+       75,
+       140,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgb(232, 230, 220)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    },
+    {
+     "text": "Console",
+     "href": "https://platform.claude.com/login?returnTo=%2F%3F",
+     "info": {
+      "r": [
+       1159,
+       107,
+       140,
+       28
+      ],
+      "p": "4px 16px",
+      "m": "0px",
+      "g": "normal",
+      "d": "flex",
+      "gc": "none",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16.6863px",
+      "c": "rgb(20, 20, 19)",
+      "br": "8px",
+      "b": "0px solid rgb(20, 20, 19)",
+      "sh": "none"
+     }
+    }
+   ]
+  }
+ }
+}

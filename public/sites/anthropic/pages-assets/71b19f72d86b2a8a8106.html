@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LLM ATT&CK Navigator</title>
+<style>
+  :root {
+    --bg: #fafaf9;
+    --bg-card: #ffffff;
+    --border: #d6d3d1;
+    --border-strong: #1c1917;
+    --text: #1c1917;
+    --muted: #57534e;
+    --header-bg: #f5f5f4;
+    --tactic-grid: #E8E6DC;
+    --link: #1d4ed8;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .container { max-width: 100%; margin: 0 auto; padding: 24px; }
+  @media (max-width: 640px) {
+    .container { padding: 16px; }
+  }
+  header { margin-bottom: 20px; }
+  .navigator-panel {
+    background: #E8E6DC;
+    border-radius: 8px;
+    padding: 16px;
+  }
+  .navigator-panel > :last-child { margin-bottom: 0; }
+  h1 { font-size: 22px; margin: 0 0 4px 0; letter-spacing: -0.01em; font-weight: 700; }
+  .subtitle { font-size: 14px; color: var(--muted); max-width: 720px; margin: 0; }
+  em { font-style: italic; }
+
+  .toolbar {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .toolbar-label { font-weight: 600; color: #44403c; }
+  select {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 4px 8px;
+    background: white;
+    font: inherit;
+  }
+
+  .legend {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: #44403c;
+    margin-bottom: 12px;
+  }
+  .legend-title { font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); font-size: 11px; }
+  .legend-item { display: inline-flex; align-items: center; gap: 6px; }
+  .legend-swatch { display: inline-block; width: 16px; height: 16px; border: 1px solid var(--border); }
+  .legend-swatch.observed { border: 2px solid #000; background: white; }
+
+  .matrix-scroll {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    background: white;
+  }
+  .matrix {
+    display: flex;
+    gap: 1px;
+    background: var(--tactic-grid);
+    padding: 1px;
+    min-width: min-content;
+  }
+  .tactic-col {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 150px;
+    gap: 2px;
+  }
+  .tactic-head {
+    padding: 8px;
+    background: var(--header-bg);
+    border: 1px solid var(--border);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    min-height: 52px;
+  }
+  .tactic-name { font-size: 11px; font-weight: 700; line-height: 1.15; }
+  .tactic-count { font-size: 10px; color: var(--muted); margin-top: 2px; }
+
+  .cell {
+    text-align: left;
+    border: 1px solid #ddd;
+    padding: 4px 5px;
+    min-height: 42px;
+    font-size: 10.5px;
+    line-height: 1.15;
+    overflow: hidden;
+    word-break: break-word;
+    hyphens: auto;
+    background: white;
+    color: var(--text);
+    cursor: default;
+    font-family: inherit;
+    width: 100%;
+  }
+  .cell.observed { border: 2px solid #000; cursor: pointer; }
+  .cell.observed .tech-name { font-weight: 600; }
+  .cell:not(.observed) .tech-name { font-weight: 500; }
+  .cell.observed:hover { filter: brightness(0.95); }
+
+  /* Modal */
+  .modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 50;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 24px;
+    overflow-y: auto;
+  }
+  .modal-backdrop.open { display: flex; }
+  .modal {
+    background: white;
+    border: 2px solid var(--border-strong);
+    border-radius: 4px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 700px;
+    margin: 32px 0;
+  }
+  .modal-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid #e7e5e4;
+    gap: 12px;
+  }
+  .modal-title { font-size: 18px; font-weight: 700; margin: 0; }
+  .modal-meta {
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    color: var(--muted);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    flex-wrap: wrap;
+  }
+  .modal-meta a { color: var(--link); text-decoration: none; display: inline-flex; align-items: center; gap: 4px; }
+  .modal-meta a:hover { text-decoration: underline; }
+  .modal-meta .sep { color: #a8a29e; }
+  .close-btn {
+    border: none;
+    background: transparent;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: var(--text);
+    display: flex;
+  }
+  .close-btn:hover { background: var(--header-bg); }
+
+  .modal-section { padding: 16px; }
+  .modal-section.gray { background: var(--bg); border-bottom: 1px solid #e7e5e4; }
+  .section-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+  .stat-row { display: flex; font-size: 14px; margin-bottom: 6px; }
+  .stat-row:last-child { margin-bottom: 0; }
+  .stat-label { width: 180px; color: var(--muted); }
+  .stat-value { font-weight: 600; }
+  .stat-note { font-weight: 400; font-size: 12px; color: var(--muted); margin-left: 8px; }
+  .stat-divider {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #d6d3d1;
+    display: flex;
+    align-items: center;
+  }
+  .headline-pill {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .stat-divider .stat-label { font-weight: 600; color: #44403c; }
+
+  .sub-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 6px 10px;
+    background: var(--bg);
+    border-left: 4px solid #d6d3d1;
+    border-radius: 2px;
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+  .sub-row:last-child { margin-bottom: 0; }
+  .sub-id {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 11px;
+    color: var(--link);
+    text-decoration: none;
+    width: 80px;
+    flex-shrink: 0;
+  }
+  .sub-id:hover { text-decoration: underline; }
+  .sub-name { flex: 1; color: #292524; }
+  .sub-meta { font-size: 11px; color: var(--muted); white-space: nowrap; }
+  .sub-score {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>LLM ATT&CK Navigator</h1>
+    <p class="subtitle" id="subtitle"></p>
+  </header>
+
+  <div class="navigator-panel">
+  <div class="toolbar">
+    <label class="toolbar-label" for="color-mode">Color cells by:</label>
+    <select id="color-mode">
+      <option value="raw_mean">Raw mean ARiES</option>
+      <option value="adjusted">Adjusted (mean x prevalence)</option>
+      <option value="pct_actors" selected>% of banned accounts</option>
+    </select>
+  </div>
+
+  <div class="legend" id="legend"></div>
+
+  <div class="matrix-scroll">
+    <div class="matrix" id="matrix"></div>
+  </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modal-backdrop">
+  <div class="modal" id="modal"></div>
+</div>
+
+<script>
+const BUNDLE = {"enterprise":{"T1078.003":{"raw_mean":58.4,"adjusted":29.2,"prevalence":0.5,"count":19,"n_actors":17,"pct_actors":2.0,"n_scored":19},"T1213.003":{"raw_mean":50.0,"adjusted":25.0,"prevalence":0.5,"count":10,"n_actors":10,"pct_actors":1.2,"n_scored":10},"T1564.002":{"raw_mean":47.0,"adjusted":23.5,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1018":{"raw_mean":52.0,"adjusted":26.0,"prevalence":0.5,"count":90,"n_actors":88,"pct_actors":10.6,"n_scored":90},"T1555.001":{"raw_mean":46.9,"adjusted":23.5,"prevalence":0.5,"count":6,"n_actors":6,"pct_actors":0.7,"n_scored":6},"T1102.003":{"raw_mean":35.0,"adjusted":17.5,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1565.003":{"raw_mean":29.5,"adjusted":14.8,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1027.007":{"raw_mean":48.0,"adjusted":24.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1553.005":{"raw_mean":60.0,"adjusted":30.0,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1583.007":{"raw_mean":41.5,"adjusted":20.8,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1559":{"raw_mean":44.0,"adjusted":22.0,"prevalence":0.5,"count":8,"n_actors":8,"pct_actors":1.0,"n_scored":8},"T1587.001":{"raw_mean":46.7,"adjusted":70.1,"prevalence":1.5,"count":577,"n_actors":560,"pct_actors":67.3,"n_scored":577},"T1602":{"raw_mean":85.0,"adjusted":42.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1543.001":{"raw_mean":45.5,"adjusted":22.8,"prevalence":0.5,"count":22,"n_actors":22,"pct_actors":2.6,"n_scored":22},"T1528":{"raw_mean":53.2,"adjusted":26.6,"prevalence":0.5,"count":8,"n_actors":8,"pct_actors":1.0,"n_scored":8},"T1564.004":{"raw_mean":47.9,"adjusted":23.9,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1110.004":{"raw_mean":44.9,"adjusted":22.5,"prevalence":0.5,"count":17,"n_actors":15,"pct_actors":1.8,"n_scored":17},"T1566":{"raw_mean":47.0,"adjusted":58.8,"prevalence":1.25,"count":381,"n_actors":324,"pct_actors":38.9,"n_scored":381},"T1055.004":{"raw_mean":54.9,"adjusted":27.4,"prevalence":0.5,"count":10,"n_actors":9,"pct_actors":1.1,"n_scored":10},"T1567.002":{"raw_mean":50.3,"adjusted":25.1,"prevalence":0.5,"count":14,"n_actors":14,"pct_actors":1.7,"n_scored":14},"T1562.004":{"raw_mean":49.8,"adjusted":24.9,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1001":{"raw_mean":53.8,"adjusted":26.9,"prevalence":0.5,"count":16,"n_actors":16,"pct_actors":1.9,"n_scored":16},"T1589.002":{"raw_mean":48.8,"adjusted":24.4,"prevalence":0.5,"count":34,"n_actors":34,"pct_actors":4.1,"n_scored":34},"T1059.007":{"raw_mean":44.9,"adjusted":33.7,"prevalence":0.75,"count":147,"n_actors":142,"pct_actors":17.1,"n_scored":147},"T1586":{"raw_mean":49.4,"adjusted":24.7,"prevalence":0.5,"count":10,"n_actors":10,"pct_actors":1.2,"n_scored":10},"T1213.002":{"raw_mean":46.8,"adjusted":23.4,"prevalence":0.5,"count":54,"n_actors":54,"pct_actors":6.5,"n_scored":54},"T1574.011":{"raw_mean":50.0,"adjusted":25.0,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1102":{"raw_mean":45.3,"adjusted":34.0,"prevalence":0.75,"count":158,"n_actors":146,"pct_actors":17.5,"n_scored":158},"T1546.010":{"raw_mean":53.0,"adjusted":26.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1047":{"raw_mean":56.0,"adjusted":28.0,"prevalence":0.5,"count":9,"n_actors":9,"pct_actors":1.1,"n_scored":9},"T1606":{"raw_mean":46.3,"adjusted":23.2,"prevalence":0.5,"count":6,"n_actors":6,"pct_actors":0.7,"n_scored":6},"T1518.001":{"raw_mean":43.8,"adjusted":21.9,"prevalence":0.5,"count":33,"n_actors":33,"pct_actors":4.0,"n_scored":33},"T1110":{"raw_mean":49.4,"adjusted":37.1,"prevalence":0.75,"count":190,"n_actors":129,"pct_actors":15.5,"n_scored":190},"T1588.007":{"raw_mean":40.6,"adjusted":20.3,"prevalence":0.5,"count":7,"n_actors":7,"pct_actors":0.8,"n_scored":7},"T1590.001":{"raw_mean":49.5,"adjusted":24.7,"prevalence":0.5,"count":115,"n_actors":113,"pct_actors":13.6,"n_scored":115},"T1087.001":{"raw_mean":54.1,"adjusted":27.0,"prevalence":0.5,"count":24,"n_actors":24,"pct_actors":2.9,"n_scored":24},"T1204":{"raw_mean":45.5,"adjusted":22.8,"prevalence":0.5,"count":52,"n_actors":50,"pct_actors":6.0,"n_scored":52},"T1211":{"raw_mean":54.0,"adjusted":27.0,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1091":{"raw_mean":50.0,"adjusted":25.0,"prevalence":0.5,"count":6,"n_actors":6,"pct_actors":0.7,"n_scored":6},"T1112":{"raw_mean":45.7,"adjusted":22.9,"prevalence":0.5,"count":58,"n_actors":58,"pct_actors":7.0,"n_scored":58},"T1565.002":{"raw_mean":43.3,"adjusted":21.6,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1136":{"raw_mean":51.8,"adjusted":25.9,"prevalence":0.5,"count":64,"n_actors":63,"pct_actors":7.6,"n_scored":64},"T1550.001":{"raw_mean":55.8,"adjusted":27.9,"prevalence":0.5,"count":14,"n_actors":13,"pct_actors":1.6,"n_scored":14},"T1518":{"raw_mean":44.3,"adjusted":22.2,"prevalence":0.5,"count":55,"n_actors":54,"pct_actors":6.5,"n_scored":55},"T1087.004":{"raw_mean":47.2,"adjusted":23.6,"prevalence":0.5,"count":32,"n_actors":32,"pct_actors":3.8,"n_scored":32},"T1498":{"raw_mean":46.4,"adjusted":23.2,"prevalence":0.5,"count":56,"n_actors":45,"pct_actors":5.4,"n_scored":56},"T1056.003":{"raw_mean":46.0,"adjusted":23.0,"prevalence":0.5,"count":49,"n_actors":46,"pct_actors":5.5,"n_scored":49},"T1025":{"raw_mean":45.5,"adjusted":22.8,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1127.002":{"raw_mean":62.0,"adjusted":31.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1140":{"raw_mean":48.3,"adjusted":24.2,"prevalence":0.5,"count":83,"n_actors":83,"pct_actors":10.0,"n_scored":83},"T1482":{"raw_mean":70.0,"adjusted":35.0,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1610":{"raw_mean":64.0,"adjusted":32.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1583.003":{"raw_mean":50.2,"adjusted":25.1,"prevalence":0.5,"count":109,"n_actors":108,"pct_actors":13.0,"n_scored":109},"T1598.001":{"raw_mean":47.0,"adjusted":23.5,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1608.001":{"raw_mean":46.5,"adjusted":23.2,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1039":{"raw_mean":54.9,"adjusted":27.4,"prevalence":0.5,"count":21,"n_actors":21,"pct_actors":2.5,"n_scored":21},"T1592.001":{"raw_mean":43.3,"adjusted":21.6,"prevalence":0.5,"count":7,"n_actors":7,"pct_actors":0.8,"n_scored":7},"T1136.003":{"raw_mean":45.0,"adjusted":22.5,"prevalence":0.5,"count":19,"n_actors":19,"pct_actors":2.3,"n_scored":19},"T1030":{"raw_mean":46.4,"adjusted":23.2,"prevalence":0.5,"count":26,"n_actors":26,"pct_actors":3.1,"n_scored":26},"T1580":{"raw_mean":56.8,"adjusted":28.4,"prevalence":0.5,"count":6,"n_actors":6,"pct_actors":0.7,"n_scored":6},"T1098":{"raw_mean":52.9,"adjusted":26.4,"prevalence":0.5,"count":27,"n_actors":27,"pct_actors":3.2,"n_scored":27},"T1090.002":{"raw_mean":48.0,"adjusted":24.0,"prevalence":0.5,"count":49,"n_actors":48,"pct_actors":5.8,"n_scored":49},"T1134.005":{"raw_mean":64.0,"adjusted":32.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1491.002":{"raw_mean":70.0,"adjusted":35.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1550.004":{"raw_mean":48.8,"adjusted":24.4,"prevalence":0.5,"count":6,"n_actors":6,"pct_actors":0.7,"n_scored":6},"T1195.002":{"raw_mean":43.4,"adjusted":21.7,"prevalence":0.5,"count":18,"n_actors":18,"pct_actors":2.2,"n_scored":18},"T1584.007":{"raw_mean":48.0,"adjusted":24.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1021.003":{"raw_mean":49.0,"adjusted":24.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1547.006":{"raw_mean":48.8,"adjusted":24.4,"prevalence":0.5,"count":13,"n_actors":12,"pct_actors":1.4,"n_scored":13},"T1590.005":{"raw_mean":49.5,"adjusted":37.1,"prevalence":0.75,"count":162,"n_actors":160,"pct_actors":19.2,"n_scored":162},"T1596.001":{"raw_mean":57.0,"adjusted":28.5,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1021.007":{"raw_mean":65.0,"adjusted":32.5,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1552.007":{"raw_mean":65.5,"adjusted":32.8,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1071":{"raw_mean":48.3,"adjusted":60.3,"prevalence":1.25,"count":407,"n_actors":385,"pct_actors":46.3,"n_scored":407},"T1583.001":{"raw_mean":47.3,"adjusted":35.5,"prevalence":0.75,"count":217,"n_actors":215,"pct_actors":25.8,"n_scored":217},"T1070.006":{"raw_mean":44.3,"adjusted":22.1,"prevalence":0.5,"count":62,"n_actors":62,"pct_actors":7.5,"n_scored":62},"T1548":{"raw_mean":52.9,"adjusted":26.4,"prevalence":0.5,"count":44,"n_actors":40,"pct_actors":4.8,"n_scored":44},"T1055.001":{"raw_mean":44.0,"adjusted":22.0,"prevalence":0.5,"count":61,"n_actors":57,"pct_actors":6.9,"n_scored":61},"T1555":{"raw_mean":49.3,"adjusted":37.0,"prevalence":0.75,"count":190,"n_actors":170,"pct_actors":20.4,"n_scored":190},"T1204.003":{"raw_mean":29.0,"adjusted":14.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1491":{"raw_mean":49.1,"adjusted":24.6,"prevalence":0.5,"count":17,"n_actors":17,"pct_actors":2.0,"n_scored":17},"T1125":{"raw_mean":46.4,"adjusted":23.2,"prevalence":0.5,"count":28,"n_actors":28,"pct_actors":3.4,"n_scored":28},"T1486":{"raw_mean":51.5,"adjusted":25.7,"prevalence":0.5,"count":29,"n_actors":28,"pct_actors":3.4,"n_scored":29},"T1593":{"raw_mean":50.8,"adjusted":25.4,"prevalence":0.5,"count":41,"n_actors":41,"pct_actors":4.9,"n_scored":41},"T1003.002":{"raw_mean":58.7,"adjusted":29.3,"prevalence":0.5,"count":9,"n_actors":9,"pct_actors":1.1,"n_scored":9},"T1037":{"raw_mean":49.8,"adjusted":24.9,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1559.001":{"raw_mean":39.4,"adjusted":19.7,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1593.003":{"raw_mean":52.6,"adjusted":26.3,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1552.005":{"raw_mean":67.0,"adjusted":33.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1562.006":{"raw_mean":51.0,"adjusted":25.5,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1613":{"raw_mean":65.5,"adjusted":32.8,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1110.003":{"raw_mean":50.1,"adjusted":25.0,"prevalence":0.5,"count":46,"n_actors":45,"pct_actors":5.4,"n_scored":46},"T1213":{"raw_mean":49.2,"adjusted":36.9,"prevalence":0.75,"count":139,"n_actors":137,"pct_actors":16.5,"n_scored":139},"T1588.006":{"raw_mean":48.3,"adjusted":24.2,"prevalence":0.5,"count":44,"n_actors":43,"pct_actors":5.2,"n_scored":44},"T1497":{"raw_mean":45.5,"adjusted":22.8,"prevalence":0.5,"count":73,"n_actors":67,"pct_actors":8.1,"n_scored":73},"T1553.004":{"raw_mean":38.8,"adjusted":19.4,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1071.002":{"raw_mean":31.0,"adjusted":15.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1003.004":{"raw_mean":47.0,"adjusted":23.5,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1539":{"raw_mean":46.1,"adjusted":23.1,"prevalence":0.5,"count":82,"n_actors":76,"pct_actors":9.1,"n_scored":82},"T1588.003":{"raw_mean":38.3,"adjusted":19.2,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1547.004":{"raw_mean":45.7,"adjusted":22.8,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1588.005":{"raw_mean":48.7,"adjusted":24.3,"prevalence":0.5,"count":89,"n_actors":89,"pct_actors":10.7,"n_scored":89},"T1585.002":{"raw_mean":46.8,"adjusted":23.4,"prevalence":0.5,"count":13,"n_actors":13,"pct_actors":1.6,"n_scored":13},"T1134":{"raw_mean":53.2,"adjusted":26.6,"prevalence":0.5,"count":51,"n_actors":39,"pct_actors":4.7,"n_scored":51},"T1052.001":{"raw_mean":39.2,"adjusted":19.6,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1078":{"raw_mean":49.5,"adjusted":37.1,"prevalence":0.75,"count":176,"n_actors":153,"pct_actors":18.4,"n_scored":176},"T1611":{"raw_mean":63.0,"adjusted":31.5,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1001.001":{"raw_mean":53.2,"adjusted":26.6,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1584.003":{"raw_mean":68.0,"adjusted":34.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1590":{"raw_mean":49.9,"adjusted":49.9,"prevalence":1.0,"count":336,"n_actors":268,"pct_actors":32.2,"n_scored":336},"T1218":{"raw_mean":53.9,"adjusted":27.0,"prevalence":0.5,"count":12,"n_actors":10,"pct_actors":1.2,"n_scored":12},"T1003.003":{"raw_mean":68.5,"adjusted":34.2,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1566.001":{"raw_mean":47.9,"adjusted":35.9,"prevalence":0.75,"count":152,"n_actors":149,"pct_actors":17.9,"n_scored":152},"T1027.005":{"raw_mean":40.3,"adjusted":20.1,"prevalence":0.5,"count":7,"n_actors":7,"pct_actors":0.8,"n_scored":7},"T1001.003":{"raw_mean":54.6,"adjusted":27.3,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1546.016":{"raw_mean":46.3,"adjusted":23.2,"prevalence":0.5,"count":6,"n_actors":6,"pct_actors":0.7,"n_scored":6},"T1548.001":{"raw_mean":52.8,"adjusted":26.4,"prevalence":0.5,"count":11,"n_actors":10,"pct_actors":1.2,"n_scored":11},"T1059.006":{"raw_mean":46.3,"adjusted":34.7,"prevalence":0.75,"count":127,"n_actors":124,"pct_actors":14.9,"n_scored":127},"T1132.001":{"raw_mean":47.7,"adjusted":23.9,"prevalence":0.5,"count":20,"n_actors":20,"pct_actors":2.4,"n_scored":20},"T1036":{"raw_mean":46.8,"adjusted":35.1,"prevalence":0.75,"count":242,"n_actors":233,"pct_actors":28.0,"n_scored":242},"T1134.003":{"raw_mean":54.0,"adjusted":27.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1537":{"raw_mean":52.0,"adjusted":26.0,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1546.003":{"raw_mean":54.1,"adjusted":27.1,"prevalence":0.5,"count":10,"n_actors":10,"pct_actors":1.2,"n_scored":10},"T1070.009":{"raw_mean":42.0,"adjusted":21.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1598.003":{"raw_mean":50.2,"adjusted":25.1,"prevalence":0.5,"count":14,"n_actors":13,"pct_actors":1.6,"n_scored":14},"T1589":{"raw_mean":48.0,"adjusted":36.0,"prevalence":0.75,"count":147,"n_actors":122,"pct_actors":14.7,"n_scored":147},"T1027.010":{"raw_mean":50.7,"adjusted":25.3,"prevalence":0.5,"count":12,"n_actors":12,"pct_actors":1.4,"n_scored":12},"T1556.001":{"raw_mean":54.0,"adjusted":27.0,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1596.005":{"raw_mean":43.4,"adjusted":21.7,"prevalence":0.5,"count":7,"n_actors":7,"pct_actors":0.8,"n_scored":7},"T1591.002":{"raw_mean":46.0,"adjusted":23.0,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1552.002":{"raw_mean":62.7,"adjusted":31.3,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1566.002":{"raw_mean":46.4,"adjusted":34.8,"prevalence":0.75,"count":156,"n_actors":151,"pct_actors":18.1,"n_scored":156},"T1048.002":{"raw_mean":39.0,"adjusted":19.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1133":{"raw_mean":54.4,"adjusted":27.2,"prevalence":0.5,"count":26,"n_actors":26,"pct_actors":3.1,"n_scored":26},"T1543.003":{"raw_mean":47.6,"adjusted":23.8,"prevalence":0.5,"count":85,"n_actors":83,"pct_actors":10.0,"n_scored":85},"T1529":{"raw_mean":49.0,"adjusted":24.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1505":{"raw_mean":55.6,"adjusted":27.8,"prevalence":0.5,"count":60,"n_actors":56,"pct_actors":6.7,"n_scored":60},"T1560.001":{"raw_mean":44.6,"adjusted":22.3,"prevalence":0.5,"count":10,"n_actors":10,"pct_actors":1.2,"n_scored":10},"T1055.008":{"raw_mean":39.8,"adjusted":19.9,"prevalence":0.5,"count":6,"n_actors":6,"pct_actors":0.7,"n_scored":6},"T1588.001":{"raw_mean":45.5,"adjusted":22.8,"prevalence":0.5,"count":117,"n_actors":116,"pct_actors":13.9,"n_scored":117},"T1098.001":{"raw_mean":46.4,"adjusted":23.2,"prevalence":0.5,"count":7,"n_actors":7,"pct_actors":0.8,"n_scored":7},"T1546.005":{"raw_mean":46.0,"adjusted":23.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1657":{"raw_mean":47.9,"adjusted":24.0,"prevalence":0.5,"count":11,"n_actors":11,"pct_actors":1.3,"n_scored":11},"T1562.008":{"raw_mean":52.0,"adjusted":26.0,"prevalence":0.5,"count":7,"n_actors":7,"pct_actors":0.8,"n_scored":7},"T1499":{"raw_mean":44.6,"adjusted":22.3,"prevalence":0.5,"count":82,"n_actors":74,"pct_actors":8.9,"n_scored":82},"T1590.002":{"raw_mean":52.8,"adjusted":26.4,"prevalence":0.5,"count":26,"n_actors":26,"pct_actors":3.1,"n_scored":26},"T1134.004":{"raw_mean":49.6,"adjusted":24.8,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1008":{"raw_mean":51.0,"adjusted":25.5,"prevalence":0.5,"count":45,"n_actors":43,"pct_actors":5.2,"n_scored":45},"T1056.004":{"raw_mean":55.5,"adjusted":27.8,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1574.006":{"raw_mean":45.9,"adjusted":23.0,"prevalence":0.5,"count":16,"n_actors":15,"pct_actors":1.8,"n_scored":16},"T1566.004":{"raw_mean":51.0,"adjusted":25.5,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1021":{"raw_mean":55.8,"adjusted":27.9,"prevalence":0.5,"count":57,"n_actors":45,"pct_actors":5.4,"n_scored":57},"T1598":{"raw_mean":51.1,"adjusted":25.5,"prevalence":0.5,"count":22,"n_actors":21,"pct_actors":2.5,"n_scored":22},"T1568.002":{"raw_mean":55.7,"adjusted":27.8,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1584":{"raw_mean":49.9,"adjusted":25.0,"prevalence":0.5,"count":19,"n_actors":19,"pct_actors":2.3,"n_scored":19},"T1592.004":{"raw_mean":50.8,"adjusted":25.4,"prevalence":0.5,"count":55,"n_actors":55,"pct_actors":6.6,"n_scored":55},"T1573.001":{"raw_mean":49.6,"adjusted":37.2,"prevalence":0.75,"count":133,"n_actors":130,"pct_actors":15.6,"n_scored":133},"T1555.004":{"raw_mean":55.9,"adjusted":27.9,"prevalence":0.5,"count":7,"n_actors":7,"pct_actors":0.8,"n_scored":7},"T1115":{"raw_mean":44.4,"adjusted":22.2,"prevalence":0.5,"count":27,"n_actors":26,"pct_actors":3.1,"n_scored":27},"T1202":{"raw_mean":37.0,"adjusted":18.5,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1596.003":{"raw_mean":57.0,"adjusted":28.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1127.001":{"raw_mean":60.0,"adjusted":30.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1187":{"raw_mean":28.0,"adjusted":14.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1563.001":{"raw_mean":57.0,"adjusted":28.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1127":{"raw_mean":61.0,"adjusted":30.5,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1584.006":{"raw_mean":50.3,"adjusted":25.2,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1003.001":{"raw_mean":56.3,"adjusted":28.2,"prevalence":0.5,"count":18,"n_actors":18,"pct_actors":2.2,"n_scored":18},"T1033":{"raw_mean":48.9,"adjusted":24.5,"prevalence":0.5,"count":23,"n_actors":23,"pct_actors":2.8,"n_scored":23},"T1552.001":{"raw_mean":50.2,"adjusted":25.1,"prevalence":0.5,"count":123,"n_actors":123,"pct_actors":14.8,"n_scored":123},"T1005":{"raw_mean":47.5,"adjusted":59.4,"prevalence":1.25,"count":477,"n_actors":465,"pct_actors":55.9,"n_scored":477},"T1137":{"raw_mean":36.5,"adjusted":18.2,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1036.004":{"raw_mean":50.6,"adjusted":25.3,"prevalence":0.5,"count":11,"n_actors":11,"pct_actors":1.3,"n_scored":11},"T1049":{"raw_mean":47.3,"adjusted":23.7,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1574.002":{"raw_mean":48.9,"adjusted":24.5,"prevalence":0.5,"count":29,"n_actors":29,"pct_actors":3.5,"n_scored":29},"T1554":{"raw_mean":46.4,"adjusted":23.2,"prevalence":0.5,"count":13,"n_actors":13,"pct_actors":1.6,"n_scored":13},"T1090.001":{"raw_mean":49.9,"adjusted":25.0,"prevalence":0.5,"count":34,"n_actors":34,"pct_actors":4.1,"n_scored":34},"T1614":{"raw_mean":39.8,"adjusted":19.9,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1560":{"raw_mean":51.9,"adjusted":25.9,"prevalence":0.5,"count":26,"n_actors":26,"pct_actors":3.1,"n_scored":26},"T1185":{"raw_mean":48.0,"adjusted":24.0,"prevalence":0.5,"count":26,"n_actors":26,"pct_actors":3.1,"n_scored":26},"T1083":{"raw_mean":49.1,"adjusted":49.1,"prevalence":1.0,"count":280,"n_actors":275,"pct_actors":33.1,"n_scored":280},"T1195.001":{"raw_mean":51.0,"adjusted":25.5,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1588.004":{"raw_mean":48.6,"adjusted":24.3,"prevalence":0.5,"count":19,"n_actors":19,"pct_actors":2.3,"n_scored":19},"T1606.001":{"raw_mean":46.5,"adjusted":23.2,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1592.003":{"raw_mean":40.0,"adjusted":20.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1200":{"raw_mean":45.5,"adjusted":22.8,"prevalence":0.5,"count":32,"n_actors":32,"pct_actors":3.8,"n_scored":32},"T1069.001":{"raw_mean":40.0,"adjusted":20.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1055.011":{"raw_mean":76.0,"adjusted":38.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1598.002":{"raw_mean":49.5,"adjusted":24.8,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1564":{"raw_mean":45.0,"adjusted":22.5,"prevalence":0.5,"count":63,"n_actors":59,"pct_actors":7.1,"n_scored":63},"T1098.004":{"raw_mean":53.0,"adjusted":26.5,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1014":{"raw_mean":46.5,"adjusted":23.3,"prevalence":0.5,"count":29,"n_actors":27,"pct_actors":3.2,"n_scored":29},"T1568.003":{"raw_mean":46.0,"adjusted":23.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1589.001":{"raw_mean":46.8,"adjusted":23.4,"prevalence":0.5,"count":98,"n_actors":98,"pct_actors":11.8,"n_scored":98},"T1573":{"raw_mean":48.6,"adjusted":36.5,"prevalence":0.75,"count":231,"n_actors":215,"pct_actors":25.8,"n_scored":231},"T1071.003":{"raw_mean":49.8,"adjusted":24.9,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1557":{"raw_mean":47.1,"adjusted":23.6,"prevalence":0.5,"count":25,"n_actors":21,"pct_actors":2.5,"n_scored":25},"T1562.001":{"raw_mean":45.6,"adjusted":57.0,"prevalence":1.25,"count":423,"n_actors":415,"pct_actors":49.9,"n_scored":423},"T1111":{"raw_mean":38.7,"adjusted":19.3,"prevalence":0.5,"count":13,"n_actors":13,"pct_actors":1.6,"n_scored":13},"T1562.002":{"raw_mean":49.7,"adjusted":24.8,"prevalence":0.5,"count":6,"n_actors":6,"pct_actors":0.7,"n_scored":6},"T1114.002":{"raw_mean":45.3,"adjusted":22.6,"prevalence":0.5,"count":35,"n_actors":35,"pct_actors":4.2,"n_scored":35},"T1485":{"raw_mean":47.0,"adjusted":23.5,"prevalence":0.5,"count":38,"n_actors":37,"pct_actors":4.4,"n_scored":38},"T1021.004":{"raw_mean":59.2,"adjusted":29.6,"prevalence":0.5,"count":16,"n_actors":16,"pct_actors":1.9,"n_scored":16},"T1649":{"raw_mean":39.8,"adjusted":19.9,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1090.003":{"raw_mean":46.4,"adjusted":23.2,"prevalence":0.5,"count":89,"n_actors":83,"pct_actors":10.0,"n_scored":89},"T1583.004":{"raw_mean":48.9,"adjusted":24.5,"prevalence":0.5,"count":26,"n_actors":25,"pct_actors":3.0,"n_scored":26},"T1219":{"raw_mean":51.8,"adjusted":25.9,"prevalence":0.5,"count":17,"n_actors":17,"pct_actors":2.0,"n_scored":17},"T1547":{"raw_mean":46.5,"adjusted":34.9,"prevalence":0.75,"count":221,"n_actors":212,"pct_actors":25.5,"n_scored":221},"T1072":{"raw_mean":35.0,"adjusted":17.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1204.001":{"raw_mean":44.4,"adjusted":22.2,"prevalence":0.5,"count":7,"n_actors":7,"pct_actors":0.8,"n_scored":7},"T1594":{"raw_mean":48.3,"adjusted":24.1,"prevalence":0.5,"count":22,"n_actors":22,"pct_actors":2.6,"n_scored":22},"T1120":{"raw_mean":43.0,"adjusted":21.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1068":{"raw_mean":51.6,"adjusted":25.8,"prevalence":0.5,"count":46,"n_actors":42,"pct_actors":5.0,"n_scored":46},"T1526":{"raw_mean":48.4,"adjusted":24.2,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1552.004":{"raw_mean":60.0,"adjusted":30.0,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1557.002":{"raw_mean":43.1,"adjusted":21.6,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1495":{"raw_mean":43.0,"adjusted":21.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1555.003":{"raw_mean":49.7,"adjusted":24.8,"prevalence":0.5,"count":100,"n_actors":98,"pct_actors":11.8,"n_scored":100},"T1059.003":{"raw_mean":53.0,"adjusted":26.5,"prevalence":0.5,"count":64,"n_actors":64,"pct_actors":7.7,"n_scored":64},"T1550.002":{"raw_mean":59.2,"adjusted":29.6,"prevalence":0.5,"count":11,"n_actors":11,"pct_actors":1.3,"n_scored":11},"T1558.004":{"raw_mean":62.0,"adjusted":31.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1592.002":{"raw_mean":46.5,"adjusted":34.9,"prevalence":0.75,"count":135,"n_actors":133,"pct_actors":16.0,"n_scored":135},"T1003.007":{"raw_mean":58.7,"adjusted":29.3,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1563":{"raw_mean":57.0,"adjusted":28.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1497.002":{"raw_mean":45.7,"adjusted":22.8,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1546.015":{"raw_mean":45.3,"adjusted":22.6,"prevalence":0.5,"count":7,"n_actors":7,"pct_actors":0.8,"n_scored":7},"T1074":{"raw_mean":42.8,"adjusted":21.4,"prevalence":0.5,"count":12,"n_actors":12,"pct_actors":1.4,"n_scored":12},"T1053.005":{"raw_mean":46.4,"adjusted":23.2,"prevalence":0.5,"count":71,"n_actors":67,"pct_actors":8.1,"n_scored":71},"T1204.002":{"raw_mean":45.6,"adjusted":22.8,"prevalence":0.5,"count":42,"n_actors":41,"pct_actors":4.9,"n_scored":42},"T1021.002":{"raw_mean":54.5,"adjusted":27.2,"prevalence":0.5,"count":17,"n_actors":15,"pct_actors":1.8,"n_scored":17},"T1087.002":{"raw_mean":58.8,"adjusted":29.4,"prevalence":0.5,"count":12,"n_actors":12,"pct_actors":1.4,"n_scored":12},"T1505.002":{"raw_mean":38.0,"adjusted":19.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1491.001":{"raw_mean":48.9,"adjusted":24.5,"prevalence":0.5,"count":13,"n_actors":13,"pct_actors":1.6,"n_scored":13},"T1555.006":{"raw_mean":45.0,"adjusted":22.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1573.002":{"raw_mean":47.3,"adjusted":23.6,"prevalence":0.5,"count":59,"n_actors":58,"pct_actors":7.0,"n_scored":59},"T1113":{"raw_mean":47.1,"adjusted":35.3,"prevalence":0.75,"count":131,"n_actors":130,"pct_actors":15.6,"n_scored":131},"T1543":{"raw_mean":47.9,"adjusted":36.0,"prevalence":0.75,"count":162,"n_actors":155,"pct_actors":18.6,"n_scored":162},"T1496":{"raw_mean":49.4,"adjusted":24.7,"prevalence":0.5,"count":31,"n_actors":31,"pct_actors":3.7,"n_scored":31},"T1203":{"raw_mean":48.9,"adjusted":24.5,"prevalence":0.5,"count":110,"n_actors":109,"pct_actors":13.1,"n_scored":110},"T1010":{"raw_mean":47.7,"adjusted":23.9,"prevalence":0.5,"count":7,"n_actors":7,"pct_actors":0.8,"n_scored":7},"T1048":{"raw_mean":52.1,"adjusted":26.0,"prevalence":0.5,"count":17,"n_actors":17,"pct_actors":2.0,"n_scored":17},"T1114":{"raw_mean":46.6,"adjusted":23.3,"prevalence":0.5,"count":100,"n_actors":98,"pct_actors":11.8,"n_scored":100},"T1498.001":{"raw_mean":45.5,"adjusted":22.7,"prevalence":0.5,"count":28,"n_actors":28,"pct_actors":3.4,"n_scored":28},"T1567":{"raw_mean":51.6,"adjusted":25.8,"prevalence":0.5,"count":21,"n_actors":21,"pct_actors":2.5,"n_scored":21},"T1569.002":{"raw_mean":48.4,"adjusted":24.2,"prevalence":0.5,"count":25,"n_actors":25,"pct_actors":3.0,"n_scored":25},"T1609":{"raw_mean":52.2,"adjusted":26.1,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1593.002":{"raw_mean":50.1,"adjusted":25.1,"prevalence":0.5,"count":13,"n_actors":13,"pct_actors":1.6,"n_scored":13},"T1546.004":{"raw_mean":53.2,"adjusted":26.6,"prevalence":0.5,"count":11,"n_actors":11,"pct_actors":1.3,"n_scored":11},"T1053.003":{"raw_mean":49.1,"adjusted":24.6,"prevalence":0.5,"count":58,"n_actors":54,"pct_actors":6.5,"n_scored":58},"T1621":{"raw_mean":50.8,"adjusted":25.4,"prevalence":0.5,"count":12,"n_actors":12,"pct_actors":1.4,"n_scored":12},"T1558.001":{"raw_mean":49.0,"adjusted":24.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1069.002":{"raw_mean":93.0,"adjusted":46.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1574.013":{"raw_mean":53.0,"adjusted":26.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1071.004":{"raw_mean":52.2,"adjusted":26.1,"prevalence":0.5,"count":11,"n_actors":11,"pct_actors":1.3,"n_scored":11},"T1190":{"raw_mean":49.8,"adjusted":49.8,"prevalence":1.0,"count":286,"n_actors":279,"pct_actors":33.5,"n_scored":286},"T1550.003":{"raw_mean":56.0,"adjusted":28.0,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1027.009":{"raw_mean":51.2,"adjusted":25.6,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1585.001":{"raw_mean":48.2,"adjusted":24.1,"prevalence":0.5,"count":35,"n_actors":34,"pct_actors":4.1,"n_scored":35},"T1106":{"raw_mean":45.4,"adjusted":34.0,"prevalence":0.75,"count":149,"n_actors":146,"pct_actors":17.5,"n_scored":149},"T1095":{"raw_mean":48.7,"adjusted":24.3,"prevalence":0.5,"count":25,"n_actors":25,"pct_actors":3.0,"n_scored":25},"T1546.006":{"raw_mean":42.9,"adjusted":21.4,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1057":{"raw_mean":46.3,"adjusted":34.7,"prevalence":0.75,"count":147,"n_actors":144,"pct_actors":17.3,"n_scored":147},"T1074.001":{"raw_mean":43.8,"adjusted":21.9,"prevalence":0.5,"count":7,"n_actors":7,"pct_actors":0.8,"n_scored":7},"T1569":{"raw_mean":48.4,"adjusted":24.2,"prevalence":0.5,"count":25,"n_actors":25,"pct_actors":3.0,"n_scored":25},"T1562.007":{"raw_mean":48.5,"adjusted":24.2,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1210":{"raw_mean":72.0,"adjusted":36.0,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1574":{"raw_mean":46.7,"adjusted":23.4,"prevalence":0.5,"count":73,"n_actors":63,"pct_actors":7.6,"n_scored":73},"T1553.002":{"raw_mean":46.2,"adjusted":23.1,"prevalence":0.5,"count":13,"n_actors":13,"pct_actors":1.6,"n_scored":13},"T1036.008":{"raw_mean":52.0,"adjusted":26.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1546.002":{"raw_mean":43.0,"adjusted":21.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1090.004":{"raw_mean":57.2,"adjusted":28.6,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1566.003":{"raw_mean":44.1,"adjusted":22.1,"prevalence":0.5,"count":25,"n_actors":25,"pct_actors":3.0,"n_scored":25},"T1564.003":{"raw_mean":45.2,"adjusted":22.6,"prevalence":0.5,"count":16,"n_actors":16,"pct_actors":1.9,"n_scored":16},"T1078.002":{"raw_mean":66.8,"adjusted":33.4,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1078.001":{"raw_mean":58.5,"adjusted":29.2,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1608":{"raw_mean":48.8,"adjusted":24.4,"prevalence":0.5,"count":6,"n_actors":6,"pct_actors":0.7,"n_scored":6},"T1059.004":{"raw_mean":51.5,"adjusted":25.7,"prevalence":0.5,"count":113,"n_actors":110,"pct_actors":13.2,"n_scored":113},"T1027.014":{"raw_mean":42.0,"adjusted":21.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1489":{"raw_mean":49.9,"adjusted":24.9,"prevalence":0.5,"count":17,"n_actors":17,"pct_actors":2.0,"n_scored":17},"T1557.001":{"raw_mean":50.4,"adjusted":25.2,"prevalence":0.5,"count":13,"n_actors":12,"pct_actors":1.4,"n_scored":13},"T1587.003":{"raw_mean":42.0,"adjusted":21.0,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1587.004":{"raw_mean":48.7,"adjusted":24.4,"prevalence":0.5,"count":25,"n_actors":25,"pct_actors":3.0,"n_scored":25},"T1040":{"raw_mean":44.7,"adjusted":22.3,"prevalence":0.5,"count":29,"n_actors":27,"pct_actors":3.2,"n_scored":29},"T1007":{"raw_mean":54.0,"adjusted":27.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1119":{"raw_mean":42.3,"adjusted":31.8,"prevalence":0.75,"count":128,"n_actors":125,"pct_actors":15.0,"n_scored":128},"T1020":{"raw_mean":50.1,"adjusted":25.0,"prevalence":0.5,"count":69,"n_actors":69,"pct_actors":8.3,"n_scored":69},"T1195.003":{"raw_mean":41.0,"adjusted":20.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1016":{"raw_mean":49.5,"adjusted":24.8,"prevalence":0.5,"count":22,"n_actors":22,"pct_actors":2.6,"n_scored":22},"T1548.002":{"raw_mean":51.9,"adjusted":25.9,"prevalence":0.5,"count":25,"n_actors":22,"pct_actors":2.6,"n_scored":25},"T1505.003":{"raw_mean":56.3,"adjusted":28.1,"prevalence":0.5,"count":58,"n_actors":54,"pct_actors":6.5,"n_scored":58},"T1055.002":{"raw_mean":46.0,"adjusted":23.0,"prevalence":0.5,"count":6,"n_actors":6,"pct_actors":0.7,"n_scored":6},"T1053.006":{"raw_mean":51.0,"adjusted":25.5,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1218.007":{"raw_mean":55.3,"adjusted":27.7,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1593.001":{"raw_mean":50.1,"adjusted":25.1,"prevalence":0.5,"count":20,"n_actors":20,"pct_actors":2.4,"n_scored":20},"T1027.013":{"raw_mean":64.0,"adjusted":32.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1199":{"raw_mean":52.7,"adjusted":26.3,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1585":{"raw_mean":47.7,"adjusted":23.8,"prevalence":0.5,"count":52,"n_actors":50,"pct_actors":6.0,"n_scored":52},"T1561":{"raw_mean":43.0,"adjusted":21.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1596":{"raw_mean":54.9,"adjusted":27.4,"prevalence":0.5,"count":21,"n_actors":21,"pct_actors":2.5,"n_scored":21},"T1195":{"raw_mean":44.4,"adjusted":22.2,"prevalence":0.5,"count":22,"n_actors":20,"pct_actors":2.4,"n_scored":22},"T1562.010":{"raw_mean":54.0,"adjusted":27.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1552":{"raw_mean":51.2,"adjusted":38.4,"prevalence":0.75,"count":154,"n_actors":143,"pct_actors":17.2,"n_scored":154},"T1217":{"raw_mean":30.0,"adjusted":15.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1087.003":{"raw_mean":58.2,"adjusted":29.1,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1574.012":{"raw_mean":62.0,"adjusted":31.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1055":{"raw_mean":45.8,"adjusted":68.7,"prevalence":1.5,"count":591,"n_actors":387,"pct_actors":46.5,"n_scored":591},"T1056.001":{"raw_mean":47.2,"adjusted":23.6,"prevalence":0.5,"count":95,"n_actors":88,"pct_actors":10.6,"n_scored":95},"T1552.006":{"raw_mean":76.0,"adjusted":38.0,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1556.007":{"raw_mean":46.3,"adjusted":23.2,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1606.002":{"raw_mean":68.0,"adjusted":34.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1498.002":{"raw_mean":44.4,"adjusted":22.2,"prevalence":0.5,"count":11,"n_actors":10,"pct_actors":1.2,"n_scored":11},"T1222":{"raw_mean":70.5,"adjusted":35.2,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1056":{"raw_mean":46.1,"adjusted":34.6,"prevalence":0.75,"count":184,"n_actors":150,"pct_actors":18.0,"n_scored":184},"T1027.002":{"raw_mean":50.8,"adjusted":25.4,"prevalence":0.5,"count":60,"n_actors":60,"pct_actors":7.2,"n_scored":60},"T1542.005":{"raw_mean":57.0,"adjusted":28.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1176":{"raw_mean":46.1,"adjusted":23.1,"prevalence":0.5,"count":27,"n_actors":26,"pct_actors":3.1,"n_scored":27},"T1114.001":{"raw_mean":45.8,"adjusted":22.9,"prevalence":0.5,"count":9,"n_actors":9,"pct_actors":1.1,"n_scored":9},"T1583.008":{"raw_mean":51.7,"adjusted":25.8,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1110.001":{"raw_mean":49.1,"adjusted":24.5,"prevalence":0.5,"count":82,"n_actors":82,"pct_actors":9.9,"n_scored":82},"T1588":{"raw_mean":46.9,"adjusted":70.4,"prevalence":1.5,"count":570,"n_actors":520,"pct_actors":62.5,"n_scored":570},"T1048.003":{"raw_mean":53.0,"adjusted":26.5,"prevalence":0.5,"count":14,"n_actors":14,"pct_actors":1.7,"n_scored":14},"T1087":{"raw_mean":52.7,"adjusted":26.3,"prevalence":0.5,"count":122,"n_actors":115,"pct_actors":13.8,"n_scored":122},"T1069":{"raw_mean":57.2,"adjusted":28.6,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1570":{"raw_mean":57.8,"adjusted":28.9,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1597.002":{"raw_mean":55.0,"adjusted":27.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1114.003":{"raw_mean":47.4,"adjusted":23.7,"prevalence":0.5,"count":8,"n_actors":8,"pct_actors":1.0,"n_scored":8},"T1059.001":{"raw_mean":50.0,"adjusted":25.0,"prevalence":0.5,"count":120,"n_actors":119,"pct_actors":14.3,"n_scored":120},"T1082":{"raw_mean":48.2,"adjusted":36.1,"prevalence":0.75,"count":170,"n_actors":167,"pct_actors":20.1,"n_scored":170},"T1656":{"raw_mean":47.0,"adjusted":23.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1055.012":{"raw_mean":48.0,"adjusted":24.0,"prevalence":0.5,"count":87,"n_actors":80,"pct_actors":9.6,"n_scored":87},"T1070.002":{"raw_mean":59.5,"adjusted":29.8,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1595.001":{"raw_mean":52.9,"adjusted":26.5,"prevalence":0.5,"count":34,"n_actors":34,"pct_actors":4.1,"n_scored":34},"T1132":{"raw_mean":47.7,"adjusted":23.9,"prevalence":0.5,"count":20,"n_actors":20,"pct_actors":2.4,"n_scored":20},"T1543.002":{"raw_mean":50.3,"adjusted":25.1,"prevalence":0.5,"count":32,"n_actors":32,"pct_actors":3.8,"n_scored":32},"T1059":{"raw_mean":48.7,"adjusted":73.0,"prevalence":1.5,"count":626,"n_actors":487,"pct_actors":58.5,"n_scored":626},"T1584.005":{"raw_mean":40.0,"adjusted":20.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1070":{"raw_mean":48.3,"adjusted":36.2,"prevalence":0.75,"count":194,"n_actors":186,"pct_actors":22.4,"n_scored":194},"T1105":{"raw_mean":51.8,"adjusted":25.9,"prevalence":0.5,"count":56,"n_actors":56,"pct_actors":6.7,"n_scored":56},"T1558":{"raw_mean":59.7,"adjusted":29.9,"prevalence":0.5,"count":7,"n_actors":7,"pct_actors":0.8,"n_scored":7},"T1059.005":{"raw_mean":47.0,"adjusted":23.5,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1104":{"raw_mean":44.8,"adjusted":22.4,"prevalence":0.5,"count":6,"n_actors":6,"pct_actors":0.7,"n_scored":6},"T1102.002":{"raw_mean":44.9,"adjusted":22.4,"prevalence":0.5,"count":70,"n_actors":68,"pct_actors":8.2,"n_scored":70},"T1572":{"raw_mean":57.5,"adjusted":28.8,"prevalence":0.5,"count":12,"n_actors":12,"pct_actors":1.4,"n_scored":12},"T1574.001":{"raw_mean":40.1,"adjusted":20.1,"prevalence":0.5,"count":15,"n_actors":14,"pct_actors":1.7,"n_scored":15},"T1586.003":{"raw_mean":66.0,"adjusted":33.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1568":{"raw_mean":52.6,"adjusted":26.3,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1078.004":{"raw_mean":44.7,"adjusted":22.3,"prevalence":0.5,"count":61,"n_actors":58,"pct_actors":7.0,"n_scored":61},"T1547.001":{"raw_mean":46.5,"adjusted":34.9,"prevalence":0.75,"count":175,"n_actors":171,"pct_actors":20.6,"n_scored":175},"T1650":{"raw_mean":68.0,"adjusted":34.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1037.004":{"raw_mean":49.8,"adjusted":24.9,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1546":{"raw_mean":47.9,"adjusted":23.9,"prevalence":0.5,"count":52,"n_actors":52,"pct_actors":6.2,"n_scored":52},"T1070.004":{"raw_mean":47.8,"adjusted":23.9,"prevalence":0.5,"count":65,"n_actors":65,"pct_actors":7.8,"n_scored":65},"T1574.007":{"raw_mean":49.5,"adjusted":24.8,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1059.009":{"raw_mean":53.0,"adjusted":26.5,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1218.005":{"raw_mean":64.0,"adjusted":32.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1556.006":{"raw_mean":42.5,"adjusted":21.2,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1564.006":{"raw_mean":41.8,"adjusted":20.9,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1056.002":{"raw_mean":41.7,"adjusted":20.8,"prevalence":0.5,"count":16,"n_actors":16,"pct_actors":1.9,"n_scored":16},"T1041":{"raw_mean":48.7,"adjusted":36.5,"prevalence":0.75,"count":235,"n_actors":228,"pct_actors":27.4,"n_scored":235},"T1129":{"raw_mean":49.9,"adjusted":24.9,"prevalence":0.5,"count":16,"n_actors":16,"pct_actors":1.9,"n_scored":16},"T1564.008":{"raw_mean":53.0,"adjusted":26.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1499.002":{"raw_mean":46.5,"adjusted":23.2,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1542":{"raw_mean":43.1,"adjusted":21.5,"prevalence":0.5,"count":17,"n_actors":15,"pct_actors":1.8,"n_scored":17},"T1497.001":{"raw_mean":43.4,"adjusted":21.7,"prevalence":0.5,"count":33,"n_actors":32,"pct_actors":3.8,"n_scored":33},"T1592":{"raw_mean":47.9,"adjusted":36.0,"prevalence":0.75,"count":217,"n_actors":198,"pct_actors":23.8,"n_scored":217},"T1568.001":{"raw_mean":50.0,"adjusted":25.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1553":{"raw_mean":46.5,"adjusted":23.3,"prevalence":0.5,"count":23,"n_actors":23,"pct_actors":2.8,"n_scored":23},"T1006":{"raw_mean":48.0,"adjusted":24.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1542.001":{"raw_mean":40.8,"adjusted":20.4,"prevalence":0.5,"count":9,"n_actors":7,"pct_actors":0.8,"n_scored":9},"T1547.009":{"raw_mean":48.2,"adjusted":24.1,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1499.001":{"raw_mean":36.0,"adjusted":18.0,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1558.003":{"raw_mean":67.3,"adjusted":33.7,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1136.001":{"raw_mean":53.9,"adjusted":27.0,"prevalence":0.5,"count":33,"n_actors":32,"pct_actors":3.8,"n_scored":33},"T1588.002":{"raw_mean":46.7,"adjusted":46.7,"prevalence":1.0,"count":283,"n_actors":277,"pct_actors":33.3,"n_scored":283},"T1583.006":{"raw_mean":44.5,"adjusted":33.4,"prevalence":0.75,"count":191,"n_actors":187,"pct_actors":22.5,"n_scored":191},"T1027.004":{"raw_mean":37.0,"adjusted":18.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1550":{"raw_mean":56.6,"adjusted":28.3,"prevalence":0.5,"count":38,"n_actors":36,"pct_actors":4.3,"n_scored":38},"T1189":{"raw_mean":44.8,"adjusted":22.4,"prevalence":0.5,"count":57,"n_actors":54,"pct_actors":6.5,"n_scored":57},"T1561.001":{"raw_mean":43.0,"adjusted":21.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1599":{"raw_mean":52.5,"adjusted":26.2,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1012":{"raw_mean":47.0,"adjusted":23.5,"prevalence":0.5,"count":13,"n_actors":13,"pct_actors":1.6,"n_scored":13},"T1053":{"raw_mean":47.6,"adjusted":35.7,"prevalence":0.75,"count":151,"n_actors":140,"pct_actors":16.8,"n_scored":151},"T1564.001":{"raw_mean":45.5,"adjusted":22.7,"prevalence":0.5,"count":31,"n_actors":31,"pct_actors":3.7,"n_scored":31},"T1003":{"raw_mean":57.0,"adjusted":28.5,"prevalence":0.5,"count":56,"n_actors":46,"pct_actors":5.5,"n_scored":56},"T1620":{"raw_mean":48.1,"adjusted":24.1,"prevalence":0.5,"count":38,"n_actors":38,"pct_actors":4.6,"n_scored":38},"T1556":{"raw_mean":43.2,"adjusted":21.6,"prevalence":0.5,"count":19,"n_actors":19,"pct_actors":2.3,"n_scored":19},"T1589.003":{"raw_mean":50.0,"adjusted":25.0,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1595.002":{"raw_mean":49.7,"adjusted":37.3,"prevalence":0.75,"count":183,"n_actors":181,"pct_actors":21.8,"n_scored":183},"T1583.005":{"raw_mean":46.7,"adjusted":23.4,"prevalence":0.5,"count":9,"n_actors":8,"pct_actors":1.0,"n_scored":9},"T1608.005":{"raw_mean":58.0,"adjusted":29.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1090":{"raw_mean":47.9,"adjusted":47.9,"prevalence":1.0,"count":261,"n_actors":217,"pct_actors":26.1,"n_scored":261},"T1615":{"raw_mean":48.0,"adjusted":24.0,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1001.002":{"raw_mean":51.8,"adjusted":25.9,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1553.006":{"raw_mean":45.3,"adjusted":22.7,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1555.005":{"raw_mean":52.8,"adjusted":26.4,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1599.001":{"raw_mean":52.5,"adjusted":26.2,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1597":{"raw_mean":55.0,"adjusted":27.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1591":{"raw_mean":42.2,"adjusted":21.1,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1622":{"raw_mean":46.4,"adjusted":23.2,"prevalence":0.5,"count":7,"n_actors":7,"pct_actors":0.8,"n_scored":7},"T1003.008":{"raw_mean":59.8,"adjusted":29.9,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1070.001":{"raw_mean":51.8,"adjusted":25.9,"prevalence":0.5,"count":26,"n_actors":26,"pct_actors":3.1,"n_scored":26},"T1201":{"raw_mean":40.0,"adjusted":20.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1571":{"raw_mean":48.7,"adjusted":24.4,"prevalence":0.5,"count":22,"n_actors":22,"pct_actors":2.6,"n_scored":22},"T1046":{"raw_mean":53.3,"adjusted":26.6,"prevalence":0.5,"count":86,"n_actors":85,"pct_actors":10.2,"n_scored":86},"T1499.004":{"raw_mean":42.3,"adjusted":21.2,"prevalence":0.5,"count":46,"n_actors":45,"pct_actors":5.4,"n_scored":46},"T1021.001":{"raw_mean":53.5,"adjusted":26.7,"prevalence":0.5,"count":13,"n_actors":13,"pct_actors":1.6,"n_scored":13},"T1027.003":{"raw_mean":49.5,"adjusted":24.8,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1587":{"raw_mean":46.9,"adjusted":70.4,"prevalence":1.5,"count":617,"n_actors":574,"pct_actors":69.0,"n_scored":617},"T1003.005":{"raw_mean":50.0,"adjusted":25.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1565.001":{"raw_mean":46.5,"adjusted":23.3,"prevalence":0.5,"count":80,"n_actors":77,"pct_actors":9.3,"n_scored":80},"T1134.001":{"raw_mean":55.2,"adjusted":27.6,"prevalence":0.5,"count":14,"n_actors":13,"pct_actors":1.6,"n_scored":14},"T1134.002":{"raw_mean":58.0,"adjusted":29.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1036.005":{"raw_mean":46.2,"adjusted":34.6,"prevalence":0.75,"count":192,"n_actors":188,"pct_actors":22.6,"n_scored":192},"T1530":{"raw_mean":53.4,"adjusted":26.7,"prevalence":0.5,"count":22,"n_actors":22,"pct_actors":2.6,"n_scored":22},"T1055.003":{"raw_mean":41.5,"adjusted":20.8,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1531":{"raw_mean":51.4,"adjusted":25.7,"prevalence":0.5,"count":5,"n_actors":5,"pct_actors":0.6,"n_scored":5},"T1110.002":{"raw_mean":53.0,"adjusted":26.5,"prevalence":0.5,"count":8,"n_actors":8,"pct_actors":1.0,"n_scored":8},"T1542.003":{"raw_mean":43.2,"adjusted":21.6,"prevalence":0.5,"count":6,"n_actors":6,"pct_actors":0.7,"n_scored":6},"T1590.006":{"raw_mean":48.0,"adjusted":24.0,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1595":{"raw_mean":50.5,"adjusted":37.9,"prevalence":0.75,"count":224,"n_actors":198,"pct_actors":23.8,"n_scored":224},"T1562":{"raw_mean":45.8,"adjusted":57.3,"prevalence":1.25,"count":475,"n_actors":457,"pct_actors":54.9,"n_scored":475},"T1574.014":{"raw_mean":62.0,"adjusted":31.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1029":{"raw_mean":47.5,"adjusted":23.8,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1586.002":{"raw_mean":45.9,"adjusted":22.9,"prevalence":0.5,"count":7,"n_actors":7,"pct_actors":0.8,"n_scored":7},"T1135":{"raw_mean":58.3,"adjusted":29.1,"prevalence":0.5,"count":7,"n_actors":7,"pct_actors":0.8,"n_scored":7},"T1583":{"raw_mean":47.1,"adjusted":70.6,"prevalence":1.5,"count":570,"n_actors":482,"pct_actors":57.9,"n_scored":570},"T1102.001":{"raw_mean":44.3,"adjusted":22.1,"prevalence":0.5,"count":22,"n_actors":22,"pct_actors":2.6,"n_scored":22},"T1565":{"raw_mean":46.1,"adjusted":23.0,"prevalence":0.5,"count":98,"n_actors":91,"pct_actors":10.9,"n_scored":98},"T1583.002":{"raw_mean":40.0,"adjusted":20.0,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1584.004":{"raw_mean":49.4,"adjusted":24.7,"prevalence":0.5,"count":12,"n_actors":12,"pct_actors":1.4,"n_scored":12},"T1218.011":{"raw_mean":47.8,"adjusted":23.9,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1590.004":{"raw_mean":62.0,"adjusted":31.0,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1052":{"raw_mean":39.1,"adjusted":19.6,"prevalence":0.5,"count":4,"n_actors":4,"pct_actors":0.5,"n_scored":4},"T1055.013":{"raw_mean":43.0,"adjusted":21.5,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1490":{"raw_mean":56.0,"adjusted":28.0,"prevalence":0.5,"count":4,"n_actors":3,"pct_actors":0.4,"n_scored":4},"T1497.003":{"raw_mean":47.7,"adjusted":23.8,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1070.003":{"raw_mean":51.7,"adjusted":25.8,"prevalence":0.5,"count":16,"n_actors":16,"pct_actors":1.9,"n_scored":16},"T1123":{"raw_mean":48.1,"adjusted":24.1,"prevalence":0.5,"count":18,"n_actors":18,"pct_actors":2.2,"n_scored":18},"T1556.009":{"raw_mean":43.0,"adjusted":21.5,"prevalence":0.5,"count":1,"n_actors":1,"pct_actors":0.1,"n_scored":1},"T1027":{"raw_mean":46.5,"adjusted":69.8,"prevalence":1.5,"count":600,"n_actors":538,"pct_actors":64.7,"n_scored":600},"T1548.003":{"raw_mean":57.0,"adjusted":28.5,"prevalence":0.5,"count":3,"n_actors":3,"pct_actors":0.4,"n_scored":3},"T1071.001":{"raw_mean":48.0,"adjusted":48.0,"prevalence":1.0,"count":360,"n_actors":347,"pct_actors":41.7,"n_scored":360},"T1055.014":{"raw_mean":40.0,"adjusted":20.0,"prevalence":0.5,"count":2,"n_actors":2,"pct_actors":0.2,"n_scored":2},"T1212":{"raw_mean":53.0,"adjusted":26.5,"prevalence":0.5,"count":8,"n_actors":8,"pct_actors":1.0,"n_scored":8}},"mapping_enterprise":{"tactic_to_techniques":{"TA0043":{"tactic_name":"Reconnaissance","techniques":[{"id":"T1595","name":"Active Scanning","sub_techniques":[{"id":"T1595.001","name":"Scanning IP Blocks"},{"id":"T1595.002","name":"Vulnerability Scanning"},{"id":"T1595.003","name":"Wordlist Scanning"}]},{"id":"T1592","name":"Gather Victim Host Information","sub_techniques":[{"id":"T1592.001","name":"Hardware"},{"id":"T1592.002","name":"Software"},{"id":"T1592.003","name":"Firmware"},{"id":"T1592.004","name":"Client Configurations"}]},{"id":"T1589","name":"Gather Victim Identity Information","sub_techniques":[{"id":"T1589.001","name":"Credentials"},{"id":"T1589.002","name":"Email Addresses"},{"id":"T1589.003","name":"Employee Names"}]},{"id":"T1590","name":"Gather Victim Network Information","sub_techniques":[{"id":"T1590.001","name":"Domain Properties"},{"id":"T1590.002","name":"DNS"},{"id":"T1590.003","name":"Network Trust Dependencies"},{"id":"T1590.004","name":"Network Topology"},{"id":"T1590.005","name":"IP Addresses"},{"id":"T1590.006","name":"Network Security Appliances"}]},{"id":"T1591","name":"Gather Victim Org Information","sub_techniques":[{"id":"T1591.001","name":"Determine Physical Locations"},{"id":"T1591.002","name":"Business Relationships"},{"id":"T1591.003","name":"Identify Business Tempo"},{"id":"T1591.004","name":"Identify Roles"}]},{"id":"T1598","name":"Phishing for Information","sub_techniques":[{"id":"T1598.001","name":"Spearphishing Service"},{"id":"T1598.002","name":"Spearphishing Attachment"},{"id":"T1598.003","name":"Spearphishing Link"},{"id":"T1598.004","name":"Spearphishing Voice"}]},{"id":"T1597","name":"Search Closed Sources","sub_techniques":[{"id":"T1597.001","name":"Threat Intel Vendors"},{"id":"T1597.002","name":"Purchase Technical Data"}]},{"id":"T1596","name":"Search Open Technical Databases","sub_techniques":[{"id":"T1596.001","name":"DNS/Passive DNS"},{"id":"T1596.002","name":"WHOIS"},{"id":"T1596.003","name":"Digital Certificates"},{"id":"T1596.004","name":"CDNs"},{"id":"T1596.005","name":"Scan Databases"}]},{"id":"T1593","name":"Search Open Websites/Domains","sub_techniques":[{"id":"T1593.001","name":"Social Media"},{"id":"T1593.002","name":"Search Engines"},{"id":"T1593.003","name":"Code Repositories"}]},{"id":"T1681","name":"Search Threat Vendor Data"},{"id":"T1594","name":"Search Victim-Owned Websites"}]},"TA0042":{"tactic_name":"Resource Development","techniques":[{"id":"T1650","name":"Acquire Access"},{"id":"T1583","name":"Acquire Infrastructure","sub_techniques":[{"id":"T1583.001","name":"Domains"},{"id":"T1583.002","name":"DNS Server"},{"id":"T1583.003","name":"Virtual Private Server"},{"id":"T1583.004","name":"Server"},{"id":"T1583.005","name":"Botnet"},{"id":"T1583.006","name":"Web Services"},{"id":"T1583.007","name":"Serverless"},{"id":"T1583.008","name":"Malvertising"}]},{"id":"T1586","name":"Compromise Accounts","sub_techniques":[{"id":"T1586.001","name":"Social Media Accounts"},{"id":"T1586.002","name":"Email Accounts"},{"id":"T1586.003","name":"Cloud Accounts"}]},{"id":"T1584","name":"Compromise Infrastructure","sub_techniques":[{"id":"T1584.001","name":"Domains"},{"id":"T1584.002","name":"DNS Server"},{"id":"T1584.003","name":"Virtual Private Server"},{"id":"T1584.004","name":"Server"},{"id":"T1584.005","name":"Botnet"},{"id":"T1584.006","name":"Web Services"},{"id":"T1584.007","name":"Serverless"},{"id":"T1584.008","name":"Network Devices"}]},{"id":"T1587","name":"Develop Capabilities","sub_techniques":[{"id":"T1587.001","name":"Malware"},{"id":"T1587.002","name":"Code Signing Certificates"},{"id":"T1587.003","name":"Digital Certificates"},{"id":"T1587.004","name":"Exploits"}]},{"id":"T1585","name":"Establish Accounts","sub_techniques":[{"id":"T1585.001","name":"Social Media Accounts"},{"id":"T1585.002","name":"Email Accounts"},{"id":"T1585.003","name":"Cloud Accounts"}]},{"id":"T1588","name":"Obtain Capabilities","sub_techniques":[{"id":"T1588.001","name":"Malware"},{"id":"T1588.002","name":"Tool"},{"id":"T1588.003","name":"Code Signing Certificates"},{"id":"T1588.004","name":"Digital Certificates"},{"id":"T1588.005","name":"Exploits"},{"id":"T1588.006","name":"Vulnerabilities"},{"id":"T1588.007","name":"Artificial Intelligence"}]},{"id":"T1608","name":"Stage Capabilities","sub_techniques":[{"id":"T1608.001","name":"Upload Malware"},{"id":"T1608.002","name":"Upload Tool"},{"id":"T1608.003","name":"Install Digital Certificate"},{"id":"T1608.004","name":"Drive-by Target"},{"id":"T1608.005","name":"Link Target"},{"id":"T1608.006","name":"SEO Poisoning"}]}]},"TA0001":{"tactic_name":"Initial Access","techniques":[{"id":"T1659","name":"Content Injection"},{"id":"T1189","name":"Drive-by Compromise"},{"id":"T1190","name":"Exploit Public-Facing Application"},{"id":"T1133","name":"External Remote Services"},{"id":"T1200","name":"Hardware Additions"},{"id":"T1566","name":"Phishing","sub_techniques":[{"id":"T1566.001","name":"Spearphishing Attachment"},{"id":"T1566.002","name":"Spearphishing Link"},{"id":"T1566.003","name":"Spearphishing via Service"},{"id":"T1566.004","name":"Spearphishing Voice"}]},{"id":"T1091","name":"Replication Through Removable Media"},{"id":"T1195","name":"Supply Chain Compromise","sub_techniques":[{"id":"T1195.001","name":"Compromise Software Dependencies and Development Tools"},{"id":"T1195.002","name":"Compromise Software Supply Chain"},{"id":"T1195.003","name":"Compromise Hardware Supply Chain"}]},{"id":"T1199","name":"Trusted Relationship"},{"id":"T1078","name":"Valid Accounts","sub_techniques":[{"id":"T1078.001","name":"Default Accounts"},{"id":"T1078.002","name":"Domain Accounts"},{"id":"T1078.003","name":"Local Accounts"},{"id":"T1078.004","name":"Cloud Accounts"}]},{"id":"T1669","name":"Wi-Fi Networks"}]},"TA0002":{"tactic_name":"Execution","techniques":[{"id":"T1651","name":"Cloud Administration Command"},{"id":"T1059","name":"Command and Scripting Interpreter","sub_techniques":[{"id":"T1059.001","name":"PowerShell"},{"id":"T1059.002","name":"AppleScript"},{"id":"T1059.003","name":"Windows Command Shell"},{"id":"T1059.004","name":"Unix Shell"},{"id":"T1059.005","name":"Visual Basic"},{"id":"T1059.006","name":"Python"},{"id":"T1059.007","name":"JavaScript"},{"id":"T1059.008","name":"Network Device CLI"},{"id":"T1059.009","name":"Cloud API"},{"id":"T1059.010","name":"AutoHotKey & AutoIT"},{"id":"T1059.011","name":"Lua"},{"id":"T1059.012","name":"Hypervisor CLI"},{"id":"T1059.013","name":"Container CLI/API"}]},{"id":"T1609","name":"Container Administration Command"},{"id":"T1610","name":"Deploy Container"},{"id":"T1675","name":"ESXi Administration Command"},{"id":"T1203","name":"Exploitation for Client Execution"},{"id":"T1674","name":"Input Injection"},{"id":"T1559","name":"Inter-Process Communication","sub_techniques":[{"id":"T1559.001","name":"Component Object Model"},{"id":"T1559.002","name":"Dynamic Data Exchange"},{"id":"T1559.003","name":"XPC Services"}]},{"id":"T1106","name":"Native API"},{"id":"T1677","name":"Poisoned Pipeline Execution"},{"id":"T1053","name":"Scheduled Task/Job","sub_techniques":[{"id":"T1053.002","name":"At"},{"id":"T1053.003","name":"Cron"},{"id":"T1053.005","name":"Scheduled Task"},{"id":"T1053.006","name":"Systemd Timers"},{"id":"T1053.007","name":"Container Orchestration Job"}]},{"id":"T1648","name":"Serverless Execution"},{"id":"T1129","name":"Shared Modules"},{"id":"T1072","name":"Software Deployment Tools"},{"id":"T1569","name":"System Services","sub_techniques":[{"id":"T1569.001","name":"Launchctl"},{"id":"T1569.002","name":"Service Execution"},{"id":"T1569.003","name":"Systemctl"}]},{"id":"T1204","name":"User Execution","sub_techniques":[{"id":"T1204.001","name":"Malicious Link"},{"id":"T1204.002","name":"Malicious File"},{"id":"T1204.003","name":"Malicious Image"},{"id":"T1204.004","name":"Malicious Copy and Paste"},{"id":"T1204.005","name":"Malicious Library"}]},{"id":"T1047","name":"Windows Management Instrumentation"}]},"TA0003":{"tactic_name":"Persistence","techniques":[{"id":"T1098","name":"Account Manipulation","sub_techniques":[{"id":"T1098.001","name":"Additional Cloud Credentials"},{"id":"T1098.002","name":"Additional Email Delegate Permissions"},{"id":"T1098.003","name":"Additional Cloud Roles"},{"id":"T1098.004","name":"SSH Authorized Keys"},{"id":"T1098.005","name":"Device Registration"},{"id":"T1098.006","name":"Additional Container Cluster Roles"},{"id":"T1098.007","name":"Additional Local or Domain Groups"}]},{"id":"T1197","name":"BITS Jobs"},{"id":"T1547","name":"Boot or Logon Autostart Execution","sub_techniques":[{"id":"T1547.001","name":"Registry Run Keys / Startup Folder"},{"id":"T1547.002","name":"Authentication Package"},{"id":"T1547.003","name":"Time Providers"},{"id":"T1547.004","name":"Winlogon Helper DLL"},{"id":"T1547.005","name":"Security Support Provider"},{"id":"T1547.006","name":"Kernel Modules and Extensions"},{"id":"T1547.007","name":"Re-opened Applications"},{"id":"T1547.008","name":"LSASS Driver"},{"id":"T1547.009","name":"Shortcut Modification"},{"id":"T1547.010","name":"Port Monitors"},{"id":"T1547.012","name":"Print Processors"},{"id":"T1547.013","name":"XDG Autostart Entries"},{"id":"T1547.014","name":"Active Setup"},{"id":"T1547.015","name":"Login Items"}]},{"id":"T1037","name":"Boot or Logon Initialization Scripts","sub_techniques":[{"id":"T1037.001","name":"Logon Script (Windows)"},{"id":"T1037.002","name":"Login Hook"},{"id":"T1037.003","name":"Network Logon Script"},{"id":"T1037.004","name":"RC Scripts"},{"id":"T1037.005","name":"Startup Items"}]},{"id":"T1671","name":"Cloud Application Integration"},{"id":"T1554","name":"Compromise Host Software Binary"},{"id":"T1136","name":"Create Account","sub_techniques":[{"id":"T1136.001","name":"Local Account"},{"id":"T1136.002","name":"Domain Account"},{"id":"T1136.003","name":"Cloud Account"}]},{"id":"T1543","name":"Create or Modify System Process","sub_techniques":[{"id":"T1543.001","name":"Launch Agent"},{"id":"T1543.002","name":"Systemd Service"},{"id":"T1543.003","name":"Windows Service"},{"id":"T1543.004","name":"Launch Daemon"},{"id":"T1543.005","name":"Container Service"}]},{"id":"T1546","name":"Event Triggered Execution","sub_techniques":[{"id":"T1546.001","name":"Change Default File Association"},{"id":"T1546.002","name":"Screensaver"},{"id":"T1546.003","name":"Windows Management Instrumentation Event Subscription"},{"id":"T1546.004","name":"Unix Shell Configuration Modification"},{"id":"T1546.005","name":"Trap"},{"id":"T1546.006","name":"LC_LOAD_DYLIB Addition"},{"id":"T1546.007","name":"Netsh Helper DLL"},{"id":"T1546.008","name":"Accessibility Features"},{"id":"T1546.009","name":"AppCert DLLs"},{"id":"T1546.010","name":"AppInit DLLs"},{"id":"T1546.011","name":"Application Shimming"},{"id":"T1546.012","name":"Image File Execution Options Injection"},{"id":"T1546.013","name":"PowerShell Profile"},{"id":"T1546.014","name":"Emond"},{"id":"T1546.015","name":"Component Object Model Hijacking"},{"id":"T1546.016","name":"Installer Packages"},{"id":"T1546.017","name":"Udev Rules"},{"id":"T1546.018","name":"Python Startup Hooks"}]},{"id":"T1668","name":"Exclusive Control"},{"id":"T1133","name":"External Remote Services"},{"id":"T1574","name":"Hijack Execution Flow","sub_techniques":[{"id":"T1574.001","name":"DLL"},{"id":"T1574.004","name":"Dylib Hijacking"},{"id":"T1574.005","name":"Executable Installer File Permissions Weakness"},{"id":"T1574.006","name":"Dynamic Linker Hijacking"},{"id":"T1574.007","name":"Path Interception by PATH Environment Variable"},{"id":"T1574.008","name":"Path Interception by Search Order Hijacking"},{"id":"T1574.009","name":"Path Interception by Unquoted Path"},{"id":"T1574.010","name":"Services File Permissions Weakness"},{"id":"T1574.011","name":"Services Registry Permissions Weakness"},{"id":"T1574.012","name":"COR_PROFILER"},{"id":"T1574.013","name":"KernelCallbackTable"},{"id":"T1574.014","name":"AppDomainManager"}]},{"id":"T1525","name":"Implant Internal Image"},{"id":"T1556","name":"Modify Authentication Process","sub_techniques":[{"id":"T1556.001","name":"Domain Controller Authentication"},{"id":"T1556.002","name":"Password Filter DLL"},{"id":"T1556.003","name":"Pluggable Authentication Modules"},{"id":"T1556.004","name":"Network Device Authentication"},{"id":"T1556.005","name":"Reversible Encryption"},{"id":"T1556.006","name":"Multi-Factor Authentication"},{"id":"T1556.007","name":"Hybrid Identity"},{"id":"T1556.008","name":"Network Provider DLL"},{"id":"T1556.009","name":"Conditional Access Policies"}]},{"id":"T1112","name":"Modify Registry"},{"id":"T1137","name":"Office Application Startup","sub_techniques":[{"id":"T1137.001","name":"Office Template Macros"},{"id":"T1137.002","name":"Office Test"},{"id":"T1137.003","name":"Outlook Forms"},{"id":"T1137.004","name":"Outlook Home Page"},{"id":"T1137.005","name":"Outlook Rules"},{"id":"T1137.006","name":"Add-ins"}]},{"id":"T1653","name":"Power Settings"},{"id":"T1542","name":"Pre-OS Boot","sub_techniques":[{"id":"T1542.001","name":"System Firmware"},{"id":"T1542.002","name":"Component Firmware"},{"id":"T1542.003","name":"Bootkit"},{"id":"T1542.004","name":"ROMMONkit"},{"id":"T1542.005","name":"TFTP Boot"}]},{"id":"T1053","name":"Scheduled Task/Job","sub_techniques":[{"id":"T1053.002","name":"At"},{"id":"T1053.003","name":"Cron"},{"id":"T1053.005","name":"Scheduled Task"},{"id":"T1053.006","name":"Systemd Timers"},{"id":"T1053.007","name":"Container Orchestration Job"}]},{"id":"T1505","name":"Server Software Component","sub_techniques":[{"id":"T1505.001","name":"SQL Stored Procedures"},{"id":"T1505.002","name":"Transport Agent"},{"id":"T1505.003","name":"Web Shell"},{"id":"T1505.004","name":"IIS Components"},{"id":"T1505.005","name":"Terminal Services DLL"},{"id":"T1505.006","name":"vSphere Installation Bundles"}]},{"id":"T1176","name":"Software Extensions","sub_techniques":[{"id":"T1176.001","name":"Browser Extensions"},{"id":"T1176.002","name":"IDE Extensions"}]},{"id":"T1205","name":"Traffic Signaling","sub_techniques":[{"id":"T1205.001","name":"Port Knocking"},{"id":"T1205.002","name":"Socket Filters"}]},{"id":"T1078","name":"Valid Accounts","sub_techniques":[{"id":"T1078.001","name":"Default Accounts"},{"id":"T1078.002","name":"Domain Accounts"},{"id":"T1078.003","name":"Local Accounts"},{"id":"T1078.004","name":"Cloud Accounts"}]}]},"TA0004":{"tactic_name":"Privilege Escalation","techniques":[{"id":"T1548","name":"Abuse Elevation Control Mechanism","sub_techniques":[{"id":"T1548.001","name":"Setuid and Setgid"},{"id":"T1548.002","name":"Bypass User Account Control"},{"id":"T1548.003","name":"Sudo and Sudo Caching"},{"id":"T1548.004","name":"Elevated Execution with Prompt"},{"id":"T1548.005","name":"Temporary Elevated Cloud Access"},{"id":"T1548.006","name":"TCC Manipulation"}]},{"id":"T1134","name":"Access Token Manipulation","sub_techniques":[{"id":"T1134.001","name":"Token Impersonation/Theft"},{"id":"T1134.002","name":"Create Process with Token"},{"id":"T1134.003","name":"Make and Impersonate Token"},{"id":"T1134.004","name":"Parent PID Spoofing"},{"id":"T1134.005","name":"SID-History Injection"}]},{"id":"T1098","name":"Account Manipulation","sub_techniques":[{"id":"T1098.001","name":"Additional Cloud Credentials"},{"id":"T1098.002","name":"Additional Email Delegate Permissions"},{"id":"T1098.003","name":"Additional Cloud Roles"},{"id":"T1098.004","name":"SSH Authorized Keys"},{"id":"T1098.005","name":"Device Registration"},{"id":"T1098.006","name":"Additional Container Cluster Roles"},{"id":"T1098.007","name":"Additional Local or Domain Groups"}]},{"id":"T1547","name":"Boot or Logon Autostart Execution","sub_techniques":[{"id":"T1547.001","name":"Registry Run Keys / Startup Folder"},{"id":"T1547.002","name":"Authentication Package"},{"id":"T1547.003","name":"Time Providers"},{"id":"T1547.004","name":"Winlogon Helper DLL"},{"id":"T1547.005","name":"Security Support Provider"},{"id":"T1547.006","name":"Kernel Modules and Extensions"},{"id":"T1547.007","name":"Re-opened Applications"},{"id":"T1547.008","name":"LSASS Driver"},{"id":"T1547.009","name":"Shortcut Modification"},{"id":"T1547.010","name":"Port Monitors"},{"id":"T1547.012","name":"Print Processors"},{"id":"T1547.013","name":"XDG Autostart Entries"},{"id":"T1547.014","name":"Active Setup"},{"id":"T1547.015","name":"Login Items"}]},{"id":"T1037","name":"Boot or Logon Initialization Scripts","sub_techniques":[{"id":"T1037.001","name":"Logon Script (Windows)"},{"id":"T1037.002","name":"Login Hook"},{"id":"T1037.003","name":"Network Logon Script"},{"id":"T1037.004","name":"RC Scripts"},{"id":"T1037.005","name":"Startup Items"}]},{"id":"T1543","name":"Create or Modify System Process","sub_techniques":[{"id":"T1543.001","name":"Launch Agent"},{"id":"T1543.002","name":"Systemd Service"},{"id":"T1543.003","name":"Windows Service"},{"id":"T1543.004","name":"Launch Daemon"},{"id":"T1543.005","name":"Container Service"}]},{"id":"T1484","name":"Domain or Tenant Policy Modification","sub_techniques":[{"id":"T1484.001","name":"Group Policy Modification"},{"id":"T1484.002","name":"Trust Modification"}]},{"id":"T1611","name":"Escape to Host"},{"id":"T1546","name":"Event Triggered Execution","sub_techniques":[{"id":"T1546.001","name":"Change Default File Association"},{"id":"T1546.002","name":"Screensaver"},{"id":"T1546.003","name":"Windows Management Instrumentation Event Subscription"},{"id":"T1546.004","name":"Unix Shell Configuration Modification"},{"id":"T1546.005","name":"Trap"},{"id":"T1546.006","name":"LC_LOAD_DYLIB Addition"},{"id":"T1546.007","name":"Netsh Helper DLL"},{"id":"T1546.008","name":"Accessibility Features"},{"id":"T1546.009","name":"AppCert DLLs"},{"id":"T1546.010","name":"AppInit DLLs"},{"id":"T1546.011","name":"Application Shimming"},{"id":"T1546.012","name":"Image File Execution Options Injection"},{"id":"T1546.013","name":"PowerShell Profile"},{"id":"T1546.014","name":"Emond"},{"id":"T1546.015","name":"Component Object Model Hijacking"},{"id":"T1546.016","name":"Installer Packages"},{"id":"T1546.017","name":"Udev Rules"},{"id":"T1546.018","name":"Python Startup Hooks"}]},{"id":"T1068","name":"Exploitation for Privilege Escalation"},{"id":"T1574","name":"Hijack Execution Flow","sub_techniques":[{"id":"T1574.001","name":"DLL"},{"id":"T1574.004","name":"Dylib Hijacking"},{"id":"T1574.005","name":"Executable Installer File Permissions Weakness"},{"id":"T1574.006","name":"Dynamic Linker Hijacking"},{"id":"T1574.007","name":"Path Interception by PATH Environment Variable"},{"id":"T1574.008","name":"Path Interception by Search Order Hijacking"},{"id":"T1574.009","name":"Path Interception by Unquoted Path"},{"id":"T1574.010","name":"Services File Permissions Weakness"},{"id":"T1574.011","name":"Services Registry Permissions Weakness"},{"id":"T1574.012","name":"COR_PROFILER"},{"id":"T1574.013","name":"KernelCallbackTable"},{"id":"T1574.014","name":"AppDomainManager"}]},{"id":"T1055","name":"Process Injection","sub_techniques":[{"id":"T1055.001","name":"Dynamic-link Library Injection"},{"id":"T1055.002","name":"Portable Executable Injection"},{"id":"T1055.003","name":"Thread Execution Hijacking"},{"id":"T1055.004","name":"Asynchronous Procedure Call"},{"id":"T1055.005","name":"Thread Local Storage"},{"id":"T1055.008","name":"Ptrace System Calls"},{"id":"T1055.009","name":"Proc Memory"},{"id":"T1055.011","name":"Extra Window Memory Injection"},{"id":"T1055.012","name":"Process Hollowing"},{"id":"T1055.013","name":"Process Doppelg\u00e4nging"},{"id":"T1055.014","name":"VDSO Hijacking"},{"id":"T1055.015","name":"ListPlanting"}]},{"id":"T1053","name":"Scheduled Task/Job","sub_techniques":[{"id":"T1053.002","name":"At"},{"id":"T1053.003","name":"Cron"},{"id":"T1053.005","name":"Scheduled Task"},{"id":"T1053.006","name":"Systemd Timers"},{"id":"T1053.007","name":"Container Orchestration Job"}]},{"id":"T1078","name":"Valid Accounts","sub_techniques":[{"id":"T1078.001","name":"Default Accounts"},{"id":"T1078.002","name":"Domain Accounts"},{"id":"T1078.003","name":"Local Accounts"},{"id":"T1078.004","name":"Cloud Accounts"}]}]},"TA0005":{"tactic_name":"Defense Evasion","techniques":[{"id":"T1548","name":"Abuse Elevation Control Mechanism","sub_techniques":[{"id":"T1548.001","name":"Setuid and Setgid"},{"id":"T1548.002","name":"Bypass User Account Control"},{"id":"T1548.003","name":"Sudo and Sudo Caching"},{"id":"T1548.004","name":"Elevated Execution with Prompt"},{"id":"T1548.005","name":"Temporary Elevated Cloud Access"},{"id":"T1548.006","name":"TCC Manipulation"}]},{"id":"T1134","name":"Access Token Manipulation","sub_techniques":[{"id":"T1134.001","name":"Token Impersonation/Theft"},{"id":"T1134.002","name":"Create Process with Token"},{"id":"T1134.003","name":"Make and Impersonate Token"},{"id":"T1134.004","name":"Parent PID Spoofing"},{"id":"T1134.005","name":"SID-History Injection"}]},{"id":"T1197","name":"BITS Jobs"},{"id":"T1612","name":"Build Image on Host"},{"id":"T1622","name":"Debugger Evasion"},{"id":"T1678","name":"Delay Execution"},{"id":"T1140","name":"Deobfuscate/Decode Files or Information"},{"id":"T1610","name":"Deploy Container"},{"id":"T1006","name":"Direct Volume Access"},{"id":"T1484","name":"Domain or Tenant Policy Modification","sub_techniques":[{"id":"T1484.001","name":"Group Policy Modification"},{"id":"T1484.002","name":"Trust Modification"}]},{"id":"T1672","name":"Email Spoofing"},{"id":"T1480","name":"Execution Guardrails","sub_techniques":[{"id":"T1480.001","name":"Environmental Keying"},{"id":"T1480.002","name":"Mutual Exclusion"}]},{"id":"T1211","name":"Exploitation for Defense Evasion"},{"id":"T1222","name":"File and Directory Permissions Modification","sub_techniques":[{"id":"T1222.001","name":"Windows File and Directory Permissions Modification"},{"id":"T1222.002","name":"Linux and Mac File and Directory Permissions Modification"}]},{"id":"T1564","name":"Hide Artifacts","sub_techniques":[{"id":"T1564.001","name":"Hidden Files and Directories"},{"id":"T1564.002","name":"Hidden Users"},{"id":"T1564.003","name":"Hidden Window"},{"id":"T1564.004","name":"NTFS File Attributes"},{"id":"T1564.005","name":"Hidden File System"},{"id":"T1564.006","name":"Run Virtual Instance"},{"id":"T1564.007","name":"VBA Stomping"},{"id":"T1564.008","name":"Email Hiding Rules"},{"id":"T1564.009","name":"Resource Forking"},{"id":"T1564.010","name":"Process Argument Spoofing"},{"id":"T1564.011","name":"Ignore Process Interrupts"},{"id":"T1564.012","name":"File/Path Exclusions"},{"id":"T1564.013","name":"Bind Mounts"},{"id":"T1564.014","name":"Extended Attributes"}]},{"id":"T1574","name":"Hijack Execution Flow","sub_techniques":[{"id":"T1574.001","name":"DLL"},{"id":"T1574.004","name":"Dylib Hijacking"},{"id":"T1574.005","name":"Executable Installer File Permissions Weakness"},{"id":"T1574.006","name":"Dynamic Linker Hijacking"},{"id":"T1574.007","name":"Path Interception by PATH Environment Variable"},{"id":"T1574.008","name":"Path Interception by Search Order Hijacking"},{"id":"T1574.009","name":"Path Interception by Unquoted Path"},{"id":"T1574.010","name":"Services File Permissions Weakness"},{"id":"T1574.011","name":"Services Registry Permissions Weakness"},{"id":"T1574.012","name":"COR_PROFILER"},{"id":"T1574.013","name":"KernelCallbackTable"},{"id":"T1574.014","name":"AppDomainManager"}]},{"id":"T1562","name":"Impair Defenses","sub_techniques":[{"id":"T1562.001","name":"Disable or Modify Tools"},{"id":"T1562.002","name":"Disable Windows Event Logging"},{"id":"T1562.003","name":"Impair Command History Logging"},{"id":"T1562.004","name":"Disable or Modify System Firewall"},{"id":"T1562.006","name":"Indicator Blocking"},{"id":"T1562.007","name":"Disable or Modify Cloud Firewall"},{"id":"T1562.008","name":"Disable or Modify Cloud Logs"},{"id":"T1562.009","name":"Safe Mode Boot"},{"id":"T1562.010","name":"Downgrade Attack"},{"id":"T1562.011","name":"Spoof Security Alerting"},{"id":"T1562.012","name":"Disable or Modify Linux Audit System"},{"id":"T1562.013","name":"Disable or Modify Network Device Firewall"}]},{"id":"T1656","name":"Impersonation"},{"id":"T1070","name":"Indicator Removal","sub_techniques":[{"id":"T1070.001","name":"Clear Windows Event Logs"},{"id":"T1070.002","name":"Clear Linux or Mac System Logs"},{"id":"T1070.003","name":"Clear Command History"},{"id":"T1070.004","name":"File Deletion"},{"id":"T1070.005","name":"Network Share Connection Removal"},{"id":"T1070.006","name":"Timestomp"},{"id":"T1070.007","name":"Clear Network Connection History and Configurations"},{"id":"T1070.008","name":"Clear Mailbox Data"},{"id":"T1070.009","name":"Clear Persistence"},{"id":"T1070.010","name":"Relocate Malware"}]},{"id":"T1202","name":"Indirect Command Execution"},{"id":"T1036","name":"Masquerading","sub_techniques":[{"id":"T1036.001","name":"Invalid Code Signature"},{"id":"T1036.002","name":"Right-to-Left Override"},{"id":"T1036.003","name":"Rename Legitimate Utilities"},{"id":"T1036.004","name":"Masquerade Task or Service"},{"id":"T1036.005","name":"Match Legitimate Resource Name or Location"},{"id":"T1036.006","name":"Space after Filename"},{"id":"T1036.007","name":"Double File Extension"},{"id":"T1036.008","name":"Masquerade File Type"},{"id":"T1036.009","name":"Break Process Trees"},{"id":"T1036.010","name":"Masquerade Account Name"},{"id":"T1036.011","name":"Overwrite Process Arguments"},{"id":"T1036.012","name":"Browser Fingerprint"}]},{"id":"T1556","name":"Modify Authentication Process","sub_techniques":[{"id":"T1556.001","name":"Domain Controller Authentication"},{"id":"T1556.002","name":"Password Filter DLL"},{"id":"T1556.003","name":"Pluggable Authentication Modules"},{"id":"T1556.004","name":"Network Device Authentication"},{"id":"T1556.005","name":"Reversible Encryption"},{"id":"T1556.006","name":"Multi-Factor Authentication"},{"id":"T1556.007","name":"Hybrid Identity"},{"id":"T1556.008","name":"Network Provider DLL"},{"id":"T1556.009","name":"Conditional Access Policies"}]},{"id":"T1578","name":"Modify Cloud Compute Infrastructure","sub_techniques":[{"id":"T1578.001","name":"Create Snapshot"},{"id":"T1578.002","name":"Create Cloud Instance"},{"id":"T1578.003","name":"Delete Cloud Instance"},{"id":"T1578.004","name":"Revert Cloud Instance"},{"id":"T1578.005","name":"Modify Cloud Compute Configurations"}]},{"id":"T1666","name":"Modify Cloud Resource Hierarchy"},{"id":"T1112","name":"Modify Registry"},{"id":"T1601","name":"Modify System Image","sub_techniques":[{"id":"T1601.001","name":"Patch System Image"},{"id":"T1601.002","name":"Downgrade System Image"}]},{"id":"T1599","name":"Network Boundary Bridging","sub_techniques":[{"id":"T1599.001","name":"Network Address Translation Traversal"}]},{"id":"T1027","name":"Obfuscated Files or Information","sub_techniques":[{"id":"T1027.001","name":"Binary Padding"},{"id":"T1027.002","name":"Software Packing"},{"id":"T1027.003","name":"Steganography"},{"id":"T1027.004","name":"Compile After Delivery"},{"id":"T1027.005","name":"Indicator Removal from Tools"},{"id":"T1027.006","name":"HTML Smuggling"},{"id":"T1027.007","name":"Dynamic API Resolution"},{"id":"T1027.008","name":"Stripped Payloads"},{"id":"T1027.009","name":"Embedded Payloads"},{"id":"T1027.010","name":"Command Obfuscation"},{"id":"T1027.011","name":"Fileless Storage"},{"id":"T1027.012","name":"LNK Icon Smuggling"},{"id":"T1027.013","name":"Encrypted/Encoded File"},{"id":"T1027.014","name":"Polymorphic Code"},{"id":"T1027.015","name":"Compression"},{"id":"T1027.016","name":"Junk Code Insertion"},{"id":"T1027.017","name":"SVG Smuggling"}]},{"id":"T1647","name":"Plist File Modification"},{"id":"T1542","name":"Pre-OS Boot","sub_techniques":[{"id":"T1542.001","name":"System Firmware"},{"id":"T1542.002","name":"Component Firmware"},{"id":"T1542.003","name":"Bootkit"},{"id":"T1542.004","name":"ROMMONkit"},{"id":"T1542.005","name":"TFTP Boot"}]},{"id":"T1055","name":"Process Injection","sub_techniques":[{"id":"T1055.001","name":"Dynamic-link Library Injection"},{"id":"T1055.002","name":"Portable Executable Injection"},{"id":"T1055.003","name":"Thread Execution Hijacking"},{"id":"T1055.004","name":"Asynchronous Procedure Call"},{"id":"T1055.005","name":"Thread Local Storage"},{"id":"T1055.008","name":"Ptrace System Calls"},{"id":"T1055.009","name":"Proc Memory"},{"id":"T1055.011","name":"Extra Window Memory Injection"},{"id":"T1055.012","name":"Process Hollowing"},{"id":"T1055.013","name":"Process Doppelg\u00e4nging"},{"id":"T1055.014","name":"VDSO Hijacking"},{"id":"T1055.015","name":"ListPlanting"}]},{"id":"T1620","name":"Reflective Code Loading"},{"id":"T1207","name":"Rogue Domain Controller"},{"id":"T1014","name":"Rootkit"},{"id":"T1679","name":"Selective Exclusion"},{"id":"T1553","name":"Subvert Trust Controls","sub_techniques":[{"id":"T1553.001","name":"Gatekeeper Bypass"},{"id":"T1553.002","name":"Code Signing"},{"id":"T1553.003","name":"SIP and Trust Provider Hijacking"},{"id":"T1553.004","name":"Install Root Certificate"},{"id":"T1553.005","name":"Mark-of-the-Web Bypass"},{"id":"T1553.006","name":"Code Signing Policy Modification"}]},{"id":"T1218","name":"System Binary Proxy Execution","sub_techniques":[{"id":"T1218.001","name":"Compiled HTML File"},{"id":"T1218.002","name":"Control Panel"},{"id":"T1218.003","name":"CMSTP"},{"id":"T1218.004","name":"InstallUtil"},{"id":"T1218.005","name":"Mshta"},{"id":"T1218.007","name":"Msiexec"},{"id":"T1218.008","name":"Odbcconf"},{"id":"T1218.009","name":"Regsvcs/Regasm"},{"id":"T1218.010","name":"Regsvr32"},{"id":"T1218.011","name":"Rundll32"},{"id":"T1218.012","name":"Verclsid"},{"id":"T1218.013","name":"Mavinject"},{"id":"T1218.014","name":"MMC"},{"id":"T1218.015","name":"Electron Applications"}]},{"id":"T1216","name":"System Script Proxy Execution","sub_techniques":[{"id":"T1216.001","name":"PubPrn"},{"id":"T1216.002","name":"SyncAppvPublishingServer"}]},{"id":"T1221","name":"Template Injection"},{"id":"T1205","name":"Traffic Signaling","sub_techniques":[{"id":"T1205.001","name":"Port Knocking"},{"id":"T1205.002","name":"Socket Filters"}]},{"id":"T1127","name":"Trusted Developer Utilities Proxy Execution","sub_techniques":[{"id":"T1127.001","name":"MSBuild"},{"id":"T1127.002","name":"ClickOnce"},{"id":"T1127.003","name":"JamPlus"}]},{"id":"T1535","name":"Unused/Unsupported Cloud Regions"},{"id":"T1550","name":"Use Alternate Authentication Material","sub_techniques":[{"id":"T1550.001","name":"Application Access Token"},{"id":"T1550.002","name":"Pass the Hash"},{"id":"T1550.003","name":"Pass the Ticket"},{"id":"T1550.004","name":"Web Session Cookie"}]},{"id":"T1078","name":"Valid Accounts","sub_techniques":[{"id":"T1078.001","name":"Default Accounts"},{"id":"T1078.002","name":"Domain Accounts"},{"id":"T1078.003","name":"Local Accounts"},{"id":"T1078.004","name":"Cloud Accounts"}]},{"id":"T1497","name":"Virtualization/Sandbox Evasion","sub_techniques":[{"id":"T1497.001","name":"System Checks"},{"id":"T1497.002","name":"User Activity Based Checks"},{"id":"T1497.003","name":"Time Based Checks"}]},{"id":"T1600","name":"Weaken Encryption","sub_techniques":[{"id":"T1600.001","name":"Reduce Key Space"},{"id":"T1600.002","name":"Disable Crypto Hardware"}]},{"id":"T1220","name":"XSL Script Processing"}]},"TA0006":{"tactic_name":"Credential Access","techniques":[{"id":"T1557","name":"Adversary-in-the-Middle","sub_techniques":[{"id":"T1557.001","name":"LLMNR/NBT-NS Poisoning and SMB Relay"},{"id":"T1557.002","name":"ARP Cache Poisoning"},{"id":"T1557.003","name":"DHCP Spoofing"},{"id":"T1557.004","name":"Evil Twin"}]},{"id":"T1110","name":"Brute Force","sub_techniques":[{"id":"T1110.001","name":"Password Guessing"},{"id":"T1110.002","name":"Password Cracking"},{"id":"T1110.003","name":"Password Spraying"},{"id":"T1110.004","name":"Credential Stuffing"}]},{"id":"T1555","name":"Credentials from Password Stores","sub_techniques":[{"id":"T1555.001","name":"Keychain"},{"id":"T1555.002","name":"Securityd Memory"},{"id":"T1555.003","name":"Credentials from Web Browsers"},{"id":"T1555.004","name":"Windows Credential Manager"},{"id":"T1555.005","name":"Password Managers"},{"id":"T1555.006","name":"Cloud Secrets Management Stores"}]},{"id":"T1212","name":"Exploitation for Credential Access"},{"id":"T1187","name":"Forced Authentication"},{"id":"T1606","name":"Forge Web Credentials","sub_techniques":[{"id":"T1606.001","name":"Web Cookies"},{"id":"T1606.002","name":"SAML Tokens"}]},{"id":"T1056","name":"Input Capture","sub_techniques":[{"id":"T1056.001","name":"Keylogging"},{"id":"T1056.002","name":"GUI Input Capture"},{"id":"T1056.003","name":"Web Portal Capture"},{"id":"T1056.004","name":"Credential API Hooking"}]},{"id":"T1556","name":"Modify Authentication Process","sub_techniques":[{"id":"T1556.001","name":"Domain Controller Authentication"},{"id":"T1556.002","name":"Password Filter DLL"},{"id":"T1556.003","name":"Pluggable Authentication Modules"},{"id":"T1556.004","name":"Network Device Authentication"},{"id":"T1556.005","name":"Reversible Encryption"},{"id":"T1556.006","name":"Multi-Factor Authentication"},{"id":"T1556.007","name":"Hybrid Identity"},{"id":"T1556.008","name":"Network Provider DLL"},{"id":"T1556.009","name":"Conditional Access Policies"}]},{"id":"T1111","name":"Multi-Factor Authentication Interception"},{"id":"T1621","name":"Multi-Factor Authentication Request Generation"},{"id":"T1040","name":"Network Sniffing"},{"id":"T1003","name":"OS Credential Dumping","sub_techniques":[{"id":"T1003.001","name":"LSASS Memory"},{"id":"T1003.002","name":"Security Account Manager"},{"id":"T1003.003","name":"NTDS"},{"id":"T1003.004","name":"LSA Secrets"},{"id":"T1003.005","name":"Cached Domain Credentials"},{"id":"T1003.006","name":"DCSync"},{"id":"T1003.007","name":"Proc Filesystem"},{"id":"T1003.008","name":"/etc/passwd and /etc/shadow"}]},{"id":"T1528","name":"Steal Application Access Token"},{"id":"T1539","name":"Steal Web Session Cookie"},{"id":"T1649","name":"Steal or Forge Authentication Certificates"},{"id":"T1558","name":"Steal or Forge Kerberos Tickets","sub_techniques":[{"id":"T1558.001","name":"Golden Ticket"},{"id":"T1558.002","name":"Silver Ticket"},{"id":"T1558.003","name":"Kerberoasting"},{"id":"T1558.004","name":"AS-REP Roasting"},{"id":"T1558.005","name":"Ccache Files"}]},{"id":"T1552","name":"Unsecured Credentials","sub_techniques":[{"id":"T1552.001","name":"Credentials In Files"},{"id":"T1552.002","name":"Credentials in Registry"},{"id":"T1552.003","name":"Shell History"},{"id":"T1552.004","name":"Private Keys"},{"id":"T1552.005","name":"Cloud Instance Metadata API"},{"id":"T1552.006","name":"Group Policy Preferences"},{"id":"T1552.007","name":"Container API"},{"id":"T1552.008","name":"Chat Messages"}]}]},"TA0007":{"tactic_name":"Discovery","techniques":[{"id":"T1087","name":"Account Discovery","sub_techniques":[{"id":"T1087.001","name":"Local Account"},{"id":"T1087.002","name":"Domain Account"},{"id":"T1087.003","name":"Email Account"},{"id":"T1087.004","name":"Cloud Account"}]},{"id":"T1010","name":"Application Window Discovery"},{"id":"T1217","name":"Browser Information Discovery"},{"id":"T1580","name":"Cloud Infrastructure Discovery"},{"id":"T1538","name":"Cloud Service Dashboard"},{"id":"T1526","name":"Cloud Service Discovery"},{"id":"T1619","name":"Cloud Storage Object Discovery"},{"id":"T1613","name":"Container and Resource Discovery"},{"id":"T1622","name":"Debugger Evasion"},{"id":"T1652","name":"Device Driver Discovery"},{"id":"T1482","name":"Domain Trust Discovery"},{"id":"T1083","name":"File and Directory Discovery"},{"id":"T1615","name":"Group Policy Discovery"},{"id":"T1680","name":"Local Storage Discovery"},{"id":"T1654","name":"Log Enumeration"},{"id":"T1046","name":"Network Service Discovery"},{"id":"T1135","name":"Network Share Discovery"},{"id":"T1040","name":"Network Sniffing"},{"id":"T1201","name":"Password Policy Discovery"},{"id":"T1120","name":"Peripheral Device Discovery"},{"id":"T1069","name":"Permission Groups Discovery","sub_techniques":[{"id":"T1069.001","name":"Local Groups"},{"id":"T1069.002","name":"Domain Groups"},{"id":"T1069.003","name":"Cloud Groups"}]},{"id":"T1057","name":"Process Discovery"},{"id":"T1012","name":"Query Registry"},{"id":"T1018","name":"Remote System Discovery"},{"id":"T1518","name":"Software Discovery","sub_techniques":[{"id":"T1518.001","name":"Security Software Discovery"},{"id":"T1518.002","name":"Backup Software Discovery"}]},{"id":"T1082","name":"System Information Discovery"},{"id":"T1614","name":"System Location Discovery","sub_techniques":[{"id":"T1614.001","name":"System Language Discovery"}]},{"id":"T1016","name":"System Network Configuration Discovery","sub_techniques":[{"id":"T1016.001","name":"Internet Connection Discovery"},{"id":"T1016.002","name":"Wi-Fi Discovery"}]},{"id":"T1049","name":"System Network Connections Discovery"},{"id":"T1033","name":"System Owner/User Discovery"},{"id":"T1007","name":"System Service Discovery"},{"id":"T1124","name":"System Time Discovery"},{"id":"T1673","name":"Virtual Machine Discovery"},{"id":"T1497","name":"Virtualization/Sandbox Evasion","sub_techniques":[{"id":"T1497.001","name":"System Checks"},{"id":"T1497.002","name":"User Activity Based Checks"},{"id":"T1497.003","name":"Time Based Checks"}]}]},"TA0008":{"tactic_name":"Lateral Movement","techniques":[{"id":"T1210","name":"Exploitation of Remote Services"},{"id":"T1534","name":"Internal Spearphishing"},{"id":"T1570","name":"Lateral Tool Transfer"},{"id":"T1563","name":"Remote Service Session Hijacking","sub_techniques":[{"id":"T1563.001","name":"SSH Hijacking"},{"id":"T1563.002","name":"RDP Hijacking"}]},{"id":"T1021","name":"Remote Services","sub_techniques":[{"id":"T1021.001","name":"Remote Desktop Protocol"},{"id":"T1021.002","name":"SMB/Windows Admin Shares"},{"id":"T1021.003","name":"Distributed Component Object Model"},{"id":"T1021.004","name":"SSH"},{"id":"T1021.005","name":"VNC"},{"id":"T1021.006","name":"Windows Remote Management"},{"id":"T1021.007","name":"Cloud Services"},{"id":"T1021.008","name":"Direct Cloud VM Connections"}]},{"id":"T1091","name":"Replication Through Removable Media"},{"id":"T1072","name":"Software Deployment Tools"},{"id":"T1080","name":"Taint Shared Content"},{"id":"T1550","name":"Use Alternate Authentication Material","sub_techniques":[{"id":"T1550.001","name":"Application Access Token"},{"id":"T1550.002","name":"Pass the Hash"},{"id":"T1550.003","name":"Pass the Ticket"},{"id":"T1550.004","name":"Web Session Cookie"}]}]},"TA0009":{"tactic_name":"Collection","techniques":[{"id":"T1557","name":"Adversary-in-the-Middle","sub_techniques":[{"id":"T1557.001","name":"LLMNR/NBT-NS Poisoning and SMB Relay"},{"id":"T1557.002","name":"ARP Cache Poisoning"},{"id":"T1557.003","name":"DHCP Spoofing"},{"id":"T1557.004","name":"Evil Twin"}]},{"id":"T1560","name":"Archive Collected Data","sub_techniques":[{"id":"T1560.001","name":"Archive via Utility"},{"id":"T1560.002","name":"Archive via Library"},{"id":"T1560.003","name":"Archive via Custom Method"}]},{"id":"T1123","name":"Audio Capture"},{"id":"T1119","name":"Automated Collection"},{"id":"T1185","name":"Browser Session Hijacking"},{"id":"T1115","name":"Clipboard Data"},{"id":"T1074","name":"Data Staged","sub_techniques":[{"id":"T1074.001","name":"Local Data Staging"},{"id":"T1074.002","name":"Remote Data Staging"}]},{"id":"T1530","name":"Data from Cloud Storage"},{"id":"T1602","name":"Data from Configuration Repository","sub_techniques":[{"id":"T1602.001","name":"SNMP (MIB Dump)"},{"id":"T1602.002","name":"Network Device Configuration Dump"}]},{"id":"T1213","name":"Data from Information Repositories","sub_techniques":[{"id":"T1213.001","name":"Confluence"},{"id":"T1213.002","name":"Sharepoint"},{"id":"T1213.003","name":"Code Repositories"},{"id":"T1213.004","name":"Customer Relationship Management Software"},{"id":"T1213.005","name":"Messaging Applications"},{"id":"T1213.006","name":"Databases"}]},{"id":"T1005","name":"Data from Local System"},{"id":"T1039","name":"Data from Network Shared Drive"},{"id":"T1025","name":"Data from Removable Media"},{"id":"T1114","name":"Email Collection","sub_techniques":[{"id":"T1114.001","name":"Local Email Collection"},{"id":"T1114.002","name":"Remote Email Collection"},{"id":"T1114.003","name":"Email Forwarding Rule"}]},{"id":"T1056","name":"Input Capture","sub_techniques":[{"id":"T1056.001","name":"Keylogging"},{"id":"T1056.002","name":"GUI Input Capture"},{"id":"T1056.003","name":"Web Portal Capture"},{"id":"T1056.004","name":"Credential API Hooking"}]},{"id":"T1113","name":"Screen Capture"},{"id":"T1125","name":"Video Capture"}]},"TA0011":{"tactic_name":"Command and Control","techniques":[{"id":"T1071","name":"Application Layer Protocol","sub_techniques":[{"id":"T1071.001","name":"Web Protocols"},{"id":"T1071.002","name":"File Transfer Protocols"},{"id":"T1071.003","name":"Mail Protocols"},{"id":"T1071.004","name":"DNS"},{"id":"T1071.005","name":"Publish/Subscribe Protocols"}]},{"id":"T1092","name":"Communication Through Removable Media"},{"id":"T1659","name":"Content Injection"},{"id":"T1132","name":"Data Encoding","sub_techniques":[{"id":"T1132.001","name":"Standard Encoding"},{"id":"T1132.002","name":"Non-Standard Encoding"}]},{"id":"T1001","name":"Data Obfuscation","sub_techniques":[{"id":"T1001.001","name":"Junk Data"},{"id":"T1001.002","name":"Steganography"},{"id":"T1001.003","name":"Protocol or Service Impersonation"}]},{"id":"T1568","name":"Dynamic Resolution","sub_techniques":[{"id":"T1568.001","name":"Fast Flux DNS"},{"id":"T1568.002","name":"Domain Generation Algorithms"},{"id":"T1568.003","name":"DNS Calculation"}]},{"id":"T1573","name":"Encrypted Channel","sub_techniques":[{"id":"T1573.001","name":"Symmetric Cryptography"},{"id":"T1573.002","name":"Asymmetric Cryptography"}]},{"id":"T1008","name":"Fallback Channels"},{"id":"T1665","name":"Hide Infrastructure"},{"id":"T1105","name":"Ingress Tool Transfer"},{"id":"T1104","name":"Multi-Stage Channels"},{"id":"T1095","name":"Non-Application Layer Protocol"},{"id":"T1571","name":"Non-Standard Port"},{"id":"T1572","name":"Protocol Tunneling"},{"id":"T1090","name":"Proxy","sub_techniques":[{"id":"T1090.001","name":"Internal Proxy"},{"id":"T1090.002","name":"External Proxy"},{"id":"T1090.003","name":"Multi-hop Proxy"},{"id":"T1090.004","name":"Domain Fronting"}]},{"id":"T1219","name":"Remote Access Tools","sub_techniques":[{"id":"T1219.001","name":"IDE Tunneling"},{"id":"T1219.002","name":"Remote Desktop Software"},{"id":"T1219.003","name":"Remote Access Hardware"}]},{"id":"T1205","name":"Traffic Signaling","sub_techniques":[{"id":"T1205.001","name":"Port Knocking"},{"id":"T1205.002","name":"Socket Filters"}]},{"id":"T1102","name":"Web Service","sub_techniques":[{"id":"T1102.001","name":"Dead Drop Resolver"},{"id":"T1102.002","name":"Bidirectional Communication"},{"id":"T1102.003","name":"One-Way Communication"}]}]},"TA0010":{"tactic_name":"Exfiltration","techniques":[{"id":"T1020","name":"Automated Exfiltration","sub_techniques":[{"id":"T1020.001","name":"Traffic Duplication"}]},{"id":"T1030","name":"Data Transfer Size Limits"},{"id":"T1048","name":"Exfiltration Over Alternative Protocol","sub_techniques":[{"id":"T1048.001","name":"Exfiltration Over Symmetric Encrypted Non-C2 Protocol"},{"id":"T1048.002","name":"Exfiltration Over Asymmetric Encrypted Non-C2 Protocol"},{"id":"T1048.003","name":"Exfiltration Over Unencrypted Non-C2 Protocol"}]},{"id":"T1041","name":"Exfiltration Over C2 Channel"},{"id":"T1011","name":"Exfiltration Over Other Network Medium","sub_techniques":[{"id":"T1011.001","name":"Exfiltration Over Bluetooth"}]},{"id":"T1052","name":"Exfiltration Over Physical Medium","sub_techniques":[{"id":"T1052.001","name":"Exfiltration over USB"}]},{"id":"T1567","name":"Exfiltration Over Web Service","sub_techniques":[{"id":"T1567.001","name":"Exfiltration to Code Repository"},{"id":"T1567.002","name":"Exfiltration to Cloud Storage"},{"id":"T1567.003","name":"Exfiltration to Text Storage Sites"},{"id":"T1567.004","name":"Exfiltration Over Webhook"}]},{"id":"T1029","name":"Scheduled Transfer"},{"id":"T1537","name":"Transfer Data to Cloud Account"}]},"TA0040":{"tactic_name":"Impact","techniques":[{"id":"T1531","name":"Account Access Removal"},{"id":"T1485","name":"Data Destruction","sub_techniques":[{"id":"T1485.001","name":"Lifecycle-Triggered Deletion"}]},{"id":"T1486","name":"Data Encrypted for Impact"},{"id":"T1565","name":"Data Manipulation","sub_techniques":[{"id":"T1565.001","name":"Stored Data Manipulation"},{"id":"T1565.002","name":"Transmitted Data Manipulation"},{"id":"T1565.003","name":"Runtime Data Manipulation"}]},{"id":"T1491","name":"Defacement","sub_techniques":[{"id":"T1491.001","name":"Internal Defacement"},{"id":"T1491.002","name":"External Defacement"}]},{"id":"T1561","name":"Disk Wipe","sub_techniques":[{"id":"T1561.001","name":"Disk Content Wipe"},{"id":"T1561.002","name":"Disk Structure Wipe"}]},{"id":"T1667","name":"Email Bombing"},{"id":"T1499","name":"Endpoint Denial of Service","sub_techniques":[{"id":"T1499.001","name":"OS Exhaustion Flood"},{"id":"T1499.002","name":"Service Exhaustion Flood"},{"id":"T1499.003","name":"Application Exhaustion Flood"},{"id":"T1499.004","name":"Application or System Exploitation"}]},{"id":"T1657","name":"Financial Theft"},{"id":"T1495","name":"Firmware Corruption"},{"id":"T1490","name":"Inhibit System Recovery"},{"id":"T1498","name":"Network Denial of Service","sub_techniques":[{"id":"T1498.001","name":"Direct Network Flood"},{"id":"T1498.002","name":"Reflection Amplification"}]},{"id":"T1496","name":"Resource Hijacking","sub_techniques":[{"id":"T1496.001","name":"Compute Hijacking"},{"id":"T1496.002","name":"Bandwidth Hijacking"},{"id":"T1496.003","name":"SMS Pumping"},{"id":"T1496.004","name":"Cloud Service Hijacking"}]},{"id":"T1489","name":"Service Stop"},{"id":"T1529","name":"System Shutdown/Reboot"}]}}},"meta":{"total_actors":832,"total_observations":13873,"study_period":"March 2025 - March 2026"}};
+
+const RISK_COLORS = { critical: "#F44336", high: "#FF9800", medium: "#FFC107", low: "#66BB6A", none: "#FFFFFF" };
+const PCT_COLORS  = ["#f9d976", "#f5a623", "#e8540c", "#b91c1c", "#7f1d1d"];
+
+function getRiskColor(score) {
+  if (score === null || score === undefined || isNaN(score)) return RISK_COLORS.none;
+  const s = Number(score);
+  if (s >= 85) return RISK_COLORS.critical;
+  if (s >= 70) return RISK_COLORS.high;
+  if (s >= 50) return RISK_COLORS.medium;
+  return RISK_COLORS.low;
+}
+function scoreToCategory(score) {
+  if (score === null || score === undefined || isNaN(score)) return "Unknown";
+  const s = Number(score);
+  if (s >= 85) return "Critical";
+  if (s >= 70) return "High";
+  if (s >= 50) return "Medium";
+  return "Low";
+}
+function getPctColor(pct) {
+  if (pct === null || pct === undefined || isNaN(pct)) return RISK_COLORS.none;
+  const p = Number(pct);
+  if (p >= 50) return PCT_COLORS[4];
+  if (p >= 25) return PCT_COLORS[3];
+  if (p >= 10) return PCT_COLORS[2];
+  if (p >= 2)  return PCT_COLORS[1];
+  if (p > 0)   return PCT_COLORS[0];
+  return RISK_COLORS.none;
+}
+function fgFor(bg) {
+  if (!bg || /^#fff(fff)?$/i.test(bg)) return "#1c1917";
+  const m = bg.match(/^#([0-9a-f]{6})$/i);
+  if (!m) return "#1c1917";
+  const n = parseInt(m[1], 16);
+  const r = (n >> 16) & 0xff, g = (n >> 8) & 0xff, b = n & 0xff;
+  const lin = (c) => { const s = c / 255; return s <= 0.03928 ? s / 12.92 : Math.pow((s + 0.055) / 1.055, 2.4); };
+  const L = 0.2126 * lin(r) + 0.7152 * lin(g) + 0.0722 * lin(b);
+  return L > 0.55 ? "#1c1917" : "#ffffff";
+}
+function pickColor(agg, colorMode) {
+  if (!agg) return RISK_COLORS.none;
+  if (colorMode === "pct_actors") return getPctColor(agg.pct_actors);
+  const v = agg[colorMode];
+  return v !== null && v !== undefined ? getRiskColor(v) : RISK_COLORS.none;
+}
+
+function buildDomainView(mapping) {
+  const tactics = [];
+  const techniqueIndex = {};
+  for (const [taId, td] of Object.entries(mapping.tactic_to_techniques)) {
+    const tacticEntry = { id: taId, name: td.tactic_name, techniques: [] };
+    for (const tech of td.techniques) {
+      tacticEntry.techniques.push({ id: tech.id, name: tech.name, sub_techniques: tech.sub_techniques || [] });
+      techniqueIndex[tech.id] = { name: tech.name, tactic_name: td.tactic_name };
+      for (const sub of tech.sub_techniques || []) {
+        techniqueIndex[sub.id] = { name: sub.name, parent: tech.id, tactic_name: td.tactic_name };
+      }
+    }
+    tacticEntry.techniques.sort((a, b) => a.name.localeCompare(b.name));
+    tactics.push(tacticEntry);
+  }
+  return { tactics, techniqueIndex };
+}
+
+// ----- state -----
+const view = buildDomainView(BUNDLE.mapping_enterprise);
+const aggs = BUNDLE.enterprise;
+const totalActors = BUNDLE.meta.total_actors;
+let colorMode = "pct_actors";
+
+// ----- helpers -----
+function el(tag, attrs, ...children) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs || {})) {
+    if (k === "style" && v && typeof v === "object") {
+      for (const [sk, sv] of Object.entries(v)) e.style[sk] = sv;
+    } else if (k === "class") {
+      e.className = v;
+    } else if (k.startsWith("on") && typeof v === "function") {
+      e.addEventListener(k.slice(2).toLowerCase(), v);
+    } else if (k === "html") {
+      e.innerHTML = v;
+    } else {
+      e.setAttribute(k, v);
+    }
+  }
+  for (const c of children) {
+    if (c == null) continue;
+    e.append(c instanceof Node ? c : document.createTextNode(c));
+  }
+  return e;
+}
+
+// ----- subtitle -----
+document.getElementById("subtitle").innerHTML =
+  `Companion to <em>Mapping AI-Enabled Cyber Threats</em>: ${BUNDLE.meta.total_observations.toLocaleString()} technique ` +
+  `observations from ${totalActors} banned accounts (${BUNDLE.meta.study_period}), ` +
+  `mapped to MITRE ATT&CK v18 and scored on the AI Risk Enablement Score (ARiES). ` +
+  `Cells are colored by the selected metric; bold borders mark techniques observed in this dataset.`;
+
+// ----- legend -----
+function renderLegend() {
+  const root = document.getElementById("legend");
+  root.innerHTML = "";
+  if (colorMode === "pct_actors") {
+    root.append(el("span", { class: "legend-title" }, `% of ${totalActors} banned accounts:`));
+    [
+      ["<2%",   PCT_COLORS[0]],
+      ["2-10%", PCT_COLORS[1]],
+      ["10-25%", PCT_COLORS[2]],
+      ["25-50%", PCT_COLORS[3]],
+      [">50%",  PCT_COLORS[4]],
+    ].forEach(([label, color]) => {
+      root.append(el("span", { class: "legend-item" },
+        el("span", { class: "legend-swatch", style: { backgroundColor: color } }),
+        label
+      ));
+    });
+  } else {
+    root.append(el("span", { class: "legend-title" }, "ARiES:"));
+    [
+      ["Low (0-49)", RISK_COLORS.low],
+      ["Medium (50-69)", RISK_COLORS.medium],
+      ["High (70-84)", RISK_COLORS.high],
+      ["Critical (85-100)", RISK_COLORS.critical],
+    ].forEach(([label, color]) => {
+      root.append(el("span", { class: "legend-item" },
+        el("span", { class: "legend-swatch", style: { backgroundColor: color } }),
+        label
+      ));
+    });
+  }
+}
+
+// ----- matrix -----
+function renderMatrix() {
+  const root = document.getElementById("matrix");
+  root.innerHTML = "";
+  for (const tactic of view.tactics) {
+    const col = el("div", { class: "tactic-col" });
+    col.append(el("div", { class: "tactic-head" },
+      el("div", { class: "tactic-name" }, tactic.name),
+      el("div", { class: "tactic-count" }, `${tactic.techniques.length} techniques`)
+    ));
+    for (const tech of tactic.techniques) {
+      const agg = aggs[tech.id];
+      const observed = !!agg;
+      const bg = pickColor(agg, colorMode);
+      const cell = el("button", {
+        class: "cell" + (observed ? " observed" : ""),
+        type: "button",
+        title: observed ? `${tech.name} - click for details` : tech.name,
+        style: { backgroundColor: bg, color: fgFor(bg) },
+      });
+      if (!observed) cell.disabled = true;
+      cell.append(el("div", { class: "tech-name" }, tech.name));
+      if (observed) cell.addEventListener("click", () => openModal(tech.id, tactic.name));
+      col.append(cell);
+    }
+    root.append(col);
+  }
+}
+
+// ----- modal -----
+function openModal(techId, tacticName) {
+  const agg = aggs[techId];
+  if (!agg) return;
+  const idxEntry = view.techniqueIndex[techId] || {};
+  const techName = idxEntry.name || techId;
+  const mitreUrl = `https://attack.mitre.org/versions/v18/techniques/${techId.replace(".", "/")}/`;
+
+  // Sub-techniques (dedupe — some parents appear under multiple tactics)
+  const subTechs = [];
+  if (!techId.includes(".")) {
+    const seen = new Set();
+    for (const tactic of view.tactics) {
+      for (const t of tactic.techniques) {
+        if (t.id === techId) {
+          for (const sub of t.sub_techniques || []) {
+            if (seen.has(sub.id)) continue;
+            if (aggs[sub.id]) {
+              seen.add(sub.id);
+              subTechs.push({ id: sub.id, name: sub.name, agg: aggs[sub.id] });
+            }
+          }
+        }
+      }
+    }
+    subTechs.sort((a, b) => a.id.localeCompare(b.id));
+  }
+
+  // Headline
+  let headlineScore, headlineLabel, headlineColor;
+  if (colorMode === "pct_actors") {
+    headlineScore = agg.pct_actors !== null ? `${agg.pct_actors}%` : "N/A";
+    headlineLabel = "% of Banned Accounts";
+    headlineColor = getPctColor(agg.pct_actors);
+  } else {
+    const v = colorMode === "raw_mean" ? agg.raw_mean : agg.adjusted;
+    headlineScore = v !== null ? `${v} (${scoreToCategory(v)})` : "N/A";
+    headlineLabel = colorMode === "raw_mean" ? "Raw Mean ARiES" : "Adjusted ARiES";
+    headlineColor = getRiskColor(v);
+  }
+
+  const modal = document.getElementById("modal");
+  modal.innerHTML = "";
+
+  // Header
+  const head = el("div", { class: "modal-head" });
+  const headLeft = el("div", { style: { flex: "1", minWidth: "0" } },
+    el("h3", { class: "modal-title" }, techName),
+    el("div", { class: "modal-meta" },
+      el("a", { href: mitreUrl, target: "_blank", rel: "noopener noreferrer" },
+        techId,
+        el("span", { html: "&#x2197;" })
+      ),
+      el("span", { class: "sep" }, "|"),
+      el("span", null, `Tactic: ${tacticName}`)
+    )
+  );
+  head.append(headLeft);
+  head.append(el("button", { class: "close-btn", onclick: closeModal, "aria-label": "Close" }, "✕"));
+  modal.append(head);
+
+  // Activity section
+  const act = el("div", { class: "modal-section gray" });
+  act.append(el("div", { class: "section-label" }, "Observed Activity"));
+  act.append(stat("Distinct banned accounts:", `${agg.n_actors}`, `(${agg.pct_actors}% of ${totalActors} banned accounts)`));
+  act.append(stat("Total observations:", `${agg.count}`));
+  act.append(el("div", { class: "section-label", style: { marginTop: "16px", marginBottom: "8px" } }, "ARiES Risk Score"));
+  act.append(stat(
+    "Raw mean (avg ARiES):",
+    agg.raw_mean !== null ? `${agg.raw_mean}` : "N/A",
+    agg.n_scored > 0 ? `(n=${agg.n_scored} scored observations)` : ""
+  ));
+  if (colorMode === "adjusted") {
+    act.append(stat("Prevalence factor:", `x${agg.prevalence.toFixed(2)}`));
+  }
+  // Headline pill
+  const head2 = el("div", { class: "stat-row stat-divider" });
+  head2.append(el("span", { class: "stat-label" }, `${headlineLabel}:`));
+  head2.append(el("span", {
+    class: "headline-pill",
+    style: { backgroundColor: headlineColor, color: fgFor(headlineColor) }
+  }, headlineScore));
+  act.append(head2);
+  modal.append(act);
+
+  // Sub-techniques
+  if (subTechs.length) {
+    const sec = el("div", { class: "modal-section" });
+    sec.append(el("div", { class: "section-label" }, `Sub-techniques observed (${subTechs.length})`));
+    for (const sub of subTechs) {
+      const subBg = pickColor(sub.agg, colorMode);
+      let subDisplay;
+      if (colorMode === "pct_actors") {
+        subDisplay = `${sub.agg.pct_actors}%`;
+      } else {
+        const v = colorMode === "raw_mean" ? sub.agg.raw_mean : sub.agg.adjusted;
+        subDisplay = v !== null ? v : "N/A";
+      }
+      const row = el("div", { class: "sub-row", style: { borderLeftColor: subBg } });
+      row.append(el("a", {
+        class: "sub-id",
+        href: `https://attack.mitre.org/versions/v18/techniques/${sub.id.replace(".", "/")}/`,
+        target: "_blank", rel: "noopener noreferrer",
+      }, sub.id));
+      row.append(el("span", { class: "sub-name" }, sub.name));
+      row.append(el("span", { class: "sub-meta" }, `${sub.agg.n_actors} banned accounts (${sub.agg.pct_actors}%)`));
+      row.append(el("span", {
+        class: "sub-score",
+        style: { backgroundColor: subBg, color: fgFor(subBg) }
+      }, String(subDisplay)));
+      sec.append(row);
+    }
+    modal.append(sec);
+  }
+
+  document.getElementById("modal-backdrop").classList.add("open");
+}
+
+function stat(label, value, note) {
+  const row = el("div", { class: "stat-row" });
+  row.append(el("span", { class: "stat-label" }, label));
+  const v = el("span", { class: "stat-value" }, value);
+  if (note) v.append(el("span", { class: "stat-note" }, " ", note));
+  row.append(v);
+  return row;
+}
+
+function closeModal() {
+  document.getElementById("modal-backdrop").classList.remove("open");
+}
+
+document.getElementById("modal-backdrop").addEventListener("click", (e) => {
+  if (e.target.id === "modal-backdrop") closeModal();
+});
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
+
+document.getElementById("color-mode").addEventListener("change", (e) => {
+  colorMode = e.target.value;
+  renderLegend();
+  renderMatrix();
+});
+
+renderLegend();
+renderMatrix();
+</script>
+</body>
+</html>

@@ -1,0 +1,2902 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="The National Artificial Intelligence Research Resource (NAIRR) is a vision for a shared national research infrastructure for responsible discovery and innovation in AI." />
+<link rel="canonical" href="https://www.nsf.gov/focus-areas/si/nairr" />
+<link rel="icon" href="/themes/custom/nsf_theme/favicons/favicon-32x32.png" />
+<link rel="icon" sizes="16x16" href="/themes/custom/nsf_theme/favicons/favicon-16x16.png" />
+<link rel="icon" sizes="32x32" href="/themes/custom/nsf_theme/favicons/favicon-32x32.png" />
+<link rel="icon" sizes="96x96" href="/themes/custom/nsf_theme/favicons/favicon-96x96.png" />
+<link rel="icon" sizes="192x192" href="/themes/custom/nsf_theme/favicons/android-icon-192x192.png" />
+<meta property="og:site_name" content="NSF - U.S. National Science Foundation" />
+<meta property="og:url" content="https://www.nsf.gov/focus-areas/si/nairr" />
+<meta property="og:title" content="National Artificial Intelligence Research Resource" />
+<meta property="og:image" content="https://www.nsf.gov/themes/custom/nsf_theme/logo-200x200.png" />
+<meta property="og:image:alt" content="" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@NSF" />
+<meta name="twitter:title" content="National Artificial Intelligence Research Resource" />
+<meta name="twitter:image" content="https://www.nsf.gov/themes/custom/nsf_theme/logo-200x200.png" />
+<meta name="twitter:image:alt" content="" />
+<meta name="Generator" content="Drupal 11 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};</script>
+<script src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=NSF&amp;dclink=true&amp;ver=true&amp;exts=doc,docx,xls,xlsx,xlsm,ppt,pptx,exe,zip,pdf,js,txt,csv,dxf,wmv,jpg,jpeg,gif,png,wma,mov,avi,mp3,mp4,csv&amp;sitetopic=2024-01-24" async defer id="_fed_an_ua_tag"></script>
+
+    <title>National Artificial Intelligence Research Resource | NSF - U.S. National Science Foundation</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_iz0CE6r1sCQt6-usQJTQwVCXtmbpdIUfhkDZ8_VRFkk.css?delta=0&amp;language=en&amp;theme=nsf_theme&amp;include=eJx9ke1OxSAMhm8I2CUtBcrAFYotqOfu3dSjP0xImqbp-6SfEONgaI8NfgKXhNswgYmga_HE4dwCC5rbXVHt3LANdU3TPjJWtBYIZawALwgxyKxeV1gAiTaCnNbTXHZMCGMKRpsKoaXSzhV98Jv10BrKisoovNKJj6X-Oks4bYKwPIXgNXizgy_rK3CAv1bjZMP1kFv8hqPMDuTgBT7ML70NniF3LjfWQeAQ6Fmf8F_Gzdanp6IZo1EOBWivGAvs9w11-59yXw2MPnRg3Twomqnv8Vn7EzCb3lA" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_Rp8Qq0KBlI94YRu32BcPRuuTzzTC-3rqMmh91cZ4o6o.css?delta=1&amp;language=en&amp;theme=nsf_theme&amp;include=eJx9ke1OxSAMhm8I2CUtBcrAFYotqOfu3dSjP0xImqbp-6SfEONgaI8NfgKXhNswgYmga_HE4dwCC5rbXVHt3LANdU3TPjJWtBYIZawALwgxyKxeV1gAiTaCnNbTXHZMCGMKRpsKoaXSzhV98Jv10BrKisoovNKJj6X-Oks4bYKwPIXgNXizgy_rK3CAv1bjZMP1kFv8hqPMDuTgBT7ML70NniF3LjfWQeAQ6Fmf8F_Gzdanp6IZo1EOBWivGAvs9w11-59yXw2MPnRg3Twomqnv8Vn7EzCb3lA" />
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/96947","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJyNko1uxCAIgF9I6yM1qNS6ojjU7W5PP9vcbdmWmCWG8PMFEADvG0O-G3goyyacm3JMBKVGS-wO41hQnWJoqXDG3OqS67a2HRNqDYTSZoAVBO-kJ1v_ienYMM1YB-K1Bzm0pT7tbkNoXdDrLRJqivmY0YHftIWcUWbUjsKzeMyjzigGFmnGEYdpntce3aE3cNPxCo4PZt14vDIDG9gxAt60G0s-g1MYb01fB6CcwMcdQzBPRQXmQLg2CCYM8dte4AVuP51JfeU2jbvbC8ezgwICQaDs1XjpBWj59iw9l24p1h29quwi0JrQR1jPNVbz17VcBVS913E_xkJF1eu7f-Z-GJf8BDzDJkQ","theme":"nsf_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"google\nnonGooglePixels\nnonGoogleScripts\nnonGoogleIframes","blocklist_classes":"customScripts\ncustomPixels","include_environment":true,"environment_id":"env-1","environment_token":"g18KstQIuISFV7R8jqLFKQ"},"tagIds":["GTM-WSDBJPS"]},"data":{"extlink":{"extTarget":false,"extTargetAppendNewWindowLabel":"(opens in a new window)","extTargetNoOverride":false,"extNofollow":true,"extTitleNoOverride":false,"extNoreferrer":false,"extFollowNoOverride":true,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":true,"extExclude":"(.*\\.gov\\\/)|(.*\\.mil\\\/)|((public|service)\\.govdelivery\\.com\\\/)|(web\\\/)|(web:8443\\\/)|(.*\\.amazonaws\\.com\\\/)|(.*\\.akamaihd\\.net\\\/)|(nsf\\.widencollective\\.com\\\/)|(www\\.facebook\\.com\\\/)|(www\\.instagram\\.com\\\/)|(www\\.linkedin\\.com\\\/)|(www\\.twitter\\.com\\\/)|(www\\.youtube\\.com\\\/)","extInclude":"","extCssExclude":".extlink-extra-leaving, .no-extlink-icon, .twitter-tweet","extCssInclude":"","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","extHideIcons":false,"mailtoClass":"0","telClass":"tel","mailtoLabel":"(link sends email)","telLabel":"(link is a phone number)","extUseFontAwesome":false,"extIconPlacement":"append","extPreventOrphan":false,"extFaLinkClasses":"fa fa-external-link","extFaMailtoClasses":"fa fa-envelope-o","extAdditionalLinkClasses":"","extAdditionalMailtoClasses":"","extAdditionalTelClasses":"","extFaTelClasses":"fa fa-phone","whitelistedDomains":[],"extExcludeNoreferrer":""}},"collapsiblock":{"active_pages":false,"slide_speed":200,"cookie_lifetime":null},"mediaFilter":{"nodeType":"layout_builder_page"},"user":{"uid":0,"permissionsHash":"ff22307b4df654f9cdf01d7093e0e48a64aefef2f5ead1bd8e5b02218cb1ae83"}}</script>
+<script src="/sites/default/files/js/js_vQMlZcZ6zsmtJqvoZvBz8qpE71Jkxwqb6s7RZQ14Cks.js?scope=header&amp;delta=0&amp;language=en&amp;theme=nsf_theme&amp;include=eJx9jeEKwjAMhF-oXR9pxDbrpl2upBk6n94qKuiPQfi45I4LpWQg2QO9xTApxFxEKVTbciqIlxCh7J7oaq0QFmuDtGm0mVf2nmI30wI5DBVWOwrMrDjylW1T8YY-1UWl-845h49wGciFR6Mccsf_PtCZbr_H1X3rg2GLc8XSn7qtXVMLLz4ASFZv0A"></script>
+<script src="https://script.crazyegg.com/pages/scripts/0041/5508.js" async></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?tnpb1j"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?tnpb1j"></script>
+
+  </head>
+  <body class="env-prod path-node page-node-type-layout-builder-page context-focus-areas-si-nairr page-node-view">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSDBJPS&gtm_auth=g18KstQIuISFV7R8jqLFKQ&gtm_preview=env-1&gtm_cookies_win=x"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+
+
+
+<header class="usa-header usa-header--basic usa-header--megamenu" id="header" role="banner">
+    <a href="#content-wrap" id='js-skiplink-main-content' class="visually-hidden focusable skip-link">
+    Skip to main content
+  </a>
+  
+    
+<section class="usa-banner" aria-label="Official website of the United States government">
+  <div class="usa-accordion">
+    <div class="usa-banner__header">
+      <div class="usa-banner__inner">
+        <div class="grid-col-auto">
+          <img
+            aria-hidden="true"
+            class="usa-banner__header-flag"
+            src="/themes/custom/nsf_theme/plugins/uswds/dist/img/us_flag_small.png"
+            alt=""
+          />
+        </div>
+        <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+          <p class="usa-banner__header-text">An official website of the United States government</p>
+          <p class="usa-banner__header-action">Here's how you know</p>
+        </div>
+        <button type="button" class="usa-accordion__button usa-banner__button"
+                aria-expanded="false" aria-controls="gov-banner">
+          <span class="usa-banner__button-text">Here's how you know</span>
+        </button>
+      </div>
+    </div>
+    <div class="usa-banner__content usa-accordion__content" id="gov-banner" hidden>
+      <div class="grid-row grid-gap-lg">
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="/themes/custom/nsf_theme/plugins/uswds/dist/img/icon-dot-gov.svg" alt="" aria-hidden="true">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>Official websites use .gov</strong>
+              <br>
+              A <strong>.gov</strong> website belongs to an official government organization in the United States.
+            </p>
+          </div>
+        </div>
+        <div class="usa-banner__guidance tablet:grid-col-6">
+          <img class="usa-banner__icon usa-media-block__img" src="/themes/custom/nsf_theme/plugins/uswds/dist/img/icon-https.svg" alt="" aria-hidden="true">
+          <div class="usa-media-block__body">
+            <p>
+              <strong>Secure .gov websites use HTTPS.</strong>
+              <br>
+              A <strong>lock</strong>
+              (<span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-description" focusable="false"><title id="banner-lock-title-default">Lock</title><desc id="banner-lock-description">Locked padlock</desc><path fill="#000000" fill-rule="evenodd" d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"></path></svg></span>)
+              or <strong>https://</strong> means you've safely connected to the .gov website. Share sensitive information only on official, secure websites.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  
+  <section class="primary-menu">
+
+        <div class="usa-nav-container">
+      
+      <div class="usa-navbar">
+
+          <div class="region region-header">
+    
+  
+<div id="block-nsf-theme-branding">
+    <div class="usa-logo">
+    
+<a class="logo logo--header" href="/">
+  <img src="/themes/custom/nsf_theme/components/molecules/logo/logo-desktop.png" alt="NSF - U.S. National Science Foundation - Home" class="logo__image logo__item" />
+        <img src="/themes/custom/nsf_theme/components/molecules/logo/logo-wordmark.svg" alt="" class="logo__text logo__item" aria-hidden="true" />
+  </a>
+
+  </div>
+</div>
+
+  </div>
+
+
+        <div class="usa-navbar__buttons">
+          <button type="button" class="usa-button usa-navbar__buttons-search">
+            <span class="usa-sr-only">
+              Search
+            </span>
+          </button>
+
+          <button type="button" class="usa-menu-btn usa-navbar__buttons-menu" aria-expanded="false">Menu</button>
+        </div>
+
+      </div>
+
+      <div class="usa-overlay"></div>
+      <div class="usa-nav">
+        <div class="usa-nav-inner">
+
+          <button type="button" class="usa-nav__close">
+            <img src="/themes/custom/nsf_theme/images/icons/close-base-darkest.svg" alt="Close navigation" />
+          </button>
+
+                        <div class="region region-search">
+    
+<section>
+  <div id="block-sitesearch" class="block block-block-content block-block-contentd8573fbc-c73e-43c3-9b1c-d9e6f0ce33bb block-sitesearch">
+    
+    
+          
+
+
+                    <div class="clearfix text-formatted field body"><form accept-charset="UTF-8" action="https://search.nsf.gov/search" aria-label="Site" class="site-search" id="search1" method="get" name="siteSearchForm" role="search">
+  <label class="usa-sr-only usa-label" for="QueryText">Search</label></p>
+<input class="usa-input" id="QueryText" name="query" placeholder="Search NSF" title="search" type="text" />
+<input id="affiliate" name="affiliate" type="hidden" value="nsf" />
+  <button class="search-btn" name="search" type="submit"><span class="usa-sr-only">search</span><br />
+  </button><br />
+</form>
+</div>
+            
+      </div>
+</section>
+
+  </div>
+
+          
+          <nav>
+                          <div class="region region-primary-menu">
+    
+
+    
+          <ul region="primary_menu" class="usa-nav__primary usa-accordion">
+    
+                                      
+        <li class=" usa-nav__primary-item two-col-50-50-text-large-small">
+                                  <button type="button" class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="basic-mega-nav-section-1">
+              <span>Find Funding</span>
+            </button>
+                                    
+                <ul id="basic-mega-nav-section-1" class="usa-nav__submenu usa-megamenu">
+    
+                                                        
+        <li class="usa-nav__submenu-item with-nested-list usa-nav__no-link">
+                                                                                                
+          <ul class="usa-nav__submenu-list">
+    
+                                                        
+        <li>
+                                                  <a href="/funding/opportunities" class="icon-search" data-drupal-link-system-path="funding/opportunities">Funding Search</a>
+                                        </li>
+                                      
+        <li>
+                                                  <a href="https://www.nsf.gov/awardsearch/" class="icon-search">Award Search</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/funding/initiatives" data-drupal-link-system-path="node/5643">NSF-wide Initiatives</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/funding/initiatives/reu" data-drupal-link-system-path="group/298">Research Experiences for Undergraduates</a>
+                                        </li>
+      
+    </ul>
+
+  
+                  </li>
+                                                        
+        <li class="usa-nav__submenu-item with-nested-list usa-nav__no-link">
+                                                <span class="">Where to Start</span>
+                                                
+          <ul class="usa-nav__submenu-list">
+    
+                                                        
+        <li>
+                                    <a href="/funding/getting-started" data-drupal-link-system-path="node/95581">For Everyone</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/funding/early-career-researchers" data-drupal-link-system-path="node/95880">For Early-Career Researchers</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/funding/postdocs" data-drupal-link-system-path="node/95582">For Postdoctoral Fellows</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/funding/graduate-students" data-drupal-link-system-path="node/95583">For Graduate Students</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/funding/undergraduates" data-drupal-link-system-path="node/95584">For Undergraduates</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/funding/industry" data-drupal-link-system-path="node/95755">For Industry</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/funding/entrepreneurs" data-drupal-link-system-path="node/95585">For Entrepreneurs</a>
+                                        </li>
+      
+    </ul>
+
+  
+                  </li>
+      
+    </ul>
+
+  
+                  </li>
+                                      
+        <li class=" usa-nav__primary-item two-col-50-50-text-large-small">
+                                  <button type="button" class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="basic-mega-nav-section-2">
+              <span>How to Apply</span>
+            </button>
+                                    
+                <ul id="basic-mega-nav-section-2" class="usa-nav__submenu usa-megamenu">
+    
+                                                        
+        <li class="usa-nav__submenu-item with-nested-list usa-nav__no-link">
+                                                                                                
+          <ul class="usa-nav__submenu-list">
+    
+                                                        
+        <li>
+                                    <a href="/funding/preparing-proposal" data-drupal-link-system-path="node/95608">Preparing Your Proposal</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/funding/submitting-proposal" data-drupal-link-system-path="node/95593">Submitting Your Proposal</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/policies/pappg" data-drupal-link-system-path="node/85833">Proposal &amp; Award Policies &amp; Procedures Guide (PAPPG)</a>
+                                        </li>
+      
+    </ul>
+
+  
+                  </li>
+                                                        
+        <li class="usa-nav__submenu-item with-nested-list usa-nav__no-link">
+                                                <span class="">Additional Resources</span>
+                                                
+          <ul class="usa-nav__submenu-list">
+    
+                                      
+        <li>
+                                    <a href="https://www.research.gov/research-web/">Research.gov</a>
+                                        </li>
+                                      
+        <li>
+                                    <a href="https://www.grants.gov">Grants.gov</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/funding/merit-review" data-drupal-link-system-path="node/95594">How We Make Funding Decisions</a>
+                                        </li>
+      
+    </ul>
+
+  
+                  </li>
+      
+    </ul>
+
+  
+                  </li>
+                                      
+        <li class=" usa-nav__primary-item two-col-50-50-text-large-small">
+                                  <button type="button" class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="basic-mega-nav-section-3">
+              <span>Manage Your Award</span>
+            </button>
+                                    
+                <ul id="basic-mega-nav-section-3" class="usa-nav__submenu usa-megamenu">
+    
+                                                        
+        <li class="usa-nav__submenu-item with-nested-list usa-nav__no-link">
+                                                                                                
+          <ul class="usa-nav__submenu-list">
+    
+                                                        
+        <li>
+                                    <a href="/awards" data-drupal-link-system-path="group/282">Getting Started</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/awards/request-a-change" data-drupal-link-system-path="node/95620">Request a Change to Your Award</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/awards/report-your-outcomes" data-drupal-link-system-path="node/95622">Report Your Outcomes</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/policies/pappg" data-drupal-link-system-path="node/85833">Proposal &amp; Award Policies &amp; Procedures Guide (PAPPG)</a>
+                                        </li>
+      
+    </ul>
+
+  
+                  </li>
+                                                        
+        <li class="usa-nav__submenu-item with-nested-list usa-nav__no-link">
+                                                <span class="">Additional Resources</span>
+                                                
+          <ul class="usa-nav__submenu-list">
+    
+                                      
+        <li>
+                                    <a href="https://www.research.gov/research-web/">Research.gov</a>
+                                        </li>
+                                      
+        <li>
+                                    <a href="https://par.nsf.gov">NSF Public Access Repository</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/awards/who-to-contact" data-drupal-link-system-path="node/109452">Who to Contact With Questions</a>
+                                        </li>
+      
+    </ul>
+
+  
+                  </li>
+      
+    </ul>
+
+  
+                  </li>
+                                      
+        <li class=" usa-nav__primary-item two-col-33-66-text-large-small">
+                                  <button type="button" class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="basic-mega-nav-section-4">
+              <span>Focus Areas</span>
+            </button>
+                                    
+                <ul id="basic-mega-nav-section-4" class="usa-nav__submenu usa-megamenu">
+    
+                                                        
+        <li class="usa-nav__submenu-item with-nested-list usa-nav__no-link">
+                                                <span class="">Major Initiatives</span>
+                                                
+          <ul class="usa-nav__submenu-list">
+    
+                                                        
+        <li>
+                                    <a href="/focus-areas/si" data-drupal-link-system-path="group/309">Super Intelligence</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/focus-areas/biotechnology" data-drupal-link-system-path="node/96534">Biotechnology</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/focus-areas/quantum" data-drupal-link-system-path="node/96546">Quantum</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/focus-areas/workforce" data-drupal-link-system-path="node/115944">STEM Workforce</a>
+                                        </li>
+      
+    </ul>
+
+  
+                  </li>
+                                                        
+        <li class="usa-nav__submenu-item with-nested-list usa-nav__no-link">
+                                                <span class="">Focus Areas</span>
+                                                
+          <ul class="usa-nav__submenu-list">
+    
+                                                        
+        <li>
+                                                  <a href="/focus-areas" class="icon-grid" data-drupal-link-system-path="node/95631">Explore All Focus Areas</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/focus-areas/arctic-antarctic" data-drupal-link-system-path="node/95624">Arctic and Antarctic</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/focus-areas/astronomy-space" data-drupal-link-system-path="node/95628">Astronomy and Space</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/focus-areas/biology" data-drupal-link-system-path="node/95632">Biology</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/focus-areas/chemistry" data-drupal-link-system-path="node/95633">Chemistry</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/focus-areas/computing" data-drupal-link-system-path="node/95644">Computing</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/focus-areas/earth-environment" data-drupal-link-system-path="node/95645">Earth and Environment</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/focus-areas/education" data-drupal-link-system-path="node/95653">Education and Training</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/focus-areas/engineering" data-drupal-link-system-path="node/95651">Engineering</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/focus-areas/infrastructure" data-drupal-link-system-path="node/95658">Facilities and Infrastructure</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/focus-areas/materials" data-drupal-link-system-path="node/96533">Materials Research</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/focus-areas/mathematics" data-drupal-link-system-path="node/95660">Mathematics</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/focus-areas/people-society" data-drupal-link-system-path="node/95667">People and Society</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/focus-areas/physics" data-drupal-link-system-path="node/95677">Physics</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/focus-areas/research-partnerships" data-drupal-link-system-path="node/95678">Research Partnerships</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/focus-areas/technology" data-drupal-link-system-path="node/95691">Technology</a>
+                                        </li>
+      
+    </ul>
+
+  
+                  </li>
+      
+    </ul>
+
+  
+                  </li>
+                                      
+        <li class=" usa-nav__primary-item two-col-50-50-text-large-large">
+                                  <button type="button" class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="basic-mega-nav-section-5">
+              <span>News &amp; Events</span>
+            </button>
+                                    
+                <ul id="basic-mega-nav-section-5" class="usa-nav__submenu usa-megamenu">
+    
+                                                        
+        <li class="usa-nav__submenu-item with-nested-list usa-nav__no-link">
+                                                                                                
+          <ul class="usa-nav__submenu-list">
+    
+                                                        
+        <li>
+                                                  <a href="/news" class="icon-speaker" data-drupal-link-system-path="node/11137">News &amp; Announcements</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/impacts" data-drupal-link-system-path="group/286">NSF Impacts</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/science-matters" data-drupal-link-system-path="group/247">Science Matters Blog</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/news/media-toolkits" data-drupal-link-system-path="node/81900">For the Press</a>
+                                        </li>
+      
+    </ul>
+
+  
+                  </li>
+                                                        
+        <li class="usa-nav__submenu-item with-nested-list usa-nav__no-link">
+                                                                                                
+          <ul class="usa-nav__submenu-list">
+    
+                                                        
+        <li>
+                                                  <a href="/events" class="icon-calendar" data-drupal-link-system-path="events">Upcoming Events</a>
+                                        </li>
+      
+    </ul>
+
+  
+                  </li>
+      
+    </ul>
+
+  
+                  </li>
+                                      
+        <li class=" usa-nav__primary-item two-col-33-66-text-large-small">
+                                  <button type="button" class="usa-accordion__button usa-nav__link " aria-expanded="false" aria-controls="basic-mega-nav-section-6">
+              <span>About</span>
+            </button>
+                                    
+                <ul id="basic-mega-nav-section-6" class="usa-nav__submenu usa-megamenu">
+    
+                                                        
+        <li class="usa-nav__submenu-item with-nested-list ">
+                                                  <a href="/about" class="icon-building" data-drupal-link-system-path="group/275">About NSF</a>
+                                                
+          <ul class="usa-nav__submenu-list">
+    
+                                                        
+        <li>
+                                    <a href="/careers" data-drupal-link-system-path="node/1989">Careers at NSF</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/updates-on-priorities" data-drupal-link-system-path="node/119066">Updates on NSF Priorities</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/about/contact-us" data-drupal-link-system-path="node/95239">Contact Us</a>
+                                        </li>
+      
+    </ul>
+
+  
+                  </li>
+                                                        
+        <li class="usa-nav__submenu-item with-nested-list usa-nav__no-link">
+                                                <span class="">Our Directorates &amp; Offices</span>
+                                                
+          <ul class="usa-nav__submenu-list">
+    
+                                                        
+        <li>
+                                                  <a href="/about/directorates-offices" class="icon-org-chart" data-drupal-link-system-path="node/95240">How NSF Is Organized</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/bio" data-drupal-link-system-path="group/15">Biological Sciences (BIO)</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/cise" data-drupal-link-system-path="group/12">Computer &amp; Information Science &amp; Engineering (CISE)</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/eng" data-drupal-link-system-path="group/14">Engineering (ENG)</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/geo" data-drupal-link-system-path="group/13">Geosciences (GEO)</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/od/oia" data-drupal-link-system-path="group/25">Integrative Activities (OIA)</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/od/oise" data-drupal-link-system-path="group/28">International Science &amp; Engineering (OISE)</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/mps" data-drupal-link-system-path="group/10">Mathematical &amp; Physical Sciences (MPS)</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/sbe" data-drupal-link-system-path="group/11">Social, Behavioral &amp; Economic Sciences (SBE)</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/edu" data-drupal-link-system-path="group/17">STEM Education (EDU)</a>
+                                        </li>
+                                                        
+        <li>
+                                    <a href="/tip/latest" data-drupal-link-system-path="node/14838">Technology, Innovation &amp; Partnerships (TIP)</a>
+                                        </li>
+                                      
+        <li>
+                                    <a href="https://ncses.nsf.gov">National Center for Science &amp; Engineering Statistics (NCSES)</a>
+                                        </li>
+                                      
+        <li>
+                                    <a href="https://www.nsf.gov/nsb/">National Science Board (NSB)</a>
+                                        </li>
+      
+    </ul>
+
+  
+                  </li>
+      
+    </ul>
+
+  
+                  </li>
+      
+    </ul>
+
+  
+
+
+
+
+
+
+
+
+  </div>
+
+            
+                      </nav>
+
+        </div>
+      </div>
+
+          </div>
+    
+  </section>
+
+</header>
+
+      <div id="content-wrap">
+  
+  
+                <div>
+      
+<section aria-label="Main image and title"   class="hero__wrapper  dynamic-image-overlay hero__wrapper--dynamic-image-overlay "
+   data-is-footer-caption-credit data-media-id="10089" data-footer-caption-credit-src="https://nsf-gov-resources.nsf.gov/styles/image_credit_caption_block_130x78_/s3/2023-04/AI_Machine_Learning_2.png?itok=jU2-TArV" data-caption="While a normal brain emits waves to signal function, an AI brain uses algorithms to execute functions." data-credit="Alice Kitterman/U.S. National Science Foundation" data-component-id="nsf_theme:hero">
+
+      <picture  class="hero__media hero__image">
+      <source srcset="https://nsf-gov-resources.nsf.gov/styles/hero/s3/2023-04/AI_Machine_Learning_2.png.webp?itok=Pn3fJBPk" media="(min-width: 1204px)" type="image/webp" />
+      <source srcset="https://nsf-gov-resources.nsf.gov/styles/hero_medium/s3/2023-04/AI_Machine_Learning_2.png.webp?itok=98YeQ2Zw" media="(min-width: 580px)" type="image/webp" />
+      <img class="hero__image-image" src="https://nsf-gov-resources.nsf.gov/styles/hero_small/s3/2023-04/AI_Machine_Learning_2.png.webp?itok=NTPeKcaL"  alt="brain emits waves illustration"  />
+    </picture>
+
+    
+          <span class="hero__overlay"></span>
+    
+    
+<div class="hero hero--default hero--style-dynamic-image-overlay  hero--media-type-image">
+	<div class="hero__content hero__content--default ">
+		<div class="hero__content-inner">
+
+			<div class="hero__meta">
+
+  
+    
+</div>
+
+																	<h1 class="hero__title hero-heading">National Artificial Intelligence Research Resource</h1>
+							
+			
+					</div>
+
+			</div>
+</div>
+
+          <div class="hero-credit-caption__wrapper">
+	<div class="hero-credit-caption">
+		<div class="hero-credit-caption__content">
+			<div class="icon__camera">
+  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><circle cx="12" cy="12" r="3.2" fill="#005EA2" /><path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z" fill="#005EA2"/></svg>
+</div>
+
+													
+			<div class="hero-credit-caption__text">
+				<a
+     class="credit__link"  href="#image-caption-credit-block"
+    >
+  View image credit &amp; caption</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+    
+  </section>
+    </div>
+            
+  
+    <section  class="usa-section uswds-middle-section">
+    <div class="grid-container">
+      <div class="grid-row grid-gap-lg">
+
+                <div class="mobile-lg:grid-col-fill">
+            <div class="region region-breadcrumb">
+    
+<div id="block-nsf-theme-breadcrumbs" class="block block-system block-system-breadcrumb-block block-nsf-theme-breadcrumbs">
+  
+    
+                                                                                                          <nav aria-label="Breadcrumb" id="system-breadcrumb" class="breadcrumbs">
+  <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+      <a href="/" class="breadcrumbs__item--url">Home</a>
+  </li>
+          <li class="breadcrumbs__item">
+      <a href="/focus-areas" class="breadcrumbs__item--url">Our Focus Areas</a>
+  </li>
+          <li class="breadcrumbs__item">
+      <a href="/focus-areas/si" class="breadcrumbs__item--url">Super Intelligence</a>
+  </li>
+          <li class="breadcrumbs__item">
+      <span class="breadcrumbs__item--current" aria-current="page">National Artificial Intelligence Research Resource</span>
+  </li>
+      </ol>
+</nav>
+
+  </div>
+
+  </div>
+
+        </div>
+        
+                        
+        
+
+                
+      </div>
+    </div>
+  </section>
+  
+      
+      <section class="alerts-wrapper grid-container" role="status">
+      
+  
+
+
+
+
+
+
+  <div class="usa-alert alert--in-page is-collapsible is-collapsed usa-alert--warning  usa-alert--slim   "  data-component-id="nsf_theme:alert">
+
+    
+      
+      
+
+      <div class="usa-alert__body message-content">
+                <div class="usa-alert__text">
+  <p>Per the Sept. 29, 2026, <a href="https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/">Executive Order 14434: Inaugurating the Era of Super Intelligence</a>, NSF is working to update its communications to incorporate the term "super intelligence" as directed.</p>
+
+
+                  </div>
+      </div>
+
+      </div>
+
+
+
+    </section>
+  
+  
+  
+                        <div  class="uswds-main-content-wrapper grid-container not-search-page three-col-layout">
+          
+              
+    
+
+  <div class="grid-row">
+    
+    
+          </div>
+
+
+            
+    
+    
+<div class="grid-row grid-gap-6">
+
+  
+
+        <main class="region-content full-width-container tablet:grid-col-12">
+      <div id="content-article-wrap">
+          <div class="region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+<div id="block-nsf-theme-content" class="block block-system block-system-main-block block-nsf-theme-content">
+  
+    
+      
+<article class="node node--type-layout-builder-page node--promoted node--view-mode-full">
+
+      
+    
+    
+  
+  <div class="node__content">
+
+                  
+
+<article class="node text__container node--type-layout-builder-page node--promoted node--view-mode-pre-layout-fields">
+  
+</article>
+
+            
+  <div class="layout-container--wrapper nsf-layout nsf-layout--twocol-60-40 constrained-width">
+    <div class="nsf-layout--outer">
+      <div class="nsf-layout--inner">
+              </div>
+      <div class="nsf-layout--inner">
+        <div  class="layout__region layout__region--first">
+          
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+    
+
+      <div class="body-1"><p>Artificial intelligence is accelerating discovery, economic competitiveness and the future workforce, making access to advanced AI research and education resources essential to U.S. leadership in innovation.</p></div>
+  
+      <div class="text__content text-formatted"><p>The U.S. National Science Foundation-led National Artificial Intelligence Research Resource (NAIRR) is a scalable national infrastructure that provides the research and education communities with access to the critical computing, software, data, models, educational resources and expertise needed to advance AI innovation for the U.S.</p><p>The key goals of NAIRR are:</p><ul type="disc"><li><span>Accelerate AI and AI-powered discovery and innovation.</span></li><li><span>Expand the AI workforce and train the next generation of AI researchers and educators.</span></li><li><span>Increase capacity, integration and use of world-class public and private-sector AI resources.</span></li><li><span>Advance AI interpretability, security and trust.</span></li></ul></div>
+  
+</section>
+</div>
+
+<div class="block block-layout-builder block-inline-blockfile">
+
+  
+  
+
+    
+  
+
+
+            <div class="field field-file">
+                  <div>
+
+    
+      
+
+
+<article class="featured-file-link featured-file media media--type-file media--view-mode-featured-file"  class="media media--type-file media--view-mode-featured-file" data-component-id="nsf_theme:featured-file-link">
+
+  <div class="featured__image">
+          <img class="" src="https://nsf-gov-resources.nsf.gov/styles/featured_file_thumbnail_115x150_/s3/2026-03/NAIRR-2-Year-Progress-Update-cover.jpg?itok=fOAC0B7M" alt="report cover with NSF logo and text displaying a number 2 - Two years in National AI Research Resource NAIRR"  />
+      </div>
+
+  <div class="featured__text">
+
+    <h3 class="featured__title">
+      <a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-2-Year-Progress-Update.pdf">NAIRR Two Year Progress Update
+                  <span span class="featured__metadata">(PDF, 7.86 MB)</span>
+              </a>
+    </h3>
+
+    
+    
+  </div>
+</article>
+</div>
+              </div>
+      
+
+</div>
+
+        </div>
+
+        <div  class="layout__region layout__region--second">
+          
+<div class="block block-nsf-custom block-table-of-contents-block">
+  
+    
+      
+  
+            
+    <div class="table-of-contents">
+      
+      <h2 class="table-of-contents__title">
+        <img class="icon-document" src="/themes/custom/nsf_theme/images/icons/document.svg" alt=""  />
+        On this page
+      </h2>
+
+              <nav aria-label="Table of Contents" class="table-of-contents__items">
+          
+          <ol class="table-of-contents__list">
+                                                                                                                                                      <li>
+                      <a href="#about-nairr-bcb">About NAIRR</a>
+                    </li>
+                                      <li>
+                      <a href="#how-to-get-involved-761">How to get involved</a>
+                    </li>
+                                      <li>
+                      <a href="#nairr-partners-and-contributors-890">NAIRR partners and contributors</a>
+                    </li>
+                                      <li>
+                      <a href="#about-the-nairr-task-force-72e">About the NAIRR Task Force</a>
+                    </li>
+                                      <li>
+                      <a href="#additional-resources-11f">Additional resources</a>
+                    </li>
+                                                                      </ol>
+          
+                            </nav>
+      
+    </div>
+
+  
+  </div>
+
+        </div>
+      </div>
+      <div class="nsf-layout--inner">
+              </div>
+    </div>
+  </div>
+
+
+  <div class="layout-container--wrapper nsf-layout nsf-layout--base constrained-width">
+    <div class = "nsf-layout--outer">
+      <div class = "nsf-layout--inner">
+        <div  class="layout__region layout__region--main">
+          
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+      <h2 id="about-nairr-bcb" class="text__title">About NAIRR</h2>
+    
+
+  
+  
+</section>
+</div>
+
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+    
+
+  
+      <div class="text__content text-formatted"><p>Initially established as a pilot in 2024, the NAIRR concept has become a proven national research infrastructure, supporting more than 600 research projects and 6,000 students across all 50 states, Washington, D.C. and Puerto Rico. By partnering with 13 other federal agencies and 28 nongovernmental partners, NAIRR bridges a gap that neither the private sector nor government can address alone: making available the tools to enable early, high-risk, high-reward research activities and building foundational AI capabilities long before they are commercially viable.</p><p>The pilot phase of NAIRR validated the importance of a coordinated national AI infrastructure and was recognized in the White House <a href="https://www.whitehouse.gov/wp-content/uploads/2026/01/WHOSTP-2025-Wins.pdf"><em>Science and Technology Highlights: Year One</em></a> report. Building on this success, and consistent with the <a href="https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf">White House AI Action Plan</a>, NSF has released an opportunity to establish the <a href="/funding/opportunities/nairr-oc-foundations-operating-national-artificial-intelligence/506437" data-entity-type="node" data-entity-uuid="1487096f-aca0-43df-b891-923527b55005" data-entity-substitution="canonical" title="Foundations for Operating the National Artificial Intelligence Research Resource: the NAIRR Operations Center (NAIRR-OC)">NAIRR Operations Center</a> to transition NAIRR from a pilot to a sustained national capability.</p><p>The next phase of NAIRR will establish a lean, long-term operational structure that, through continued partnerships with leading technology companies, expands access to world-class resources and creates practical pathways for researchers, startups and small businesses to participate in a competitive, open and innovative AI ecosystem, directly advancing the AI Action Plan's directive to foster open, innovative and competitive AI development.</p></div>
+  
+</section>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout-container--wrapper nsf-layout nsf-layout--twocol constrained-width">
+    <div class="nsf-layout--outer">
+      <div class="nsf-layout--inner">
+                  <div  class="layout__region layout__region--headline">
+            
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+    
+
+  
+      <div class="text__content text-formatted"><h3>Operational focus areas</h3></div>
+  
+</section>
+</div>
+
+          </div>
+              </div>
+      <div class="nsf-layout--inner">
+        <div  class="layout__region layout__region--first">
+          
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+    
+
+  
+      <div class="text__content text-formatted"><blockquote><h3>NAIRR for Research</h3><p>Led by NSF, this focus area advances U.S. AI leadership and AI-enabled scientific discovery by expanding access to advanced AI research resources through the NAIRR portal and coordinated allocations, including deep collaboration opportunities with private sector partners.</p></blockquote></div>
+  
+</section>
+</div>
+
+        </div>
+
+        <div  class="layout__region layout__region--second">
+          
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+    
+
+  
+      <div class="text__content text-formatted"><blockquote><h3>NAIRR Secure</h3><p>Led by the National Institutes of Health and the U.S. Department of Energy, this focus area strengthens secure, privacy-preserving AI research by exploring the use of privacy/security-preserving infrastructure and the benefits of secure environments for research areas using high-quality AI-ready controlled-access data.</p></blockquote></div>
+  
+</section>
+</div>
+
+        </div>
+      </div>
+      <div class="nsf-layout--inner">
+              </div>
+    </div>
+  </div>
+
+  <div class="layout-container--wrapper nsf-layout nsf-layout--twocol constrained-width">
+    <div class="nsf-layout--outer">
+      <div class="nsf-layout--inner">
+              </div>
+      <div class="nsf-layout--inner">
+        <div  class="layout__region layout__region--first">
+          
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+    
+
+  
+      <div class="text__content text-formatted"><blockquote><h3>NAIRR Data and Models</h3><p>Led by NSF, this focus area promotes interoperability, reproducibility and efficient integration of AI software, platforms, tools, datasets and services, supporting scalable AI research across the NAIRR ecosystem.</p></blockquote></div>
+  
+</section>
+</div>
+
+        </div>
+
+        <div  class="layout__region layout__region--second">
+          
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+    
+
+  
+      <div class="text__content text-formatted"><blockquote><h3>NAIRR Classroom</h3><p>Led by NSF, this focus area develops an AI-ready workforce by expanding education, training, user support and outreach to new and nontraditional research and learning communities across the U.S.</p></blockquote></div>
+  
+</section>
+</div>
+
+        </div>
+      </div>
+      <div class="nsf-layout--inner">
+              </div>
+    </div>
+  </div>
+
+  <div class="palette palette--dark-blue layout-container--wrapper nsf-layout nsf-layout--twocol-40-60 constrained-width">
+    <div class="nsf-layout--outer">
+      <div class="nsf-layout--inner">
+              </div>
+      <div class="nsf-layout--inner">
+        <div >
+          
+        </div>
+
+        <div >
+          
+        </div>
+      </div>
+      <div class="nsf-layout--inner">
+                  <div  class="layout__region layout__region--footer">
+            
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+    
+
+      <div class="body-1"><blockquote><h2>Two Years In: NAIRR by the Numbers</h2></blockquote></div>
+  
+  
+</section>
+</div>
+
+<div class="block nsf-component quick-facts block-layout-builder block-inline-blockquick-facts">
+  
+  
+      
+  
+  <div class="quick-fact "  data-component-id="nsf_theme:quick-fact">
+
+  
+  
+
+  <div class="quick-fact__statistic">
+    ~$100M
+    <hr class="divider">
+  </div>
+
+  <div class="quick-fact__description">
+    <p>Private sector in-kind contributions</p>
+  </div>
+
+</div>
+
+  
+  <div class="quick-fact "  data-component-id="nsf_theme:quick-fact">
+
+  
+  
+
+  <div class="quick-fact__statistic">
+    28 Private + 14 Federal
+    <hr class="divider">
+  </div>
+
+  <div class="quick-fact__description">
+    <p>Partners</p>
+  </div>
+
+</div>
+
+  
+  <div class="quick-fact "  data-component-id="nsf_theme:quick-fact">
+
+  
+  
+
+  <div class="quick-fact__statistic">
+    600+
+    <hr class="divider">
+  </div>
+
+  <div class="quick-fact__description">
+    <p>Research and education projects</p>
+  </div>
+
+</div>
+
+  
+  <div class="quick-fact "  data-component-id="nsf_theme:quick-fact">
+
+  
+  
+
+  <div class="quick-fact__statistic">
+    6,000+
+    <hr class="divider">
+  </div>
+
+  <div class="quick-fact__description">
+    <p>Students supported</p>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+          </div>
+              </div>
+    </div>
+  </div>
+
+  <div class="palette palette--dark-blue layout-container--wrapper nsf-layout nsf-layout--twocol-40-60 constrained-width">
+    <div class="nsf-layout--outer">
+      <div class="nsf-layout--inner">
+                  <div  class="layout__region layout__region--headline">
+            
+<div class="block nsf-component quick-facts block-layout-builder block-inline-blockquick-facts">
+  
+  
+      
+  
+  <div class="quick-fact "  data-component-id="nsf_theme:quick-fact">
+
+  
+  
+
+  <div class="quick-fact__statistic">
+    50 States
+    <hr class="divider">
+  </div>
+
+  <div class="quick-fact__description">
+    <p>+DC +Puerto Rico</p>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+          </div>
+              </div>
+      <div class="nsf-layout--inner">
+        <div >
+          
+        </div>
+
+        <div >
+          
+        </div>
+      </div>
+      <div class="nsf-layout--inner">
+              </div>
+    </div>
+  </div>
+
+
+  <div class="layout-container--wrapper nsf-layout nsf-layout--base constrained-width">
+    <div class = "nsf-layout--outer">
+      <div class = "nsf-layout--inner">
+        <div  class="layout__region layout__region--main">
+          
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+    
+
+  
+  
+</section>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="palette palette--light-blue layout-container--wrapper nsf-layout nsf-layout--twocol full-browser-width">
+    <div class="nsf-layout--outer">
+      <div class="nsf-layout--inner">
+                  <div  class="layout__region layout__region--headline">
+            
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+      <h2 id="how-to-get-involved-761" class="text__title">How to get involved</h2>
+    
+
+  
+  
+</section>
+</div>
+
+          </div>
+              </div>
+      <div class="nsf-layout--inner">
+        <div  class="layout__region layout__region--first">
+          
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+    
+
+  
+      <div class="text__content text-formatted"><h3>Access resources:</h3><p>Visit <a href="https://nairrpilot.org/">nairrpilot.org to</a> explore opportunities for researchers, educators and students, including access to computational resources, cloud computing environments, AI-ready datasets, pre-trained models and more.</p></div>
+  
+</section>
+</div>
+
+        </div>
+
+        <div  class="layout__region layout__region--second">
+          
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+    
+
+  
+      <div class="text__content text-formatted"><h3>Participate in events and workshops:</h3><p>The NAIRR community of partners holds regular events and technical workshops to engage the community in an iterative design process. Visit <a href="https://nairrpilot.org/">nairrpilot.org</a> to learn about upcoming events and subscribe to the community-run NAIRR newsletter.</p></div>
+  
+</section>
+</div>
+
+        </div>
+      </div>
+      <div class="nsf-layout--inner">
+              </div>
+    </div>
+  </div>
+
+  <div class="layout-container--wrapper nsf-layout nsf-layout--twocol constrained-width">
+    <div class="nsf-layout--outer">
+      <div class="nsf-layout--inner">
+                  <div  class="layout__region layout__region--headline">
+            
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+      <h2 id="nairr-partners-and-contributors-890" class="text__title">NAIRR partners and contributors</h2>
+    
+
+  
+      <div class="text__content text-formatted"><p>Led by NSF, NAIRR brings together a coalition of federal agencies and nongovernmental contributors to make a wide range of resources available and accessible to the U.S. research community.</p></div>
+  
+</section>
+</div>
+
+          </div>
+              </div>
+      <div class="nsf-layout--inner">
+        <div  class="layout__region layout__region--first">
+          
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+    
+
+  
+      <div class="text__content text-formatted"><h3>Federal agency partners</h3><p>In addition to NSF, the following U.S. federal agencies are participating and contributing computational and data resources to NAIRR:</p></div>
+  
+</section>
+</div>
+
+  
+<div class="block block-layout-builder block-inline-blockcomponent-accordion nsf-component usa-accordion js-first-collapsed">
+  
+  
+
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-1s442575828"
+          aria-expanded="true"
+  >
+    Defense Advanced Research Projects Agency
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-1s442575828"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: DARPA will make a set of open-source tools and environments available to the NAIRR pilot user community, including those that support assurance of autonomous systems, development of machine common sense capabilities, and robustness against adversarial attacks.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-2N1394950850"
+          aria-expanded="true"
+  >
+    NASA
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-2N1394950850"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: NASA will provide datasets to support AI model development, contribute expertise in the development of foundational models, and offer hands-on tutorials to assist the research community in fine-tuning and using these models.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-3y360029187"
+          aria-expanded="true"
+  >
+    National Institute of Standards and Technology
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-3y360029187"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: NIST will provide expertise on best practices for AI governance, risk management, and testing and evaluation for responsible AI to aid in the management of the NAIRR pilot.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-4s1170016604"
+          aria-expanded="true"
+  >
+    National Institutes of Health
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-4s1170016604"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: NIH will co-lead the NAIRR Secure pilot effort with DOE and provide open and controlled-access to NIH computing and data platforms and biomedical datasets to support healthcare-focused AI research.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-5a1644050739"
+          aria-expanded="true"
+  >
+    National Oceanic and Atmospheric Administration
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-5a1644050739"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: Leveraging the NOAA Open Data Dissemination program, NOAA will make datasets of interest available to the NAIRR user community.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-6r2056368538"
+          aria-expanded="true"
+  >
+    U.S. Department of Agriculture
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-6r2056368538"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: USDA will make the forthcoming 2022 Census of Agriculture dataset available and accessible to the research community through the NAIRR pilot infrastructure.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-71704257987"
+          aria-expanded="true"
+  >
+    U.S. Department of Education
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-71704257987"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: ED will furnish education research and statistics datasets, while also providing expertise in the development and project management of foundational models. This support aims to aid the NAIRR pilot user community in accessing AI model development resources.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-8a2047962046"
+          aria-expanded="true"
+  >
+    U.S. Department of Energy
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-8a2047962046"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: DOE will provide allocations on the Summit pre-exascale supercomputer as well as access to AI testbeds, training resources and associated expertise, and will lead the NAIRR Secure pilot effort together with the National Institutes of Health.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-9f2143309726"
+          aria-expanded="true"
+  >
+    U.S. Department of Veterans Affairs
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-9f2143309726"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: VA will support the NAIRR pilot through its National AI Institute and AI Network including providing expertise (i.e., training and governance), best practices supporting trustworthy AI, lessons from AI pilots, as well as experience in supporting AI for health use cases. VA will collaborate on NAIRR Secure to explore health-related efforts most important to jointly serving the needs of veterans and Americans.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-101583706997"
+          aria-expanded="true"
+  >
+    U.S. Department of War
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-101583706997"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: DoD will contribute expertise to the management and allocation of NAIRR pilot computing resources as well as a responsible AI toolkit to assist NAIRR users in crafting responsible approaches to AI research.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-111658306755"
+          aria-expanded="true"
+  >
+    U.S. Food and Drug Administration
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-111658306755"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: FDA, via the Office of Science and Engineering Laboratories (OSEL) in the Center for Devices and Radiological Health (CDRH), will make AI-specific test methods, datasets and evaluation methodologies available to the NAIRR community. These tools, developed by OSEL's AI program, are intended to aid researchers and innovators with safety, effectiveness and performance assessment, in both premarket and real-world settings, of novel AI solutions.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-12u1520370536"
+          aria-expanded="true"
+  >
+    U.S. Geological Survey
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-12u1520370536"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: USGS is making datasets supporting AI model development available to the NAIRR pilot user community.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-13e536378582"
+          aria-expanded="true"
+  >
+    U.S. Patent and Trademark Office
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-13e536378582"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: USPTO will provide access to rich datasets for AI training and will support public challenges to spur the development of novel data products.</p></p>
+</div>
+  
+
+  
+</div>
+
+        </div>
+
+        <div  class="layout__region layout__region--second">
+          
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+    
+
+  
+      <div class="text__content text-formatted"><h3>Nongovernmental partners</h3><p>The following private sector, nonprofit and philanthropic partners committed to the NAIRR during its pilot phase:</p></div>
+  
+</section>
+</div>
+
+  
+<div class="block block-layout-builder block-inline-blockcomponent-accordion nsf-component usa-accordion js-first-collapsed">
+  
+  
+
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-1e866078698"
+          aria-expanded="true"
+  >
+    Allen Institute for Artificial Intelligence
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-1e866078698"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: Access to a fully open ecosystem of data, models, training and evaluation software necessary to support a scientific approach to AI research. Initial access will be provided to AI2 Dolma, the largest open dataset to support language model pre-training.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-2n1925503359"
+          aria-expanded="true"
+  >
+    Amazon Web Services
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-2n1925503359"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: Support for at least 20 research projects through access to AWS credits for storage, compute and AI services to build, train and deploy machine learning (ML) models. AWS will also work with the NAIRR pilot to publicize AWS resources to accelerate AI research, including access to pre-trained and customizable AI/ML models, AI/ML training resources and 500+ datasets through the Registry of Open Data on AWS.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-3D1007088288"
+          aria-expanded="true"
+  >
+    AMD
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-3D1007088288"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: Application support for NAIRR pilot users running applications on AMD hardware and collaboration with cloud vendor sites offering access to AMD hardware.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-4i696665147"
+          aria-expanded="true"
+  >
+    Anthropic
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-4i696665147"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: API access to Anthropic's Claude model for 10 researchers working on climate change-related projects. Anthropic will also provide educational resources to help those researchers experiment with prompt engineering. </p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-5e954078640"
+          aria-expanded="true"
+  >
+    Cerebras
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-5e954078640"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: Access to Cerebras systems and clusters, providing up to four EXAFLOPs of AI compute for NAIRR pilot projects and users and enabling them to rapidly train AI models. Cerebras will also contribute access to open-source datasets and models, and time from its expert data scientists and AI researchers to facilitate project selection, definition and success.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-6r437621502"
+          aria-expanded="true"
+  >
+    Databricks
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-6r437621502"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: Access to Databricks' Data Intelligence Platform for NAIRR pilot users. This will facilitate use of Databricks' data processing tools by the research community to analyze existing datasets and create entirely new ones.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-7D999262031"
+          aria-expanded="true"
+  >
+    Datavant
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-7D999262031"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: $2.6 million in the form of access to Datavant's privacy-preserving record linkage platform, privacy-preserving data discovery tools, and staff expertise in support of the NAIRR Secure NIH component of the pilot as well as elements of the future NAIRR software stack.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-8E1462608524"
+          aria-expanded="true"
+  >
+    EleutherAI
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-8E1462608524"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: 100,000 hours of GPU access to support an effort in the research community to train a foundation model for scientific research, in addition to support and expertise for using EleutherAI's large language model training library on high-performance computing systems.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-9o685450478"
+          aria-expanded="true"
+  >
+    Google
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-9o685450478"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: Collaboration across Google Colab, Kaggle and Data Commons programs, including licenses for Colab's virtual notebooks, integration of Kaggle public resources onto NAIRR pilot infrastructure, and partnership on competitions and red teaming of models. In addition, Data Commons will co-locate an instance of Data Commons with NAIRR pilot computing infrastructure to facilitate the ability of the research community to use its diverse, integrated datasets.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-10q1150140099"
+          aria-expanded="true"
+  >
+    Groq
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-10q1150140099"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><span>Groq is providing access for up to 10 research teams to use Groq's Language Processing Unit (LPU) Inference Engine via GroqCloud.</span></p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-11e1413300572"
+          aria-expanded="true"
+  >
+    Hewlett Packard Enterprise
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-11e1413300572"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Proposed contribution</strong>: Time on GPU-powered supercomputing platforms and discounts on supercomputing resources for potential expansion of the NAIRR pilot. In addition, HPE will provide licenses to HPE Machine Learning Development Environment and HPE Machine Learning Data Management Software along with hands-on training for researchers who will have access to datasets, digital twins and performance and productivity tools.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-12F992246465"
+          aria-expanded="true"
+  >
+    Hugging Face
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-12F992246465"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: 100 compute grants for NAIRR pilot projects and participants to support access to Hugging Face Spaces demos of systems and model evaluation, inference and fine-tuning. Hugging Face will also partner with the NAIRR pilot to set up sharing and evaluation leaderboards for datasets and models developed through or hosted by the pilot.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-13M1781634062"
+          aria-expanded="true"
+  >
+    IBM
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-13M1781634062"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: Datasets and benchmarks focused on AI safety and trust evaluation as well as geospatial, time series, materials and chemistry foundation models. IBM will also provide expertise and assistance to researchers working with these resources.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-14n1334431330"
+          aria-expanded="true"
+  >
+    Intel
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-14n1334431330"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: Technical training on Intel server platforms, AI technologies and software optimization for NAIRR pilot users working with Intel hardware.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-15x35712975"
+          aria-expanded="true"
+  >
+    Lexset
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-15x35712975"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution: </strong>Access to Lexset's Seahaven synthetic data creation software and tools. Lexset will also provide staff time and expertise to support research community data creation projects.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-16a1210390360"
+          aria-expanded="true"
+  >
+    Meta
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-16a1210390360"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: Collaboration with NAIRR pilot researchers to support research on Meta's Llama suite of models, consistent with applicable model licenses.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-17i119007624"
+          aria-expanded="true"
+  >
+    Microsoft
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-17i119007624"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: $20 million in compute credits on Microsoft Azure, along with access to leading-edge models, including those available via Azure OpenAI Service. Availability of state-of-the-art resources for developing trustworthy and responsible AI applications, including tools for research and development (R&amp;D) on AI fairness, accuracy, reliability, transparency, privacy and security, and model orchestration. Offerings include resources to enable HIPAA-compliant computing in support of health care research, access to innovative tools for scientific discovery through Azure Quantum Elements, and opportunities to forge collaborative relationships with Microsoft's scientists and engineers.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-18L771621782"
+          aria-expanded="true"
+  >
+    MLCommons
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-18L771621782"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: Access to the MLCommons technology platform to enable testing of AI systems as well as access to AI benchmarks and the suite of MLPerf training, inference and storage benchmarks. MLCommons will also provide hosting services for select open datasets developed by the NAIRR pilot user community.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-19D220130308"
+          aria-expanded="true"
+  >
+    NVIDIA
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-19D220130308"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: $30 million in overall support for the pilot, including $24 million worth of computing on NVIDIA's DGX  Cloud platform integrated with NVIDIA AI software tools and supported by technical subject-matter experts to assist NAIRR pilot users. In addition, NVIDIA will provide AI software platform licenses to national supercomputing centers integrated with the NAIRR pilot, and run deep-learning workshops, AI boot camps and AI hackathons for NAIRR pilot users.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-20r1556547784"
+          aria-expanded="true"
+  >
+    Omidyar Network
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-20r1556547784"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: $500,000 in support of the pilot effort, which includes computing infrastructure, dedicated staff time and expertise from portfolio partners. Additionally, Omidyar Network will co-sponsor workshops and future calls for proposals, fostering an inclusive environment for innovation and knowledge-sharing.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-21n573395942"
+          aria-expanded="true"
+  >
+    OpenAI
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-21n573395942"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: Up to $1 million in credits for model access for research related to AI safety, evaluations and societal impacts, and up to $250,000 in model access and/or ChatGPT accounts to support applied research and coursework at historically Black colleges and universities and minority-serving institutions. Additionally, OpenAI will provide next-generation AI technology and data processing tools to aid in the digitization and structuring of large-scale datasets that are not currently available for research.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-22n641384443"
+          aria-expanded="true"
+  >
+    OpenMined
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-22n641384443"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: Access to an integrated architecture based on privacy-enhancing technologies and up to $500,000 in cloud credits to support research partnerships working to develop AI solutions with sensitive or distributed data.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-23n764852656"
+          aria-expanded="true"
+  >
+    Palantir
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-23n764852656"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><span><strong>Contribution</strong>:&nbsp;Supports the NAIRR Secure pilot and the expansion of the </span><a href="https://ncats.nih.gov/research/research-activities/n3c/overview"><span>National Clinical Cohort Collaborative</span></a><span> through access to Palantir’s </span><a href="https://www.palantir.com/platforms/foundry/"><span>Foundry</span></a><span> and </span><a href="https://www.palantir.com/platforms/aip/"><span>AIP</span></a><span> platforms deployed at the National Institutes of Health, including compute hours and platform support resources.</span></p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-24e1858670630"
+          aria-expanded="true"
+  >
+    Regenstrief Institute
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-24e1858670630"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: Large-scale clinical datasets derived from real-world health care data in support of the NAIRR Secure pilot to bolster AI research and innovation in health care.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-25m1719878656"
+          aria-expanded="true"
+  >
+    SambaNova Systems
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-25m1719878656"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: Hosted environment for NAIRR pilot researchers to access pre-configured generative AI and large language models for domain specific fine-tuning and experimentation. Researchers will receive training and technical support to ensure project success. Technical assistance will also be provided for researchers utilizing the SambaNova cluster deployed at Argonne National Laboratory.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-26e1312328277"
+          aria-expanded="true"
+  >
+    Vocareum
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-26e1312328277"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: $2.4 million in the form of access to Vocareum notebooks and cloud resources for 20,000 students, enabling educators to deliver hands-on AI education in their classrooms.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-27k401724317"
+          aria-expanded="true"
+  >
+    Voltage Park
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-27k401724317"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution: </strong>One million GPU-hour compute credits, localized storage and associated staff time and expertise to support projects for the research community.</p></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-28g41665473"
+          aria-expanded="true"
+  >
+    Weights &amp; Biases
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-28g41665473"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><strong>Contribution</strong>: Free academic licenses for NAIRR pilot users to access Weights &amp; Biases' AI Developer Platform, and technical support to maximize impact from use of the platform.</p></p>
+</div>
+  
+
+  
+</div>
+
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+    
+
+  
+      <div class="text__content text-formatted"><p>In addition, the recently formed <strong>AI Alliance will</strong> work with NAIRR as a collaborating consortium, making the open-source tools and models developed by the AI Alliance accessible to the broader AI research community through the NAIRR platform.</p></div>
+  
+</section>
+</div>
+
+        </div>
+      </div>
+      <div class="nsf-layout--inner">
+              </div>
+    </div>
+  </div>
+
+
+  <div class="palette palette--dark-blue layout-container--wrapper nsf-layout nsf-layout--base full-browser-width">
+    <div class = "nsf-layout--outer">
+      <div class = "nsf-layout--inner">
+        <div  class="layout__region layout__region--main">
+          
+
+
+  
+  
+    
+                      
+  
+  
+
+
+<div class="card-dark-blue card-dark-blue--horizontal block block-layout-builder block-inline-blockcomponent-featured-content"  class="block block-layout-builder block-inline-blockcomponent-featured-content" data-media-id="51809" data-is-footer-caption-credit data-src="https://nsf-gov-resources.nsf.gov/media_hub/20240507_AI_Expo_CG_0014.jpg" data-footer-caption-credit-src="https://nsf-gov-resources.nsf.gov/styles/image_credit_caption_block_130x78_/s3/media_hub/20240507_AI_Expo_CG_0014.jpg?itok=6vUKL3nb" data-caption="The AI Expo for National Competitiveness 2024" data-credit="Charlotte Geary/NSF" data-component-id="nsf_theme:card-dark-blue">
+
+	<div class="card-dark-blue__inner">
+
+		<div class="card-dark-blue__content  fullwidth">
+
+			<div class="card-dark-blue__image">
+
+				<div class="card-dark-blue__image--image">
+																  <picture>
+                  <source srcset="https://nsf-gov-resources.nsf.gov/styles/featured_content_tablet/s3/media_hub/20240507_AI_Expo_CG_0014.jpg.webp?itok=-FM6M2X5 1x" media="all and (min-width: 640px)" type="image/webp" width="500" height="324"/>
+              <source srcset="https://nsf-gov-resources.nsf.gov/styles/featured_content_tablet/s3/media_hub/20240507_AI_Expo_CG_0014.jpg?itok=-FM6M2X5 1x" media="all and (min-width: 640px)" type="image/jpeg" width="500" height="324"/>
+              <source srcset="https://nsf-gov-resources.nsf.gov/styles/featured_content_mobile/s3/media_hub/20240507_AI_Expo_CG_0014.jpg.webp?itok=j2ZCAeYC 1x" media="all and (min-width: 0)" type="image/webp" width="595" height="400"/>
+                  <img width="500" height="324" src="https://nsf-gov-resources.nsf.gov/styles/featured_content_tablet/s3/media_hub/20240507_AI_Expo_CG_0014.jpg?itok=-FM6M2X5" alt="The AI Expo for National Competitiveness 2024" loading="lazy" />
+
+  </picture>
+
+															</div>
+
+																		<span role="img" aria-label="The AI Expo for National Competitiveness 2024" class="card-dark-blue__background-image" style="background-image: url(https://nsf-gov-resources.nsf.gov/styles/featured_content_tablet/s3/media_hub/20240507_AI_Expo_CG_0014.jpg?itok=-FM6M2X5);"></span>
+				
+			</div>
+
+			<div class="card-dark-blue__text">
+
+				
+				<h3>
+					<a href="mailto:NAIRR_Pilot@nsf.gov">Join as a partner</a>
+				</h3>
+				
+
+									<p>NAIRR welcomes additional contributing partners.</p>
+				
+									
+
+<a href="mailto:NAIRR_Pilot@nsf.gov"
+   title="Contact us"
+   class="link-button usa-button usa-button--outline usa-button--inverse "
+>
+  Contact us
+</a>
+				
+			</div>
+		</div>
+
+		
+	</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout-container--wrapper nsf-layout nsf-layout--twocol-60-40 constrained-width">
+    <div class="nsf-layout--outer">
+      <div class="nsf-layout--inner">
+                  <div  class="layout__region layout__region--headline">
+            
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+      <h2 id="about-the-nairr-task-force-72e" class="text__title">About the NAIRR Task Force</h2>
+    
+
+  
+  
+</section>
+</div>
+
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+    
+
+  
+      <div class="text__content text-formatted"><p>The "<a href="https://www.congress.gov/116/crpt/hrpt617/CRPT-116hrpt617.pdf#page=1218">National Artificial Intelligence Initiative Act of 2020</a>" called on NSF, in coordination with the White House Office of Science and Technology Policy (OSTP), to form a National AI Research Resource Task Force to investigate the feasibility of establishing a NAIRR and develop a roadmap detailing how such a resource could be established and sustained.</p><p>Launched in June 2021, the NAIRR Task Force culminated its work in April 2023, dissolving 90 days after the submission of its final report, per its legislative mandate.</p><p>In its final report, the NAIRR Task Force laid out a phased approach for implementing NAIRR, including its administration, policies, security framework and cyberinfrastructure.</p></div>
+  
+</section>
+</div>
+
+          </div>
+              </div>
+      <div class="nsf-layout--inner">
+        <div >
+          
+        </div>
+
+        <div  class="layout__region layout__region--second">
+          
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+    
+
+  
+  
+</section>
+</div>
+
+        </div>
+      </div>
+      <div class="nsf-layout--inner">
+              </div>
+    </div>
+  </div>
+
+  <div class="layout-container--wrapper nsf-layout nsf-layout--twocol constrained-width">
+    <div class="nsf-layout--outer">
+      <div class="nsf-layout--inner">
+              </div>
+      <div class="nsf-layout--inner">
+        <div  class="layout__region layout__region--first">
+          
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+    
+
+  
+      <div class="text__content text-formatted"><h3>Task force members</h3><p>Congress directed that the director of OSTP and the director of NSF, or their designees, serve as the co-chairpersons of the NAIRR Task Force. It also mandated that the task force be composed of 12 technical experts: four from government, four from institutions of higher education and four from private organizations.</p></div>
+  
+</section>
+</div>
+
+  
+<div class="block block-layout-builder block-inline-blockcomponent-accordion nsf-component usa-accordion js-first-collapsed">
+  
+  
+
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-1e1806882886"
+          aria-expanded="true"
+  >
+    Task force members
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-1e1806882886"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p>The following experts served on the NAIRR Task Force. Titles listed reflect those held at the time of service on the task force:</p><ul><li><strong>Tess DeBlanc-Knowles (co-chair, beginning Aug. 2022)</strong>, Senior Policy Advisor, National AI Initiative Office, White House Office of Science and Technology Policy.</li><li><strong>Manish Parashar (co-chair, beginning Oct. 2021)</strong>, Office Director of the Office of Advanced Cyberinfrastructure, U.S. National Science Foundation.&nbsp;</li><li><strong>Lynne Parker (co-chair, June 2021 – August 2022)</strong>, was Founding Director of the National AI Initiative Office, White House Office of Science and Technology Policy.&nbsp;</li><li><strong>Erwin Gianchandani (co-chair, June 2021 – October 2021)</strong>, Senior Advisor for Translation, Innovation and Partnerships, U.S. National Science Foundation.</li><li><strong>Daniela Braga</strong>, Founder and CEO of DefinedCrowd.&nbsp;</li><li><strong>Mark E. Dean</strong>, Ph.D.&nbsp;</li><li><strong>Oren Etzioni</strong>, CEO, Allen Institute for AI.&nbsp;</li><li><strong>Julia Lane</strong>, Professor, New York University; CEO, the Coleridge Initiative.</li><li><strong>Fei-Fei Li</strong>, Sequoia Professor of Computer Science at Stanford University and Denning Co-Director of the Stanford Institute for Human-Centered AI (HAI).</li><li><strong>Andrew Moore</strong>, Vice President and General Manager, Google Cloud AI and Industry Solutions.&nbsp;</li><li><strong>Michael L. Norman</strong>, Distinguished Professor, University of California, San Diego.</li><li><strong>Dan Stanzione</strong>, Executive Director, Texas Advanced Computing Center/Associate Vice President for Research, The University of Texas at Austin.&nbsp;</li><li><strong>Frederick H. Streitz</strong>, Chief Computational Scientist, Lawrence Livermore National Laboratory.</li><li><strong>Elham Tabassi</strong>, Chief of Staff, Information Technology Laboratory, National Institute of Standards and Technology.</li></ul></p>
+</div>
+  
+
+  
+</div>
+
+        </div>
+
+        <div  class="layout__region layout__region--second">
+          
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+    
+
+  
+      <div class="text__content text-formatted"><h3>Task force meeting materials</h3><p>Materials from the task force's public meetings are available below.</p></div>
+  
+</section>
+</div>
+
+  
+<div class="block block-layout-builder block-inline-blockcomponent-accordion nsf-component usa-accordion js-first-collapsed">
+  
+  
+
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-1e1154019533"
+          aria-expanded="true"
+  >
+    Meeting #1: July 28, 2021
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-1e1154019533"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><em><span>Meeting #1:</span></em><span>&nbsp;July 28, 2021, from 1:00–5:00 p.m. EDT.&nbsp; For more information, refer to&nbsp;</span><a href="https://www.federalregister.gov/documents/2021/06/24/2021-13332/national-artificial-intelligence-research-resource-task-force-notice-of-meeting" target="_blank" title="Federal Register Notice 86 FR 33380"><span>Federal Register Notice 86 FR 33380</span></a><span>.</span></p><ul type="disc"><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Agenda-07282021.pdf?VersionId=Wa1i7NGNwuSBwctDgCLvnATPUgDGxK3I"><span>Agenda</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Presentations-07282021.pdf?VersionId=oe76jymBnRU4.h6gu3mAkfgQ3OXfhsAZ"><span>Presentations</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Meeting-Minutes-07282021.pdf?VersionId=lAyw.PkRiEV_CVsaObfnibEN5_FOdcVx"><span>Minutes</span></a></li><li><a href="https://www.whitehouse.gov/ostp/news-updates/2021/07/29/readout-of-the-first-national-artificial-intelligence-research-resource-task-force-meeting/"><span>Meeting readout</span></a></li><li><a href="https://players.brightcove.net/679256133001/NkgrDczuol_default/index.html?videoId=6291784955001"><span>Video recording</span></a></li></ul></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-2g766119461"
+          aria-expanded="true"
+  >
+    Meeting #2: Aug. 30, 2021
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-2g766119461"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><em><span>Meeting #2</span></em><span>: August 30, 2021, from 11:00 a.m. – 5:00 p.m. EDT. For more information, refer to&nbsp;</span><a href="https://www.federalregister.gov/documents/2021/08/04/2021-16566/national-artificial-intelligence-research-resource-task-force-notice-of-meeting" target="_blank" title="Federal Register Notice 86 FR 41997"><span>Federal Register Notice 86 FR 41997</span></a><span>.</span></p><ul type="disc"><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Agenda-08302021.pdf?VersionId=ehkbPIZB6Uac.K0JCODfuzLB.4FOWnOw"><span>Agenda</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Presentations-08302021.pdf?VersionId=Bgfg.J4.5UvFm1xQ0x4Ls6jng.Id9PGe"><span>Presentations</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Meeting-Minutes-08302021.pdf?VersionId=D47RXei6ZIMK21NWv717PBV3sSdX6qCS"><span>Minutes</span></a></li><li><a href="https://players.brightcove.net/679256133001/NkgrDczuol_default/index.html?videoId=6294164217001"><span>Video recording<sup>*</sup></span></a></li></ul></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-3327490811"
+          aria-expanded="true"
+  >
+    Meeting #3: Oct. 25, 2021
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-3327490811"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><em><span>Meeting #3</span></em><span>: October 25, 2021, from 11:00 a.m. – 5:00 p.m. EDT. For more information, refer to&nbsp;</span><a href="https://www.federalregister.gov/documents/2021/08/10/2021-16980/national-artificial-intelligence-research-resource-task-force-notice-of-meeting" target="_blank" title="Federal Register Notice 86 FR 43684"><span>Federal Register Notice 86 FR 43684</span></a><span>.</span></p><ul type="disc"><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Agenda-10252021.pdf?VersionId=8q0UPs4QgcqfXLvfaWCKZ8EaUOR0IGiw"><span>Agenda</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Presentations-10252021.pdf?VersionId=pO2JQc1Ze.AyJT.J7Nx3kINcCh_1P.Fs"><span>Presentations</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Meeting-Minutes-10252021.pdf?VersionId=VP.RyaOT3G8ZNPOw8RxM94wmbu0Ou8_s"><span>Minutes</span></a></li><li><a href="https://www.whitehouse.gov/ostp/news-updates/2021/10/26/readout-of-the-third-national-artificial-intelligence-research-resource-nairr-task-force-meeting-and-announcement-of-posting-of-request-for-information-rfi-responses/"><span>Meeting readout</span></a></li><li><a href="https://players.brightcove.net/679256133001/NkgrDczuol_default/index.html?videoId=6291784796001"><span>Video recording<sup>*</sup></span></a></li></ul></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-40758892128"
+          aria-expanded="true"
+  >
+    Meeting #4: Dec. 13, 2021
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-40758892128"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><em><span>Meeting #4</span></em><span>: December 13, 2021, from 11:00 a.m. – 6:00 p.m. EST. For more information, refer to&nbsp;</span><a href="https://www.federalregister.gov/documents/2021/08/10/2021-16981/national-artificial-intelligence-research-resource-task-force-notice-of-meeting" target="_blank" title="Federal Register Notice 86 FR 43684"><span>Federal Register Notice 86 FR 43684</span></a><span>.</span></p><ul type="disc"><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Agenda-12132021.pdf?VersionId=7jSHuY6tft1hv1yC0qR6PJcIHMjbZ8Sv"><span>Agenda</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Presentations-12132021.pdf?VersionId=LI.TE9oXWVyVoCCGBmS6N84vUOkgi9HO"><span>Presentations</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Meeting-Minutes-12132021.pdf?VersionId=m55H9iR0ci0J67jz6pYzOgSYG5kWIZcQ"><span>Minutes</span></a></li><li><a href="https://www.whitehouse.gov/ostp/news-updates/2021/12/15/readout-of-the-fourth-national-artificial-intelligence-research-resource-nairr-task-force-meeting/"><span>Meeting readout</span></a></li><li><a href="https://players.brightcove.net/679256133001/NkgrDczuol_default/index.html?videoId=6292576305001"><span>Video recording (Part 1)</span></a></li><li><a href="https://players.brightcove.net/679256133001/NkgrDczuol_default/index.html?videoId=6292576303001"><span>Video recording (Part 2)</span></a></li></ul></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-5:1185211857"
+          aria-expanded="true"
+  >
+    Meeting #5: Feb. 16, 2022
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-5:1185211857"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><em><span>Meeting #5</span></em><span>: February 16, 2022, from 11:00 a.m. – 5:00 p.m. EDT. For more information, refer to&nbsp;</span><a href="https://www.federalregister.gov/documents/2021/11/26/2021-25779/national-artificial-intelligence-research-resource-task-force-notice-of-meeting" target="_blank" title="Federal Register Notice 86 FR 67500"><span>Federal Register Notice 86 FR 67500</span></a><span>.</span></p><ul type="disc"><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Agenda-02162022.pdf?VersionId=Hl00a.7psq5ac4p_ZqCOTMvsujQk3ToS"><span>Agenda</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Presentations-02162022.pdf?VersionId=9jZHOC6wBLQWdYjy19iKwVwuhGSYwOgY"><span>Presentations</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Meeting-Minutes-02162022.pdf?VersionId=AUZPhcSfklfqn84b4UNWg6t67OfU9kPD"><span>Minutes</span></a></li><li><a href="https://www.whitehouse.gov/ostp/news-updates/2022/02/22/readout-of-the-fifth-national-artificial-intelligence-research-resource-nairr-task-force-meeting/"><span>Meeting readout</span></a></li><li><a href="https://players.brightcove.net/679256133001/NkgrDczuol_default/index.html?videoId=6298512375001"><span>Video recording</span></a></li></ul></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-6:567057430"
+          aria-expanded="true"
+  >
+    Meeting #6: April 8, 2022
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-6:567057430"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><em><span>Meeting #6</span></em><span>: April 8, 2022, from 11:00 a.m. – 5:00 p.m. EDT. For more information, refer to&nbsp;</span><a href="https://www.federalregister.gov/documents/2022/02/28/2022-04101/national-artificial-intelligence-research-resource-task-force-notice-of-meeting" target="_blank" title="Federal Register Notice 87 FR 11100"><span>Federal Register Notice 87 FR 11100</span></a><span>.</span></p><ul type="disc"><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Agenda-04082021.pdf?VersionId=IstCcDCkmF6ynpOCbsnhcZ3TMQfFle0b"><span>Agenda</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Presentations-04082022.pdf?VersionId=sRX7kwH5x2FKQIvVAUAP5DPcXkl4b9wu"><span>Presentations</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Meeting-Minutes-04082022.pdf?VersionId=ODjOGcm99EE6rlcUNZlYw1wveWtdBd89"><span>Minutes</span></a></li><li><a href="https://www.whitehouse.gov/ostp/news-updates/2022/04/11/readout-of-the-sixth-national-artificial-intelligence-research-resource-nairr-task-force-meeting/"><span>Meeting readout</span></a></li><li><a href="https://players.brightcove.net/679256133001/NkgrDczuol_default/index.html?videoId=6304057355001"><span>Video recording</span></a></li></ul></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-7:208451174"
+          aria-expanded="true"
+  >
+    Meeting #7: May 20, 2022
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-7:208451174"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><em><span>Meeting #7</span></em><span>: May 20, 2022, from 2:00–3:00 p.m. EDT. For more information, refer to&nbsp;</span><a href="https://www.federalregister.gov/documents/2022/03/21/2022-05879/national-artificial-intelligence-research-resource-task-force-notice-of-meeting" target="_blank" title="Federal Register Notice 87 FR 16034"><span>Federal Register Notice 87 FR 16034</span></a><span>.</span></p><ul type="disc"><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Agenda-05202022.pdf?VersionId=BKcoxtfjQHwZ3UkfxmiNwQlDOEMFfvGa"><span>Agenda</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Presentations-05202022.pdf?VersionId=jKV9UNLLBw6XmKD0YPdTMpqKks21VitK"><span>Presentations</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Meeting-Minutes-05202022.pdf?VersionId=EmB3i4KtNMWw7lC9fqrMhGb_l42QsyKh"><span>Minutes</span></a></li><li><a href="https://players.brightcove.net/679256133001/NkgrDczuol_default/index.html?videoId=6306859194112"><span>Video recording</span></a></li></ul></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-8373720484"
+          aria-expanded="true"
+  >
+    Meeting #8: July 25, 2022
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-8373720484"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><em><span>Meeting #8</span></em><span>: July 25, 2022, from 11:00 a.m. – 5:00 p.m. EDT. For more information, refer to&nbsp;</span><a href="https://www.federalregister.gov/documents/2022/06/15/2022-12851/national-artificial-intelligence-research-resource-task-force-notice-of-meeting" target="_blank" title="Federal Register Notice 87 FR 36153"><span>Federal Register Notice 87 FR 36153</span></a><span>.</span></p><ul type="disc"><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Agenda-07252022.pdf?VersionId=NRuKbZC4em_DoE7zi9tSxA_R_rh3WeHo"><span>Agenda</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Presentations-07252022.pdf?VersionId=fVrTn30CwdAKgVx2n3vypOfYF5kDXsXx"><span>Presentations</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Meeting-Minutes-07252022.pdf?VersionId=l09_CKba6WQDYs48AszVuByN1iuDj9LI"><span>Minutes</span></a></li><li><a href="https://www.whitehouse.gov/ostp/news-updates/2022/08/02/readout-of-the-eighth-national-artificial-intelligence-research-resource-nairr-task-force-meeting/"><span>Meeting readout</span></a></li><li><a href="https://players.brightcove.net/679256133001/NkgrDczuol_default/index.html?videoId=6310387746112"><span>Video recording</span></a></li></ul></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-92503125072"
+          aria-expanded="true"
+  >
+    Meeting #9: Sep. 12, 2022
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-92503125072"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><em><span>Meeting #9</span></em><span>: September 12, 2022, from 11:00 a.m. – 5:00 p.m. EDT. For more information, refer to&nbsp;</span><a href="https://www.federalregister.gov/documents/2022/08/11/2022-17227/national-artificial-intelligence-research-resource-task-force-notice-of-meeting" target="_blank" title="Federal Register Notice 87 FR 49615"><span>Federal Register Notice 87 FR 49615</span></a><span>.</span></p><ul type="disc"><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Agenda-09122022.pdf?VersionId=TLxrwxABnvO12Eh6KgpfkD02.gUNZzzP"><span>Agenda</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Presentations-09122022.pdf?VersionId=gqmPfBP9xbfUQEw0m5H7M5GIyVmotBfL"><span>Presentations</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Meeting-Minutes-09122022.pdf?VersionId=wLRTZS5KIKQYm9NkJQtfpQwrgkH6Qj0q"><span>Minutes</span></a></li><li><a href="https://www.whitehouse.gov/ostp/news-updates/2022/09/19/readout-of-the-ninth-national-artificial-intelligence-research-resource-nairr-task-force-meeting/"><span>Meeting readout</span></a></li><li><a href="https://players.brightcove.net/679256133001/NkgrDczuol_default/index.html?videoId=6318870769112"><span>Video recording: Part 1</span></a></li><li><a href="https://players.brightcove.net/679256133001/NkgrDczuol_default/index.html?videoId=6318871851112"><span>Video recording: Part 2</span></a></li></ul></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-102389922918"
+          aria-expanded="true"
+  >
+    Meeting #10: Oct. 21, 2022
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-102389922918"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><em><span>Meeting #10</span></em><span>: October 21, 2022, from 1:00 p.m. – 3:00 pm. EDT. For more information, refer to&nbsp;</span><a href="https://www.federalregister.gov/documents/2022/09/22/2022-20478/national-artificial-intelligence-research-resource-task-force-notice-of-meeting" title="Federal Register Notice 87 FR 57927"><span>Federal Register Notice 87 FR 57927</span></a><span>.</span></p><ul type="disc"><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Agenda-10212022.pdf?VersionId=GuQRYKe5VSHTrOYbh.uCoxxt6wLNVKpF"><span>Agenda</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Presentations-10212022.pdf?VersionId=1rLJCtjsm3IPli.O6cSYI2QhIGIrWK35"><span>Presentations</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Meeting-Minutes-10212022.pdf?VersionId=0glvbx4zIY4nHIQEip3MQtcor33q729O"><span>Minutes</span></a></li><li><a href="https://www.whitehouse.gov/ostp/news-updates/2022/10/27/readout-of-the-tenth-meeting-of-the-national-artificial-intelligence-research-resource-nairr-task-force/" target="_blank" title="Meeting readout"><span>Meeting readout</span></a></li><li><a href="https://players.brightcove.net/679256133001/NkgrDczuol_default/index.html?videoId=6314786690112" target="_blank" title="Video recording"><span>Video recording</span></a></li></ul></p>
+</div>
+  
+
+  
+    
+          
+  
+        <h2 class="usa-accordion__heading">
+  <button type="button"
+          class="usa-accordion__button"
+          aria-controls="item-111359486698"
+          aria-expanded="true"
+  >
+    Meeting #11: Jan. 13, 2023
+  </button>
+</h2><div class="usa-accordion__content text-formatted field field-accordion" id="item-111359486698"  class="field field-accordion" data-component-id="nsf_theme:accordion-item">
+    <p><p><em><span>Meeting #11</span></em><span>: January 13, 2023 from 1:00–2:00 p.m. EST. For more information, refer to&nbsp;</span><a href="https://www.federalregister.gov/documents/2022/12/19/2022-27401/national-artificial-intelligence-research-resource-task-force-notice-of-meeting" target="_blank" title="Federal Register Notice 87 FR 77641"><span>Federal Register Notice 87 FR 77641</span></a></p><ul type="disc"><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Agenda-01132023.pdf?VersionId=QRs2PXwxSsD6ETYGRc6A9Sj7IC04lEse"><span>Agenda</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Presentations-01132023.pdf?VersionId=uxuCEielRZm5BVGMnb3uJ0x8XQQZ4iOl"><span>Presentations</span></a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Meeting-Minutes-01132023.pdf?VersionId=Qnt71pnkKDC21R0.RKgEHOe4jXOUGQFJ"><span>Minutes</span></a></li><li><a href="https://players.brightcove.net/679256133001/NkgrDczuol_default/index.html?videoId=6318815117112"><span>Video recording</span></a></li></ul></p>
+</div>
+  
+
+  
+</div>
+
+        </div>
+      </div>
+      <div class="nsf-layout--inner">
+              </div>
+    </div>
+  </div>
+
+  <div class="palette palette--light-gray layout-container--wrapper nsf-layout nsf-layout--twocol full-browser-width">
+    <div class="nsf-layout--outer">
+      <div class="nsf-layout--inner">
+                  <div  class="layout__region layout__region--headline">
+            
+<div class="block block-layout-builder block-inline-blockcomponent-text nsf-component">
+  <section class="text__container">
+
+  
+      <h2 id="additional-resources-11f" class="text__title">Additional resources</h2>
+    
+
+  
+      <div class="text__content text-formatted"><ul type="disc"><li><a href="https://nairrpilot.org/">NAIRR web portal</a></li><li><a href="https://www.whitehouse.gov/wp-content/uploads/2025/09/M-25-34-NSTM-2-Fiscal-Year-FY-2027-Administration-Research-and-Development-Budget-Priorities-and-Cross-Cutting-Actions.pdf">Fiscal Year 2027 Administration Research and Development Budget</a></li><li><a href="/focus-areas/si" data-entity-type="group" data-entity-uuid="c7bae80a-9cbb-49ab-bc2f-b5134026f948" data-entity-substitution="canonical" title="Super Intelligence"><span>NSF Artificial Intelligence</span></a></li><li><a href="https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf">Winning the Race: America's AI Action Plan</a></li><li><a href="https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf%22%EF%B7%9FHYPERLINK%20%22https://aiinstitutes.org/">AI Institutes Virtual Organization</a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/National-AI-Research-Resource-Task-Force-Charter-2021.pdf">National AI Research Resource Task Force Charter</a></li><li><a href="https://nsf-gov-resources.nsf.gov/files/NAIRR-TF-Interim-Report-2022.pdf?VersionId=.yhXZ_u9o_213S2qQHLt6BMTtmhQWoJe">NAIRR Task Force interim report to the President and Congress (2022)</a></li><li><a href="https://www.federalregister.gov/documents/2022/05/25/2022-11223/request-for-information-rfi-on-implementing-initial-findings-and-recommendations-of-the-national">NAIRR Task Force Request for Information (2022)</a></li><li><a href="https://www.federalregister.gov/documents/2021/07/23/2021-15660/request-for-information-rfi-on-an-implementation-plan-for-a-national-artificial-intelligence">NAIRR Task Force Request for Information (2021)</a></li></ul></div>
+  
+</section>
+</div>
+
+          </div>
+              </div>
+      <div class="nsf-layout--inner">
+        <div >
+          
+        </div>
+
+        <div >
+          
+        </div>
+      </div>
+      <div class="nsf-layout--inner">
+              </div>
+    </div>
+  </div>
+
+      </div>
+
+</article>
+
+  </div>
+
+  </div>
+
+      </div>
+    </main>
+    
+
+
+
+</div>
+
+              
+                </div>
+      
+  
+      </div>
+  
+
+<div class="usa-footer__return-to-top">
+  <div class="usa-footer__return-to-top--inner">
+    <a class="usa-button usa-button--secondary usa-button__link" href="#"><span class="arrow"></span>Top</a>
+  </div>
+</div>
+
+<footer class="usa-footer usa-footer--medium" role="contentinfo">
+
+            <div class="usa-footer__meta grid-container">
+      <ul>
+
+                  <li>
+            <span class="field__inline--label label__inline">Publication date: </span>
+            <time datetime="2024-01-24">
+              January 24, 2024
+            </time>
+          </li>
+        
+                  <li>
+            <span class="field__inline--label label__inline">Last updated: </span>
+            <time datetime="2026-10-06">
+              October 6, 2026
+            </time>
+          </li>
+        
+      </ul>
+    </div>
+  
+  
+  <div class="usa-footer__secondary-section usa-section">
+  <div class="grid-container">
+
+        <div class="grid-row grid-gap-2 nsf--secondary-footer">
+      <div class="usa-agency-information desktop:grid-col-4">
+        <div>
+          
+                          
+    
+<div>
+    <div class="usa-logo">
+    
+<a class="logo logo--footer" href="/">
+  <img src="/themes/custom/nsf_theme/components/molecules/logo/logo-desktop.png" alt="NSF - U.S. National Science Foundation - Home" class="logo__image logo__item" />
+        <img src="/themes/custom/nsf_theme/components/molecules/logo/logo-wordmark--white.svg" alt="" class="logo__text logo__item" aria-hidden="true" />
+  </a>
+
+  </div>
+</div>
+
+            
+            
+            
+        </div>
+
+                  <div class="usa-footer__contact-links">
+
+            
+            
+            
+            
+            <address>
+                            
+<div id="block-nsf-theme-address" class="block block-block-content block-block-contente9f5c07c-1ec9-4bdf-a83b-abf600274196 block-nsf-theme-address">
+  
+    
+      
+
+
+                    <div class="clearfix text-formatted field body"><p>Randolph Building<br>401 Dulany Street<br>Alexandria, VA 22314</p></div>
+            
+  </div>
+
+                              <div><a class="nsf--phone" href="tel:(703)292-5111">(703) 292-5111</a></div>
+                          </address>
+
+                        
+<div id="block-emailupdates" class="block block-block-content block-block-content0888028e-c0e0-438c-8538-7e831c88f2d0 block-emailupdates">
+  
+    
+      
+
+
+                    <div class="clearfix text-formatted field body"><p><span class="icon__envelope"><svg aria-hidden="true" fill="currentColor" viewBox="0 0 20 16" height="16" width="20"><path clip-rule="evenodd" d="M18 0H2C0.9 0 0.00999999 0.9 0.00999999 2L0 14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 4L10 9L2 4V2L10 7L18 2V4Z" fill="currentColor" fill-rule="evenodd" /></svg></span><a class="nsf--emailsignup" href="https://service.govdelivery.com/accounts/USNSF/subscriber/new?qsp=823">Sign up for email updates</a></p></div>
+            
+  </div>
+
+            
+<div id="block-socialmedialinks-footer" class="block-social-media-links block block-social-media-links-block block-socialmedialinks-footer">
+  
+    
+      
+
+<ul class="social-media-links--platforms platforms inline horizontal">
+      <li>
+      <a class="social-media-link-icon--facebook" href="https://www.facebook.com/US.NSF"  >
+        <img src="/libraries/nsf_iconset/facebook-icon_square_32x32.png" alt="Facebook">
+      </a>
+
+          </li>
+      <li>
+      <a class="social-media-link-icon--twitter" href="https://x.com/NSF"  aria-label="X (formerly known as Twitter)" title="X (formerly known as Twitter)" >
+        <img src="/libraries/nsf_iconset/x-twitter-icon_square_32x32.png" alt="X (formerly known as Twitter)">
+      </a>
+
+          </li>
+      <li>
+      <a class="social-media-link-icon--instagram" href="https://www.instagram.com/nsfgov"  >
+        <img src="/libraries/nsf_iconset/instagram-icon_square_32x32.png" alt="Instagram">
+      </a>
+
+          </li>
+      <li>
+      <a class="social-media-link-icon--youtube" href="https://www.youtube.com/user/VideosatNSF"  >
+        <img src="/libraries/nsf_iconset/youtube-icon_square_32x32.png" alt="YouTube">
+      </a>
+
+          </li>
+      <li>
+      <a class="social-media-link-icon--linkedin" href="https://www.linkedin.com/company/national-science-foundation"  >
+        <img src="/libraries/nsf_iconset/linkedin-icon_square_32x32.png" alt="LinkedIn">
+      </a>
+
+          </li>
+      <li>
+      <a class="social-media-link-icon--nsfrss" href="https://nsf.gov/rss"  >
+        <img src="/libraries/nsf_iconset/nsfrss-icon_square_32x32.png" alt="RSS">
+      </a>
+
+          </li>
+  </ul>
+
+  </div>
+
+
+          </div>
+      </div>
+      
+
+        <div class="desktop:grid-col-8">
+                        <div class="region region-footer-menus">
+    <nav aria-labelledby="block-footer-menu" id="block-footer" class="block block-menu navigation menu--footer">
+
+          
+    <h2 class="visually-hidden menu--footer__title" id="block-footer-menu"
+
+  >Footer</h2>
+  
+        <div class="menu--footer__content">
+      
+
+    
+        
+    <ul class="menu--footer__list">
+              <li class="menu-item--top menu-item">
+                      <h3><span>About Us</span></h3>
+            
+    
+        
+    <ul class="menu--footer__sublist">
+              <li class="menu-item--sub menu-item">
+                      <a href="/about" data-drupal-link-system-path="group/275">About NSF</a>
+                  </li>
+              <li class="menu-item--sub menu-item">
+                      <a href="/careers" data-drupal-link-system-path="node/1989">Careers</a>
+                  </li>
+              <li class="menu-item--sub menu-item">
+                      <a href="/about/directorates-offices" data-drupal-link-system-path="node/95240">Our Directorates &amp; Offices</a>
+                  </li>
+              <li class="menu-item--sub menu-item">
+                      <a href="/nsb" data-drupal-link-system-path="group/2">National Science Board</a>
+                  </li>
+              <li class="menu-item--sub menu-item">
+                      <a href="/about/contact-us" data-drupal-link-system-path="node/95239">Contact Us</a>
+                  </li>
+          </ul>
+
+  
+                  </li>
+              <li class="menu-item--top menu-item">
+                      <h3><span>What&#039;s New</span></h3>
+            
+    
+        
+    <ul class="menu--footer__sublist">
+              <li class="menu-item--sub menu-item">
+                      <a href="/news" data-drupal-link-system-path="node/11137">News &amp; Announcements</a>
+                  </li>
+              <li class="menu-item--sub menu-item">
+                      <a href="/events" data-drupal-link-system-path="events">Events</a>
+                  </li>
+              <li class="menu-item--sub menu-item">
+                      <a href="/science-matters" data-drupal-link-system-path="group/247">Science Matters Blog</a>
+                  </li>
+          </ul>
+
+  
+                  </li>
+              <li class="menu-item--top menu-item">
+                      <h3><span>Information For</span></h3>
+            
+    
+        
+    <ul class="menu--footer__sublist">
+              <li class="menu-item--sub menu-item">
+                      <a href="/funding" data-drupal-link-system-path="group/283">Funding Seekers</a>
+                  </li>
+              <li class="menu-item--sub menu-item">
+                      <a href="/awards" data-drupal-link-system-path="group/282">NSF Awardees</a>
+                  </li>
+              <li class="menu-item--sub menu-item">
+                      <a href="/about/congress" data-drupal-link-system-path="group/295">Congress </a>
+                  </li>
+              <li class="menu-item--sub menu-item">
+                      <a href="/news/media-toolkits" data-drupal-link-system-path="node/81900">Media</a>
+                  </li>
+              <li class="menu-item--sub menu-item">
+                      <a href="/focus-areas/education#educational-resources" data-drupal-link-system-path="node/95653">Educators</a>
+                  </li>
+              <li class="menu-item--sub menu-item">
+                      <a href="/about/meetings" data-drupal-link-system-path="group/293">Panelists</a>
+                  </li>
+          </ul>
+
+  
+                  </li>
+              <li class="menu-item--top menu-item">
+                      <h3><span>Resources</span></h3>
+            
+    
+        
+    <ul class="menu--footer__sublist">
+              <li class="menu-item--sub menu-item">
+                      <a href="/documents-reports" data-drupal-link-system-path="node/115745">Documents &amp; Reports</a>
+                  </li>
+              <li class="menu-item--sub menu-item">
+                      <a href="/about/budget" data-drupal-link-system-path="node/95097">Budget, Performance &amp; Financial Reporting</a>
+                  </li>
+              <li class="menu-item--sub menu-item">
+                      <a href="/public-access" data-drupal-link-system-path="node/5619">Public Access</a>
+                  </li>
+              <li class="menu-item--sub menu-item">
+                      <a href="/stopping-harassment" data-drupal-link-system-path="node/95035">Stopping Harassment</a>
+                  </li>
+              <li class="menu-item--sub menu-item">
+                      <a href="/research-security" data-drupal-link-system-path="node/5664">Research Security</a>
+                  </li>
+              <li class="menu-item--sub menu-item">
+                      <a href="/policies/scientific-integrity" data-drupal-link-system-path="node/96952">Scientific Integrity</a>
+                  </li>
+              <li class="menu-item--sub menu-item">
+                      <a href="https://www.research.gov/research-web/">Research.gov</a>
+                  </li>
+          </ul>
+
+  
+                  </li>
+          </ul>
+
+  
+
+
+    </div>
+  </nav>
+
+  </div>
+
+                  </div>
+          </div>
+  </div>
+
+</div>
+
+    <div class="bottom-menu--wrapper">
+    <div class="grid-container bottom-menu">
+        <div class="region region-bottom-menu">
+    <nav aria-labelledby="block-requiredpolicylinks-menu" id="block-requiredpolicylinks" class="block block-menu navigation menu--required-policy-links">
+
+          
+    <h2 class="visually-hidden menu--required-policy-links__title" id="block-requiredpolicylinks-menu"
+
+  >Required Policy Links</h2>
+  
+        <div class="menu--required-policy-links__content">
+      
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/policies/digital/vulnerability-disclosure" data-drupal-link-system-path="node/113004">Vulnerability disclosure</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://oig.nsf.gov/home/">Inspector General</a>
+              </li>
+                <li class="menu-item">
+        <a href="/policies/privacy" data-drupal-link-system-path="node/111124">Privacy</a>
+              </li>
+                <li class="menu-item">
+        <a href="/policies/foia" data-drupal-link-system-path="node/109321">FOIA</a>
+              </li>
+                <li class="menu-item">
+        <a href="/od/ocr/no-fear-act" data-drupal-link-system-path="node/112949">No FEAR Act</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.usa.gov/">USA.gov</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.nsf.gov/policies/accessibility">Accessibility</a>
+              </li>
+                <li class="menu-item">
+        <a href="/policies/nsf_plain_language.jsp">Plain language</a>
+              </li>
+        </ul>
+  
+
+
+    </div>
+  </nav>
+
+  </div>
+
+    </div>
+  </div>
+  
+  
+</footer>
+
+  </div>
+
+    
+    <script src="/core/assets/vendor/jquery/jquery.min.js?v=4.0.0"></script>
+<script src="/sites/default/files/js/js_sqNL_XWC5h0UHxoexp957navPklbgi3n7JeP2etPQk8.js?scope=footer&amp;delta=1&amp;language=en&amp;theme=nsf_theme&amp;include=eJx9jeEKwjAMhF-oXR9pxDbrpl2upBk6n94qKuiPQfi45I4LpWQg2QO9xTApxFxEKVTbciqIlxCh7J7oaq0QFmuDtGm0mVf2nmI30wI5DBVWOwrMrDjylW1T8YY-1UWl-845h49wGciFR6Mccsf_PtCZbr_H1X3rg2GLc8XSn7qtXVMLLz4ASFZv0A"></script>
+<script src="https://static.addtoany.com/menu/page.js" defer></script>
+<script src="/sites/default/files/js/js_2eVMIpW7i-9sDgyZyDTZFR3fEgRDoXv-F-Ep0ZtXI_U.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=nsf_theme&amp;include=eJx9jeEKwjAMhF-oXR9pxDbrpl2upBk6n94qKuiPQfi45I4LpWQg2QO9xTApxFxEKVTbciqIlxCh7J7oaq0QFmuDtGm0mVf2nmI30wI5DBVWOwrMrDjylW1T8YY-1UWl-845h49wGciFR6Mccsf_PtCZbr_H1X3rg2GLc8XSn7qtXVMLLz4ASFZv0A"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+<script src="/modules/contrib/collapsiblock/theme/dist/collapsiblock.js?tnpb1j" type="module"></script>
+<script src="/sites/default/files/js/js_n8KIimrZ2xWX9klVrFa8_9fogxC6k63DUxacDfVDABw.js?scope=footer&amp;delta=6&amp;language=en&amp;theme=nsf_theme&amp;include=eJx9jeEKwjAMhF-oXR9pxDbrpl2upBk6n94qKuiPQfi45I4LpWQg2QO9xTApxFxEKVTbciqIlxCh7J7oaq0QFmuDtGm0mVf2nmI30wI5DBVWOwrMrDjylW1T8YY-1UWl-845h49wGciFR6Mccsf_PtCZbr_H1X3rg2GLc8XSn7qtXVMLLz4ASFZv0A"></script>
+<script src="https://touchpoints.app.cloud.gov/touchpoints/f0b5f6ee.js" defer></script>
+<script src="/themes/custom/nsf_theme/js/touchpoints.js?tnpb1j" defer></script>
+<script src="/sites/default/files/js/js_6x3wajo9FF3XCqx--SiQi_asZPAY9o91_tSPdke_04c.js?scope=footer&amp;delta=9&amp;language=en&amp;theme=nsf_theme&amp;include=eJx9jeEKwjAMhF-oXR9pxDbrpl2upBk6n94qKuiPQfi45I4LpWQg2QO9xTApxFxEKVTbciqIlxCh7J7oaq0QFmuDtGm0mVf2nmI30wI5DBVWOwrMrDjylW1T8YY-1UWl-845h49wGciFR6Mccsf_PtCZbr_H1X3rg2GLc8XSn7qtXVMLLz4ASFZv0A"></script>
+
+  </body>
+</html>

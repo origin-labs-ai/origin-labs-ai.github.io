@@ -1,0 +1,1140 @@
+<!DOCTYPE html><!-- Last Published: Fri Oct 30 2026 23:29:00 GMT+0000 (Coordinated Universal Time) --><html data-wf-domain="benevity.com" data-wf-page="680946676a0dac031a9848fb" data-wf-site="680946676a0dac031a9848fc" lang="en"><head><meta charset="utf-8"/><link href="https://cdn.prod.website-files.com" rel="preconnect" crossorigin="anonymous"/><title>AI-Native Corporate Purpose Software | Benevity</title><meta content="The AI-native platform that consolidates giving, volunteering and grants — with the reporting to prove ROI in every room. Trusted by 1,000 enterprises." name="description"/><meta content="AI-Native Corporate Purpose Software | Benevity" property="og:title"/><meta content="The AI-native platform that consolidates giving, volunteering and grants — with the reporting to prove ROI in every room. Trusted by 1,000 enterprises." property="og:description"/><meta content="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6abeb087328acbac5fd0390b_Open%20Graph%20Thumbnail.png" property="og:image"/><meta content="AI-Native Corporate Purpose Software | Benevity" name="twitter:title"/><meta content="The AI-native platform that consolidates giving, volunteering and grants — with the reporting to prove ROI in every room. Trusted by 1,000 enterprises." name="twitter:description"/><meta content="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6abeb087328acbac5fd0390b_Open%20Graph%20Thumbnail.png" name="twitter:image"/><meta property="og:type" content="website"/><meta content="summary_large_image" name="twitter:card"/><meta content="width=device-width, initial-scale=1" name="viewport"/><link href="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/css/benevity.shared.0f1dd0cd9.min.css" rel="stylesheet" type="text/css" integrity="sha384-Dx3QzZsIh0EE0tZCkLkBPwQNmHw5rGiJ9OI8RvAn19VZwEGwhs2D3faA3mc0g9Wp" crossorigin="anonymous"/><script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script><link href="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/680946676a0dac031a984951_Favicon%20-%20Small%20-32px.png" rel="shortcut icon" type="image/x-icon"/><link href="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/680946676a0dac031a984953_Favicon%20-%20Large%20-%20256px.svg" rel="apple-touch-icon"/><link href="https://benevity.com" rel="canonical"/><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://benevity.com/#organization",
+      "name": "Benevity",
+      "legalName": "Benevity, Inc.",
+      "url": "https://benevity.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://cdn.prod.website-files.com/680946676a0dac031a9848fc/682446ffdd1ab037e4ea07da_0.Benevity_Logo-p-130x130q80.png",
+        "@id": "https://benevity.com/#logo"
+      },
+      "description": "Enterprise Impact Platform for corporate social responsibility. Benevity empowers companies to create meaningful social impact through a single, scalable platform for giving, volunteering, grantmaking, and employee engagement.",
+      "slogan": "We are your purpose at work",
+      "foundingDate": "2008",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Calgary",
+          "addressCountry": "CA"
+        },
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Barcelona",
+          "addressCountry": "ES"
+        },
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Geneva",
+          "addressCountry": "CH"
+        },
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Toronto",
+          "addressCountry": "CA"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-855-237-7875",
+        "contactType": "customer service",
+        "availableLanguage": ["en", "fr", "de", "es"]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/benevity",
+        "https://www.facebook.com/Benevity",
+        "https://www.youtube.com/benevity",
+        "https://www.instagram.com/benevity/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://benevity.com/#website",
+      "url": "https://benevity.com",
+      "name": "Benevity",
+      "description": "We are your purpose at work",
+      "publisher": {
+        "@id": "https://benevity.com/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://benevity.com/search?query={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>
+<!-- OneTrust Cookies Consent Notice start for benevity.com -->
+<link rel="preconnect" href="https://cdn.cookielaw.org" crossorigin>
+<script src="https://cdn.cookielaw.org/consent/a02d08d1-7a6a-4009-81dc-7dbdc30dc524/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="a02d08d1-7a6a-4009-81dc-7dbdc30dc524" ></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end for benevity.com -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W5S379');</script>
+<!-- End Google Tag Manager -->
+<!-- OneTrust Cookies -->
+<script>
+  wf.ready(() => {
+    const handleWebflowAnalyticsConsent = () => {
+      try {
+        const otCookie = document.cookie.split('; ').find(c => c.startsWith('OptanonConsent='));
+        if (!otCookie) {
+          console.warn('OneTrust cookie not found.');
+          wf.denyUserTracking();
+          return;
+        }
+        const otGroupsRaw = otCookie.split('&').find(row => row.startsWith('groups='));
+        if (!otGroupsRaw) {
+          console.warn('Consent groups missing.');
+          wf.denyUserTracking();
+          return;
+        }
+
+        const otGroups = decodeURIComponent(otGroupsRaw.split('=')[1]);
+
+        // ✅ Use Performance Cookies (C0002)
+        const OT_CONSENT_GROUP = 'C0002:1';
+
+        const hasOptedIn = otGroups.includes(OT_CONSENT_GROUP);
+
+        if (hasOptedIn) {
+          console.log('User opted in → Allowing Webflow tracking');
+          wf.allowUserTracking();
+        } else {
+          console.log('User opted out → Blocking Webflow tracking');
+          wf.denyUserTracking();
+        }
+      } catch (e) {
+        console.error('Consent script error:', e);
+        wf.denyUserTracking();
+      }
+    };
+
+    if (window.OneTrust && typeof OneTrust.OnConsentChanged === 'function') {
+      OneTrust.OnConsentChanged(handleWebflowAnalyticsConsent);
+    }
+
+    handleWebflowAnalyticsConsent();
+  });
+</script>
+<!-- End OneTrust Cookies -->
+<script>!function(){var e="body {opacity: 0 !important;}",t=document.createElement("style");t.type="text/css",t.id="page-hide-style",t.styleSheet?t.styleSheet.cssText=e:t.appendChild(document.createTextNode(e)),document.head.appendChild(t),window.rmo=function(){var e=document.getElementById("page-hide-style");e&&(e.parentNode.removeChild(e),document.body.style.opacity="")},setTimeout(window.rmo,1e3)}();</script>
+<link rel="preconnect" href="https://d3niuqph2rteir.cloudfront.net" crossorigin/>
+<script async src="https://d3niuqph2rteir.cloudfront.net/client_js/stellar.js?apiKey=4b217ec6d30c84972c538b5bbb423eac:68fab8e83bb404bbdeeaac5038ec57bab5c4383f1295d045b57bda51436dd5d2"></script><script src="https://app.optibase.io/script.js" data-public-api-key="329a0da6-f64a-4f46-b213-af695d19490c"></script></head><body><div class="page-wrapper"><div class="w-embed w-iframe"><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W5S379"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --></div><div class="global-styles w-embed"><style>
+
+/* Make text look crisper and more legible in all browsers */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+
+/* Set color style to inherit */
+.inherit-color * {
+    color: inherit;
+}
+
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+
+
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+ 
+.margin-0 {
+  margin: 0rem !important;
+}
+  
+.padding-0 {
+  padding: 0rem !important;
+}
+
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+  
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+  
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+  
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+  
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+
+
+/*  Custom styles for resolutions above 1441px  */
+
+
+@media (min-width: 1441px) {
+    :root {
+      --_responsive---font-size--h1: 4.68125rem;
+      --_responsive---font-size--h2: 3.1875rem;
+      --_responsive---font-size--h3: 2.4375rem;
+      --_responsive---font-size--h4: 1.875rem;
+      --_responsive---font-size--h5: 1.5rem;
+
+      --_responsive---font-size--text-large: 1.375rem;
+      --_responsive---font-size--text-medium: 1.125rem;
+      --_responsive---font-size--text-regular: 1rem;
+      --_responsive---font-size--text-small: 0.875rem;
+
+      --_responsive---font-size--misc-stat: 4.75rem;
+      --_responsive---font-size--misc-quote: 2rem;
+      --_responsive---font-size--misc-global: 1.25rem;
+      --_responsive---font-size--misc-overline: 0.875rem;
+      --_responsive---font-size--misc-button-medium: 1rem;
+      --_responsive---font-size--misc-button-small: 0.875rem;
+    }
+    
+		.padding-section-home_hero{
+    	padding:10.75rem 0;
+    }
+
+  }
+
+	/* Nav cards width */
+  .nav-dropdown_toggle.w-dropdown-toggle.w--open {
+    background-color: #F0F7FC;
+  }
+
+  .nav-products-left_col .nav-dropdown-layout_wrapper .nav-dropdown-card_link {
+      width: calc((100% - (1.5rem * 2)) / 3);
+  }
+  .nav-products-right_col .nav-dropdown-card_link {
+      width: 100%;
+      max-width: 17.4375rem;
+  }
+
+  /* Fix nav bar lines not displaying on designer  */
+  @media screen and (max-width: 991px) {
+    .w-nav[data-collapse="medium"] .w-nav-button {
+      display: flex !important;
+    }
+
+    .w-nav-link {
+      margin: 0;
+    }
+  }
+
+	/*  Nav logo transition  */
+  .nav-logo_icon path {
+    transition: fill 0.3s ease;
+  }
+  
+  
+	.button.is-icon-white-transparent .icon-height-play,.button.is-icon-black-transparent .icon-height-play{
+		color: #D1305E;
+  }
+  
+	.button.is-icon-white-transparent:hover .icon-height-play, .button.is-icon-black-transparent:hover .icon-height-play{
+		color: #B91C1C;
+  }
+
+.w-dropdown-toggle div {
+	white-space: normal;
+}
+
+
+.nav-logo_icon path,
+.nav-logo_icon rect,
+.nav-logo_icon circle {
+  transition: fill 0.3s ease, opacity 0.3s ease;
+}
+
+
+svg.footer-logo.white .st0 {
+	fill: #fff;
+}
+  
+  
+svg.footer-logo.white	.st1 {
+	opacity: .5;
+}
+
+  
+  
+svg.nav-logo_icon .st0 {
+	fill: #1d174e;
+}
+
+svg.nav-logo_icon .st1 {
+	fill: #4ba4da;
+}
+@media (min-width: 992px) {
+.nav-dropdown-card_link:hover .nav_title {
+ color: var(--base-color-neutral--white);
+}
+}
+</style></div><div data-wf--banner---transparent-nav--variant="base" class="topbar-nav-wrapper"><div class="padding-global"><div class="container-large"><div class="topbar-nav-block"><div class="topbar-nav-flex"><div class="topbar-text">It’s time to get LOUD! 📣 Registration for <a href="https://www.linkedin.com/search/results/all/?keywords=%23benevitylive&amp;origin=HASH_TAG_FROM_FEED">Benevity Live!</a> 2027 is open.</div><a href="https://live.benevity.com/" target="_blank" class="learn-more-button w-inline-block"><div>Grab your spot</div></a></div><div data-w-id="39438566-a456-7aca-fe6c-e31f82c6f014" class="close-button"><div class="code-embed-21-2 w-embed"><svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="currentColor"/>
+</svg></div></div></div></div></div></div><div data-animation="default" class="nav_bar w-variant-ddfe9e92-d432-5a55-160d-3bf3123efd3f w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium" data-navbar="" data-w-id="12e97f92-06b8-58c8-56dd-204c414e8c5a" role="banner" data-duration="400" data-wf--global---navbar--variant="transparent"><div class="padding-global"><div class="nav_container"><a aria-label="Benevity Logo" href="/" aria-current="page" class="nav-logo_link w-nav-brand w--current"><div aria-label="Benevity Logo" class="w-embed"><svg width="100%" class="nav-logo_icon colored" viewBox="0 0 503 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path class="st1" d="M86.2484 7.94992C77.1984 -1.09008 62.5284 -1.09008 53.4884 7.94992C48.9684 12.4799 46.7084 18.3999 46.7084 24.3299V24.6299C46.7884 18.6099 44.5284 12.5499 39.9284 7.94992C30.8884 -1.09008 16.2284 -1.09008 7.17844 7.94992C-1.86156 16.9999 -1.86156 31.6599 7.17844 40.7099C11.6984 45.2199 17.6184 47.4799 23.5384 47.4899C17.6184 47.4899 11.7084 49.7499 7.17844 54.2699C-1.86156 63.3199 -1.86156 77.9799 7.17844 87.0299C16.2284 96.0699 30.8884 96.0699 39.9284 87.0299C44.5284 82.4299 46.7884 76.3699 46.7084 70.3499V47.4999H69.5584C75.5884 47.5699 81.6384 45.3199 86.2484 40.7199C95.2884 31.6699 95.2884 17.0099 86.2484 7.95992V7.94992Z" fill="#49A4DA"/>
+<path class="st0" d="M142.318 41.3505C135.425 41.3505 129.144 43.9405 124.418 48.1905V27.2205C124.418 25.9805 123.415 24.9805 122.17 24.9805H117.966C116.722 24.9805 115.719 25.9805 115.719 27.2205V67.6205C115.719 82.1305 127.629 93.8905 142.308 93.8905C156.987 93.8905 168.897 82.1305 168.897 67.6205C168.897 53.1105 156.987 41.3505 142.308 41.3505H142.318ZM142.478 85.3905C132.676 85.3905 124.739 77.4405 124.739 67.6205C124.739 57.8005 132.686 49.8505 142.478 49.8505C152.271 49.8505 160.218 57.8005 160.218 67.6205C160.218 77.4405 152.271 85.3905 142.478 85.3905Z" fill="#170E4F"/>
+<path class="st0" d="M483.353 43.4397C482.942 42.8097 482.229 42.4297 481.477 42.4297H476.681C475.778 42.4297 474.965 42.9697 474.614 43.7897L459.975 78.0797L446.259 43.8397C445.918 42.9897 445.095 42.4297 444.172 42.4297H439.576C438.834 42.4297 438.142 42.7997 437.72 43.4097C437.299 44.0197 437.218 44.7997 437.489 45.4897L455.018 89.4897L447.142 107.37C446.841 108.06 446.901 108.86 447.322 109.49C447.734 110.12 448.446 110.5 449.199 110.5H453.914C454.807 110.5 455.62 109.97 455.971 109.15L483.544 45.5497C483.845 44.8597 483.775 44.0597 483.363 43.4297L483.353 43.4397Z" fill="#170E4F"/>
+<path class="st0" d="M431.972 42.4305H422.882V27.2205C422.882 25.9805 421.878 24.9805 420.634 24.9805H416.43C415.186 24.9805 414.182 25.9805 414.182 27.2205V42.4305H406.677C405.433 42.4305 404.43 43.4305 404.43 44.6705V48.7005C404.43 49.9405 405.433 50.9405 406.677 50.9405H414.182V90.5805C414.182 91.8205 415.186 92.8205 416.43 92.8205H420.634C421.878 92.8205 422.882 91.8205 422.882 90.5805V50.9405H431.972C433.216 50.9405 434.22 49.9405 434.22 48.7005V44.6705C434.22 43.4305 433.216 42.4305 431.972 42.4305Z" fill="#170E4F"/>
+<path class="st0" d="M382.021 43.4197C381.6 42.7997 380.907 42.4297 380.155 42.4297H375.459C374.546 42.4297 373.723 42.9797 373.382 43.8197L359.054 78.5997L344.515 43.8097C344.164 42.9797 343.351 42.4297 342.438 42.4297H338.003C337.251 42.4297 336.558 42.7997 336.137 43.4197C335.716 44.0397 335.645 44.8297 335.926 45.5197L354.629 90.8397L354.87 91.4197C355.211 92.2597 356.034 92.8097 356.947 92.8097H361.201C362.114 92.8097 362.927 92.2597 363.278 91.4197L382.222 45.5197C382.503 44.8297 382.422 44.0397 382.011 43.4197H382.021Z" fill="#170E4F"/>
+<path class="st0" d="M271.271 46.4801C267.147 43.0801 261.819 41.3501 255.518 41.3501C253.501 41.2801 251.434 41.4701 249.367 41.9201C247.31 42.3601 245.334 43.0501 243.487 43.9701C242.504 44.4601 241.561 45.0301 240.668 45.6601V44.6701C240.668 43.4301 239.665 42.4301 238.42 42.4301H234.216C232.972 42.4301 231.969 43.4301 231.969 44.6701V90.5701C231.969 91.8101 232.972 92.8101 234.216 92.8101H238.42C239.665 92.8101 240.668 91.8101 240.668 90.5701V64.3001C240.668 59.6901 241.952 56.1201 244.481 53.7101C247.069 51.2501 250.762 49.9501 255.407 49.8501C257.384 49.8501 259.33 50.1201 261.207 50.6401C262.892 51.1201 264.428 51.9701 265.782 53.1901C267.066 54.3401 268.11 55.9601 268.903 58.0001C269.735 60.1501 270.147 62.9601 270.147 66.3801V90.5801C270.147 91.8201 271.15 92.8201 272.394 92.8201H276.598C277.843 92.8201 278.846 91.8201 278.846 90.5801V66.3801C278.846 57.4101 276.307 50.7201 271.271 46.4901V46.4801Z" fill="#170E4F"/>
+<path class="st0" d="M223.908 56.0806C222.423 52.9706 220.436 50.2806 217.988 48.1006C215.57 45.9406 212.771 44.2506 209.69 43.0906C206.62 41.9306 203.379 41.3506 200.068 41.3506C196.386 41.3506 192.884 42.0206 189.653 43.3306C186.412 44.6506 183.563 46.5206 181.185 48.8806C178.807 51.2406 176.93 54.0506 175.586 57.2406C174.241 60.4106 173.559 63.9006 173.539 67.6106V67.7106C173.549 71.3506 174.221 74.8006 175.536 77.9706C176.86 81.1706 178.716 83.9806 181.054 86.3406C183.402 88.7106 186.232 90.5906 189.452 91.9106C192.663 93.2306 196.215 93.8906 200.008 93.8906C202.496 93.8906 204.964 93.5806 207.362 92.9606C209.791 92.3306 212.108 91.3606 214.236 90.0606C216.353 88.7706 218.329 87.1106 220.085 85.1406C221.379 83.6906 222.523 82.0406 223.487 80.2206C223.858 79.5306 223.828 78.6906 223.426 78.0206C223.025 77.3506 222.293 76.9406 221.5 76.9406H216.624C215.871 76.9406 215.169 77.3206 214.747 77.9406C213.393 79.9906 211.667 81.6406 209.64 82.8506C206.811 84.5406 203.6 85.3906 200.088 85.3906C198.272 85.3906 196.275 85.0406 194.158 84.3406C192.101 83.6606 190.165 82.5906 188.419 81.1606C186.703 79.7506 185.238 77.9206 184.084 75.7006C183.372 74.3406 182.87 72.7806 182.589 71.0306H224.028C225.212 71.0306 226.196 70.1106 226.266 68.9406L226.406 66.7106C226.406 66.6306 226.406 66.5406 226.406 66.4606C226.216 62.6806 225.373 59.1806 223.888 56.0706L223.908 56.0806ZM200.249 49.8506C202.346 49.7506 204.433 50.1206 206.449 50.9206C208.536 51.7506 210.413 52.9106 212.038 54.3906C213.674 55.8706 215.028 57.6506 216.082 59.6506C216.563 60.5806 216.945 61.5506 217.215 62.5406H182.931C183.211 61.4706 183.593 60.4506 184.074 59.4906C185.058 57.5306 186.362 55.8206 187.947 54.4106C189.543 52.9906 191.409 51.8606 193.486 51.0606C195.553 50.2606 197.8 49.8606 200.148 49.8606C200.178 49.8606 200.208 49.8606 200.249 49.8606V49.8506Z" fill="#170E4F"/>
+<path class="st0" d="M334.756 56.0806C333.271 52.9706 331.284 50.2806 328.836 48.1006C326.418 45.9406 323.618 44.2506 320.538 43.0906C317.468 41.9306 314.227 41.3506 310.916 41.3506C307.233 41.3506 303.732 42.0206 300.501 43.3306C297.26 44.6506 294.41 46.5206 292.032 48.8806C289.664 51.2406 287.778 54.0506 286.434 57.2406C285.089 60.4106 284.407 63.9006 284.387 67.6106V67.7106C284.397 71.3506 285.069 74.8006 286.383 77.9706C287.708 81.1706 289.564 83.9806 291.902 86.3406C294.25 88.7106 297.079 90.5906 300.3 91.9106C303.511 93.2306 307.063 93.8906 310.855 93.8906C313.344 93.8906 315.812 93.5806 318.21 92.9606C320.638 92.3306 322.956 91.3606 325.083 90.0606C327.2 88.7706 329.177 87.1106 330.933 85.1406C332.227 83.6906 333.371 82.0406 334.334 80.2206C334.705 79.5306 334.675 78.6906 334.274 78.0206C333.873 77.3506 333.14 76.9406 332.348 76.9406H327.471C326.719 76.9406 326.016 77.3206 325.595 77.9406C324.24 79.9906 322.515 81.6406 320.488 82.8506C317.658 84.5406 314.447 85.3906 310.936 85.3906C309.12 85.3906 307.123 85.0406 305.006 84.3406C302.949 83.6606 301.012 82.5906 299.267 81.1606C297.551 79.7506 296.086 77.9206 294.932 75.7006C294.22 74.3406 293.718 72.7806 293.437 71.0306H334.876C336.06 71.0306 337.043 70.1106 337.113 68.9406L337.254 66.7106C337.254 66.6306 337.254 66.5406 337.254 66.4606C337.063 62.6806 336.221 59.1806 334.736 56.0706L334.756 56.0806ZM311.096 49.8506C313.193 49.7506 315.28 50.1206 317.297 50.9206C319.384 51.7506 321.26 52.9106 322.886 54.3906C324.521 55.8706 325.876 57.6506 326.929 59.6506C327.411 60.5806 327.792 61.5506 328.063 62.5406H293.778C294.059 61.4706 294.44 60.4506 294.922 59.4906C295.905 57.5306 297.21 55.8206 298.795 54.4106C300.39 52.9906 302.257 51.8606 304.334 51.0606C306.401 50.2606 308.648 49.8606 310.996 49.8606C311.026 49.8606 311.056 49.8606 311.096 49.8606V49.8506Z" fill="#170E4F"/>
+<path class="st0" d="M394.788 42.4297H390.583C389.342 42.4297 388.336 43.4326 388.336 44.6697V90.5697C388.336 91.8068 389.342 92.8097 390.583 92.8097H394.788C396.029 92.8097 397.035 91.8068 397.035 90.5697V44.6697C397.035 43.4326 396.029 42.4297 394.788 42.4297Z" fill="#170E4F"/>
+<path class="st0" d="M392.69 35.8405C395.699 35.8405 398.139 33.4094 398.139 30.4105C398.139 27.4116 395.699 24.9805 392.69 24.9805C389.681 24.9805 387.242 27.4116 387.242 30.4105C387.242 33.4094 389.681 35.8405 392.69 35.8405Z" fill="#170E4F"/>
+<path class="st0" d="M495.018 53.9497C494.165 53.9497 493.373 53.8097 492.65 53.5197C491.928 53.2297 491.296 52.8297 490.764 52.3097C490.232 51.7897 489.811 51.1797 489.52 50.4697C489.229 49.7697 489.078 48.9997 489.078 48.1697C489.078 47.3397 489.229 46.5897 489.52 45.8897C489.811 45.1897 490.232 44.5797 490.764 44.0597C491.296 43.5397 491.928 43.1397 492.65 42.8597C493.373 42.5697 494.165 42.4297 495.018 42.4297C495.871 42.4297 496.664 42.5697 497.396 42.8597C498.128 43.1497 498.751 43.5497 499.292 44.0597C499.824 44.5797 500.246 45.1797 500.547 45.8897C500.848 46.5897 500.998 47.3497 500.998 48.1697C500.998 48.9897 500.848 49.7697 500.547 50.4697C500.246 51.1697 499.834 51.7797 499.292 52.3097C498.761 52.8297 498.128 53.2397 497.396 53.5197C496.664 53.7997 495.881 53.9497 495.018 53.9497ZM495.018 53.2597C495.991 53.2597 496.874 53.0397 497.657 52.6097C498.439 52.1797 499.072 51.5797 499.523 50.8197C499.975 50.0597 500.215 49.1797 500.215 48.1797C500.215 47.4697 500.085 46.8097 499.834 46.1897C499.573 45.5797 499.212 45.0397 498.741 44.5797C498.269 44.1197 497.717 43.7597 497.085 43.4997C496.453 43.2497 495.761 43.1197 495.018 43.1197C494.276 43.1197 493.583 43.2497 492.951 43.4997C492.329 43.7597 491.777 44.1097 491.316 44.5697C490.854 45.0297 490.493 45.5597 490.232 46.1697C489.971 46.7797 489.851 47.4397 489.851 48.1597C489.851 48.8797 489.981 49.5397 490.232 50.1597C490.493 50.7797 490.854 51.3197 491.316 51.7797C491.777 52.2397 492.329 52.5997 492.951 52.8597C493.573 53.1197 494.266 53.2497 495.018 53.2497V53.2597ZM492.53 44.8497C492.53 44.7197 492.64 44.6097 492.77 44.6097H495.359C495.49 44.6097 495.71 44.6297 495.851 44.6397C495.851 44.6397 496.413 44.7197 496.744 44.9497C497.075 45.1797 497.326 45.4697 497.516 45.8197C497.707 46.1697 497.797 46.5297 497.797 46.8997C497.797 47.2297 497.737 47.5397 497.607 47.8297C497.476 48.1197 497.296 48.3697 497.065 48.5897C496.834 48.7997 496.483 48.9297 496.483 48.9297C496.353 48.9797 496.312 49.1097 496.383 49.2197L497.868 51.5397C497.938 51.6497 497.888 51.7497 497.757 51.7497H497.075C496.945 51.7497 496.774 51.6597 496.704 51.5397L495.329 49.3797C495.259 49.2697 495.088 49.1697 494.958 49.1697H493.824C493.694 49.1697 493.583 49.2797 493.583 49.4097V51.4997C493.583 51.6297 493.473 51.7397 493.342 51.7397H492.791C492.66 51.7397 492.55 51.6297 492.55 51.4997V44.8397L492.53 44.8497ZM495.319 48.2697C495.449 48.2697 495.67 48.2497 495.801 48.2197C495.801 48.2197 496.242 48.1397 496.453 47.8797C496.664 47.6197 496.764 47.2897 496.764 46.8997C496.764 46.5097 496.643 46.1697 496.403 45.9197C496.162 45.6697 495.75 45.5897 495.75 45.5897C495.62 45.5597 495.399 45.5397 495.269 45.5397H493.814C493.684 45.5397 493.573 45.6497 493.573 45.7797V48.0097C493.573 48.1397 493.684 48.2497 493.814 48.2497H495.319V48.2697Z" fill="#170E4F"/>
+<path class="st0" d="M66.7773 93.7699C59.7337 93.7699 53.1115 91.0399 48.1248 86.0699C43.0478 81.0099 40.3086 74.2899 40.4089 67.1399V23.8199C40.4089 20.1299 43.3989 17.1299 47.1114 17.1299C50.8238 17.1299 53.8139 20.1299 53.8139 23.8199V67.2199C53.7637 70.8199 55.1283 74.1299 57.6166 76.6199C60.0748 79.0599 63.3358 80.4099 66.7974 80.4099C70.259 80.4099 73.5199 79.0599 75.9681 76.6199C78.4264 74.1799 79.7709 70.9299 79.7709 67.4799C79.7709 64.0299 78.4264 60.7799 75.9681 58.3299C73.5199 55.8899 70.259 54.5399 66.7974 54.5399C63.095 54.5399 60.0949 51.5499 60.0949 47.8599C60.0949 44.1699 63.095 41.1799 66.7974 41.1799C73.841 41.1799 80.4732 43.9199 85.46 48.8799C90.4366 53.8499 93.1859 60.4599 93.1859 67.4799C93.1859 74.4999 90.4467 81.0999 85.46 86.0699C80.4732 91.0399 73.851 93.7699 66.7974 93.7699H66.7773Z" fill="#170E4F"/>
+<path class="st0" d="M34.7253 47.47C34.7253 51.16 31.7252 54.15 28.0228 54.15C24.3204 54.15 21.3203 51.16 21.3203 47.47C21.3203 43.78 24.3204 40.79 28.0228 40.79C31.7252 40.79 34.7253 43.78 34.7253 47.47Z" fill="#170E4F"/>
+</svg></div></a><nav role="navigation" class="nav_menu w-nav-menu"><div class="nav-menu-flex_wrapper"><div class="nav-menu-dropdowns_wrapper"><div data-hover="false" data-delay="0" class="nav-dropdown w-dropdown"><div class="nav-dropdown_toggle w-variant-ddfe9e92-d432-5a55-160d-3bf3123efd3f w-dropdown-toggle"><div>Products</div><div class="nav-dropdown-toggle_arrow w-embed"><svg width="100%" height="100%" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div></div><nav class="nav-dropdown_list w-dropdown-list"><div class="nav-dropdown_list-padding_element"><div class="padding-global nav-1"><div class="nav-container-large"><div class="nav-products-big-layout_wrapper"><div class="nav-products-left_col"><div class="nav-dropdown-layout_wrapper"><a data-wf--nav-card-w-icon--background-color="light-blue" href="/products/donate" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Donate</div></div><div><div class="text-block-84 hide-mobile-landscape">Make giving easy, seamless, and more convenient for your team.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="/products/grants" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Grants Management</div></div><div><div class="text-block-84 hide-mobile-landscape">Maximize your community impact through strategic grantmaking.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="/products/challenges" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Challenges</div></div><div><div class="text-block-84 hide-mobile-landscape">Engage your workforce with fun experiences that inspire action.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="white" href="/enterprise-impact-platform" class="nav-dropdown-card_link w-variant-18f67ce9-a5c8-f9e0-7fe1-6ab6187ac30e w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Enterprise Impact Platform</div></div><div><div class="text-block-84 hide-mobile-landscape">Purpose, impact and change at a global scale.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="/products/volunteer" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Volunteer</div></div><div><div class="text-block-84 hide-mobile-landscape">Empower employees to make a difference through volunteering.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="/products/employee-groups" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Employee Groups</div></div><div><div class="text-block-84 hide-mobile-landscape">Foster a rich culture of belonging and inclusion with our ERG tools.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="white" href="/products/reporting-suite" class="nav-dropdown-card_link w-variant-18f67ce9-a5c8-f9e0-7fe1-6ab6187ac30e w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Reporting Suite</div></div><div><div class="text-block-84 hide-mobile-landscape">Unify your social impact data and turn insights into action.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="white" href="/products/services-add-ons" class="nav-dropdown-card_link w-variant-18f67ce9-a5c8-f9e0-7fe1-6ab6187ac30e w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Services &amp; Add-Ons</div></div><div><div class="text-block-84 hide-mobile-landscape">Expand your impact with expert services and support.</div></div></div></a><a id="w-node-_3fb2f14c-a5a0-652b-0d4c-9d2afb07c878-414e8c5a" href="/products" class="button is-secondary is-nav w-nav-link">View all</a></div></div><div class="nav-products-right_col"></div></div></div></div></div></nav></div><div data-hover="false" data-delay="0" class="nav-dropdown w-dropdown"><div class="nav-dropdown_toggle w-variant-ddfe9e92-d432-5a55-160d-3bf3123efd3f w-dropdown-toggle"><div>Solutions</div><div class="nav-dropdown-toggle_arrow w-embed"><svg width="100%" height="100%" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div></div><nav class="nav-dropdown_list w-dropdown-list"><div class="nav-dropdown_list-padding_element"><div class="padding-global nav-1"><div class="nav-container-large"><div class="nav-dropdown-layout_wrapper v2"><a data-wf--nav-card-w-icon--background-color="light-blue" href="/solutions/money-movement" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Money Movement</div></div><div><div class="text-block-84 hide-mobile-landscape">Disburse funds globally with speed, security and compliance.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="/solutions/employee-mobilization" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Employee Mobilization</div></div><div><div class="text-block-84 hide-mobile-landscape">Scale employee-led action across your company.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="/solutions/employee-engagement" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Employee Engagement</div></div><div><div class="text-block-84 hide-mobile-landscape">Empower people to give, volunteer and connect with purpose.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="/solutions/grantmaking-csr-risk-mitigation" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Risk Mitigation</div></div><div><div class="text-block-84 hide-mobile-landscape">Protect every program, at every layer.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="/solutions/global-donor-advised-fund" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Donor Advised Fund</div></div><div><div class="text-block-84 hide-mobile-landscape">Support global giving with tax-effective disbursement.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="/solutions/nonprofit-due-diligence" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Nonprofit Due Diligence</div></div><div><div class="text-block-84 hide-mobile-landscape">Give confidently knowing nonprofits are continuously validated.</div></div></div></a></div></div></div></div></nav></div><div data-hover="false" data-delay="0" class="nav-dropdown w-dropdown"><div class="nav-dropdown_toggle w-variant-ddfe9e92-d432-5a55-160d-3bf3123efd3f w-dropdown-toggle"><div class="text-block-83 w-variant-ddfe9e92-d432-5a55-160d-3bf3123efd3f">About Us</div><div class="nav-dropdown-toggle_arrow w-embed"><svg width="100%" height="100%" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div></div><nav class="nav-dropdown_list w-dropdown-list"><div class="nav-dropdown_list-padding_element"><div class="padding-global nav-1"><div class="nav-container-large"><div class="nav-dropdown-layout_wrapper v2"><a data-wf--nav-card-w-icon--background-color="light-blue" href="/about-us" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">About Benevity</div></div><div><div class="text-block-84 hide-mobile-landscape">Meet the people powering purpose at work.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="/join-the-team" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Careers</div></div><div><div class="text-block-84 hide-mobile-landscape">Join a mission-driven team shaping the future of impact.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="https://live.benevity.com/" target="_blank" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Benevity Live! 2027</div></div><div><div class="text-block-84 hide-mobile-landscape">Learn about our annual conference. </div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="/media" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Newsroom</div></div><div><div class="text-block-84 hide-mobile-landscape">See the latest news and stories.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="/contact" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Contact</div></div><div><div class="text-block-84 hide-mobile-landscape">Connect with us to amplify your social impact.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="/events" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Events</div></div><div><div class="text-block-84 hide-mobile-landscape">Join us where purpose meets people.</div></div></div></a><a id="w-node-f67486a3-60af-c01c-6da1-62ad990cb7f9-414e8c5a" href="/state-of-corporate-purpose/2026" class="details-nav_card w-variant-ddfe9e92-d432-5a55-160d-3bf3123efd3f w-inline-block"><img src="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6a4d8c01337c96e4ce6f80ce_a410cb6a93bffd03d0dee1239224c269_Benevity-SoCP-2026-OpenGraph.webp" loading="lazy" sizes="100vw" srcset="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6a4d8c01337c96e4ce6f80ce_a410cb6a93bffd03d0dee1239224c269_Benevity-SoCP-2026-OpenGraph-p-500.webp 500w, https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6a4d8c01337c96e4ce6f80ce_a410cb6a93bffd03d0dee1239224c269_Benevity-SoCP-2026-OpenGraph-p-800.webp 800w, https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6a4d8c01337c96e4ce6f80ce_a410cb6a93bffd03d0dee1239224c269_Benevity-SoCP-2026-OpenGraph-p-1080.webp 1080w, https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6a4d8c01337c96e4ce6f80ce_a410cb6a93bffd03d0dee1239224c269_Benevity-SoCP-2026-OpenGraph.webp 1200w" alt="Text reading Benevity Impact Labs State of Corporate Purpose 2026 with blue wave lines on right side"/><div class="details-nav-card_content"><div class="details-nav-card_tag">Benevity Impact Labs</div><div class="details-nav-card_title">The State of Corporate Purpose 2026</div><div class="details-nav-card_btn"><div>Read the report</div><div class="details-nav-card_arrow w-embed"><svg width="1rem" height="1rem" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="16" height="16" rx="8" fill="#D1305E"/>
+<path d="M11.3536 8.35355C11.5488 8.15829 11.5488 7.84171 11.3536 7.64645L8.17157 4.46447C7.97631 4.2692 7.65973 4.2692 7.46447 4.46447C7.2692 4.65973 7.2692 4.97631 7.46447 5.17157L10.2929 8L7.46447 10.8284C7.2692 11.0237 7.2692 11.3403 7.46447 11.5355C7.65973 11.7308 7.97631 11.7308 8.17157 11.5355L11.3536 8.35355ZM5 8L5 8.5L11 8.5L11 8L11 7.5L5 7.5L5 8Z" fill="white"/>
+</svg></div></div></div></a></div></div></div></div></nav></div><div data-hover="false" data-delay="0" class="nav-dropdown w-dropdown"><div class="nav-dropdown_toggle w-variant-ddfe9e92-d432-5a55-160d-3bf3123efd3f w-dropdown-toggle"><div>Resources</div><div class="nav-dropdown-toggle_arrow w-embed"><svg width="100%" height="100%" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></div></div><nav class="nav-dropdown_list w-dropdown-list"><div class="nav-dropdown_list-padding_element"><div class="padding-global nav-1"><div class="nav-container-large"><div class="nav-dropdown-layout_wrapper"><a data-wf--nav-card-w-icon--background-color="light-blue" href="/webinars" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Webinars</div></div><div><div class="text-block-84 hide-mobile-landscape">Unlock insights you can act on.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="/speaking-of-purpose" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Podcast</div></div><div><div class="text-block-84 hide-mobile-landscape">Stories and ideas that inspire impact.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="/research" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Research</div></div><div><div class="text-block-84 hide-mobile-landscape">Get inspired by insights from industry experts.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="/blog" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">CSR Blog</div></div><div><div class="text-block-84 hide-mobile-landscape">Guidance and big ideas for leaders driving change.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="/tools/calculator" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Business Impact Calculator</div></div><div><div class="text-block-84 hide-mobile-landscape">Calculate the value your program can unlock in 2 minutes.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="/csr-program-toolkits" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">CSR Program Toolkits</div></div><div><div class="text-block-84 hide-mobile-landscape">Access practical guides, toolkits and templates.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="/client-stories" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Client Stories</div></div><div><div class="text-block-84 hide-mobile-landscape">Discover how our clients are making a difference.</div></div></div></a><a data-wf--nav-card-w-icon--background-color="light-blue" href="/interactive-demo" class="nav-dropdown-card_link w-inline-block"><div class="nav-dropdown-copy-flex_wrapper"><div><div class="nav_title text-color-content-primary">Interactive Demos</div></div><div><div class="text-block-84 hide-mobile-landscape">Experience our platform in action.</div></div></div></a><a id="w-node-_772d2b9d-2ca1-9002-9601-839b50376a29-414e8c5a" href="/resources" class="button is-secondary is-nav w-nav-link">View all</a></div></div></div></div></nav></div></div><div class="nav-menu-cta_wrapper is-vertical"><div class="nav-menu-cta_nav-search_wrap"><form action="/search" class="nav-menu-cta_nav-search_contain w-form"><input class="nav-menu-cta_nav-search_input w-variant-ddfe9e92-d432-5a55-160d-3bf3123efd3f w-input" autocomplete="off" maxlength="256" name="query" aria-label="Search site content" placeholder="" data-w-id="f5410d44-2201-b14c-3f2b-963000640adb" type="search" id="search-2" required=""/><input type="submit" aria-label="Open Site Search" class="nav-menu-cta_nav-search_btn w-variant-ddfe9e92-d432-5a55-160d-3bf3123efd3f w-button" value=""/></form></div><div class="nav-menu-cta-buttons-wrapper"><a href="/nonprofits" class="button is-secondary is-nav-v2 w-variant-ddfe9e92-d432-5a55-160d-3bf3123efd3f w-nav-link">For nonprofits</a><a href="/demo-enterprise-impact-platform" data-wf-event-ids="157058193-157060706-157062551" class="button is-nav w-nav-link">Get a tour</a></div></div></div></nav><div class="navbar_button w-nav-button"><svg data-w-id="12e97f92-06b8-58c8-56dd-204c414e8ce0" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 18 2" fill="none" class="navbar_button-line"><path d="M0 0V2H18V0H0Z" fill="currentColor"></path></svg><svg data-w-id="12e97f92-06b8-58c8-56dd-204c414e8ce2" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 18 2" fill="none" class="navbar_button-line"><path d="M0 0V2H18V0H0Z" fill="currentColor"></path></svg><svg data-w-id="12e97f92-06b8-58c8-56dd-204c414e8ce4" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 18 2" fill="none" class="navbar_button-line"><path d="M0 0V2H18V0H0Z" fill="currentColor"></path></svg></div></div></div></div><main class="main-wrapper"><section class="section_home-hero"><div class="background-color-moonshot"><div class="home_hero-position-wrapper"><div class="padding-global padding-section-home_hero"><div class="container-large"><div class="grid-2x-hp"><div id="w-node-_3c5233fd-956e-ac8c-e57d-29205d1ae233-1a9848fb" class="home_hero-content_wrapper"><div class="eyebrow-wrapper"><div class="eyebrow text-color-aqua">PURPOSE AT WORK</div></div><div class="flex-v-left-top gap-1-75rem"><h1 class="heading-style-h1 hp">Trust at scale.<br/>Undeniably proven. </h1><div class="flex-v-left-top gap--5rem max-width-95"><div class="text-size-large hp">The Benevity® Enterprise Impact Platform is one trusted platform for employee giving, volunteering, grants and reporting.</div><div><div class="hero-stat-card"><a href="https://www.g2.com/products/benevity/reviews" target="_blank" class="grid-2x-g2 w-inline-block"><div><div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--simple-icons" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0a12 12 0 1 0 0 24a12 12 0 0 0 0-24m.122 5.143c.45 0 .9.044 1.342.132l-1.342 2.806C9.962 8.08 8.203 9.84 8.203 12s1.76 3.92 3.92 3.92c.937 0 1.844-.338 2.553-.951l1.483 2.572A6.856 6.856 0 0 1 5.266 12a6.856 6.856 0 0 1 6.856-6.856Zm3.498.49h.026q.639 0 1.101.34q.465.345.466.946c0 .639-.36 1.03-1.035 1.376l-.377.191c-.403.204-.602.385-.657.706h2.05v.85h-3.101v-.144q-.001-.788.314-1.306q.315-.517 1.102-.917l.242-.117c.427-.216.538-.401.538-.625c0-.266-.228-.458-.6-.458c-.44 0-.773.228-1.004.694l-.592-.595q.196-.417.619-.675a1.7 1.7 0 0 1 .908-.266m-2.094 5.388h3.394l1.697 2.937l-1.697 2.94l-1.697-2.94H11.83z"></path></svg></div></div><div><div class="g2-styling">4.7</div></div><div class="flex-h-left-center"><div class="icon-embed-xxsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453l-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107l-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4l4.536-4.082c.297-.268.406-.686.278-1.065z" fill="currentColor"></path></svg></div><div class="icon-embed-xxsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453l-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107l-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4l4.536-4.082c.297-.268.406-.686.278-1.065z" fill="currentColor"></path></svg></div><div class="icon-embed-xxsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453l-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107l-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4l4.536-4.082c.297-.268.406-.686.278-1.065z" fill="currentColor"></path></svg></div><div class="icon-embed-xxsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453l-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107l-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4l4.536-4.082c.297-.268.406-.686.278-1.065z" fill="currentColor"></path></svg></div><div class="icon-embed-xxsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M5.025 20.775A.998.998 0 0 0 6 22a1 1 0 0 0 .555-.168L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4l4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454l-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107l-1.491 6.452zM12 5.429l2.042 4.521l.588.047h.001l3.972.315l-3.271 2.944l-.001.002l-.463.416l.171.597v.003l1.253 4.385L12 15.798V5.429z" fill="currentColor"></path></svg></div></div></a></div></div></div></div><div class="button-group"><a href="/demo-enterprise-impact-platform" data-wf-event-ids="157036969-157060706-157062551" class="button w-button">Get a personalized demo</a><a href="/interactive-demo" class="button is-icon-white-transparent w-button">Watch an interactive demo →</a></div></div><div class="image-wrapper-ar-5-4"><img src="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6a1700e52e3e5a942222ae72_Benevity-WIP.webp" width="1696" height="1357" alt="Smiling man and woman in business attire looking at a tablet in an office setting." sizes="(max-width: 1696px) 100vw, 1696px" loading="eager" fetchpriority="high" srcset="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6a1700e52e3e5a942222ae72_Benevity-WIP-p-500.webp 500w, https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6a1700e52e3e5a942222ae72_Benevity-WIP-p-800.webp 800w, https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6a1700e52e3e5a942222ae72_Benevity-WIP-p-1080.webp 1080w, https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6a1700e52e3e5a942222ae72_Benevity-WIP-p-1600.webp 1600w, https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6a1700e52e3e5a942222ae72_Benevity-WIP.webp 1696w"/></div></div></div></div></div></div></section><section class="section_home-top-marquee"><div class="padding-global padding-section-small"><div class="container-large"><div class="flex-h-center-center"><h2 class="heading-style-h5">Trusted by nearly 1,000 of the world&#x27;s most admired companies</h2></div></div><div data-wf--logo-marquee--variant="grey-bg" class="home_top-marquee-position-wrapper"><div class="global_top-marquee_layout-wrapper"></div><div class="home_top-marquee-left-grad"></div><div class="home_top-marquee-right-grad"></div><div class="container-custom-home-top-marquee"><div class="home_top-marquee-component"><div class="swiper"><div class="home_top-marquee-flex-wrapper swiper-wrapper"><div class="home_top-marquee-item swiper-slide"><img src="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/680946676a0dac031a984976_Logo-1.svg" loading="eager" width="135" height="80" alt="Levi&#x27;s logo" class="logo-img"/></div><div class="home_top-marquee-item swiper-slide"><img src="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/680946676a0dac031a984956_Logo-2.svg" loading="eager" width="163" height="80" alt="Merck Logo" class="logo-img"/></div><div class="home_top-marquee-item swiper-slide"><img src="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/687929cbfe6d0b91eb73cc1a_Cisco-logo2.avif" loading="eager" width="110" height="58" alt="Cisco | Benevity Client"/></div><div class="home_top-marquee-item swiper-slide"><img src="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/680946676a0dac031a984958_Logo-4.svg" loading="eager" width="100" height="80" alt="Prudential logo" class="logo-img"/></div><div class="home_top-marquee-item swiper-slide"><img src="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/680946676a0dac031a984957_Logo-5.svg" loading="eager" width="129" height="80" alt="Visa logo" class="logo-img"/></div><div class="home_top-marquee-item swiper-slide"><img src="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/680946676a0dac031a984978_Logo-6.svg" loading="eager" width="105" height="80" alt="Starbucks logo" class="logo-img"/></div><div class="home_top-marquee-item swiper-slide"><img src="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/680946676a0dac031a984975_Logo-7.svg" loading="eager" width="95" height="80" alt="UPS logo" class="logo-img"/></div><div class="home_top-marquee-item swiper-slide"><img src="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/680946676a0dac031a98495a_Logo-8.svg" loading="eager" width="168" height="80" alt="GE Appliances logo" class="logo-img"/></div></div></div></div></div><div class="w-embed w-script"><script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+(() => {
+  const SELECTOR = ".home_top-marquee-component";
+  const WRAPPER_SELECTOR = ".home_top-marquee-flex-wrapper";
+  const SPEED = 30; // px per second
+
+  function waitForImages(root) {
+    const imgs = [...root.querySelectorAll("img")];
+    if (!imgs.length) return Promise.resolve();
+    return Promise.all(
+      imgs.map(img =>
+        img.complete
+          ? Promise.resolve()
+          : new Promise(r => {
+              img.addEventListener("load", r, { once: true });
+              img.addEventListener("error", r, { once: true });
+            })
+      )
+    );
+  }
+
+  function px(v) {
+    const n = parseFloat(v);
+    return Number.isFinite(n) ? n : 0;
+  }
+
+  function measureSlides(slides) {
+    let w = 0;
+    slides.forEach(el => {
+      const r = el.getBoundingClientRect();
+      const s = getComputedStyle(el);
+      w += r.width + px(s.marginRight);
+    });
+    return w;
+  }
+
+  function initOne(component) {
+    if (component.__marqueeInit) return;
+    component.__marqueeInit = true;
+
+    const swiper = component.querySelector(".swiper");
+    const wrapper = component.querySelector(WRAPPER_SELECTOR);
+    if (!swiper || !wrapper) return;
+
+    // Neutralize Swiper side effects
+    swiper.style.overflow = "hidden";
+    wrapper.style.display = "flex";
+    wrapper.style.flexWrap = "nowrap";
+    wrapper.style.transition = "none";
+    wrapper.style.willChange = "transform";
+
+    // Original slides only (ignore Swiper duplicates)
+    const originals = [...wrapper.children].filter(
+      el => !el.classList.contains("swiper-slide-duplicate")
+    );
+
+    let seqWidth = 0;
+    let x = 0;
+    let lastT = 0;
+
+    function build() {
+      wrapper.innerHTML = "";
+
+      // Build two sequences for accurate measurement
+      for (let i = 0; i < 2; i++) {
+        originals.forEach(el => wrapper.appendChild(el.cloneNode(true)));
+      }
+
+      // Measure first rendered sequence
+      const firstSeq = [...wrapper.children].slice(0, originals.length);
+      seqWidth = measureSlides(firstSeq);
+
+      const viewport = component.getBoundingClientRect().width;
+      const needed = Math.ceil(viewport / seqWidth) + 2;
+
+      // Rebuild with enough sequences to avoid dead zones
+      wrapper.innerHTML = "";
+      for (let i = 0; i < needed; i++) {
+        originals.forEach(el => wrapper.appendChild(el.cloneNode(true)));
+      }
+
+      // Normalize position to avoid jumps
+      x = x % seqWidth;
+      if (x > 0) x -= seqWidth;
+      wrapper.style.transform = `translate3d(${x}px,0,0)`;
+    }
+
+    function tick(t) {
+      if (!lastT) lastT = t;
+      const dt = (t - lastT) / 1000;
+      lastT = t;
+
+      x -= SPEED * dt;
+      if (x <= -seqWidth) x += seqWidth;
+
+      wrapper.style.transform = `translate3d(${x}px,0,0)`;
+      requestAnimationFrame(tick);
+    }
+
+    (async () => {
+      await waitForImages(wrapper);
+      await new Promise(r =>
+        requestAnimationFrame(() => requestAnimationFrame(r))
+      );
+      build();
+      requestAnimationFrame(tick);
+    })();
+
+    window.addEventListener("resize", () => {
+      lastT = 0;
+      build();
+    });
+  }
+
+  function initAll() {
+    document.querySelectorAll(SELECTOR).forEach(initOne);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initAll);
+  } else {
+    initAll();
+  }
+})();
+</script></div></div></div></section><div class="background-color-tint-1"><div class="padding-global padding-section-large-copy alt"><div class="container-large"><div class="grid-2x-equal gap-large-4rem"><div class="flex-v-left-top gap-1-75rem"><div class="flex-v-left-top gap-1-75rem"><h2 class="heading-style-h2">What is the Benevity Enterprise Impact Platform?</h2><div class="text-size-small homepage">Running a purpose program in 2026 means justifying it in every room — to finance, legal, the board, the CFO. The Benevity Enterprise Impact Platform is a unified system for corporate social responsibility — bringing employee giving, volunteering, grants management, employee groups, challenges and impact reporting together in one place. <br/><br/>Built with the trusted global engine that supports every single action on the platform: risk mitigation, benchmarking, nonprofit due diligence, secure and compliant global disbursement, responsible and AI-native development.<br/><br/>Benevity is your partner for your social impact programs.</div><div class="flex-v-left-top gap--25rem"><div class="grid-3x-equal"><div class="stat-box"><div class="heading-style-h4"><strong>$16.6B</strong></div><div class="text-size-small homepage">Total donated </div></div><div class="stat-box"><div class="heading-style-h4">122.9M </div><div class="text-size-small homepage">Total volunteer hours</div></div><div class="stat-box"><div class="heading-style-h4"><strong>$20.1B</strong></div><div class="text-size-small homepage">Total grants managed</div></div></div><div class="text-size-footnote link"><a href="/annual-impact-report/2025" class="link-16">Source: 2025 Annual Impact Report</a></div></div></div><div class="button-group margin-top margin-small"><a href="/enterprise-impact-platform" class="button w-button">Learn about the platform</a></div></div><div><img src="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6a15fdcadc30ee1f0fb885ae_e0bf3d0263b07ea2d85c9eabe5745f08_Benevity-EIP.webp" loading="lazy" width="682" height="573" alt="Smiling woman inside a purple circular graphic with icons of gears, shield, pie chart, coin, and globe." srcset="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6a15fdcadc30ee1f0fb885ae_e0bf3d0263b07ea2d85c9eabe5745f08_Benevity-EIP-p-500.webp 500w, https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6a15fdcadc30ee1f0fb885ae_e0bf3d0263b07ea2d85c9eabe5745f08_Benevity-EIP-p-800.webp 800w, https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6a15fdcadc30ee1f0fb885ae_e0bf3d0263b07ea2d85c9eabe5745f08_Benevity-EIP-p-1080.webp 1080w, https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6a15fdcadc30ee1f0fb885ae_e0bf3d0263b07ea2d85c9eabe5745f08_Benevity-EIP.webp 1364w" sizes="(max-width: 767px) 100vw, 682px"/></div></div></div></div></div><section class="section_global-tabs"><div class="padding-global padding-section-large-copy"><div class="container-large"><div class="global-heading-medium-container"><div class="eyebrow-wrapper"><div class="eyebrow eyebrow-color-blue">BENEVITY ENTERPRISE IMPACT PLATFORM</div></div><div class="global-heading-copy-wrapper"><div class="text-color-primary"><h2 class="heading-style-h2">One platform — not five point solutions.</h2></div><div class="global-heading-copy-text-container"><div class="text-size-medium">Giving. Volunteering. Grants. ERGs. Impact reporting.<br/><br/>One unified platform so every dollar is tracked, every action is measurable and every decision is defensible in any room, all operating on a responsible AI model that saves your team time to focus on what matters most.</div></div></div></div><div class="margin-top margin-medium"><div class="grid-3x-equal _1-column-mobile"><div class="homepage-feature-card"><a href="/products/donate" class="card-background w-inline-block"><div class="module-feature-wrapper gap-1rem"><div class="flex-v-left-top gap-1-25rem"><div class="icon-background purple"><div class="c text-color-white w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M17.726 13.02L14 16H9v-1h4.065a.5.5 0 0 0 .416-.777l-.888-1.332A1.995 1.995 0 0 0 10.93 12H3a1 1 0 0 0-1 1v6a2 2 0 0 0 2 2h9.639a3 3 0 0 0 2.258-1.024L22 13l-1.452-.484a2.998 2.998 0 0 0-2.822.504zm1.532-5.63c.451-.465.73-1.108.73-1.818s-.279-1.353-.73-1.818A2.447 2.447 0 0 0 17.494 3S16.25 2.997 15 4.286C13.75 2.997 12.506 3 12.506 3a2.45 2.45 0 0 0-1.764.753c-.451.466-.73 1.108-.73 1.818s.279 1.354.73 1.818L15 12l4.258-4.61z" fill="currentColor"></path></svg></div></div><div class="flex-v-left-top gap--25rem"><h3 class="heading-style-h4 text-color-violet">Donate</h3><div class="text-size-small homepage">Make it easy for employees to give — matching, seeding, payroll giving — all in one place.</div></div></div><div class="button is-icon-black-transparent text-color-violet">Learn about Donate →</div></div></a></div><div class="homepage-feature-card"><a href="/products/volunteer" class="card-background w-inline-block"><div class="module-feature-wrapper gap-1rem"><div class="flex-v-left-top gap-1-25rem"><div class="icon-background blue"><div class="c text-color-white w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M16.48 10.41c-.39.39-1.04.39-1.43 0l-4.47-4.46l-7.05 7.04l-.66-.63a3 3 0 0 1 0-4.24l4.24-4.24a3 3 0 0 1 4.24 0L16.48 9c.39.39.39 1.02 0 1.41m.7-2.12c.78.78.78 2.05 0 2.83c-1.27 1.27-2.61.22-2.83 0l-3.76-3.76l-5.57 5.57a.996.996 0 0 0 0 1.41c.39.39 1.02.39 1.42 0l4.62-4.62l.71.71l-4.62 4.62a.996.996 0 0 0 0 1.41c.39.39 1.02.39 1.42 0l4.62-4.62l.71.71l-4.62 4.62a.996.996 0 1 0 1.41 1.41l4.62-4.62l.71.71l-4.62 4.62a.996.996 0 1 0 1.41 1.41l8.32-8.34a3 3 0 0 0 0-4.24l-4.24-4.24a3 3 0 0 0-4.18-.06z"></path></svg></div></div><div class="flex-v-left-top gap--25rem"><h3 class="heading-style-h4 text-color-violet">Volunteer</h3><div class="text-size-small homepage">Connect employees to in-person, virtual, and skills-based opportunities.</div></div></div><div class="button is-icon-black-transparent text-color-violet">Learn about Volunteer →</div></div></a></div><div class="homepage-feature-card"><a href="/products/grants" class="card-background w-inline-block"><div class="module-feature-wrapper gap-1rem"><div class="flex-v-left-top gap-1-25rem"><div class="icon-background"><div class="c text-color-white w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--heroicons" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="currentColor"><path fill-rule="evenodd" d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0 0 16.5 9h-1.875a1.875 1.875 0 0 1-1.875-1.875V5.25A3.75 3.75 0 0 0 9 1.5zM7.5 15a.75.75 0 0 1 .75-.75h7.5a.75.75 0 0 1 0 1.5h-7.5A.75.75 0 0 1 7.5 15m.75 2.25a.75.75 0 0 0 0 1.5H12a.75.75 0 0 0 0-1.5z" clip-rule="evenodd"></path><path d="M12.971 1.816A5.23 5.23 0 0 1 14.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 0 1 3.434 1.279a9.77 9.77 0 0 0-6.963-6.963"></path></g></svg></div></div><div class="flex-v-left-top gap--25rem"><h3 class="heading-style-h4 text-color-violet">Grants</h3><div class="text-size-small homepage">Streamline the grant lifecycle — applications, scoring, disbursement and compliance.</div></div></div><div class="button is-icon-black-transparent text-color-violet">Learn about Grants →</div></div></a></div><div class="homepage-feature-card"><a href="/products/employee-groups" class="card-background w-inline-block"><div class="module-feature-wrapper gap-1rem"><div class="flex-v-left-top gap-1-25rem"><div class="icon-background"><div class="c text-color-white w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M16.24 13.65c-1.17-.52-2.61-.9-4.24-.9s-3.07.39-4.24.9A2.99 2.99 0 0 0 6 16.39V18h12v-1.61c0-1.18-.68-2.26-1.76-2.74m-15.02.93A2.01 2.01 0 0 0 0 16.43V18h4.5v-1.61c0-.83.23-1.61.63-2.29c-.37-.06-.74-.1-1.13-.1c-.99 0-1.93.21-2.78.58m21.56 0A6.95 6.95 0 0 0 20 14c-.39 0-.76.04-1.13.1c.4.68.63 1.46.63 2.29V18H24v-1.57c0-.81-.48-1.53-1.22-1.85M12 12c1.66 0 3-1.34 3-3s-1.34-3-3-3s-3 1.34-3 3s1.34 3 3 3M1.497 11L4 8.497L6.503 11L4 13.503zM20 9l-2.5 4h5z"></path></svg></div></div><div class="flex-v-left-top gap--25rem"><h3 class="heading-style-h4 text-color-violet">Employee Groups</h3><div class="text-size-small homepage">Build ERGs that scale globally, mobilize members around shared causes and tie participation to business outcomes.</div></div></div><div class="button is-icon-black-transparent text-color-violet">Learn about Employee Groups →</div></div></a></div><div class="homepage-feature-card"><a href="/products/challenges" class="card-background w-inline-block"><div class="module-feature-wrapper gap-1rem"><div class="flex-v-left-top gap-1-25rem"><div class="icon-background purple"><div class="c text-color-white w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M21 4h-3V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v1H3a1 1 0 0 0-1 1v3c0 4.31 1.8 6.91 4.82 7A6 6 0 0 0 11 17.91V20H9v2h6v-2h-2v-2.09A6 6 0 0 0 17.18 15c3-.1 4.82-2.7 4.82-7V5a1 1 0 0 0-1-1zM4 8V6h2v6.83C4.22 12.08 4 9.3 4 8zm14 4.83V6h2v2c0 1.3-.22 4.08-2 4.83z" fill="currentColor"></path></svg></div></div><div class="flex-v-left-top gap--25rem"><h3 class="heading-style-h4 text-color-violet">Challenges</h3><div class="text-size-small homepage">Drive behavior change and build culture through gamified experiences that connect purpose to everyday employee life.</div></div></div><div class="button is-icon-black-transparent text-color-violet">Learn about Challenges →</div></div></a></div><div class="homepage-feature-card"><a href="/products/reporting-suite" class="card-background w-inline-block"><div class="module-feature-wrapper gap-1rem"><div class="flex-v-left-top gap-1-25rem"><div class="icon-background blue"><div class="c text-color-white w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bx" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M3 3v17a1 1 0 0 0 1 1h17v-2H5V3z"></path><path fill="currentColor" d="M15.293 14.707a1 1 0 0 0 1.414 0l5-5l-1.414-1.414L16 12.586l-2.293-2.293a1 1 0 0 0-1.414 0l-5 5l1.414 1.414L13 12.414z"></path></svg></div></div><div class="flex-v-left-top gap--25rem"><h3 class="heading-style-h4 text-color-violet">Reporting Suite</h3><div class="text-size-small homepage">Consolidate everything into a single Trusted Impact number — the aggregate dollar value of every hour, dollar and action.</div></div></div><div class="button is-icon-black-transparent text-color-violet">Learn about Reporting →</div></div></a></div></div></div></div></div></section><div class="background-color-moonshot"><div><div class="padding-global padding-section-xlarge"><div class="container-large"><div class="grid-2x-equal gap-large-4rem"><div class="flex-v-left-top gap-1-75rem"><div class="flex-v-left-top gap-1-75rem"><div><div class="eyebrow-wrapper"><div class="eyebrow text-color-aqua">AI-native purpose platform</div></div><h2>Built for what&#x27;s next.<br/>‍<span class="text-color-aqua">AI-first social impact.</span></h2></div><div class="text-size-medium">Benevity&#x27;s foundation has been refined for nearly two decades including regulatory compliance, secure payments, continuous nonprofit validation.<br/><br/>Now it is evolving into an AI-native platform. Not features bolted on. Intelligence embedded from the ground up. Our AI governance framework is grounded in integrity, fairness and accountability. Not added as an afterthought.</div><div class="demo-testimonial alt-background"><br/><blockquote class="text-style-quote-alt text-color-white">&quot;Reviewing employee match requests used to take me 3–5 hours a week. Using Match Assurance brought that down to about two hours - cutting my workflow in half.&quot;</blockquote><cite class="text-size-small text-weight-semibold">Anthony Rodriguez, Global Responsibility Lead, Starbucks</cite></div><div class="button-group margin-top"><a href="/solutions/ai-csr-platform" class="button w-button">See AI capabilities</a><a href="/legal/responsible-ai-policy" class="button is-icon-white-transparent w-button">Read our Responsible AI policy →</a></div></div></div><div class="flex-v-left-top gap-1-25rem"><div class="features-card"><div class="flex-h-left-top gap-16px"><div><div class="c w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M19.5 3.5L18 2l-1.5 1.5L15 2l-1.5 1.5L12 2l-1.5 1.5L9 2L7.5 3.5L6 2v14H3v3c0 1.66 1.34 3 3 3h12c1.66 0 3-1.34 3-3V2zM15 20H6c-.55 0-1-.45-1-1v-1h10zm4-1c0 .55-.45 1-1 1s-1-.45-1-1v-3H8V5h11z"></path><path fill="currentColor" d="M9 7h6v2H9zm0 3h6v2H9zm7-3h2v2h-2zm0 3h2v2h-2z"></path></svg></div></div><div><div class="flex-h-left-center"><h3 class="heading-style-h6">Match Assurance</h3><div class="live-highlight"><div>Live</div></div></div><div class="text-size-small homepage">Extracts key info from uploaded receipts automatically — before it reaches a program admin. Time saved. Every transaction. </div></div></div></div><div class="features-card"><div class="flex-h-left-top gap-16px"><div><div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--simple-icons" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M11.986 23.972C5.411 23.972 0 18.561 0 11.986C0 5.411 5.411 0 11.986 0c6.575 0 11.986 5.411 11.986 11.986a11.9 11.9 0 0 1-2.492 7.281l2.062 2.062c.293.293.458.691.458 1.106c0 .859-.706 1.565-1.565 1.565c-.415 0-.813-.165-1.106-.458l-2.062-2.062a11.9 11.9 0 0 1-7.281 2.492Zm6.664-6.001a8.936 8.936 0 0 0 2.31-5.985c0-4.923-4.051-8.974-8.974-8.974c-2.702 0-5.141 1.22-6.792 3.135h5.255v2.458H3.681a8.851 8.851 0 0 0-.536 1.844H9.22v2.459H3.06c.087.845.297 1.673.621 2.459h4.31v2.458H5.194c1.651 1.915 4.09 3.135 6.792 3.135c2.29 0 4.392-.877 5.985-2.31a1.59 1.59 0 0 1 .679-.679Zm-9.43-.146h7.376v-2.458H9.22v2.458Zm6.147-4.917h4.917v-2.459h-4.917v2.459Zm-4.918 0h3.074v-2.459h-3.074v2.459Zm1.844-4.303h4.918V6.147h-4.918v2.458Z"></path></svg></div></div><div><div class="flex-h-left-center"><h3 class="heading-style-h6">AI Grant Summaries</h3><div class="live-highlight"><div>Live</div></div></div><div class="text-size-small homepage">Generative AI produces a structured overview of every grant application — purpose, funding needs, intended impact. Review in minutes, not hours.</div></div></div></div><div class="features-card"><div class="flex-h-left-top gap-16px"><div><div class="icon-embed-xsmall w-embed"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4m0-7c-1.66 0-3 1.34-3 3s1.34 3 3 3s3-1.34 3-3s-1.34-3-3-3"></path></svg></div></div><div><div class="flex-h-left-center"><h3 class="heading-style-h6">Total Governance</h3><div class="live-highlight purple"><div>Always On</div></div></div><div class="text-size-small homepage">Complete control over your AI experience — full transparency into what AI does, with the ability to opt out of any usage in the platform.</div></div></div></div></div></div></div></div></div></div><div class="background-color-tint-1"><div class="padding-global padding-section-large-copy"><div class="container-large"><div class="grid-2x-equal gap-large-4rem"><div class="flex-v-left-top gap-1-75rem"><div class="flex-v-left-top gap-1-75rem"><div><div class="eyebrow-wrapper"><div class="eyebrow eyebrow-color-blue">Global Money Movement</div></div><h2 class="heading-style-h3 larger-mobile">99% payment success.<br/>200+ countries.<br/>One platform.</h2></div><div class="flex-v-left-top gap-medium"><div class="text-size-small homepage">Benevity disburses funds globally with speed, security, and compliance — in local currencies, with full tax reconciliation handled. Your program&#x27;s reach is never limited by where your team has bandwidth.</div><ul role="list" class="text-size-small homepage no-margin"><li>Continuous nonprofit validation across 2.5 million organizations</li><li>Intelligent fraud detection on every transaction</li><li>Automated sanctions, tax, and governance compliance</li><li>Single audit trail — one vendor, one contract, no year-end scramble</li></ul><div class="text-size-small homepage highlight-violet">$100,000 <strong>average annual tax savings per client</strong></div></div><div class="button-group"><a href="/solutions/money-movement" class="button w-button">See how money movement works</a></div></div></div><div><img src="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6ab165dfcfef2a96d74254e1_MoneyMovement-WIP.avif" loading="lazy" width="832" height="552" alt="" srcset="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6ab165dfcfef2a96d74254e1_MoneyMovement-WIP-p-500.avif 500w, https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6ab165dfcfef2a96d74254e1_MoneyMovement-WIP-p-800.avif 800w, https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6ab165dfcfef2a96d74254e1_MoneyMovement-WIP-p-1080.avif 1080w, https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6ab165dfcfef2a96d74254e1_MoneyMovement-WIP.avif 1664w" sizes="(max-width: 991px) 100vw, 832px"/></div></div></div></div></div><div><div class="padding-global padding-section-large-copy"><div class="container-large"><div class="grid-2x-equal gap-large-4rem"><div><img src="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6ab1666e7205874e46ac0626_EmployeeMobilization.avif" loading="lazy" width="832" height="553" alt="" srcset="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6ab1666e7205874e46ac0626_EmployeeMobilization-p-500.avif 500w, https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6ab1666e7205874e46ac0626_EmployeeMobilization-p-800.avif 800w, https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6ab1666e7205874e46ac0626_EmployeeMobilization-p-1080.avif 1080w, https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6ab1666e7205874e46ac0626_EmployeeMobilization.avif 1664w" sizes="(max-width: 991px) 100vw, 832px"/></div><div class="flex-v-left-top gap-1-75rem"><div class="flex-v-left-top gap-1-75rem"><div><div class="eyebrow-wrapper"><div class="eyebrow eyebrow-color-blue">Employee Mobilization</div></div><h2 class="heading-style-h3 larger-mobile">Every employee.<br/>Every location.<br/>One unified program.</h2></div><div class="flex-v-left-top gap-medium"><div class="text-size-small homepage">Benevity makes it easy for every employee to take action, whether they work at headquarters, in the field, remotely or without a desk. Purpose doesn&#x27;t stop at the office door, and neither does your program.</div><ul role="list" class="text-size-small homepage no-margin"><li>Mobile-first experience for deskless and remote employees</li><li>ERG tools that connect cause to culture, globally</li><li>Gamified challenges that drive daily engagement</li></ul><div class="text-size-small homepage highlight-violet">27% average increase in employee participation</div></div><div class="button-group"><a href="/solutions/employee-mobilization" class="button w-button">Learn about employee mobilization</a></div></div></div></div></div></div></div><div class="background-color-tint-1"><div class="padding-global padding-section-large-copy"><div class="container-large"><div class="grid-2x-equal gap-large-4rem"><div class="flex-v-left-top gap-1-75rem"><div class="flex-v-left-top gap-1-75rem"><div><div class="eyebrow-wrapper"><div class="eyebrow eyebrow-color-blue">CSR and Grant Risk Mitigation</div></div><h2 class="heading-style-h3 larger-mobile">The crises that don&#x27;t happen are the proof that matters most</h2></div><div class="flex-v-left-top gap-medium"><div class="text-size-small homepage">Benevity continuously validates nonprofits, runs intelligent fraud detection on every transaction, and automates adherence to sanctions, tax regulations, and governance standards in every market you operate.</div><ul role="list" class="text-size-small homepage no-margin"><li>Centralized audit trail — always audit-ready</li><li>Sanctions screening and regulatory compliance, automated</li><li>Match Assurance flags anomalies before they become fraud</li></ul><div class="text-size-small homepage highlight-violet">2.5M nonprofits continuously validated, globally</div></div><div class="button-group"><a href="/solutions/grantmaking-csr-risk-mitigation" class="button w-button">Learn about risk mitigation</a></div></div></div><div><img src="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6ab16659b3423b4b02e022c6_RiskMitigation-WIP.avif" loading="lazy" width="832" height="555" alt="" srcset="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6ab16659b3423b4b02e022c6_RiskMitigation-WIP-p-500.avif 500w, https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6ab16659b3423b4b02e022c6_RiskMitigation-WIP-p-800.avif 800w, https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6ab16659b3423b4b02e022c6_RiskMitigation-WIP-p-1080.avif 1080w, https://cdn.prod.website-files.com/680946676a0dac031a9848fc/6ab16659b3423b4b02e022c6_RiskMitigation-WIP.avif 1664w" sizes="(max-width: 991px) 100vw, 832px"/></div></div></div></div></div><div><div class="padding-global padding-section-large-copy"><div class="container-large"><div class="global-heading-medium-container"><div class="eyebrow-wrapper"><div class="eyebrow eyebrow-color-blue">Why Benevity</div></div><div class="global-heading-copy-wrapper margin-bottom margin-large"><div class="text-color-primary"><h2 class="heading-style-h2">One platform.<br/>Proven outcomes. Global impact.</h2></div><div class="global-heading-copy-text-container"><div class="text-size-medium">Benevity helps leading companies connect employee giving, volunteering and grants programs to business outcomes that matter.</div></div></div></div><div><div class="grid-2x-40-60 gap-large-4rem"><div class="flex-v-left-top gap-1-75rem"><div class="flex-v-left-top gap-1-75rem"><div class="divider-standard margin-bottom-only"></div><div class="flex-h-left-top gap-8px"><div><div class="text-style-numbers homepage">01</div></div><div><h3 class="heading-style-h5">One audit trail, not three.</h3><div class="text-size-small homepage">Every dollar, every hour, every grant — all in one system your CFO, legal team and board can trust. No reconciling across platforms at year-end.</div></div></div><div class="divider-standard margin-bottom-only"></div><div class="flex-h-left-top gap-8px"><div><div class="text-style-numbers homepage">02</div></div><div><h3 class="heading-style-h5"><strong>Faster disbursements. Fewer escalations.</strong></h3><div class="text-size-small homepage">Our disbursement engine automates routing, compliance checks, currency conversion and receipting — so funds move faster.</div></div></div><div class="divider-standard margin-bottom-only"></div><div class="flex-h-left-top gap-8px"><div><div class="text-style-numbers homepage">03</div></div><div><h3 class="heading-style-h5"><strong>The proof to win any room.</strong></h3><div class="text-size-small homepage">Trusted Impact reporting gives you a single number — every dollar, hour and action, translated into the language finance, legal and the C-suite can act on.</div></div></div></div><div class="button-group margin-top margin-small"><a href="/benevity-advantage" class="button w-button">Learn more about the Benevity Advantage</a></div></div><div><code-island data-loader="{&quot;tag&quot;:&quot;FEDERATION&quot;,&quot;val&quot;:{&quot;clientModuleUrl&quot;:&quot;https://code-components.website-files.com/6ae0b4472a4cecbd5ca3c210%2Fmodule%2Fwf-manifest.json&quot;,&quot;moduleId&quot;:&quot;_6ae0b4472a4cecbd5ca3c210&quot;,&quot;submoduleId&quot;:&quot;a96d4787-3955-50bb-f13a-ceec6e92ebd6&quot;,&quot;exportPath&quot;:&quot;default&quot;,&quot;serverModuleUrl&quot;:&quot;_&quot;}}" data-props="{&quot;title&quot;:&quot;Benevity vs. Point Solutions&quot;,&quot;columnA&quot;:&quot;Benevity&quot;,&quot;columnB&quot;:&quot;Point Solution&quot;,&quot;row1&quot;:&quot;Unified reporting across giving, volunteering &amp; grants&quot;,&quot;row1A&quot;:true,&quot;row1B&quot;:false,&quot;showRow1&quot;:true,&quot;row2&quot;:&quot;Global money movement, 200+ countries&quot;,&quot;row2A&quot;:true,&quot;row2B&quot;:false,&quot;showRow2&quot;:true,&quot;row3&quot;:&quot;99% payment success rate&quot;,&quot;row3A&quot;:true,&quot;row3B&quot;:false,&quot;showRow3&quot;:true,&quot;row4&quot;:&quot;Continuous nonprofit validation, 312K+&quot;,&quot;row4A&quot;:true,&quot;row4B&quot;:false,&quot;showRow4&quot;:true,&quot;row5&quot;:&quot;Intelligent fraud detection&quot;,&quot;row5A&quot;:true,&quot;row5B&quot;:false,&quot;showRow5&quot;:true,&quot;row6&quot;:&quot;Sanctions &amp; regulatory compliance, automated&quot;,&quot;row6A&quot;:true,&quot;row6B&quot;:false,&quot;showRow6&quot;:true,&quot;row7&quot;:&quot;AI automation built-in&quot;,&quot;row7A&quot;:true,&quot;row7B&quot;:false,&quot;showRow7&quot;:true,&quot;row8&quot;:&quot;Single audit trail, one contract&quot;,&quot;row8A&quot;:true,&quot;row8B&quot;:false,&quot;showRow8&quot;:true}" data-slots="[]" data-hydrate="true" data-webflow-context="{&quot;mode&quot;:&quot;publish&quot;,&quot;interactive&quot;:true,&quot;locale&quot;:&quot;en&quot;}" data-interactive="true" style="display:contents"><template shadowrootmode="open"><link rel="stylesheet" type="text/css" href="https://code-components.website-files.com/6ae0b4472a4cecbd5ca3c210%2Fmodule%2F004994d58ed8d39d.css"/><div data-root="true" style="display:contents"><!--$--><div style="font-family:&#x27;Red Hat Display&#x27;, sans-serif;width:100%"><div style="background:linear-gradient(165deg, #0f0a3e 0%, #110d42 40%, #0d0935 100%);padding:32px 36px 24px" class="max-[992px]:px-6 max-[992px]:py-6 max-[768px]:px-5 max-[768px]:py-5 max-[480px]:px-3 max-[480px]:py-4"><h3 style="color:#5CE0D2;font-size:18px;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;margin:0 0 20px 0;font-family:&#x27;Red Hat Display&#x27;, sans-serif" class="max-[768px]:text-[16px] max-[480px]:text-[13px] max-[480px]:tracking-[1.5px] max-[480px]:mb-4">Benevity vs. Point Solutions</h3><div style="display:table;width:100%;border-spacing:0;border:none"><div style="display:table-row"><div style="display:table-cell;padding-bottom:10px;border-bottom:1px solid rgba(92, 224, 210, 0.25);vertical-align:bottom" class="max-[480px]:pb-2"></div><div style="display:table-cell;width:140px;padding-bottom:10px;padding-left:8px;padding-right:8px;border-bottom:1px solid rgba(92, 224, 210, 0.25);color:#ffffff;font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase;text-align:center;vertical-align:bottom;font-family:&#x27;Red Hat Display&#x27;, sans-serif" class="max-[992px]:w-[120px] max-[768px]:w-[90px] max-[768px]:text-[12px] max-[480px]:w-[64px] max-[480px]:text-[9px] max-[480px]:tracking-[0.5px] max-[480px]:leading-tight max-[480px]:pb-2 max-[480px]:px-1">Benevity</div><div style="display:table-cell;width:140px;padding-bottom:10px;padding-left:8px;padding-right:8px;border-bottom:1px solid rgba(92, 224, 210, 0.25);color:#5a5a80;font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase;text-align:center;vertical-align:bottom;font-family:&#x27;Red Hat Display&#x27;, sans-serif" class="max-[992px]:w-[120px] max-[768px]:w-[90px] max-[768px]:text-[12px] max-[480px]:w-[64px] max-[480px]:text-[9px] max-[480px]:tracking-[0.5px] max-[480px]:leading-tight max-[480px]:pb-2 max-[480px]:px-1">Point Solution</div></div><div style="display:table-row"><div style="display:table-cell;color:#c8c8e0;font-size:16px;font-weight:500;line-height:1.5;font-family:&#x27;Red Hat Display&#x27;, sans-serif;padding-top:12px;padding-bottom:12px;padding-right:12px;border-bottom:1px solid rgba(92, 224, 210, 0.08);vertical-align:middle" class="max-[768px]:text-[14px] max-[480px]:text-[11px] max-[480px]:leading-snug max-[480px]:pr-2 max-[480px]:py-2">Unified reporting across giving, volunteering &amp; grants</div><div style="display:table-cell;text-align:center;vertical-align:middle;padding-top:12px;padding-bottom:12px;padding-left:8px;padding-right:8px;border-bottom:1px solid rgba(92, 224, 210, 0.08)" class="max-[480px]:py-2 max-[480px]:px-1"><span style="display:inline-flex;justify-content:center;align-items:center"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 14.5L10.5 21L24 7" stroke="#5CE0D2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><div style="display:table-cell;text-align:center;vertical-align:middle;padding-top:12px;padding-bottom:12px;padding-left:8px;padding-right:8px;border-bottom:1px solid rgba(92, 224, 210, 0.08)" class="max-[480px]:py-2 max-[480px]:px-1"><span style="display:inline-flex;justify-content:center;align-items:center"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4L18 18M18 4L4 18" stroke="#5a5a80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div></div><div style="display:table-row"><div style="display:table-cell;color:#c8c8e0;font-size:16px;font-weight:500;line-height:1.5;font-family:&#x27;Red Hat Display&#x27;, sans-serif;padding-top:12px;padding-bottom:12px;padding-right:12px;border-bottom:1px solid rgba(92, 224, 210, 0.08);vertical-align:middle" class="max-[768px]:text-[14px] max-[480px]:text-[11px] max-[480px]:leading-snug max-[480px]:pr-2 max-[480px]:py-2">Global money movement, 200+ countries</div><div style="display:table-cell;text-align:center;vertical-align:middle;padding-top:12px;padding-bottom:12px;padding-left:8px;padding-right:8px;border-bottom:1px solid rgba(92, 224, 210, 0.08)" class="max-[480px]:py-2 max-[480px]:px-1"><span style="display:inline-flex;justify-content:center;align-items:center"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 14.5L10.5 21L24 7" stroke="#5CE0D2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><div style="display:table-cell;text-align:center;vertical-align:middle;padding-top:12px;padding-bottom:12px;padding-left:8px;padding-right:8px;border-bottom:1px solid rgba(92, 224, 210, 0.08)" class="max-[480px]:py-2 max-[480px]:px-1"><span style="display:inline-flex;justify-content:center;align-items:center"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4L18 18M18 4L4 18" stroke="#5a5a80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div></div><div style="display:table-row"><div style="display:table-cell;color:#c8c8e0;font-size:16px;font-weight:500;line-height:1.5;font-family:&#x27;Red Hat Display&#x27;, sans-serif;padding-top:12px;padding-bottom:12px;padding-right:12px;border-bottom:1px solid rgba(92, 224, 210, 0.08);vertical-align:middle" class="max-[768px]:text-[14px] max-[480px]:text-[11px] max-[480px]:leading-snug max-[480px]:pr-2 max-[480px]:py-2">99% payment success rate</div><div style="display:table-cell;text-align:center;vertical-align:middle;padding-top:12px;padding-bottom:12px;padding-left:8px;padding-right:8px;border-bottom:1px solid rgba(92, 224, 210, 0.08)" class="max-[480px]:py-2 max-[480px]:px-1"><span style="display:inline-flex;justify-content:center;align-items:center"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 14.5L10.5 21L24 7" stroke="#5CE0D2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><div style="display:table-cell;text-align:center;vertical-align:middle;padding-top:12px;padding-bottom:12px;padding-left:8px;padding-right:8px;border-bottom:1px solid rgba(92, 224, 210, 0.08)" class="max-[480px]:py-2 max-[480px]:px-1"><span style="display:inline-flex;justify-content:center;align-items:center"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4L18 18M18 4L4 18" stroke="#5a5a80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div></div><div style="display:table-row"><div style="display:table-cell;color:#c8c8e0;font-size:16px;font-weight:500;line-height:1.5;font-family:&#x27;Red Hat Display&#x27;, sans-serif;padding-top:12px;padding-bottom:12px;padding-right:12px;border-bottom:1px solid rgba(92, 224, 210, 0.08);vertical-align:middle" class="max-[768px]:text-[14px] max-[480px]:text-[11px] max-[480px]:leading-snug max-[480px]:pr-2 max-[480px]:py-2">Continuous nonprofit validation, 312K+</div><div style="display:table-cell;text-align:center;vertical-align:middle;padding-top:12px;padding-bottom:12px;padding-left:8px;padding-right:8px;border-bottom:1px solid rgba(92, 224, 210, 0.08)" class="max-[480px]:py-2 max-[480px]:px-1"><span style="display:inline-flex;justify-content:center;align-items:center"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 14.5L10.5 21L24 7" stroke="#5CE0D2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><div style="display:table-cell;text-align:center;vertical-align:middle;padding-top:12px;padding-bottom:12px;padding-left:8px;padding-right:8px;border-bottom:1px solid rgba(92, 224, 210, 0.08)" class="max-[480px]:py-2 max-[480px]:px-1"><span style="display:inline-flex;justify-content:center;align-items:center"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4L18 18M18 4L4 18" stroke="#5a5a80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div></div><div style="display:table-row"><div style="display:table-cell;color:#c8c8e0;font-size:16px;font-weight:500;line-height:1.5;font-family:&#x27;Red Hat Display&#x27;, sans-serif;padding-top:12px;padding-bottom:12px;padding-right:12px;border-bottom:1px solid rgba(92, 224, 210, 0.08);vertical-align:middle" class="max-[768px]:text-[14px] max-[480px]:text-[11px] max-[480px]:leading-snug max-[480px]:pr-2 max-[480px]:py-2">Intelligent fraud detection</div><div style="display:table-cell;text-align:center;vertical-align:middle;padding-top:12px;padding-bottom:12px;padding-left:8px;padding-right:8px;border-bottom:1px solid rgba(92, 224, 210, 0.08)" class="max-[480px]:py-2 max-[480px]:px-1"><span style="display:inline-flex;justify-content:center;align-items:center"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 14.5L10.5 21L24 7" stroke="#5CE0D2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><div style="display:table-cell;text-align:center;vertical-align:middle;padding-top:12px;padding-bottom:12px;padding-left:8px;padding-right:8px;border-bottom:1px solid rgba(92, 224, 210, 0.08)" class="max-[480px]:py-2 max-[480px]:px-1"><span style="display:inline-flex;justify-content:center;align-items:center"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4L18 18M18 4L4 18" stroke="#5a5a80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div></div><div style="display:table-row"><div style="display:table-cell;color:#c8c8e0;font-size:16px;font-weight:500;line-height:1.5;font-family:&#x27;Red Hat Display&#x27;, sans-serif;padding-top:12px;padding-bottom:12px;padding-right:12px;border-bottom:1px solid rgba(92, 224, 210, 0.08);vertical-align:middle" class="max-[768px]:text-[14px] max-[480px]:text-[11px] max-[480px]:leading-snug max-[480px]:pr-2 max-[480px]:py-2">Sanctions &amp; regulatory compliance, automated</div><div style="display:table-cell;text-align:center;vertical-align:middle;padding-top:12px;padding-bottom:12px;padding-left:8px;padding-right:8px;border-bottom:1px solid rgba(92, 224, 210, 0.08)" class="max-[480px]:py-2 max-[480px]:px-1"><span style="display:inline-flex;justify-content:center;align-items:center"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 14.5L10.5 21L24 7" stroke="#5CE0D2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><div style="display:table-cell;text-align:center;vertical-align:middle;padding-top:12px;padding-bottom:12px;padding-left:8px;padding-right:8px;border-bottom:1px solid rgba(92, 224, 210, 0.08)" class="max-[480px]:py-2 max-[480px]:px-1"><span style="display:inline-flex;justify-content:center;align-items:center"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4L18 18M18 4L4 18" stroke="#5a5a80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div></div><div style="display:table-row"><div style="display:table-cell;color:#c8c8e0;font-size:16px;font-weight:500;line-height:1.5;font-family:&#x27;Red Hat Display&#x27;, sans-serif;padding-top:12px;padding-bottom:12px;padding-right:12px;border-bottom:1px solid rgba(92, 224, 210, 0.08);vertical-align:middle" class="max-[768px]:text-[14px] max-[480px]:text-[11px] max-[480px]:leading-snug max-[480px]:pr-2 max-[480px]:py-2">AI automation built-in</div><div style="display:table-cell;text-align:center;vertical-align:middle;padding-top:12px;padding-bottom:12px;padding-left:8px;padding-right:8px;border-bottom:1px solid rgba(92, 224, 210, 0.08)" class="max-[480px]:py-2 max-[480px]:px-1"><span style="display:inline-flex;justify-content:center;align-items:center"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 14.5L10.5 21L24 7" stroke="#5CE0D2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><div style="display:table-cell;text-align:center;vertical-align:middle;padding-top:12px;padding-bottom:12px;padding-left:8px;padding-right:8px;border-bottom:1px solid rgba(92, 224, 210, 0.08)" class="max-[480px]:py-2 max-[480px]:px-1"><span style="display:inline-flex;justify-content:center;align-items:center"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4L18 18M18 4L4 18" stroke="#5a5a80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div></div><div style="display:table-row"><div style="display:table-cell;color:#c8c8e0;font-size:16px;font-weight:500;line-height:1.5;font-family:&#x27;Red Hat Display&#x27;, sans-serif;padding-top:12px;padding-bottom:12px;padding-right:12px;border-bottom:none;vertical-align:middle" class="max-[768px]:text-[14px] max-[480px]:text-[11px] max-[480px]:leading-snug max-[480px]:pr-2 max-[480px]:py-2">Single audit trail, one contract</div><div style="display:table-cell;text-align:center;vertical-align:middle;padding-top:12px;padding-bottom:12px;padding-left:8px;padding-right:8px;border-bottom:none" class="max-[480px]:py-2 max-[480px]:px-1"><span style="display:inline-flex;justify-content:center;align-items:center"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 14.5L10.5 21L24 7" stroke="#5CE0D2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div><div style="display:table-cell;text-align:center;vertical-align:middle;padding-top:12px;padding-bottom:12px;padding-left:8px;padding-right:8px;border-bottom:none" class="max-[480px]:py-2 max-[480px]:px-1"><span style="display:inline-flex;justify-content:center;align-items:center"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4L18 18M18 4L4 18" stroke="#5a5a80" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></div></div></div></div></div><!--/$--></div></template></code-island></div></div></div></div></div></div><section class="section_global-tabs background-color-tint-1"><div class="padding-global padding-section-large-copy"><div class="container-large"><div class="global-heading-medium-container"><div class="eyebrow-wrapper"><div class="eyebrow eyebrow-color-blue">TRUSTED BY THE COMPANIES LEADING THE WORLD IN IMPACT</div></div><div class="global-heading-copy-wrapper"><div class="text-color-primary"><h2 class="heading-style-h2">Why 98% of clients renew</h2></div><div class="global-heading-copy-text-container"><div class="text-size-medium">From the 2025 Benevity client survey — what teams say their program actually does for the business.</div></div></div></div><div class="margin-top margin-medium"><div class="grid-3x-equal _1-column-mobile"><div class="state-feature-wrapper"><h3 class="heading-style-h1 text-color-violet">92%</h3><div class="text-size-medium">of clients say Benevity has had a positive effect on business efficiency</div></div><div class="state-feature-wrapper"><h3 class="heading-style-h1 text-color-light-blue">75%</h3><div class="text-size-medium">say Benevity helps them build a stronger, more connected culture</div></div><div class="state-feature-wrapper"><h3 class="heading-style-h1 text-color-aqua darker">82%</h3><div class="text-size-medium">say Benevity helps their company live its corporate values</div></div></div></div><div class="button-group margin-top margin-small"><a href="/client-stories" class="button w-button">Read client stories </a></div></div></div></section><div class="background-color-violet"><div class="padding-global padding-section-medium"><div class="container-large"><div class="grid-2x-equal gap-large-4rem"><div class="flex-v-left-top gap-1-75rem"><div class="flex-v-left-top gap-1-75rem text-color-white"><div><h2 class="heading-style-h2 text-color-alternate">Your program is more powerful than anyone in that room knows.</h2></div></div></div><div id="w-node-_3c5233fd-956e-ac8c-e57d-29205d1ae505-1a9848fb" class="flex-v-left-top gap-medium"><div class="text-size-medium text-color-white">Let&#x27;s change that. See how the world&#x27;s most purpose-driven companies use Benevity to protect, prove and grow their programs — and walk into every conversation with the proof already made.</div><div class="button-group"><a href="/demo-enterprise-impact-platform" class="button w-button">Get a personalized demo</a><a href="/interactive-demo" class="button is-icon-white-transparent w-button">Watch an interactive demo  →</a></div></div></div></div></div></div></main><footer class="footer-section"><div class="padding-global padding-section-large"><div class="container-large"><div class="text-size-medium"><div class="footer-layout_grid"><div class="footer-grid-left_col"><a aria-label="Benevity home" href="/" aria-current="page" class="w-inline-block w--current"><div class="w-embed"><svg width="100%" id="Layer_1" class="white footer-logo" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.5" d="M31.581 3.16816C28.3425 -0.0318421 23.0928 -0.0318421 19.8578 3.16816C18.2403 4.7717 17.4315 6.86727 17.4315 8.96639V9.07258C17.4602 6.94161 16.6514 4.79648 15.0053 3.16816C11.7703 -0.0318421 6.52419 -0.0318421 3.28562 3.16816C0.0506274 6.3717 0.0506274 11.5611 3.28562 14.7646C4.90311 16.3611 7.0216 17.1611 9.14009 17.1646C7.0216 17.1646 4.90669 17.9646 3.28562 19.5646C0.0506274 22.7682 0.0506274 27.9575 3.28562 31.1611C6.52419 34.3611 11.7703 34.3611 15.0053 31.1611C16.6514 29.5328 17.4602 27.3876 17.4315 25.2567V17.1682H25.6085C27.7663 17.1929 29.9313 16.3965 31.581 14.7682C34.816 11.5646 34.816 6.37524 31.581 3.1717V3.16816Z" fill="white"/>
+<path class="st0" d="M51.4984 14.9912C49.04 14.9912 46.7998 15.908 45.1143 17.4124V9.98939C45.1143 9.55046 44.7565 9.19647 44.3127 9.19647H42.8133C42.3696 9.19647 42.0117 9.55046 42.0117 9.98939V24.2903C42.0117 29.4266 46.2594 33.5894 51.4948 33.5894C56.7302 33.5894 60.9779 29.4266 60.9779 24.2903C60.9779 19.154 56.7302 14.9912 51.4948 14.9912H51.4984ZM51.5557 30.5805C48.0594 30.5805 45.2288 27.7664 45.2288 24.2903C45.2288 20.8142 48.063 18 51.5557 18C55.0483 18 57.8825 20.8142 57.8825 24.2903C57.8825 27.7664 55.0483 30.5805 51.5557 30.5805Z" fill="white"/>
+<path class="st0" d="M173.128 15.731C172.982 15.508 172.728 15.3734 172.459 15.3734H170.749C170.427 15.3734 170.137 15.5646 170.012 15.8549L164.79 27.9929L159.899 15.8726C159.777 15.5717 159.483 15.3734 159.154 15.3734H157.515C157.25 15.3734 157.004 15.5044 156.853 15.7203C156.703 15.9363 156.674 16.2124 156.771 16.4566L163.023 32.0318L160.213 38.3611C160.106 38.6053 160.128 38.8885 160.278 39.1115C160.425 39.3345 160.679 39.469 160.947 39.469H162.629C162.947 39.469 163.237 39.2814 163.363 38.9911L173.196 16.4779C173.304 16.2336 173.279 15.9504 173.132 15.7274L173.128 15.731Z" fill="white"/>
+<path class="st0" d="M154.804 15.3735H151.561V9.98939C151.561 9.55046 151.204 9.19647 150.76 9.19647H149.26C148.817 9.19647 148.459 9.55046 148.459 9.98939V15.3735H145.782C145.338 15.3735 144.98 15.7274 144.98 16.1664V17.5929C144.98 18.0319 145.338 18.3859 145.782 18.3859H148.459V32.4177C148.459 32.8567 148.817 33.2106 149.26 33.2106H150.76C151.204 33.2106 151.561 32.8567 151.561 32.4177V18.3859H154.804C155.247 18.3859 155.605 18.0319 155.605 17.5929V16.1664C155.605 15.7274 155.247 15.3735 154.804 15.3735Z" fill="white"/>
+<path class="st0" d="M136.99 15.7239C136.84 15.5044 136.593 15.3734 136.325 15.3734H134.65C134.324 15.3734 134.031 15.5681 133.909 15.8655L128.799 28.177L123.614 15.8619C123.488 15.5681 123.198 15.3734 122.873 15.3734H121.291C121.023 15.3734 120.776 15.5044 120.626 15.7239C120.475 15.9434 120.45 16.223 120.55 16.4672L127.221 32.5097L127.307 32.715C127.428 33.0124 127.722 33.2071 128.047 33.2071H129.565C129.89 33.2071 130.18 33.0124 130.305 32.715L137.062 16.4672C137.162 16.223 137.133 15.9434 136.987 15.7239H136.99Z" fill="white"/>
+<path class="st0" d="M97.4898 16.8071C96.019 15.6035 94.1188 14.9911 91.8715 14.9911C91.1522 14.9664 90.415 15.0336 89.6778 15.1929C88.9442 15.3487 88.2393 15.5929 87.5808 15.9186C87.2301 16.092 86.8937 16.2938 86.5752 16.5168V16.1664C86.5752 15.7274 86.2174 15.3734 85.7737 15.3734H84.2742C83.8305 15.3734 83.4727 15.7274 83.4727 16.1664V32.4142C83.4727 32.8531 83.8305 33.2071 84.2742 33.2071H85.7737C86.2174 33.2071 86.5752 32.8531 86.5752 32.4142V23.115C86.5752 21.4832 87.0333 20.2195 87.9351 19.3664C88.8583 18.4956 90.1752 18.0354 91.8321 18C92.5371 18 93.2313 18.0956 93.9005 18.2796C94.5017 18.4496 95.0492 18.7504 95.5323 19.1823C95.9903 19.5894 96.3625 20.1628 96.6452 20.885C96.9422 21.646 97.089 22.6407 97.089 23.8513V32.4177C97.089 32.8566 97.4468 33.2106 97.8905 33.2106H99.39C99.8337 33.2106 100.192 32.8566 100.192 32.4177V23.8513C100.192 20.6761 99.2862 18.308 97.4898 16.8106V16.8071Z" fill="white"/>
+<path class="st0" d="M80.599 20.2053C80.0694 19.1044 79.3608 18.1522 78.4876 17.3805C77.6252 16.6159 76.6268 16.0177 75.5282 15.6071C74.4332 15.1965 73.2773 14.9911 72.0964 14.9911C70.7831 14.9911 69.5342 15.2283 68.3819 15.692C67.226 16.1593 66.2097 16.8212 65.3616 17.6566C64.5135 18.492 63.8443 19.4867 63.3648 20.6159C62.8853 21.7381 62.6419 22.9735 62.6348 24.2867V24.3221C62.6383 25.6106 62.8781 26.8319 63.3469 27.954C63.8193 29.0867 64.4813 30.0814 65.3151 30.9168C66.1525 31.7558 67.1616 32.4212 68.3103 32.8885C69.4554 33.3558 70.7222 33.5894 72.0749 33.5894C72.9624 33.5894 73.8427 33.4796 74.698 33.2602C75.564 33.0372 76.3906 32.6938 77.1493 32.2336C77.9043 31.777 78.6093 31.1894 79.2356 30.492C79.6972 29.9788 80.1051 29.3947 80.4487 28.7504C80.5811 28.5062 80.5704 28.2088 80.4272 27.9717C80.2841 27.7345 80.0228 27.5894 79.7401 27.5894H78.001C77.7326 27.5894 77.4821 27.7239 77.3318 27.9434C76.8487 28.669 76.2332 29.2531 75.5103 29.6814C74.5012 30.2796 73.356 30.5805 72.1036 30.5805C71.4558 30.5805 70.7437 30.4566 69.9886 30.2088C69.255 29.9681 68.5644 29.5894 67.9417 29.0832C67.3298 28.5841 66.8073 27.9363 66.3958 27.1504C66.1417 26.669 65.9628 26.1168 65.8626 25.4973H80.6419C81.0642 25.4973 81.4149 25.1717 81.4399 24.7575L81.49 23.9681C81.49 23.9398 81.49 23.908 81.49 23.8796C81.422 22.5416 81.1214 21.3027 80.5918 20.2018L80.599 20.2053ZM72.1608 18C72.9087 17.9646 73.6531 18.0956 74.3723 18.3788C75.1167 18.6726 75.7859 19.0832 76.3656 19.6071C76.9489 20.131 77.432 20.7611 77.8077 21.469C77.9795 21.7982 78.1155 22.1416 78.2121 22.492H65.9843C66.0845 22.1133 66.2205 21.7522 66.3922 21.4124C66.7429 20.7186 67.2081 20.1133 67.7735 19.6142C68.3425 19.1115 69.0081 18.7115 69.7489 18.4283C70.4861 18.1451 71.2876 18.0035 72.125 18.0035C72.1358 18.0035 72.1465 18.0035 72.1608 18.0035V18Z" fill="white"/>
+<path class="st0" d="M120.13 20.2053C119.601 19.1044 118.892 18.1522 118.019 17.3805C117.156 16.6159 116.158 16.0177 115.059 15.6071C113.964 15.1965 112.809 14.9911 111.628 14.9911C110.314 14.9911 109.065 15.2283 107.913 15.692C106.757 16.1593 105.741 16.8212 104.893 17.6566C104.048 18.492 103.376 19.4867 102.896 20.6159C102.417 21.7381 102.173 22.9735 102.166 24.2867V24.3221C102.17 25.6106 102.409 26.8319 102.878 27.954C103.351 29.0867 104.013 30.0814 104.846 30.9168C105.684 31.7558 106.693 32.4212 107.842 32.8885C108.987 33.3558 110.253 33.5894 111.606 33.5894C112.494 33.5894 113.374 33.4796 114.229 33.2602C115.095 33.0372 115.922 32.6938 116.681 32.2336C117.436 31.777 118.141 31.1894 118.767 30.492C119.228 29.9788 119.636 29.3947 119.98 28.7504C120.112 28.5062 120.102 28.2088 119.958 27.9717C119.815 27.7345 119.554 27.5894 119.271 27.5894H117.532C117.264 27.5894 117.013 27.7239 116.863 27.9434C116.38 28.669 115.764 29.2531 115.042 29.6814C114.032 30.2796 112.887 30.5805 111.635 30.5805C110.987 30.5805 110.275 30.4566 109.52 30.2088C108.786 29.9681 108.096 29.5894 107.473 29.0832C106.861 28.5841 106.339 27.9363 105.927 27.1504C105.673 26.669 105.494 26.1168 105.394 25.4973H120.173C120.595 25.4973 120.946 25.1717 120.971 24.7575L121.021 23.9681C121.021 23.9398 121.021 23.908 121.021 23.8796C120.953 22.5416 120.653 21.3027 120.123 20.2018L120.13 20.2053ZM111.692 18C112.44 17.9646 113.184 18.0956 113.904 18.3788C114.648 18.6726 115.317 19.0832 115.897 19.6071C116.48 20.131 116.963 20.7611 117.339 21.469C117.511 21.7982 117.647 22.1416 117.743 22.492H105.516C105.616 22.1133 105.752 21.7522 105.923 21.4124C106.274 20.7186 106.739 20.1133 107.305 19.6142C107.874 19.1115 108.539 18.7115 109.28 18.4283C110.017 18.1451 110.819 18.0035 111.656 18.0035C111.667 18.0035 111.678 18.0035 111.692 18.0035V18Z" fill="white"/>
+<path class="st0" d="M141.541 15.3734H140.042C139.599 15.3734 139.24 15.7284 139.24 16.1664V32.4142C139.24 32.8521 139.599 33.2071 140.042 33.2071H141.541C141.984 33.2071 142.343 32.8521 142.343 32.4142V16.1664C142.343 15.7284 141.984 15.3734 141.541 15.3734Z" fill="white"/>
+<path class="st0" d="M140.793 13.0407C141.866 13.0407 142.736 12.1802 142.736 11.1186C142.736 10.057 141.866 9.19647 140.793 9.19647C139.72 9.19647 138.85 10.057 138.85 11.1186C138.85 12.1802 139.72 13.0407 140.793 13.0407Z" fill="white"/>
+<path class="st0" d="M177.29 19.4513C176.986 19.4513 176.703 19.4018 176.446 19.2991C176.188 19.1965 175.963 19.0549 175.773 18.8708C175.583 18.6867 175.433 18.4708 175.329 18.2195C175.226 17.9717 175.172 17.6991 175.172 17.4053C175.172 17.1115 175.226 16.846 175.329 16.5982C175.433 16.3504 175.583 16.1345 175.773 15.9504C175.963 15.7664 176.188 15.6248 176.446 15.5257C176.703 15.423 176.986 15.3734 177.29 15.3734C177.595 15.3734 177.877 15.423 178.138 15.5257C178.4 15.6283 178.622 15.7699 178.815 15.9504C179.004 16.1345 179.155 16.3469 179.262 16.5982C179.369 16.846 179.423 17.115 179.423 17.4053C179.423 17.6956 179.369 17.9717 179.262 18.2195C179.155 18.4672 179.008 18.6832 178.815 18.8708C178.625 19.0549 178.4 19.2 178.138 19.2991C177.877 19.3982 177.598 19.4513 177.29 19.4513ZM177.29 19.2071C177.637 19.2071 177.952 19.1292 178.232 18.977C178.511 18.8248 178.736 18.6124 178.897 18.3434C179.058 18.0743 179.144 17.7628 179.144 17.4088C179.144 17.1575 179.098 16.9239 179.008 16.7044C178.915 16.4885 178.786 16.2973 178.618 16.1345C178.45 15.9717 178.253 15.8442 178.028 15.7522C177.802 15.6637 177.555 15.6177 177.29 15.6177C177.026 15.6177 176.779 15.6637 176.553 15.7522C176.331 15.8442 176.134 15.9681 175.97 16.131C175.805 16.2938 175.676 16.4814 175.583 16.6973C175.49 16.9133 175.447 17.1469 175.447 17.4018C175.447 17.6566 175.494 17.8903 175.583 18.1097C175.676 18.3292 175.805 18.5203 175.97 18.6832C176.134 18.846 176.331 18.9734 176.553 19.0655C176.775 19.1575 177.022 19.2035 177.29 19.2035V19.2071ZM176.403 16.2301C176.403 16.1841 176.442 16.1451 176.489 16.1451H177.412C177.459 16.1451 177.537 16.1522 177.587 16.1557C177.587 16.1557 177.788 16.1841 177.906 16.2655C178.024 16.3469 178.113 16.4495 178.181 16.5734C178.249 16.6973 178.282 16.8248 178.282 16.9557C178.282 17.0726 178.26 17.1823 178.214 17.2849C178.167 17.3876 178.103 17.4761 178.02 17.554C177.938 17.6283 177.813 17.6743 177.813 17.6743C177.766 17.692 177.752 17.738 177.777 17.777L178.307 18.5982C178.332 18.6372 178.314 18.6726 178.267 18.6726H178.024C177.977 18.6726 177.917 18.6407 177.892 18.5982L177.401 17.8336C177.376 17.7947 177.315 17.7593 177.269 17.7593H176.865C176.818 17.7593 176.779 17.7982 176.779 17.8442V18.5841C176.779 18.6301 176.739 18.669 176.693 18.669H176.496C176.449 18.669 176.41 18.6301 176.41 18.5841V16.2265L176.403 16.2301ZM177.398 17.4407C177.444 17.4407 177.523 17.4336 177.569 17.423C177.569 17.423 177.727 17.3947 177.802 17.3026C177.877 17.2106 177.913 17.0938 177.913 16.9557C177.913 16.8177 177.87 16.6973 177.784 16.6088C177.698 16.5203 177.552 16.492 177.552 16.492C177.505 16.4814 177.426 16.4743 177.38 16.4743H176.861C176.814 16.4743 176.775 16.5133 176.775 16.5593V17.3487C176.775 17.3947 176.814 17.4336 176.861 17.4336H177.398V17.4407Z" fill="white"/>
+<path class="st0" d="M24.5557 33.5469C22.0436 33.5469 19.6818 32.5805 17.9032 30.8212C16.0925 29.0301 15.1156 26.6513 15.1513 24.1203V8.78584C15.1513 7.47964 16.2177 6.41769 17.5418 6.41769C18.8659 6.41769 19.9323 7.47964 19.9323 8.78584V24.1487C19.9144 25.423 20.401 26.5947 21.2885 27.4761C22.1653 28.3398 23.3283 28.8177 24.5629 28.8177C25.7975 28.8177 26.9605 28.3398 27.8336 27.4761C28.7104 26.6124 29.1899 25.4619 29.1899 24.2407C29.1899 23.0195 28.7104 21.869 27.8336 21.0018C26.9605 20.138 25.7975 19.6602 24.5629 19.6602C23.2424 19.6602 22.1724 18.6018 22.1724 17.2956C22.1724 15.9894 23.2424 14.931 24.5629 14.931C27.075 14.931 29.4404 15.9009 31.2189 17.6566C32.9939 19.4159 33.9744 21.7557 33.9744 24.2407C33.9744 26.7257 32.9975 29.0619 31.2189 30.8212C29.4404 32.5805 27.0786 33.5469 24.5629 33.5469H24.5557Z" fill="white"/>
+<path class="st0" d="M13.1266 17.1575C13.1266 18.4637 12.0566 19.5221 10.7362 19.5221C9.41568 19.5221 8.3457 18.4637 8.3457 17.1575C8.3457 15.8513 9.41568 14.7929 10.7362 14.7929C12.0566 14.7929 13.1266 15.8513 13.1266 17.1575Z" fill="white"/>
+<defs>
+</defs>
+</svg></div></a><div><div class="footer-left-column-links_wrapper"><div class="text-size-medium">Talk to sales:</div><a href="tel:18552377875" class="text-size-medium">1.855.237.7875</a></div></div><a href="/contact" class="button w-button">Contact us</a></div><div class="footer-grid-center_col"><div class="footer-links_col"><div class="text-weight-semibold">Products</div><div class="footer-links-flex_wrapper"><a href="/products/donate" class="footer-link">Donate</a><a href="/products/grants" class="footer-link">Grants Management</a><a href="/products/challenges" class="footer-link">Challenges</a><a href="/products/volunteer" class="footer-link">Volunteer</a><a href="/products/employee-groups" class="footer-link">Employee Groups</a><a href="/products/reporting-suite" class="footer-link">Reporting Suite</a><a href="/products/services-add-ons" class="footer-link">Services &amp; add-ons</a></div></div><div class="footer-links_col"><div class="text-weight-semibold">About Benevity</div><div class="footer-links-flex_wrapper"><a href="/benevity-advantage" class="footer-link">Benevity Advantage</a><a href="/about-us" class="footer-link">About us</a><a href="/join-the-team" class="footer-link">Join the team</a><a href="/media" class="footer-link">Media &amp; news</a><a href="/pricing" class="footer-link">Pricing</a><a href="/partnerships" class="footer-link">Partnerships</a><a href="/trust-and-security" class="footer-link">Trust and security</a><a href="/annual-impact-report/2025" class="footer-link">Annual Impact Report</a></div></div><div class="footer-links_col"><div class="text-weight-semibold">Resources</div><div class="footer-links-flex_wrapper"><a href="/resources" class="footer-link">Resources</a><a href="/research" class="footer-link">Research</a><a href="/interactive-demo" class="footer-link">Interactive demos</a><a href="/tools/calculator" class="footer-link">Impact calculator</a><a href="/client-stories" class="footer-link">Client stories</a><a href="https://live.benevity.com/" target="_blank" class="footer-link">Benevity Live!</a><a href="/community" class="footer-link">Community</a><a href="/support" class="footer-link">Support</a></div></div></div><div class="footer-logo-b_wrapper"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 80 134" fill="none" class="footer-logo_b"><path d="M23.8711 38.4492H40.1235C44.0768 38.4492 49.2909 38.4492 51.9834 40.0902C54.9362 41.8537 57.2545 45.0623 57.2545 49.4791C57.2545 54.2634 54.7491 57.8556 50.6006 59.5538V59.6844C56.1238 60.8192 59.1335 64.9748 59.1335 70.5184C59.1335 77.1314 54.4237 83.4342 45.5166 83.4342H23.8711V38.4492ZM29.8336 57.7821H41.7667C48.5426 57.7821 51.3083 55.3247 51.3083 50.5976C51.3083 44.3601 46.9157 43.4784 41.7667 43.4784H29.8336V57.7821ZM29.8336 78.3805H44.7764C49.9173 78.3805 53.1873 75.2291 53.1873 70.3224C53.1873 64.4605 48.4775 62.8276 43.4586 62.8276H29.8336V78.3805Z" fill="currentColor"></path><path d="M74.3862 60.9482C74.3862 79.8403 59.1261 95.1564 40.2951 95.1564C21.4722 95.1564 6.21219 79.8403 6.21219 60.9482C6.21219 42.0562 21.4722 26.74 40.2951 26.74C59.1261 26.7482 74.3862 42.0643 74.3862 60.9482ZM40.3032 21.5312C18.6252 21.5312 1.04688 39.1742 1.04688 60.9319C1.04688 82.6896 18.6252 100.333 40.3032 100.333C61.9894 100.333 79.5678 82.6896 79.5678 60.9319C79.5678 39.1742 61.9894 21.5312 40.3032 21.5312Z" fill="currentColor"></path><path d="M79.4812 108.652H1.12305V113.82H79.4812V108.652Z" fill="currentColor"></path><path d="M77.0352 102.961C77.1328 102.961 77.2223 102.953 77.3118 102.953C77.3931 102.945 77.4745 102.929 77.5395 102.904C77.6127 102.872 77.6615 102.823 77.7022 102.766C77.7429 102.7 77.7592 102.619 77.7592 102.512C77.7592 102.423 77.7429 102.341 77.7104 102.292C77.6778 102.235 77.629 102.194 77.5721 102.17C77.5151 102.137 77.4582 102.121 77.3768 102.104C77.3036 102.096 77.2386 102.096 77.1572 102.096H76.5959V102.97H77.0352V102.961ZM77.2223 101.737C77.5477 101.737 77.7836 101.802 77.9462 101.933C78.1008 102.063 78.1821 102.259 78.1821 102.529C78.1821 102.782 78.1089 102.953 77.9788 103.076C77.8405 103.19 77.6697 103.255 77.4582 103.28L78.2391 104.488H77.7836L77.0352 103.304H76.5878V104.488H76.1567V101.745H77.2223V101.737ZM75.3026 103.9C75.3921 104.145 75.5303 104.366 75.7093 104.545C75.8801 104.725 76.0835 104.864 76.3194 104.97C76.5471 105.068 76.8074 105.117 77.0759 105.117C77.3524 105.117 77.6046 105.068 77.8324 104.97C78.0683 104.864 78.2716 104.725 78.4424 104.545C78.6133 104.366 78.7515 104.153 78.841 103.9C78.9386 103.655 78.9956 103.394 78.9956 103.108C78.9956 102.823 78.9468 102.561 78.841 102.316C78.7434 102.072 78.6051 101.859 78.4424 101.68C78.2635 101.5 78.0601 101.361 77.8324 101.263C77.6046 101.165 77.3443 101.108 77.0759 101.108C76.8074 101.108 76.5471 101.165 76.3194 101.263C76.0835 101.369 75.872 101.508 75.7093 101.68C75.5303 101.859 75.4002 102.072 75.3026 102.316C75.205 102.561 75.1562 102.814 75.1562 103.108C75.148 103.386 75.1968 103.655 75.3026 103.9ZM74.9121 102.178C75.0342 101.892 75.205 101.655 75.4165 101.443C75.628 101.231 75.8801 101.076 76.1648 100.953C76.4495 100.831 76.7586 100.773 77.0677 100.773C77.3931 100.773 77.6941 100.831 77.9869 100.953C78.2635 101.076 78.5157 101.231 78.719 101.443C78.9305 101.655 79.1095 101.9 79.2233 102.178C79.3535 102.463 79.4104 102.774 79.4104 103.108C79.4104 103.443 79.3535 103.753 79.2233 104.039C79.1013 104.333 78.9305 104.578 78.719 104.79C78.5075 105.011 78.2635 105.166 77.9869 105.288C77.6941 105.403 77.3931 105.46 77.0677 105.46C76.7505 105.46 76.4495 105.403 76.1648 105.288C75.8801 105.166 75.628 105.011 75.4165 104.79C75.205 104.578 75.0342 104.333 74.9121 104.039C74.782 103.753 74.7332 103.443 74.7332 103.108C74.725 102.774 74.782 102.463 74.9121 102.178Z" fill="currentColor"></path><path d="M10.6242 4.20532C10.4371 3.90325 10.2093 3.64199 9.93278 3.42156C9.65621 3.19296 9.33897 3.02151 8.9892 2.89088C8.63942 2.76842 8.27338 2.7031 7.89106 2.7031C7.19151 2.7031 6.5977 2.8419 6.1015 3.11132C5.61344 3.38074 5.21486 3.74813 4.91389 4.20532C4.61292 4.66252 4.38516 5.18503 4.24687 5.77286C4.10859 6.36068 4.03538 6.96484 4.03538 7.58532C4.03538 8.18131 4.10045 8.76097 4.24687 9.3243C4.38516 9.88764 4.60478 10.3938 4.91389 10.851C5.21486 11.3 5.61344 11.6674 6.1015 11.9369C6.58956 12.2063 7.18337 12.3451 7.89106 12.3451C8.84278 12.3451 9.59114 12.0512 10.1199 11.4715C10.6567 10.8837 10.9821 10.1162 11.1041 9.16102H14.122C14.0406 10.0509 13.8373 10.851 13.5038 11.5695C13.1703 12.2879 12.7391 12.9002 12.1941 13.3983C11.6491 13.9044 11.0147 14.2882 10.2907 14.5576C9.56674 14.8188 8.76144 14.9576 7.89106 14.9576C6.80919 14.9576 5.83307 14.7699 4.9627 14.3861C4.09232 14.0106 3.36836 13.4881 2.76642 12.8186C2.17261 12.1573 1.71709 11.3735 1.39985 10.4755C1.08261 9.5774 0.919922 8.61402 0.919922 7.57716C0.919922 6.51581 1.07447 5.52793 1.39985 4.6217C1.71709 3.71547 2.17261 2.91537 2.76642 2.24591C3.36023 1.56827 4.09232 1.0376 4.9627 0.653879C5.82494 0.27016 6.80106 0.0742188 7.89106 0.0742188C8.67196 0.0742188 9.41218 0.188518 10.1036 0.408953C10.795 0.637551 11.4214 0.964122 11.9664 1.39683C12.5114 1.82953 12.9669 2.36021 13.3248 2.99702C13.6827 3.63383 13.9105 4.36861 14 5.18503H10.9821C10.9252 4.82581 10.8113 4.49924 10.6242 4.20532Z" fill="currentColor"></path><path d="M18.182 12.1568C18.605 12.565 19.2151 12.7773 20.0041 12.7773C20.5735 12.7773 21.0616 12.6385 21.4764 12.3528C21.8831 12.067 22.1353 11.7649 22.2329 11.4465H24.7139C24.3153 12.6793 23.7052 13.5692 22.8837 14.0999C22.0621 14.6306 21.0697 14.9 19.9065 14.9C19.1012 14.9 18.3691 14.7694 17.7265 14.5081C17.0757 14.2469 16.5307 13.8795 16.0752 13.4059C15.6278 12.9324 15.278 12.3609 15.034 11.6915C14.79 11.0302 14.668 10.2954 14.668 9.50344C14.668 8.736 14.79 8.01755 15.0421 7.35624C15.2943 6.69494 15.6522 6.11528 16.1159 5.63359C16.5795 5.1519 17.1327 4.76818 17.7753 4.4906C18.4179 4.21301 19.1256 4.07422 19.9065 4.07422C20.7769 4.07422 21.5415 4.24567 22.1922 4.5804C22.843 4.9233 23.3717 5.37233 23.7866 5.94383C24.2014 6.51533 24.5024 7.16847 24.6895 7.89508C24.8766 8.6217 24.9417 9.38914 24.8847 10.1892H17.4825C17.5231 11.0791 17.7509 11.7486 18.182 12.1568ZM21.3625 6.74393C21.0209 6.37654 20.5084 6.18876 19.8251 6.18876C19.3778 6.18876 19.0036 6.26224 18.7026 6.41736C18.4016 6.57248 18.1657 6.76025 17.9868 6.98069C17.8078 7.20929 17.6858 7.44605 17.6126 7.69914C17.5394 7.95223 17.4987 8.17267 17.4825 8.37677H22.0702C21.9401 7.65832 21.7042 7.11132 21.3625 6.74393Z" fill="currentColor"></path><path d="M28.838 4.32836V6.2388H28.8787C29.0088 5.92039 29.1878 5.62648 29.4155 5.34889C29.6433 5.07947 29.8955 4.84271 30.1883 4.65493C30.4811 4.46716 30.7902 4.31204 31.1237 4.2059C31.4573 4.09977 31.7989 4.05078 32.1568 4.05078C32.3439 4.05078 32.5473 4.08344 32.775 4.14875V6.77764C32.6449 6.75314 32.4822 6.72865 32.2951 6.71232C32.108 6.69599 31.929 6.67967 31.7582 6.67967C31.2458 6.67967 30.8065 6.76947 30.4486 6.94092C30.0907 7.11237 29.806 7.34913 29.5863 7.65121C29.3667 7.95329 29.2122 8.29619 29.1227 8.69623C29.0332 9.09628 28.9844 9.52899 28.9844 9.99435V14.6398H26.1699V4.32836H28.838Z" fill="currentColor"></path><path d="M40.3063 4.32792V6.22202H38.2401V11.3247C38.2401 11.8064 38.3215 12.1248 38.476 12.2799C38.6306 12.435 38.956 12.5167 39.4278 12.5167C39.5904 12.5167 39.7369 12.5085 39.8833 12.5003C40.0297 12.484 40.168 12.4677 40.2981 12.4432V14.6312C40.0622 14.672 39.7938 14.6965 39.501 14.7128C39.2081 14.7292 38.9234 14.7373 38.6469 14.7373C38.2076 14.7373 37.7928 14.7047 37.4104 14.6475C37.02 14.5904 36.6783 14.4761 36.3774 14.2965C36.0764 14.125 35.8486 13.8801 35.6697 13.5617C35.4989 13.2433 35.4094 12.8269 35.4094 12.3044V6.23019H33.7012V4.33608H35.4094V1.25H38.2239V4.33608H40.3063V4.32792Z" fill="currentColor"></path><path d="M41.9492 2.73732V0.402344H44.7637V2.73732H41.9492ZM44.7637 4.32934V14.6245H41.9492V4.32934H44.7637Z" fill="currentColor"></path><path d="M45.8867 6.22345V4.32934H47.5705V3.52925C47.5705 2.61485 47.8552 1.86374 48.4246 1.27592C48.994 0.688092 49.8563 0.402344 51.0032 0.402344C51.2554 0.402344 51.5076 0.410509 51.7597 0.435001C52.0119 0.45133 52.2559 0.475822 52.4918 0.483986V2.59853C52.1583 2.5577 51.8167 2.54138 51.4587 2.54138C51.0764 2.54138 50.7999 2.63118 50.6372 2.8108C50.4745 2.99041 50.3931 3.29248 50.3931 3.71703V4.33751H52.3373V6.23161H50.3931V14.6408H47.5705V6.23161H45.8867V6.22345Z" fill="currentColor"></path><path d="M54.2402 2.73732V0.402344H57.0547V2.73732H54.2402ZM57.0629 4.32934V14.6245H54.2402V4.32934H57.0629Z" fill="currentColor"></path><path d="M61.5039 12.1575C61.9269 12.5657 62.537 12.778 63.326 12.778C63.8954 12.778 64.3835 12.6392 64.7984 12.3535C65.2051 12.0677 65.4572 11.7656 65.5549 11.4472H68.0358C67.6372 12.68 67.0272 13.5699 66.2137 14.1006C65.3922 14.6313 64.3998 14.9007 63.2366 14.9007C62.4313 14.9007 61.6992 14.7701 61.0566 14.5088C60.4058 14.2476 59.8608 13.8802 59.4053 13.4067C58.9579 12.9331 58.6081 12.3616 58.3641 11.6922C58.1201 11.0309 57.998 10.2961 57.998 9.50414C57.998 8.7367 58.1282 8.01825 58.3722 7.35695C58.6244 6.67115 58.9823 6.09965 59.446 5.61796C59.9096 5.13627 60.4628 4.75255 61.1054 4.47497C61.748 4.19739 62.4557 4.05859 63.2366 4.05859C64.1069 4.05859 64.8716 4.23004 65.5223 4.56478C66.1731 4.90768 66.7018 5.35671 67.1167 5.92821C67.5315 6.4997 67.8325 7.15284 68.0196 7.87946C68.2067 8.60608 68.2717 9.37352 68.2229 10.1736H60.8207C60.8532 11.0798 61.081 11.7493 61.5039 12.1575ZM64.6926 6.74463C64.3591 6.37724 63.8385 6.18946 63.1552 6.18946C62.7078 6.18946 62.3337 6.26294 62.0327 6.41806C61.7317 6.57318 61.4958 6.76096 61.3169 6.98139C61.1379 7.20999 61.0159 7.44675 60.9427 7.69985C60.8695 7.95294 60.8288 8.17337 60.8125 8.37748H65.3922C65.262 7.65902 65.0261 7.11202 64.6926 6.74463Z" fill="currentColor"></path><path d="M76.7722 13.3178C76.4387 13.873 76.0076 14.2812 75.4707 14.5261C74.9339 14.7711 74.3319 14.8935 73.6568 14.8935C72.8922 14.8935 72.217 14.7466 71.6313 14.4445C71.0457 14.1424 70.5657 13.7424 70.1915 13.228C69.8174 12.7137 69.5327 12.1258 69.3374 11.4645C69.1422 10.8032 69.0527 10.1093 69.0527 9.39082C69.0527 8.69686 69.1504 8.03556 69.3374 7.39058C69.5245 6.74561 69.8174 6.18228 70.1915 5.68426C70.5657 5.1944 71.0456 4.79435 71.6069 4.50044C72.1763 4.19836 72.8352 4.05141 73.5917 4.05141C74.2018 4.05141 74.7793 4.18204 75.3243 4.44329C75.8775 4.70455 76.3086 5.0801 76.6258 5.58629H76.6665V0.410156H79.481V14.6323H76.8048V13.3178H76.7722ZM76.6502 8.22333C76.5689 7.83145 76.4387 7.48855 76.2435 7.18648C76.0483 6.8844 75.8042 6.64764 75.4951 6.45986C75.1942 6.27208 74.8037 6.18227 74.3482 6.18227C73.8927 6.18227 73.4941 6.27208 73.1768 6.45986C72.8596 6.64764 72.6074 6.89256 72.4122 7.19464C72.2251 7.49672 72.0868 7.84778 71.9974 8.23966C71.9079 8.63155 71.8672 9.03976 71.8672 9.4643C71.8672 9.86435 71.916 10.2644 72.0055 10.6563C72.095 11.0563 72.2495 11.4074 72.4529 11.7258C72.6563 12.036 72.9166 12.2891 73.2257 12.4851C73.5348 12.681 73.9089 12.7708 74.3482 12.7708C74.8119 12.7708 75.1942 12.681 75.5114 12.4932C75.8205 12.3055 76.0727 12.0605 76.2598 11.7421C76.4469 11.4319 76.577 11.0727 76.6584 10.6808C76.7397 10.2807 76.7804 9.87251 76.7804 9.44797C76.7722 9.02343 76.7316 8.61522 76.6502 8.22333Z" fill="currentColor"></path><path d="M7.99322 123.968C7.85494 122.972 6.90322 122.213 5.81322 122.213C3.8447 122.213 3.10448 123.894 3.10448 125.65C3.10448 127.315 3.8447 128.997 5.81322 128.997C7.15538 128.997 7.91188 128.075 8.07457 126.752H10.2058C9.978 129.25 8.26165 130.85 5.81322 130.85C2.72216 130.85 0.908203 128.532 0.908203 125.65C0.908203 122.678 2.72216 120.359 5.81322 120.359C8.00949 120.359 9.84785 121.649 10.1163 123.968H7.99322Z" fill="currentColor"></path><path d="M14.7844 123.168C17.0621 123.168 18.5263 124.678 18.5263 126.997C18.5263 129.299 17.0621 130.81 14.7844 130.81C12.5231 130.81 11.0508 129.291 11.0508 126.997C11.0508 124.687 12.5231 123.168 14.7844 123.168ZM14.7844 129.316C16.1429 129.316 16.5415 128.148 16.5415 127.005C16.5415 125.838 16.1348 124.678 14.7844 124.678C13.4423 124.678 13.0356 125.846 13.0356 127.005C13.0356 128.148 13.4423 129.316 14.7844 129.316Z" fill="currentColor"></path><path d="M19.7539 123.356H21.6411V124.703H21.6736C22.0315 123.789 23.0158 123.16 23.9838 123.16C24.1221 123.16 24.2929 123.185 24.4149 123.225V125.079C24.2278 125.038 23.935 125.013 23.6991 125.013C22.243 125.013 21.7387 126.067 21.7387 127.34V130.606H19.7539V123.356Z" fill="currentColor"></path><path d="M25.1898 123.364H27.0769V124.286H27.1013C27.5731 123.519 28.354 123.168 29.2488 123.168C31.5183 123.168 32.5351 125.005 32.5351 127.062C32.5351 128.997 31.4776 130.81 29.3627 130.81C28.5005 130.81 27.6708 130.434 27.199 129.716H27.1664V133.169H25.1816V123.364H25.1898ZM30.5503 127.013C30.5503 125.862 30.0867 124.67 28.8177 124.67C27.5162 124.67 27.1013 125.838 27.1013 127.013C27.1013 128.189 27.5487 129.316 28.834 129.316C30.1355 129.316 30.5503 128.189 30.5503 127.013Z" fill="currentColor"></path><path d="M36.8857 123.168C39.1633 123.168 40.6356 124.678 40.6356 126.997C40.6356 129.299 39.1633 130.81 36.8857 130.81C34.6243 130.81 33.1602 129.291 33.1602 126.997C33.1602 124.687 34.6243 123.168 36.8857 123.168ZM36.8857 129.316C38.2441 129.316 38.6508 128.148 38.6508 127.005C38.6508 125.838 38.2441 124.678 36.8857 124.678C35.5435 124.678 35.1368 125.846 35.1368 127.005C35.1449 128.148 35.5517 129.316 36.8857 129.316Z" fill="currentColor"></path><path d="M41.8656 123.356H43.7527V124.703H43.7853C44.1432 123.789 45.1274 123.16 46.0873 123.16C46.2256 123.16 46.3964 123.185 46.5184 123.225V125.079C46.3395 125.038 46.0466 125.013 45.8026 125.013C44.3465 125.013 43.8422 126.067 43.8422 127.34V130.606H41.8574V123.356H41.8656Z" fill="currentColor"></path><path d="M47.1044 125.593C47.2183 123.723 48.8777 123.168 50.5046 123.168C51.9443 123.168 53.677 123.486 53.677 125.225V128.997C53.677 129.659 53.742 130.312 53.9291 130.614H51.9118C51.8467 130.385 51.7816 130.148 51.7735 129.912C51.1472 130.573 50.228 130.81 49.3413 130.81C47.9748 130.81 46.8848 130.124 46.8848 128.638C46.8848 126.997 48.1131 126.605 49.3413 126.434C50.5615 126.254 51.6922 126.295 51.6922 125.478C51.6922 124.621 51.0984 124.499 50.4069 124.499C49.6504 124.499 49.1624 124.809 49.0892 125.593H47.1044ZM51.684 127.07C51.3424 127.364 50.651 127.381 50.0328 127.495C49.4146 127.617 48.8614 127.83 48.8614 128.565C48.8614 129.307 49.4308 129.487 50.0816 129.487C51.6271 129.487 51.6922 128.254 51.6922 127.822V127.07H51.684Z" fill="currentColor"></path><path d="M57.6769 123.363H59.133V124.694H57.6769V128.286C57.6769 128.963 57.8478 129.127 58.5148 129.127C58.7263 129.127 58.9215 129.11 59.133 129.07V130.629C58.7995 130.686 58.3602 130.702 57.9698 130.702C56.7578 130.702 55.6922 130.417 55.6922 128.98V124.702H54.4883V123.371H55.6922V121.199H57.6769V123.363Z" fill="currentColor"></path><path d="M62.6156 122.246H60.6309V120.605H62.6156V122.246ZM60.6309 123.365H62.6156V130.615H60.6309V123.365Z" fill="currentColor"></path><path d="M67.6728 123.168C69.9504 123.168 71.4227 124.678 71.4227 126.997C71.4227 129.299 69.9504 130.81 67.6728 130.81C65.4115 130.81 63.9473 129.291 63.9473 126.997C63.9473 124.687 65.4115 123.168 67.6728 123.168ZM67.6728 129.316C69.0312 129.316 69.438 128.148 69.438 127.005C69.438 125.838 69.0312 124.678 67.6728 124.678C66.3306 124.678 65.9239 125.846 65.9239 127.005C65.9239 128.148 66.3306 129.316 67.6728 129.316Z" fill="currentColor"></path><path d="M72.7031 123.364H74.5903V124.376H74.631C75.1353 123.56 75.9975 123.168 76.8435 123.168C78.9503 123.168 79.4872 124.36 79.4872 126.156V130.614H77.5024V126.515C77.5024 125.323 77.1526 124.736 76.2334 124.736C75.1516 124.736 74.696 125.34 74.696 126.817V130.622H72.7113V123.364H72.7031Z" fill="currentColor"></path></svg><div class="fcmic-footer-wrapper"><img src="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/69c1815569d5195e1cf71d11_b89fc6f57a01e46acd89bead601e09de_2026%20Fast%20Company%20Most%20Innovative%20Companies%20-%20Standard%20Logo.png" loading="lazy" width="244" height="300" alt="2026 Fast Company Most Innovative Companies Logo" class="fcmic-footer-image"/></div></div></div></div><div class="text-size-regular"><div class="footer-bottom_wrapper"><div class="footer-bottom-primary-flex_wrapper"><div class="footer-secondary-flex_wrapper"><div>© <span data-copyright-year="">2025</span> Benevity. All rights reserved.</div><div class="footer-bottom-legal_wrapper"><a href="/legal/privacy-notice" class="footer-legal_link">Privacy Notice</a><a href="/legal" class="footer-legal_link">Legal</a><a href="/cookie-policy" class="footer-legal_link">Cookie Policy</a><a href="https://status.benevity.org/" target="_blank" class="footer-legal_link">System Status</a></div></div><div class="footer-social-flex_wrapper"><a aria-label="Follow Benevity on LinkedIn" href="https://www.linkedin.com/company/benevity" target="_blank" class="footer-social_link w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 21" fill="none" class="footer-social_icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.36105 7.52809V16.1271H3.50294V7.52809H6.36105ZM6.54905 4.86856C6.54905 5.69378 5.92867 6.35407 4.932 6.35407H4.91337C3.95421 6.35407 3.33398 5.69378 3.33398 4.86856C3.33398 4.0248 3.97322 3.38281 4.9509 3.38281C5.92867 3.38281 6.53046 4.0248 6.54905 4.86856ZM10.801 16.1269H7.94295C7.94295 16.1269 7.98048 8.33477 7.94295 7.5279H10.8011V8.74549C10.7947 8.75541 10.7883 8.76525 10.782 8.77502H10.8011V8.74549C11.1809 8.15948 11.8606 7.32609 13.3769 7.32609C15.2573 7.32609 16.6674 8.55516 16.6674 11.1963V16.1269H13.8095V11.5267C13.8095 10.3706 13.3958 9.58207 12.3615 9.58207C11.572 9.58207 11.1017 10.1139 10.8951 10.6274C10.8196 10.8111 10.801 11.0678 10.801 11.3249V16.1269Z" fill="currentColor"></path></svg></a><a aria-label="Follow Benevity on Instagram" href="https://www.instagram.com/benevity/" target="_blank" class="footer-social_link w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 21" fill="none" class="footer-social_icon"><path d="M6.87565 2.13281C4.23665 2.13281 2.08398 4.28548 2.08398 6.92448V13.1745C2.08398 15.8131 4.23657 17.9661 6.87565 17.9661H13.1257C15.7644 17.9661 17.9173 15.8132 17.9173 13.1745V6.92448C17.9173 4.2854 15.7643 2.13281 13.1257 2.13281H6.87565ZM6.87565 3.38281H13.1257C15.0887 3.38281 16.6673 4.96106 16.6673 6.92448V13.1745C16.6673 15.1374 15.0886 16.7161 13.1257 16.7161H6.87565C4.91223 16.7161 3.33398 15.1375 3.33398 13.1745V6.92448C3.33398 4.96098 4.91216 3.38281 6.87565 3.38281ZM14.1673 5.04948C13.7069 5.04948 13.334 5.4224 13.334 5.88281C13.334 6.34323 13.7069 6.71615 14.1673 6.71615C14.6277 6.71615 15.0007 6.34323 15.0007 5.88281C15.0007 5.4224 14.6277 5.04948 14.1673 5.04948ZM10.0007 5.88281C7.70697 5.88281 5.83398 7.7558 5.83398 10.0495C5.83398 12.3432 7.70697 14.2161 10.0007 14.2161C12.2943 14.2161 14.1673 12.3432 14.1673 10.0495C14.1673 7.7558 12.2943 5.88281 10.0007 5.88281ZM10.0007 7.13281C11.6186 7.13281 12.9173 8.43149 12.9173 10.0495C12.9173 11.6675 11.6186 12.9661 10.0007 12.9661C8.38266 12.9661 7.08398 11.6675 7.08398 10.0495C7.08398 8.43149 8.38266 7.13281 10.0007 7.13281Z" fill="currentColor"></path></svg></a><a aria-label="Follow Benevity on Facebook" href="https://www.facebook.com/Benevity" target="_blank" class="footer-social_link w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 21" fill="none" class="footer-social_icon"><path d="M8.41409 16.7161V10.4598H6.75977V8.20716H8.41409V6.28315C8.41409 4.77124 9.3913 3.38281 11.643 3.38281C12.5547 3.38281 13.2288 3.47021 13.2288 3.47021L13.1757 5.57376C13.1757 5.57376 12.4882 5.56707 11.7379 5.56707C10.9259 5.56707 10.7958 5.94127 10.7958 6.56235V8.20716H13.2403L13.1339 10.4598H10.7958V16.7161H8.41409Z" fill="currentColor"></path></svg></a><a aria-label="Follow Benevity on YouTube" href="https://www.youtube.com/benevity" target="_blank" class="footer-social_link w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="-2 0 20 15" fill="none" class="footer-social_icon"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" fill="currentColor"></path></svg></a></div></div></div></div></div></div></footer></div><script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=680946676a0dac031a9848fc" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/js/benevity.schunk.b36de0610a35aa79.js" type="text/javascript" integrity="sha384-bOZ0zosqGRfOla7kqUultK9km3dXI3K5kOn6mDnozBPY/ZGl9/GKllrjZ0EdPONC" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/js/benevity.schunk.b1cb5afae0d1ebff.js" type="text/javascript" integrity="sha384-LU6wT1856PEiuSzBO5jgPmwf3/Bu4Imv2HSDIP3qmMkNyqFfQEyOvpjX/cNmDmvh" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/js/benevity.schunk.ca65bfeebc90ac32.js" type="text/javascript" integrity="sha384-zuM5Cpo3CqdAxNa3aysxdT7Ge9coR2J9JDvjyQ32hthPcHiO6WWFD5abyZGX5MRx" crossorigin="anonymous"></script><script src="https://cdn.prod.website-files.com/680946676a0dac031a9848fc/js/benevity.aa517fcc.91015230a0956f88.js" type="text/javascript" integrity="sha384-B+QSLgbYWM+ZQo4oU8GxsA4/jGgeyb+dHmB6LnDwhjRLOo4AlDn9xSrYbrQVwwiy" crossorigin="anonymous"></script><script src="https://static.claydar.com/init.v1.js?id=cnn5hXtxPI"></script>
+<script>
+  var Webflow = Webflow || [];
+    Webflow.push(function() {
+      //DISABLE WEBFLOW SMOOTH SCROLL
+      $(function() {
+          $(document).off('click.wf-scroll');
+    });
+  });
+</script>
+<script>
+// Transparent navbar custom functionality
+document.addEventListener("DOMContentLoaded", function () {
+  const navBar = document.querySelector(".nav_bar");
+  const secondaryButtons = document.querySelectorAll(".button.is-secondary.is-small, .button.is-secondary.is-nav-v2");
+  const navLogoIcon = document.querySelector(".nav-logo_icon");
+  const dropdownToggles = document.querySelectorAll(".nav-dropdown_toggle");
+  const navbarButton = document.querySelector(".navbar_button");
+  const navSearchInput = document.querySelector(".nav-menu-cta_nav-search_btn");
+  const isTransparentVariant =
+    navBar && navBar.getAttribute("data-wf--global---navbar--variant") === "transparent";
+
+  if (!navBar || !isTransparentVariant) return;
+
+  let hasScrolled = window.scrollY > 0;
+  let lastState = null;
+
+  // Prepare logo path groups by class
+  let st0Paths = [];
+  let st1Paths = [];
+
+  if (navLogoIcon) {
+    st0Paths = Array.from(navLogoIcon.querySelectorAll(".st0"));
+    st1Paths = Array.from(navLogoIcon.querySelectorAll(".st1"));
+
+    // Initial logo state: white
+    st0Paths.forEach(path => path.style.fill = "#FFFFFF");
+    st1Paths.forEach(path => {
+      path.style.fill = "#4ba4da";
+      path.style.opacity = "0.5";
+    });
+  }
+
+  // Custom hover for secondary buttons on desktop
+  if (window.innerWidth > 991 && isTransparentVariant) {
+    secondaryButtons.forEach((btn) => {
+      btn.style.borderColor = "var(--button--primary-border)";
+      btn.addEventListener("mouseenter", () => {
+        btn.style.borderColor = "var(--button--primary-border)";
+        
+        // Check if scrolled OR if any dropdown is open
+        const isDropdownOpen = Array.from(dropdownToggles).some(
+          (el) => el.getAttribute("aria-expanded") === "true"
+        );
+        
+        if (hasScrolled || isDropdownOpen) {
+          btn.style.color = "var(--button--primary-text)";
+        }
+      });
+      btn.addEventListener("mouseleave", () => {
+        // Check if scrolled OR if any dropdown is open
+        const isDropdownOpen = Array.from(dropdownToggles).some(
+          (el) => el.getAttribute("aria-expanded") === "true"
+        );
+        
+        if (hasScrolled || isDropdownOpen) {
+          btn.style.borderColor = "var(--button--primary-border)";
+          btn.style.color = "var(--button--primary-border)";
+        } else {
+          btn.style.borderColor = "var(--border-color--border-light)";
+          btn.style.color = "var(--border-color--border-light)";
+        }
+      });
+    });
+  }
+
+  const applyScrolledStyles = () => {
+    navSearchInput.style.filter = "invert(0)";
+    navBar.style.backgroundColor = "var(--background-color--background-alternate)";
+    navBar.style.color = "var(--base-color-neutral--content-primary)";
+
+    if (window.innerWidth >= 992) {
+      secondaryButtons.forEach((btn) => {
+        btn.style.borderColor = "var(--button--primary-border)";
+        btn.style.color = "var(--button--primary-border)";
+      });
+    }
+
+    // Logo colored state
+    st0Paths.forEach(path => path.style.fill = "#1d174e");
+    st1Paths.forEach(path => {
+      path.style.fill = "#4ba4da";
+      path.style.opacity = "1";
+    });
+  };
+
+  const resetStyles = () => {
+    navSearchInput.style.filter = "invert(1)";
+    navBar.style.backgroundColor = "transparent";
+    navBar.style.color = "";
+
+    if (window.innerWidth >= 992) {
+      secondaryButtons.forEach((btn) => {
+        btn.style.borderColor = "var(--border-color--border-light)";
+        btn.style.color = "var(--border-color--border-light)";
+      });
+    }
+
+    // Logo white state
+    st0Paths.forEach(path => path.style.fill = "#FFFFFF");
+    st1Paths.forEach(path => {
+      path.style.fill = "#4ba4da";
+      path.style.opacity = "0.5";
+    });
+  };
+
+  const updateDropdownColors = () => {
+    const isAnyDropdownOpen = Array.from(dropdownToggles).some(
+      (el) => el.getAttribute("aria-expanded") === "true"
+    );
+
+    if (isTransparentVariant && (isAnyDropdownOpen || hasScrolled)) {
+      dropdownToggles.forEach((el) => {
+        el.style.color = "#333";
+      });
+    } else {
+      dropdownToggles.forEach((el) => {
+        el.style.color = "";
+      });
+    }
+  };
+
+  const updateNavbarButtonColor = () => {
+    if (!navbarButton) return;
+    const isNavbarOpen = navbarButton.classList.contains("w--open");
+
+    if (window.innerWidth < 992 && isTransparentVariant) {
+      if (hasScrolled || isNavbarOpen) {
+        navbarButton.style.color = "#333";
+      } else {
+        navbarButton.style.color = "#fff";
+      }
+    } else {
+      navbarButton.style.color = "";
+    }
+  };
+
+  const updateStateAndApplyStyles = () => {
+    const isDropdownOpen = Array.from(dropdownToggles).some(
+      (el) => el.getAttribute("aria-expanded") === "true"
+    );
+    const isNavbarButtonOpen =
+      navbarButton && navbarButton.classList.contains("w--open");
+
+    hasScrolled = window.scrollY > 0;
+    const shouldApply = hasScrolled || isDropdownOpen || isNavbarButtonOpen;
+    const currentState = `${shouldApply}`;
+    if (currentState === lastState) return;
+    lastState = currentState;
+
+    shouldApply ? applyScrolledStyles() : resetStyles();
+
+    updateDropdownColors();
+    updateNavbarButtonColor();
+  };
+
+  if (window.innerWidth >= 992) {
+    secondaryButtons.forEach((btn) => {
+      btn.style.borderColor = "var(--border-color--border-light)";
+      btn.style.color = "var(--border-color--border-light)";
+    });
+  }
+
+  updateStateAndApplyStyles();
+
+  window.addEventListener("scroll", () => {
+    hasScrolled = window.scrollY > 0;
+    updateStateAndApplyStyles();
+    updateDropdownColors();
+    updateNavbarButtonColor();
+  });
+
+  dropdownToggles.forEach((el) => {
+    const observer = new MutationObserver(() => {
+      updateStateAndApplyStyles();
+      updateDropdownColors();
+      updateNavbarButtonColor();
+    });
+    observer.observe(el, { attributes: true, attributeFilter: ["aria-expanded"] });
+  });
+
+  if (navbarButton) {
+    const observer = new MutationObserver(() => {
+      updateStateAndApplyStyles();
+      updateNavbarButtonColor();
+    });
+    observer.observe(navbarButton, { attributes: true, attributeFilter: ["class"] });
+  }
+
+  // Smooth scroll with navbar offset
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+      const targetID = href.substring(1);
+      const target = document.getElementById(targetID);
+      if (!target || !navBar) return;
+
+      e.preventDefault();
+
+      const navHeight = navBar.offsetHeight;
+      const startY = window.scrollY;
+      const targetY = target.getBoundingClientRect().top + startY - navHeight;
+      const distance = targetY - startY;
+      const duration = 1000;
+      let startTime = null;
+
+      function easeInOutQuad(t) {
+        return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+      }
+
+      function animateScroll(currentTime) {
+        if (!startTime) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+        const easedProgress = easeInOutQuad(progress);
+        const newY = startY + distance * easedProgress;
+
+        window.scrollTo(0, newY);
+        if (timeElapsed < duration) {
+          requestAnimationFrame(animateScroll);
+        }
+      }
+
+      requestAnimationFrame(animateScroll);
+    });
+  });
+});
+</script>
+
+<script>
+/*document.addEventListener("DOMContentLoaded", function () {
+  const navBars = document.querySelectorAll("[data-navbar]");
+  const topbar = document.querySelector(".topbar-nav-wrapper");
+
+  if (!navBars.length || !topbar) return;
+
+  navBars.forEach((navBar) => {
+    // Only apply to transparent variant
+    const isTransparentVariant =
+      navBar.getAttribute("data-wf--global---navbar--variant") === "transparent";
+
+    if (!isTransparentVariant) return;
+
+    // Smooth transition
+    navBar.style.transition = "top 0.3s ease";
+
+    function adjustNavbarPosition() {
+      const topbarVisible =
+        topbar.style.display !== "none" &&
+        window.scrollY === 0;
+
+      navBar.style.top = topbarVisible
+        ? `${topbar.offsetHeight}px`
+        : "0px";
+    }
+
+    // Initial adjustment
+    adjustNavbarPosition();
+
+    // Adjust on scroll
+    window.addEventListener("scroll", adjustNavbarPosition);
+
+    // Watch for topbar visibility changes
+    const observer = new MutationObserver(adjustNavbarPosition);
+    observer.observe(topbar, {
+      attributes: true,
+      attributeFilter: ["style"],
+    });
+
+    // Handle close button
+    const closeButton = topbar.querySelector(".close-button");
+    if (closeButton) {
+      closeButton.addEventListener("click", () => {
+        // Wait for display change to apply
+        setTimeout(adjustNavbarPosition, 10);
+      });
+    }
+  });
+});*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navBars = document.querySelectorAll(".nav_bar");
+  const topbar = document.querySelector(".topbar-nav-wrapper");
+
+  if (!navBars.length || !topbar) return;
+
+  navBars.forEach(navBar => {
+    // Only apply to transparent variant
+    const isTransparentVariant =
+      navBar.getAttribute("data-wf--global---navbar--variant") === "transparent";
+
+    if (!isTransparentVariant) return;
+
+    // Smooth transition
+    navBar.style.transition = 'top 0.3s ease';
+
+    function adjustNavbarPosition() {
+      const topbarVisible =
+        topbar.style.display !== 'none' &&
+        window.scrollY === 0;
+
+      navBar.style.top = topbarVisible
+        ? topbar.offsetHeight + 'px'
+        : '0px';
+    }
+
+    // Initial adjustment
+    adjustNavbarPosition();
+
+    // Adjust on scroll
+    window.addEventListener('scroll', adjustNavbarPosition);
+
+    // Watch for topbar visibility changes
+    const observer = new MutationObserver(adjustNavbarPosition);
+    observer.observe(topbar, {
+      attributes: true,
+      attributeFilter: ['style']
+    });
+
+    // Handle close button
+    const closeButton = topbar.querySelector('.close-button');
+    if (closeButton) {
+      closeButton.addEventListener('click', function () {
+        setTimeout(adjustNavbarPosition, 10);
+      });
+    }
+  });
+});
+</script>
+
+
+
+
+<script>
+
+	// Detecting if it is an iOS device, true/false
+var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+
+$(document).ready(function () {
+  // Defining that "overlay" is the element that has a changing display value
+  var overlay = document.querySelector('.w-nav-overlay');
+
+  // Creating our mutation observer, which we attach to overlay later
+  var observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutationRecord) {
+
+      // Checking if it's the style attribute got changed and if display value now set to 'none'?
+      if (mutationRecord.attributeName === 'style' && window.getComputedStyle(overlay)
+        .getPropertyValue('display') !== 'none') {
+
+        //Overlay's  display value is no longer 'none', now changing the "body" styles:
+        if (iOS) {
+          // for iOS devices:
+          var x = $(window).scrollTop().toFixed()
+
+          $('body').css({
+            'overflow': 'hidden',
+            'position': 'fixed',
+            'top': '-' + x + 'px',
+            'width': '100vw'
+          });
+        }
+        // for all other devices:
+        $('body').css('overflow', 'hidden');
+      }
+      //Overlay's  display value back to 'none' , now changing the "body" styles again:
+      else {
+        if (iOS) {
+          //  for iOS devices:
+          var t = $('body').css('top').replace('-', '').replace('px', '')
+          $('body').css({
+            'overflow': 'auto',
+            'position': '',
+            'width': '100vw'
+          });
+          $('body').animate({ scrollTop: t }, 0);
+        }
+        // for all other devices:
+        $('body').css('overflow', '');
+
+      }
+
+    });
+  });
+  // Attach the mutation observer to overlay, and only when attribute values change
+  observer.observe(overlay, { attributes: true, attributeFilter: ['style'] });
+
+});
+
+</script>
+
+<script>
+  //Update copyright year in global footer component
+document.addEventListener("DOMContentLoaded", function () {
+  const yearElements = document.querySelectorAll("[data-copyright-year]");
+  if (!yearElements.length) return;
+
+  const currentYear = new Date().getFullYear();
+
+  yearElements.forEach(el => {
+    const displayedYear = parseInt(el.textContent.trim(), 10);
+
+    // Update only when current year surpasses displayed year
+    if (currentYear > displayedYear) {
+      el.textContent = currentYear;
+    }
+  });
+});
+</script>
+
+<script>
+ // Convert am/pm to a.m./p.m. in rendered time text
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("[data-format-ampm]").forEach(el => {
+    el.textContent = el.textContent
+      .replace(/\bam\b/gi, "a.m.")
+      .replace(/\bpm\b/gi, "p.m.");
+  });
+});
+</script>
+<!--- BENEVITY PERSISTENT UTM + WEBINAR LINK DECORATION (v3 — whitelist: tracking params only) --->
+<script>
+  (function() {
+    window.addEventListener('load', function() {
+
+      // --- SECTION 1: CONFIGURATION ---
+      const config = {
+        maxDays: 30,  // How long to store UTMs in the browser
+        storageKey: 'benevity_utm_params',
+        debug: true   // Set to false to hide console logs in production
+      };
+
+      const log = (message) => {
+        if (config.debug) console.log('Benevity Log:', message);
+      };
+
+      // --- SECTION 2: DEFINE TARGET PAGE ---
+      const isWebinarPage = window.location.pathname.includes('/webinars');
+
+      // --- SECTION 3: PARAMETER HANDLING ---
+      // WHITELIST: only real tracking params are ever stored or copied onto
+      // links. Page-functional params (goldcast_event_id for the webinar form,
+      // data for the Business Impact Calculator report, A/B test params, etc.)
+      // are automatically excluded — no per-param blacklist to maintain.
+      const TRACKED_PARAMS = /^(utm_|gclid$|fbclid$|li_fat_id$|msclkid$)/;
+
+      const filterTracked = (source) => {
+        const out = new URLSearchParams();
+        source.forEach((value, key) => {
+          if (TRACKED_PARAMS.test(key)) out.set(key, value);
+        });
+        return out;
+      };
+
+      // 'params' is our LIVE list used for link decoration on this page.
+      var params = filterTracked(new URLSearchParams(window.location.search));
+
+      // 'storageParams' is what we persist. Same whitelist.
+      let storageParams = new URLSearchParams(params.toString());
+
+      // --- SECTION 4: STORAGE LOGIC (Runs on every page) ---
+      if (storageParams.toString().length > 0) {
+        try {
+          localStorage.setItem(config.storageKey, storageParams.toString());
+          localStorage.setItem(config.storageKey + '_timestamp', Date.now());
+          log('Tracking parameters saved to memory (whitelist applied)');
+        } catch (error) {
+          console.warn('Error saving to localStorage:', error);
+        }
+      } else {
+        try {
+          const storedParams = localStorage.getItem(config.storageKey);
+          const storedTime = localStorage.getItem(config.storageKey + '_timestamp');
+
+          if (storedParams && storedTime) {
+            const daysPassed = (Date.now() - parseInt(storedTime, 10)) / (1000 * 60 * 60 * 24);
+
+            if (daysPassed < config.maxDays) {
+              // Whitelist applied on retrieval too — this also cleans out any
+              // non-tracking params (e.g. 'data') stored before this fix shipped.
+              const savedValues = filterTracked(new URLSearchParams(storedParams));
+              savedValues.forEach((value, key) => {
+                if (!params.has(key)) params.set(key, value);
+              });
+              log('Retrieved valid tracking params from memory');
+            }
+          }
+        } catch (error) {
+          console.warn('Error retrieving from localStorage:', error);
+        }
+      }
+
+      // --- SECTION 5: LINK UPDATING (Webinar Pages Only) ---
+      if (!isWebinarPage) {
+        log('Not a webinar page. Script idle (Parameters are stored but links not modified).');
+        return;
+      }
+
+      // Only whitelisted tracking params can reach this point.
+      if (params.toString().length > 0) {
+        const links = document.querySelectorAll('a[href]');
+
+        links.forEach(function(link) {
+          try {
+            const url = new URL(link.href);
+            params.forEach((value, key) => {
+              url.searchParams.set(key, value);
+            });
+            link.href = url.toString();
+          } catch (error) {
+            // Safety: Skip non-standard links like 'mailto:' or 'tel:'
+          }
+        });
+
+        log('Applied tracking params to ' + links.length + ' links (whitelist applied).');
+      }
+    });
+  })();
+
+  console.log("BENEVITY WEBINAR TRACKING LOADED");
+</script>
+<!-- LinkedIn -->
+<script type="text/javascript">
+_linkedin_partner_id = "30489";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script><script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=30489&fmt=gif" />
+</noscript>
+<!-- End LinkedIn --><script src="https://cdn.prod.website-files.com/680946676a0dac031a9848fc%2F64af5466064f85b20dfe41d5%2F6acfccd64f63702760462ce1%2Fsuperflowtestscript3-1.0.0-yvaGw8XndXiDD6jssSl3-5988980494911633.js" type="text/javascript" data-sf-platform="webflow-auto" data-superflow-script-loaded-by="webflow" data-superflow-api-key="yvaGw8XndXiDD6jssSl3" data-superflow-project-id="5988980494911633"></script></body></html>

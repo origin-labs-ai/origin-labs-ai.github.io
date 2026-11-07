@@ -1,0 +1,364 @@
+{
+  "Research": {
+    "expanded": "false",
+    "panel": null,
+    "subs": []
+  },
+  "Policy": {
+    "expanded": "true",
+    "panel": {
+      "h": 52,
+      "pad": "0px"
+    },
+    "subs": [
+      {
+        "title": "Overview",
+        "href": "/policy"
+      },
+      {
+        "title": "Policy on the AI Exponential",
+        "href": "/policy-on-the-ai-exponential"
+      }
+    ]
+  },
+  "Commitments": {
+    "expanded": "true",
+    "panel": {
+      "h": 260,
+      "pad": "0px"
+    },
+    "subs": [
+      {
+        "title": "Claude’s Constitution",
+        "href": "/constitution"
+      },
+      {
+        "title": "Beneficial Deployments",
+        "href": "/beneficial-deployments"
+      },
+      {
+        "title": "Responsible Scaling Policy",
+        "href": "/responsible-scaling-policy"
+      },
+      {
+        "title": "Frontier Safety Roadmap",
+        "href": "/responsible-scaling-policy/roadmap"
+      },
+      {
+        "title": "Transparency",
+        "href": "/transparency"
+      },
+      {
+        "title": "Threat Intelligence",
+        "href": "/threat-intelligence"
+      }
+    ]
+  },
+  "Company": {
+    "expanded": "true",
+    "panel": {
+      "h": 572,
+      "pad": "0px"
+    },
+    "subs": [
+      {
+        "title": "About us",
+        "href": "/company"
+      },
+      {
+        "title": "Leadership",
+        "href": "/company/leadership"
+      },
+      {
+        "title": "Public benefit report",
+        "href": "/public-benefit-report"
+      },
+      {
+        "title": "News",
+        "href": "/news"
+      },
+      {
+        "title": "Careers",
+        "href": "/careers"
+      },
+      {
+        "title": "Policy",
+        "href": "/policy"
+      },
+      {
+        "title": "Economic Futures",
+        "href": "/economic-futures"
+      },
+      {
+        "title": "Claude's Constitution",
+        "href": "/constitution"
+      },
+      {
+        "title": "Policy on the AI Exponential",
+        "href": "/policy-on-the-ai-exponential"
+      },
+      {
+        "title": "Responsible Scaling Policy",
+        "href": "/responsible-scaling-policy"
+      },
+      {
+        "title": "Security and compliance",
+        "href": "https://trust.anthropic.com/"
+      },
+      {
+        "title": "Transparency",
+        "href": "/transparency"
+      }
+    ]
+  },
+  "Products": {
+    "expanded": "true",
+    "panel": {
+      "h": 676,
+      "pad": "0px"
+    },
+    "subs": [
+      {
+        "title": "Claude",
+        "href": "https://claude.com/product/overview"
+      },
+      {
+        "title": "Claude Code",
+        "href": "https://claude.com/product/claude-code"
+      },
+      {
+        "title": "Claude Code Enterprise",
+        "href": "https://claude.com/product/claude-code/enterprise"
+      },
+      {
+        "title": "Claude Cowork",
+        "href": "https://claude.com/product/cowork"
+      },
+      {
+        "title": "@Claude",
+        "href": "https://claude.com/product/tag"
+      },
+      {
+        "title": "Claude Design",
+        "href": "https://claude.com/product/design"
+      },
+      {
+        "title": "Claude Duet",
+        "href": "https://claude.com/product/claude-duet"
+      },
+      {
+        "title": "Claude Science",
+        "href": "https://claude.com/product/claude-science"
+      },
+      {
+        "title": "Claude Security",
+        "href": "https://claude.com/product/claude-security"
+      },
+      {
+        "title": "Claude for Chrome",
+        "href": "https://claude.com/claude-for-chrome"
+      },
+      {
+        "title": "Claude for Microsoft 365",
+        "href": "https://claude.com/claude-for-microsoft-365"
+      },
+      {
+        "title": "Skills",
+        "href": "https://claude.com/skills"
+      },
+      {
+        "title": "Pricing",
+        "href": "https://claude.com/pricing"
+      },
+      {
+        "title": "Claude Platform",
+        "href": "https://claude.com/platform/api"
+      }
+    ]
+  },
+  "Models": {
+    "expanded": "true",
+    "panel": {
+      "h": 208,
+      "pad": "0px"
+    },
+    "subs": [
+      {
+        "title": "Mythos",
+        "href": "/claude/mythos"
+      },
+      {
+        "title": "Fable",
+        "href": "/claude/fable"
+      },
+      {
+        "title": "Opus",
+        "href": "/claude/opus"
+      },
+      {
+        "title": "Sonnet",
+        "href": "/claude/sonnet"
+      },
+      {
+        "title": "Haiku",
+        "href": "/claude/haiku"
+      }
+    ]
+  },
+  "Solutions": {
+    "expanded": "true",
+    "panel": {
+      "h": 832,
+      "pad": "0px"
+    },
+    "subs": [
+      {
+        "title": "AI agents",
+        "href": "https://claude.com/solutions/agents"
+      },
+      {
+        "title": "Code modernization",
+        "href": "https://claude.com/solutions/code-modernization"
+      },
+      {
+        "title": "Coding",
+        "href": "https://claude.com/solutions/coding"
+      },
+      {
+        "title": "Customer support",
+        "href": "https://claude.com/solutions/customer-support"
+      },
+      {
+        "title": "Cybersecurity",
+        "href": "https://claude.com/solutions/cybersecurity"
+      },
+      {
+        "title": "Enterprise",
+        "href": "https://claude.com/solutions/enterprise"
+      },
+      {
+        "title": "Financial advisors",
+        "href": "https://claude.com/solutions/financial-advisors"
+      },
+      {
+        "title": "Financial services",
+        "href": "https://claude.com/solutions/financial-services"
+      },
+      {
+        "title": "Government",
+        "href": "https://claude.com/solutions/government"
+      },
+      {
+        "title": "Healthcare",
+        "href": "https://claude.com/solutions/healthcare"
+      },
+      {
+        "title": "Higher education",
+        "href": "https://claude.com/solutions/education"
+      },
+      {
+        "title": "K-12 teachers",
+        "href": "https://claude.com/solutions/teachers"
+      },
+      {
+        "title": "Legal",
+        "href": "https://claude.com/solutions/legal"
+      },
+      {
+        "title": "Life sciences",
+        "href": "https://claude.com/solutions/life-sciences"
+      },
+      {
+        "title": "Managed Agents",
+        "href": "https://claude.com/platform/claude-managed-agents"
+      },
+      {
+        "title": "Nonprofits",
+        "href": "https://claude.com/solutions/nonprofits"
+      },
+      {
+        "title": "Small business",
+        "href": "https://claude.com/solutions/small-business"
+      }
+    ]
+  },
+  "Help and security": {
+    "expanded": "true",
+    "panel": {
+      "h": 312,
+      "pad": "0px"
+    },
+    "subs": [
+      {
+        "title": "Availability",
+        "href": "/legal/supported-regions"
+      },
+      {
+        "title": "Check files",
+        "href": "https://claude.com/check-files"
+      },
+      {
+        "title": "Regional compliance",
+        "href": "https://claude.com/regional-compliance"
+      },
+      {
+        "title": "Report abuse",
+        "href": "https://claude.com/form/anthropic-content-reporting"
+      },
+      {
+        "title": "Status",
+        "href": "https://status.claude.com/"
+      },
+      {
+        "title": "Support center",
+        "href": "https://support.claude.com/en/"
+      },
+      {
+        "title": "Security and compliance",
+        "href": "https://trust.anthropic.com/"
+      }
+    ]
+  },
+  "Terms and policies": {
+    "expanded": "true",
+    "panel": {
+      "h": 416,
+      "pad": "0px"
+    },
+    "subs": [
+      {},
+      {
+        "title": "Legal center",
+        "href": "/legal"
+      },
+      {
+        "title": "Privacy policy",
+        "href": "/legal/privacy"
+      },
+      {
+        "title": "Responsible disclosure policy",
+        "href": "/responsible-disclosure-policy"
+      },
+      {
+        "title": "Terms of service: Commercial",
+        "href": "/legal/commercial-terms"
+      },
+      {
+        "title": "Terms of service: Consumer",
+        "href": "/legal/consumer-terms"
+      },
+      {
+        "title": "Terms of service: US K-12",
+        "href": "/legal/k12-terms"
+      },
+      {
+        "title": "Consumer health data privacy policy",
+        "href": "/legal/consumer-health-data-privacy-policy"
+      },
+      {
+        "title": "Usage policy",
+        "href": "/legal/aup"
+      }
+    ]
+  }
+}
