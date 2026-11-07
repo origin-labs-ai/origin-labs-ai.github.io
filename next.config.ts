@@ -1,10 +1,8 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  output: "standalone",
-  devIndicators: false,
-  async redirects() {
-    return [
+const isGithubPages = process.env.GITHUB_PAGES === "1";
+
+const redirects = [
       { source: "/aup", destination: "/legal/aup", permanent: true },
       { source: "/engineering/a-postmortem-of-three-recent-issues", destination: "/research/a-postmortem-of-three-recent-issues", permanent: true },
       { source: "/engineering/advanced-tool-use", destination: "/research/advanced-tool-use", permanent: true },
@@ -152,8 +150,32 @@ const nextConfig: NextConfig = {
       { source: "/team", destination: "https://claude.com/pricing", permanent: true },
       { source: "/webinars/claude-corps-how-to-become-a-host-organization", destination: "https://claude.com/resources/webinars/claude-corps-how-to-become-a-host-organization", permanent: true },
       { source: "/webinars/claude-for-financial-services-putting-agents-to-work", destination: "https://claude.com/resources/webinars/claude-for-financial-services-putting-agents-to-work", permanent: true },
-    ];
-  },
+];
+
+const nextConfig: NextConfig = {
+  ...(isGithubPages
+    ? {
+        output: "export" as const,
+        trailingSlash: true,
+        images: { unoptimized: true },
+      }
+    : {
+        output: process.env.VERCEL ? undefined : ("standalone" as const),
+        async redirects() {
+          return redirects;
+        },
+        async headers() {
+          return [
+            {
+              source: "/sites/:path*",
+              headers: [
+                { key: "Access-Control-Allow-Origin", value: "*" },
+              ],
+            },
+          ];
+        },
+      }),
+  devIndicators: false,
 };
 
 export default nextConfig;
