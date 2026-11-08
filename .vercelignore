@@ -5,4 +5,5 @@ out
 public/sites
 docs
 temp
+sites.tar
 *.log
