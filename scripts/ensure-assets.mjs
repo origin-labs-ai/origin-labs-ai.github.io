@@ -1,7 +1,5 @@
-import { createWriteStream, existsSync, mkdirSync, readdirSync, rmSync, statSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, rmSync, statSync } from "node:fs";
 import { spawnSync } from "node:child_process";
-import { Readable } from "node:stream";
-import { pipeline } from "node:stream/promises";
 import { join } from "node:path";
 
 const root = process.cwd();
@@ -28,13 +26,26 @@ if (hasAssets()) {
 console.log(`Downloading heavy assets from ${url}`);
 mkdirSync(join(root, "public", "sites"), { recursive: true });
 
-const response = await fetch(url);
-if (!response.ok || !response.body) {
-  console.error(`Asset download failed: ${response.status} ${response.statusText}`);
-  process.exit(1);
+const download = spawnSync(
+  "curl",
+  [
+    "-fL",
+    "--retry",
+    "5",
+    "--retry-delay",
+    "3",
+    "--connect-timeout",
+    "30",
+    "-o",
+    tarball,
+    url,
+  ],
+  { cwd: root, stdio: "inherit" },
+);
+if (download.status !== 0) {
+  console.error("Asset download failed");
+  process.exit(download.status ?? 1);
 }
-
-await pipeline(Readable.fromWeb(response.body), createWriteStream(tarball));
 console.log(`Downloaded ${(statSync(tarball).size / 1024 / 1024).toFixed(1)} MB`);
 
 const extract = spawnSync("tar", ["-xf", tarball, "-C", "public"], {
