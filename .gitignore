@@ -50,3 +50,6 @@ temp/
 
 .vercel
 .env*
+
+# Heavy captured assets are downloaded from the GitHub release at build time
+public/sites/
