@@ -1,0 +1,194 @@
+[
+  {
+    "slug": "beneficial-deployments",
+    "label": "Beneficial Deployments",
+    "title": "Beneficial Deployments \\ Origin",
+    "desc": "Beneficial Deployments from Origin. This section is being rebuilt and will be published soon."
+  },
+  {
+    "slug": "careers",
+    "label": "Careers",
+    "title": "Careers \\ Origin",
+    "desc": "Careers at Origin are coming soon. Open roles and team information will be published here."
+  },
+  {
+    "slug": "origin-corps",
+    "label": "Origin Corps",
+    "title": "Origin Corps \\ Origin",
+    "desc": "Origin Corps is coming soon. Fellowship and host program details will be published here."
+  },
+  {
+    "slug": "models/fable",
+    "label": "Fable",
+    "title": "Fable \\ Origin",
+    "desc": "Fable is part of Origin's model family. Model details are coming soon."
+  },
+  {
+    "slug": "models/haiku",
+    "label": "Haiku",
+    "title": "Haiku \\ Origin",
+    "desc": "Haiku is part of Origin's model family. Model details are coming soon."
+  },
+  {
+    "slug": "models/mythos",
+    "label": "Mythos",
+    "title": "Mythos \\ Origin",
+    "desc": "Mythos is part of Origin's model family. Model details are coming soon."
+  },
+  {
+    "slug": "models/opus",
+    "label": "Opus",
+    "title": "Opus \\ Origin",
+    "desc": "Opus is part of Origin's model family. Model details are coming soon."
+  },
+  {
+    "slug": "models/sonnet",
+    "label": "Sonnet",
+    "title": "Sonnet \\ Origin",
+    "desc": "Sonnet is part of Origin's model family. Model details are coming soon."
+  },
+  {
+    "slug": "company",
+    "label": "Company",
+    "title": "Company \\ Origin",
+    "desc": "Company from Origin. This section is being rebuilt and will be published soon."
+  },
+  {
+    "slug": "constitution",
+    "label": "Constitution",
+    "title": "Constitution \\ Origin",
+    "desc": "The Origin Constitution is being rewritten for this site. The full document will be published here when it is ready."
+  },
+  {
+    "slug": "economic-futures",
+    "label": "Economic Futures",
+    "title": "Economic Futures \\ Origin",
+    "desc": "Economic Futures from Origin. This section is being rebuilt and will be published soon."
+  },
+  {
+    "slug": "engineering",
+    "label": "Engineering",
+    "title": "Engineering \\ Origin",
+    "desc": "Engineering from Origin. This section is being rebuilt and will be published soon."
+  },
+  {
+    "slug": "institute",
+    "label": "The Origin Institute",
+    "title": "The Origin Institute \\ Origin",
+    "desc": "The Origin Institute is coming soon. Research programs and publications will be published here."
+  },
+  {
+    "slug": "legal",
+    "label": "Legal Center",
+    "title": "Legal Center \\ Origin",
+    "desc": "Origin's legal center is coming soon. Terms, policies, and compliance resources will be published here."
+  },
+  {
+    "slug": "news",
+    "label": "Newsroom",
+    "title": "Newsroom \\ Origin",
+    "desc": "Origin's newsroom is coming soon. For press inquiries, contact press@origin.com."
+  },
+  {
+    "slug": "news/announcements",
+    "label": "Announcements",
+    "title": "Announcements \\ Origin",
+    "desc": "Origin announcements are coming soon. Product, policy, and research updates will be published here."
+  },
+  {
+    "slug": "news/features",
+    "label": "Features",
+    "title": "Features \\ Origin",
+    "desc": "Origin features are coming soon. Stories about the people and ideas behind our work will be published here."
+  },
+  {
+    "slug": "news/models",
+    "label": "Models",
+    "title": "Models \\ Origin",
+    "desc": "Origin model news is coming soon. Launches, evaluations, and system cards will be published here."
+  },
+  {
+    "slug": "news/partnerships",
+    "label": "Partnerships",
+    "title": "Partnerships \\ Origin",
+    "desc": "Origin partnership news is coming soon. Collaborations and joint work will be published here."
+  },
+  {
+    "slug": "news/policy",
+    "label": "Policy",
+    "title": "Policy \\ Origin",
+    "desc": "Origin policy news is coming soon. Briefings and public comment will be published here."
+  },
+  {
+    "slug": "news/product",
+    "label": "Product",
+    "title": "Product \\ Origin",
+    "desc": "Origin product news is coming soon. Launches and updates will be published here."
+  },
+  {
+    "slug": "news/safeguards",
+    "label": "Safeguards",
+    "title": "Safeguards \\ Origin",
+    "desc": "Origin safeguards news is coming soon. Safety evaluations and policy updates will be published here."
+  },
+  {
+    "slug": "news/security",
+    "label": "Security",
+    "title": "Security \\ Origin",
+    "desc": "Origin security news is coming soon. Threat intelligence and incident reports will be published here."
+  },
+  {
+    "slug": "policy",
+    "label": "AI policy",
+    "title": "AI policy \\ Origin",
+    "desc": "AI policy from Origin. This section is being rebuilt and will be published soon."
+  },
+  {
+    "slug": "policy-on-the-ai-exponential",
+    "label": "Policy on the AI Exponential",
+    "title": "Policy on the AI Exponential \\ Origin",
+    "desc": "Policy on the AI Exponential from Origin. This section is being rebuilt and will be published soon."
+  },
+  {
+    "slug": "research",
+    "label": "Research",
+    "title": "Research \\ Origin",
+    "desc": "Research from Origin. This section is being rebuilt and will be published soon."
+  },
+  {
+    "slug": "responsible-scaling-policy",
+    "label": "Responsible Scaling Policy",
+    "title": "Responsible Scaling Policy \\ Origin",
+    "desc": "Responsible Scaling Policy from Origin. This section is being rebuilt and will be published soon."
+  },
+  {
+    "slug": "science",
+    "label": "Science",
+    "title": "Science \\ Origin",
+    "desc": "Science from Origin. This section is being rebuilt and will be published soon."
+  },
+  {
+    "slug": "system-cards",
+    "label": "Model system cards",
+    "title": "Model system cards \\ Origin",
+    "desc": "Origin model system cards are coming soon. Evaluations and safety documentation will be published here."
+  },
+  {
+    "slug": "threat-intelligence",
+    "label": "Threat Intelligence",
+    "title": "Threat Intelligence \\ Origin",
+    "desc": "Threat Intelligence from Origin. This section is being rebuilt and will be published soon."
+  },
+  {
+    "slug": "transparency",
+    "label": "Transparency",
+    "title": "Transparency \\ Origin",
+    "desc": "Transparency from Origin. This section is being rebuilt and will be published soon."
+  },
+  {
+    "slug": "search",
+    "label": "Search",
+    "title": "Search \\ Origin",
+    "desc": "Search from Origin. This section is being rebuilt and will be published soon."
+  }
+]

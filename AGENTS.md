@@ -43,16 +43,36 @@ A reusable template for reverse-engineering any website into a clean, modern Nex
 ## Project Structure
 ```
 src/
-  app/              # Next.js routes
-  components/       # React components
+  app/              # Next.js routes (home, events, content catch-all)
+  components/
+    home/           # Home sections (hero, report, announcements, learn more)
+    layout/         # Site header, fullscreen menu, footer, nav dropdown
+    page/           # Coming-soon page shell and body
     ui/             # shadcn/ui primitives
-    sites/<site>/   # Source-specific components, including extracted SVGs
+    brand.tsx       # Origin wordmark, logo, icons
+    tiny-more.tsx   # Shared tiny-more toggle
+  content/
+    home.ts         # Home copy, announcement cards, learn-more slides
+    navigation.ts   # Header, menu, footer navigation data
+    events.ts       # Event page manifest
+    sections.ts     # Section page lookup and coming-soon notes
+    pages/
+      manifest.json # 32 kept routes and their metadata
   lib/
+    links.ts        # Live-link checks and placeholder resolution
     utils.ts        # cn() utility (shadcn)
-  types/            # TypeScript interfaces
+  styles/
+    origin.css        # Global site styles
+    origin-pages.css  # Captured page utilities still used by shared components
+    coming-soon.css   # Coming-soon page styling, loaded after captured CSS
+    home-report.css   # Video-backed home report card and hover treatment
+    brand.css         # Traced Origin logo sizing and orange accent, loaded last
+  types/
+    content.ts      # Content and navigation interfaces
   hooks/            # Custom React hooks
 public/
-  sites/<site>/     # Source-specific images, fonts, video, and other assets
+  media/            # Origin report videos and extracted poster frames
+  sites/anthropic/  # Captured source images, fonts, video, and other assets
 docs/
   research/<site>/  # Page brief, asset map, and inspection evidence
   design-references/ # Screenshots and visual references

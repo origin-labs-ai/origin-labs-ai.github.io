@@ -1,19 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-const eventPages = [
-  { slug: "aws-summit-dc", title: "AWS Summit DC \\ Anthropic" },
-  { slug: "aws-summit-london", title: "AWS Summit London \\ Anthropic" },
-  { slug: "aws-summit-nyc", title: "AWS Summit NYC \\ Anthropic" },
-  { slug: "aws-summit-tokyo", title: "AWS Summit Tokyo \\ Anthropic" },
-  {
-    slug: "claude-for-finance",
-    title: "Claude for Financial Services \\ Anthropic",
-  },
-  { slug: "google-cloud-next-2025", title: "Google Cloud Next 2025 \\ Anthropic" },
-  { slug: "paris-builder-summit", title: "Paris Builder Summit \\ Anthropic" },
-  { slug: "seoul-builder-summit", title: "Seoul Builder Summit \\ Anthropic" },
-] as const;
+import { ComingSoonPage } from "@/components/page/coming-soon-page";
+import { eventPages, findEvent } from "@/content/events";
 
 export const dynamicParams = false;
 
@@ -27,9 +16,13 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const page = eventPages.find((item) => item.slug === slug);
+  const page = findEvent(slug);
   if (!page) return {};
-  return { title: page.title };
+
+  return {
+    title: page.title,
+    description: page.desc,
+  };
 }
 
 export default async function EventPage({
@@ -38,14 +31,15 @@ export default async function EventPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const page = eventPages.find((item) => item.slug === slug);
+  const page = findEvent(slug);
   if (!page) notFound();
 
   return (
-    <iframe
-      src={`/sites/anthropic/webflow/events__${page.slug}.html`}
-      title={page.title}
-      className="webflow-frame"
+    <ComingSoonPage
+      label={page.label}
+      note={{
+        body: "This event page is being rebuilt. Event details and recordings will be published here soon.",
+      }}
     />
   );
 }

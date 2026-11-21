@@ -1,0 +1,177 @@
+/* Coming-soon section pages. These rules sit outside Tailwind's layers so the
+   captured site reset (h1/a element rules) cannot override them. */
+
+.origin-coming {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-color: #faf9f5;
+  color: #141413;
+}
+
+.origin-coming-watermark {
+  position: absolute;
+  top: 50%;
+  right: -4rem;
+  display: none;
+  width: clamp(20rem, 36vw, 36rem);
+  height: auto;
+  transform: translateY(-50%);
+  color: rgb(227 218 204 / 45%);
+  pointer-events: none;
+  user-select: none;
+}
+
+.origin-coming-watermark path {
+  fill: currentColor;
+}
+
+.origin-coming-inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 1920px;
+  min-height: calc(100svh - var(--header-nav-height, 0px));
+  margin-inline: auto;
+  padding: 96px 24px;
+}
+
+.origin-coming-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  color: #a04527;
+  font-family: var(--anthropic-sans), sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.origin-coming-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background-color: #d97757;
+}
+
+.origin-coming-title {
+  max-width: 64rem;
+  margin: 32px 0 0;
+  color: #141413;
+  font-family: var(--anthropic-serif), serif;
+  font-size: clamp(3rem, 9vw, 8rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.origin-coming-body {
+  max-width: 36rem;
+  margin: 32px 0 0;
+  color: #3d3d3a;
+  font-family: var(--anthropic-sans), sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.origin-coming-contact {
+  margin: 20px 0 0;
+  color: #3d3d3a;
+  font-family: var(--anthropic-sans), sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.origin-coming-contact a {
+  color: #a04527;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgb(217 119 87 / 40%);
+  text-underline-offset: 4px;
+}
+
+.origin-coming-contact a:hover {
+  text-decoration-color: #a04527;
+}
+
+.origin-coming-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.origin-coming-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 24px;
+  border-radius: 9999px;
+  background-color: #141413;
+  color: #faf9f5;
+  font-family: var(--anthropic-sans), sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.origin-coming-button:hover {
+  background-color: #1f1e1d;
+}
+
+.origin-coming-button:focus-visible {
+  outline: 2px solid #d97757;
+  outline-offset: 4px;
+}
+
+.origin-coming-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin: 80px 0 0;
+  padding-top: 24px;
+  border-top: 1px solid rgb(209 207 197 / 70%);
+  color: #5e5d59;
+  font-family: var(--anthropic-sans), sans-serif;
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.origin-coming-rule {
+  width: 32px;
+  height: 1px;
+  background-color: #d1cfc5;
+}
+
+@media (min-width: 768px) {
+  .origin-coming-watermark {
+    display: block;
+  }
+
+  .origin-coming-inner {
+    padding: 128px 48px;
+  }
+
+  .origin-coming-body {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .origin-coming-inner {
+    padding: 140px 80px;
+  }
+}

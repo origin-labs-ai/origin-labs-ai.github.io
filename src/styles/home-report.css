@@ -1,0 +1,155 @@
+/* Video-backed report card. Loaded after the captured styles so these rules
+   win over the old canvas treatment without touching origin.css. */
+
+.origin-report-card {
+  transform-origin: 50% 55%;
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .origin-report-card:hover {
+    transform: translateY(-10px) scale(1.012);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .origin-report-card,
+  .origin-report-card:hover {
+    transform: none;
+    transition: none;
+  }
+
+  .origin-report-video {
+    display: none;
+  }
+
+  .origin-report-media {
+    background-image: url("/media/origin-reveal-poster.webp");
+    background-position: center;
+    background-size: cover;
+    filter: blur(7px);
+    transform: scale(1.03);
+    transition: none;
+  }
+
+  .origin-report-shade::after {
+    opacity: 1;
+  }
+
+  .origin-report-card .origin-report-copy {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    pointer-events: auto;
+    transition: none;
+  }
+}
+
+.origin-report-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background-color: #e8e7e3;
+  pointer-events: none;
+  transition:
+    filter 0.9s ease,
+    transform 0.9s ease;
+  will-change: filter, transform;
+}
+
+.origin-report-card[data-copy-visible="true"] .origin-report-media {
+  filter: blur(7px);
+  transform: scale(1.03);
+}
+
+.origin-report-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+
+.origin-report-video[data-active="true"] {
+  opacity: 1;
+}
+
+.origin-report-shade {
+  position: absolute;
+  inset: 0;
+  background-color: rgb(250 249 245 / 8%);
+  transition: background-color 0.9s ease;
+}
+
+.origin-report-shade::after {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 66% 60% at 50% 52%,
+    rgb(250 249 245 / 86%) 0%,
+    rgb(250 249 245 / 76%) 40%,
+    rgb(250 249 245 / 36%) 70%,
+    rgb(250 249 245 / 6%) 100%
+  );
+  content: "";
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+
+.origin-report-card[data-copy-visible="true"] .origin-report-shade::after {
+  opacity: 1;
+}
+
+.origin-report-card .Bo9kyq_container {
+  position: relative;
+  z-index: 1;
+}
+
+.origin-report-copy {
+  width: min(100%, 780px);
+  max-width: 100%;
+  gap: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(16px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease,
+    visibility 0s linear 0.8s;
+}
+
+.origin-report-card[data-copy-visible="true"] .origin-report-copy {
+  visibility: visible;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease,
+    visibility 0s;
+}
+
+.origin-report-copy[data-shown] {
+  transform: none;
+}
+
+.origin-report-card .rLIPjq_toggle {
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .origin-report-card[data-copy-visible="true"] .origin-report-media {
+    filter: blur(6px);
+    transform: scale(1.03);
+  }
+
+  .origin-report-shade::after {
+    background: radial-gradient(
+      ellipse 96% 54% at 50% 50%,
+      rgb(250 249 245 / 88%) 0%,
+      rgb(250 249 245 / 78%) 44%,
+      rgb(250 249 245 / 38%) 74%,
+      rgb(250 249 245 / 6%) 100%
+    );
+  }
+}

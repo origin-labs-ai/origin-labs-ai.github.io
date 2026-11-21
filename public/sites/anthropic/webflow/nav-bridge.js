@@ -19,7 +19,7 @@
     event.preventDefault();
     try {
       window.top.location.href = path;
-    } catch (error) {
+    } catch {
       window.location.href = path;
     }
   });

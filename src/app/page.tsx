@@ -1,9 +1,9 @@
-import { Announcements } from "@/components/sites/anthropic/announcements";
-import { Hero } from "@/components/sites/anthropic/hero";
-import { LearnMore } from "@/components/sites/anthropic/learn-more";
-import { PublicBenefitReport } from "@/components/sites/anthropic/report";
-import { SiteFooter } from "@/components/sites/anthropic/site-footer";
-import { SiteHeader } from "@/components/sites/anthropic/site-header";
+import { Announcements } from "@/components/home/announcements";
+import { Hero } from "@/components/home/hero";
+import { LearnMore } from "@/components/home/learn-more";
+import { HomeReport } from "@/components/home/report";
+import { SiteFooter } from "@/components/layout/site-footer";
+import { SiteHeader } from "@/components/layout/site-header";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <main id="main-content">
         <article data-page-top-spacer="condensed">
           <Hero />
-          <PublicBenefitReport />
+          <HomeReport />
           <Announcements />
           <LearnMore />
         </article>

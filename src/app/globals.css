@@ -1,8 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
-@import "./anthropic.css";
-@import "./anthropic-pages.css";
+@import "../styles/origin.css";
+@import "../styles/origin-pages.css";
+@import "../styles/coming-soon.css";
+@import "../styles/home-report.css";
+@import "../styles/brand.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -106,21 +109,6 @@ body {
   display: block;
 }
 
-/* pages with a separately captured mobile DOM */
-.page-variants > .page-variant-mobile {
-  display: none;
-}
-
-@media (max-width: 767px) {
-  .page-variants[data-mobile="true"] > .page-variant-desktop {
-    display: none;
-  }
-
-  .page-variants[data-mobile="true"] > .page-variant-mobile {
-    display: block;
-  }
-}
-
 body:where(:has(> #main-content ~ footer)) > * {
   flex-shrink: 0;
 }
@@ -147,6 +135,38 @@ body:where(:has(> #main-content ~ footer)) > * {
 .nav-dropdown-popup[data-direction="up"] {
   top: auto;
   bottom: calc(100% + 8px);
+}
+
+/* Keep the popup mounted so it can fade out fully before the next one opens. */
+.nav-dropdown ._4mzI4G_trigger,
+.nav-dropdown ._4mzI4G_popup {
+  --nav-dropdown-duration: 200ms;
+}
+
+.nav-dropdown ._4mzI4G_popup {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-6px) scale(0.96);
+  transition:
+    opacity var(--nav-dropdown-duration) ease,
+    transform var(--nav-dropdown-duration) cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0s linear var(--nav-dropdown-duration);
+}
+
+.nav-dropdown ._4mzI4G_popup[data-direction="up"] {
+  transform: translateY(6px) scale(0.96);
+}
+
+.nav-dropdown ._4mzI4G_popup[data-open] {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: none;
+  transition:
+    opacity var(--nav-dropdown-duration) ease,
+    transform var(--nav-dropdown-duration) cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0s;
 }
 
 .menu-cta-dropdown {
@@ -209,17 +229,6 @@ body:where(:has(> #main-content ~ footer)) > * {
   vertical-align: baseline;
 }
 
-/* the source site has no preflight reset: media elements stay inline by default */
-@layer base {
-  .cloned-page main img,
-  .cloned-page main svg,
-  .cloned-page main video,
-  .cloned-page main canvas {
-    display: inline;
-    vertical-align: baseline;
-  }
-}
-
 /* header wordmark collapses to the A mark after scrolling (source Lottie morph) */
 @media (min-width: 1400px) {
   .UTJ3Tq_logo {
@@ -278,117 +287,5 @@ body:where(:has(> #main-content ~ footer)) > * {
   .xiAwRW_carousel {
     opacity: 1;
     transition: none;
-  }
-}
-
-/* article pages hide the header until the reader scrolls up */
-.UTJ3Tq_root[data-article="true"] {
-  transform: translateY(-100%);
-  transition: transform 0.3s;
-}
-
-.UTJ3Tq_root[data-article="true"][data-revealed="true"] {
-  transform: none;
-}
-
-/* article pages keep the header hidden at the top even when a hero is flagged "over" */
-body:has([data-hero-nav]) .UTJ3Tq_root[data-article="true"][data-hidden="true"]:not([data-revealed="true"]) {
-  transform: translateY(-100%);
-}
-
-/* economic index renders as a full-viewport app with an overlaid header */
-.cloned-page[data-slug="economic-index"] .UTJ3Tq_root[data-overlay="true"] {
-  position: absolute;
-  inset-inline: 0;
-}
-
-.cloned-page[data-slug="economic-index"] main {
-  height: 100vh;
-}
-
-/* next/font variable applied by the source body class */
-:root {
-  --jetbrains-mono: "JetBrainsMono", "JetBrainsMono Fallback";
-}
-
-/* Webflow events pages are served as self-contained static HTML in an iframe.
-   Use viewport units so the embedded page gets the same content width as the
-   live site: the iframe's own scrollbar then matches the live page scrollbar. */
-.webflow-frame {
-  position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  border: 0;
-}
-
-/* leadership bios start collapsed like the live site */
-.SoxqZG_bodyText > p:not(:first-child) {
-  display: none;
-}
-
-.SoxqZG_bodyText[data-expanded="true"] > p:not(:first-child) {
-  display: block;
-}
-
-/* the source <main> establishes a block formatting context */
-.cloned-page main {
-  display: flow-root;
-}
-
-@media (max-width: 767px) {
-  /* mobile model pages show the header at the top; hide-on-scroll still applies.
-     The Opus launch intro is the exception: its header stays hidden until the
-     scroll transition resolves the hero. */
-  body:has([data-hero-nav=away]:not([data-opus-hero])) .UTJ3Tq_root:not(:focus-within) {
-    transform: none;
-  }
-
-  body:has([data-hero-nav=away]) .UTJ3Tq_root[data-hidden="true"] {
-    transform: translateY(-100%);
-  }
-
-  /* the Haiku tile hero is positioned by desktop JS; use the captured mobile hero */
-  .cloned-page[data-slug="claude-haiku-5-5"]
-    .page-variant-desktop
-    .WHJwZW_moo-hero {
-    height: 100svh;
-    background-image: url("/sites/anthropic/pages-assets/haiku-mobile-hero.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-
-  .cloned-page[data-slug="claude-haiku-5-5"]
-    .page-variant-desktop
-    .WHJwZW_moo-hero
-    > .stage {
-    visibility: hidden;
-  }
-
-  .cloned-page[data-slug="claude-haiku-5-5"]
-    .page-variant-desktop
-    .WHJwZW_moo-hero
-    h1 {
-    visibility: visible;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip-path: inset(50%);
-    white-space: nowrap;
-  }
-
-  /* listing tables render eight rows per page on mobile */
-  .cloned-page .bxgyUW_row:nth-child(n + 9) {
-    display: none;
-  }
-
-  /* project-deal avatar cards are resized by the source JS at this breakpoint */
-  .S5McGq_avatarCard {
-    width: 113px !important;
-  }
-
-  .S5McGq_avatarImageWrap {
-    height: 113px !important;
   }
 }

@@ -2,9 +2,9 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Home \\ Anthropic",
+  title: "Home \\ Origin",
   description:
-    "Anthropic is a public benefit corporation working to make sure transformative AI serves people and reduces risk.",
+    "Origin is an independent AI research and product studio building useful, understandable, and safe systems.",
 };
 
 export const viewport: Viewport = {

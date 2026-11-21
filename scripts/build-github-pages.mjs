@@ -1,6 +1,6 @@
 import { spawnSync } from "node:child_process";
 import { existsSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync, mkdirSync } from "node:fs";
-import { dirname, join, relative } from "node:path";
+import { join } from "node:path";
 
 const root = process.cwd();
 const outDir = join(root, "out");

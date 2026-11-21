@@ -1,0 +1,57 @@
+/* Brand logo sizing and accent handling. Loaded after the captured styles so
+   the header rule that forces every logo path to currentColor does not flatten
+   the orange O. */
+
+.ZrbDXq_logo-lottie svg path[data-brand-accent],
+.UTJ3Tq_logo .ZrbDXq_logo-lottie svg path[data-brand-accent] {
+  fill: #ec6b19;
+}
+
+.ZrbDXq_logo-lottie svg {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ZrbDXq_logo-wrapper {
+  height: 34px;
+}
+
+.dU5k9q_logo {
+  --footer-logo-block-size: 28px;
+}
+
+@media (min-width: 640px) {
+  .dU5k9q_logo {
+    --footer-logo-block-size: 34px;
+  }
+}
+
+.A1YAyq_logo svg {
+  width: 34px;
+  height: 36px;
+}
+
+/* The header always shows the full Origin wordmark — never the standalone O.
+   These overrides win over the captured rules that hide the wordmark in search
+   focus mode, collapse it, or swap in the abbreviated logo on small screens. */
+.UTJ3Tq_logo,
+.UTJ3Tq_root[data-focus-mode] .UTJ3Tq_logo {
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+.UTJ3Tq_logo a > div.ZrbDXq_logo-wrapper:first-child,
+.UTJ3Tq_root[data-focus-mode] .UTJ3Tq_logo a > div.ZrbDXq_logo-wrapper:first-child {
+  display: flex !important;
+}
+
+.UTJ3Tq_logo a > svg:last-child,
+.UTJ3Tq_root[data-focus-mode] .UTJ3Tq_logo a > svg:last-child {
+  display: none !important;
+}
+
+.ZrbDXq_logo-wrapper[data-collapsed] {
+  transform: none !important;
+}
