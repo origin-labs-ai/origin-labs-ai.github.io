@@ -6,8 +6,11 @@ import { useEffect, useRef, useState } from "react";
 import { PauseIcon, PlayIcon } from "@/components/brand";
 import { reportCopy } from "@/content/home";
 
-const SPRING_STIFFNESS = 120;
-const SPRING_DAMPING = 30;
+/* Spring constants Anthropic live ke pace se — live spring ~1.3s me settle
+   hota hai (trace: 0.115 → 0.33 plateau 1.35s). k=30/c=15 ka slow pole 2.38 →
+   95% settle ≈ 1.26s ✓ same damping character (no overshoot, monotonic). */
+const SPRING_STIFFNESS = 30;
+const SPRING_DAMPING = 15;
 
 const reportVideos = [
   {
@@ -24,7 +27,6 @@ const reportVideos = [
 
 export function HomeReport() {
   const cardRef = useRef<HTMLDivElement>(null);
-  const sentinelRef = useRef<HTMLSpanElement>(null);
   const videoRefs = useRef<Array<HTMLVideoElement | null>>([]);
   const firstVideoEndedRef = useRef(false);
   const leftViewportRef = useRef(false);
@@ -35,8 +37,7 @@ export function HomeReport() {
 
   useEffect(() => {
     const card = cardRef.current;
-    const sentinel = sentinelRef.current;
-    if (!card || !sentinel) return;
+    if (!card) return;
 
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       card.style.setProperty("--scroll-grow", "1");
@@ -51,14 +52,11 @@ export function HomeReport() {
     let last = 0;
 
     const measure = () => {
-      const rect = sentinel.getBoundingClientRect();
-      const viewport = window.innerHeight;
-      const rangeStart = rect.bottom - viewport;
-      const rangeEnd = rect.top - viewport * 0.25;
-      const span = rangeEnd - rangeStart;
-      const progress =
-        span === 0 ? 1 : (window.scrollY - rangeStart) / span;
-      target = Math.min(1, Math.max(0, progress));
+      // Anthropic live mapping (naapa): grow = scrollY / (0.3 × viewport
+      // height), clamped 0..1 — load par REST (inset+rounded), scroll karte
+      // hi 0.3vh ke andar spring ke saath device edge tak.
+      const span = window.innerHeight * 0.3;
+      target = Math.min(1, Math.max(0, window.scrollY / span));
     };
 
     const tick = (now: number) => {
@@ -183,15 +181,22 @@ export function HomeReport() {
           return;
         }
 
-        if (
-          leftViewportRef.current &&
-          firstVideoEndedRef.current &&
-          activeVideo === 0
-        ) {
+        if (leftViewportRef.current) {
           leftViewportRef.current = false;
-          setCopyVisible(false);
-          setActiveVideo(1);
-          setPlaying(true);
+          if (activeVideo === 0 && firstVideoEndedRef.current) {
+            // Video 1 khatam hui thi → wapas aane par video 2 chalao.
+            setCopyVisible(false);
+            setActiveVideo(1);
+            setPlaying(true);
+          } else if (activeVideo === 1) {
+            // Video 2 bhi wahi rule: scroll-away-return par restart.
+            const video = videoRefs.current[1];
+            if (video && video.ended) {
+              video.currentTime = 0;
+              setCopyVisible(false);
+              setPlaying(true);
+            }
+          }
         }
       },
       { threshold: 0 },
@@ -200,21 +205,6 @@ export function HomeReport() {
     observer.observe(card);
     return () => observer.disconnect();
   }, [activeVideo]);
-
-  const resumePlayback = () => {
-    if (
-      playing ||
-      copyVisible ||
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    ) {
-      return;
-    }
-    const video = videoRefs.current[activeVideo];
-    if (!video) return;
-    if (video.ended) video.currentTime = 0;
-    setCopyVisible(false);
-    setPlaying(true);
-  };
 
   const togglePlayback = () => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -235,7 +225,6 @@ export function HomeReport() {
       <div className="rLIPjq_root">
         <div className="rLIPjq_frame">
           <span
-            ref={sentinelRef}
             className="rLIPjq_sentinel"
             data-grow-timing="bottomEnters"
             aria-hidden="true"
@@ -246,7 +235,6 @@ export function HomeReport() {
             data-component="MissionHomepageSizzle"
             data-video={activeVideo}
             data-copy-visible={copyVisible ? "true" : "false"}
-            onPointerEnter={resumePlayback}
           >
             <div className="origin-report-media" aria-hidden="true">
               {reportVideos.map((video, index) => (

@@ -95,12 +95,12 @@ export const headerMenus: DropdownMenu[] = [
     ],
   },
   {
-    label: "Try Origin",
+    label: "Try Code",
     columnsCount: 1,
     columns: [
       {
         links: [
-          { label: "Origin", href: "https://claude.ai/", external: true },
+          { label: "Code", href: "https://claude.ai/", external: true },
           { label: "Console", href: "https://platform.claude.com/login?returnTo=%2F%3F", external: true },
         ],
       },

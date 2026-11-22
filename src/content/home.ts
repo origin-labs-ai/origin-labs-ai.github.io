@@ -6,9 +6,9 @@ import type {
 } from "@/types/content";
 
 export const heroCopy: HeroCopy = {
-  lead: "Origin is an independent AI research and product studio.",
+  lead: "Origin is an independent AI company and research lab building useful, trustworthy systems.",
   statement:
-    "We build useful systems, study how they change the world, and share what we learn, because the future should not be a black box.",
+    "We study how those systems change the world, and share what we learn in the open, because the future should not be a black box.",
 };
 
 export const reportCopy: ReportCopy = {

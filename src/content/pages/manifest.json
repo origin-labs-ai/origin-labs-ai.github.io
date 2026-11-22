@@ -12,6 +12,12 @@
     "desc": "Careers at Origin are coming soon. Open roles and team information will be published here."
   },
   {
+    "slug": "coming-soon",
+    "label": "On the way",
+    "title": "Coming soon \\ Origin",
+    "desc": "This destination from Origin is being built and will open here soon."
+  },
+  {
     "slug": "origin-corps",
     "label": "Origin Corps",
     "title": "Origin Corps \\ Origin",

@@ -33,6 +33,14 @@ export function comingSoonNote(page: PageRecord): ComingSoonNote {
   }
 
   switch (page.slug) {
+    case "coming-soon":
+      return {
+        body: "The link you followed points to something Origin is still building. It will open here as soon as it is ready.",
+      };
+    case "search":
+      return {
+        body: "Search is being rebuilt. Full-text search across Origin's research, models, and news will be available here soon.",
+      };
     case "constitution":
       return {
         body: "The Origin Constitution is being prepared for publication. The full document will be published here when it is ready.",

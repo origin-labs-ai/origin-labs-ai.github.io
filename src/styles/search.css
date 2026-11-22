@@ -1,0 +1,557 @@
+/* Origin search experience and 404 page. Loaded after the captured styles;
+   overrides are scoped to the .origin-* classes defined here. */
+
+/* Inert header mirror inside the footer's overlay nav — jab footer header ke
+   neeche aata hai, yahi dark-theme nav dikhta hai (logo, search bar, X,
+   hamburger), bilkul Anthropic ke bottom state jaisa. */
+.origin-header-mirror {
+  position: sticky;
+  top: 0;
+}
+
+/* Mirror ke controls dark-slate — Anthropic ke bottom state jaise: search
+   input, X, hamburger sab #262624 bg + #3d3d3a border + ivory text. Specificity
+   bumped taaki transparent-bg rule mirror pe na jeete. */
+.origin-header-mirror .Z2kMRa_root[data-open="true"] .TGeX9W_input {
+  background-color: #262624;
+  border-color: #3d3d3a;
+  color: #faf9f5;
+}
+
+.origin-header-mirror .vk8Wka_utilities .f9ZZrG_button {
+  background-color: #262624;
+  border-color: #3d3d3a;
+  color: #faf9f5;
+}
+
+/* Search input focus: Anthropic ke exact measured values — 2px solid
+   rgb(21,76,146), offset -2px (inset). !important: globals ka outline:none
+   override hota hai. */
+.TGeX9W_input:focus,
+.TGeX9W_input:focus-visible {
+  outline: 2px solid rgb(21, 76, 146) !important;
+  outline-offset: -2px !important;
+}
+
+/* Search-mode header input colorless (transparent) — Anthropic jaisa. */
+.Z2kMRa_root[data-open="true"] .TGeX9W_input {
+  background-color: transparent;
+}
+
+/* Input ka native clear ✕ hide — sirf bahar waala X button dikhe. */
+.TGeX9W_input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}
+
+/* Search-mode start-nav hide captured CSS me already sahi hai — sirf
+   1100–1399px band me hide hota hai (live jaisa); 1400+ pe nav dikhta hai.
+   Yahan koi extra hide rule nahi chahiye tha (purana global !important rule
+   har resolution pe hide karta tha — hata diya). */
+
+/* Search khula ho to idle (Company/Try Origin) invisible hai — invisible
+   buttons clicks capture na karein (live jaisa). */
+.Z2kMRa_root[data-open="true"] .Z2kMRa_idle {
+  pointer-events: none;
+}
+
+/* Mirror ke dropdown popups kabhi nahi dikhne (inert visual copy hai). */
+.origin-header-mirror .nav-dropdown-popup {
+  display: none !important;
+}
+
+.origin-search-stage {
+  min-height: calc(100lvh - var(--header-nav-height, 84px));
+  display: grid;
+  /* Panel column JS se size hoti hai (search input ke left se) — CSS fallback
+     niche panel width me hai. */
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  padding-inline: var(--grid-margin);
+}
+
+.origin-search-panel {
+  grid-column: 2;
+  /* Fallback width; JS ise search input ke left edge se live set karta hai —
+     content (overview + cards) isi pixel se start hota hai har resolution me. */
+  width: calc(clamp(340px, calc(271px + 7.97vw), 424px) + 94px);
+  margin-top: 6px;
+  height: calc(100lvh - 90px);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Overview aur cards card-width pe cap — right side scrollbar zone rehta hai
+   (Anthropic ke 2560 layout jaisa: card left = search input left). */
+.origin-search-overview,
+.origin-search-list {
+  max-width: clamp(340px, calc(271px + 7.97vw), 424px);
+}
+
+.origin-search-scroll {
+  flex: 1;
+  overflow-y: scroll;
+  padding-block: 64px 48px;
+  padding-left: 14px;
+  padding-right: 8px;
+  scrollbar-width: thin;
+  scrollbar-color: #87867f transparent;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    #000 48px,
+    #000 calc(100% - 56px),
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0,
+    #000 48px,
+    #000 calc(100% - 56px),
+    transparent 100%
+  );
+}
+
+.origin-search-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.origin-search-scroll::-webkit-scrollbar-thumb {
+  background: #87867f;
+  border-radius: 6px;
+}
+
+.origin-search-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.origin-search-landing {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Landing state: the big Search h1 is present for the outline only. */
+.origin-search-h1 {
+  position: absolute;
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.origin-search-top {
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 700;
+  letter-spacing: normal;
+  margin: 0 0 24px;
+}
+
+.origin-search-chips {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.origin-search-chip {
+  display: inline-flex;
+  padding: 4px 16px;
+  border: 1px solid #e8e6dc;
+  border-radius: 999px;
+  background: #f5f4ed;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #3d3d3a;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.origin-search-chip:hover {
+  background: #e8e6dc;
+  border-color: rgb(20 20 19 / 24%);
+}
+
+.origin-search-overview {
+  padding-bottom: 10px;
+}
+
+.origin-search-eyebrow {
+  font-size: 13px;
+  line-height: 20px;
+  color: #87867f;
+  margin: 0 0 2px;
+}
+
+.origin-search-title {
+  font-size: 36px;
+  line-height: 41px;
+  font-weight: 700;
+  letter-spacing: normal;
+  margin: 0 0 18px;
+}
+
+.origin-search-desc {
+  font-size: 17px;
+  line-height: 1.53;
+  color: #5e5d59;
+  margin: 0 0 18px;
+  max-width: none;
+}
+
+.origin-search-count {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  color: #141413;
+  margin: 0 0 6px;
+}
+
+.origin-search-count-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.origin-search-back {
+  display: inline-block;
+  font-size: 13px;
+  color: #5e5d59;
+  text-decoration: none;
+  padding-block: 8px;
+}
+
+.origin-search-back:hover {
+  color: #141413;
+}
+
+.origin-search-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+
+/* Topic view entrance: overview fade-rise + cards staggered — Anthropic ke
+   topic transition jaisa. key={topic.slug} remount se har baar replay. */
+@keyframes origin-overview-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes origin-card-in {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.origin-search-scroll .origin-search-overview {
+  animation: origin-overview-in 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.origin-search-list .origin-search-card {
+  animation: origin-card-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.origin-search-list .origin-search-card:nth-child(1) {
+  animation-delay: 0.08s;
+}
+.origin-search-list .origin-search-card:nth-child(2) {
+  animation-delay: 0.14s;
+}
+.origin-search-list .origin-search-card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.origin-search-list .origin-search-card:nth-child(4) {
+  animation-delay: 0.26s;
+}
+.origin-search-list .origin-search-card:nth-child(5) {
+  animation-delay: 0.32s;
+}
+.origin-search-list .origin-search-card:nth-child(6) {
+  animation-delay: 0.38s;
+}
+.origin-search-list .origin-search-card:nth-child(n + 7) {
+  animation-delay: 0.44s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .origin-search-scroll .origin-search-overview,
+  .origin-search-list .origin-search-card {
+    animation: none;
+  }
+}
+
+.origin-search-card {
+  border: 1px solid #dedcd1;
+  border-radius: 16px;
+  padding: 14px 17px 16px;
+  background: #f5f4ed;
+  transition:
+    background-color 0.35s ease,
+    border-color 0.35s ease;
+}
+
+/* Article details collapse smoothly like the source — content stays mounted
+   and the row height animates. */
+.origin-search-card-details {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.35s ease;
+}
+
+.origin-search-card[data-expanded] .origin-search-card-details {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.origin-search-card-details > div {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.origin-search-card-dots svg {
+  transition: transform 0.3s ease, opacity 0.25s ease;
+}
+
+.origin-search-card[data-expanded] .origin-search-card-dots svg {
+  transform: rotate(90deg);
+}
+
+.origin-search-card:hover {
+  background: #f5f4ed;
+}
+
+.origin-search-card[data-expanded] {
+  background: #e8e6dc;
+  border-color: #dedcd1;
+}
+
+.origin-search-card-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.origin-search-card-title {
+  cursor: pointer;
+}
+
+.origin-search-card-topic {
+  font-size: 11px;
+  color: #5e5d59;
+}
+
+.origin-search-card-head time {
+  font-size: 11px;
+  color: #5e5d59;
+}
+
+.origin-search-card-dots {
+  margin-left: auto;
+  flex: none;
+  width: 36px;
+  height: 18px;
+  border-radius: 999px;
+  border: 1px solid rgb(20 20 19 / 18%);
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #3d3d3a;
+  padding: 0;
+}
+
+/* Collapsed: tiny-more dots (12×2 natural); Expanded: X glyph 10px — Anthropic
+   ke 8px glyph se bada aur saaf dikhta hai (hamara X path patla hai). */
+.origin-search-card-dots svg {
+  width: 12px;
+  height: 2px;
+}
+
+.origin-search-card[data-expanded] .origin-search-card-dots svg {
+  width: 10px;
+  height: 10px;
+}
+
+.origin-search-card-dots:hover {
+  border-color: rgb(20 20 19 / 40%);
+}
+
+.origin-search-card[data-expanded] .origin-search-card-dots {
+  background: #141413;
+  border-color: #141413;
+  color: #faf9f5;
+}
+
+.origin-search-card-title {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.54;
+  margin: 0;
+}
+
+.origin-search-card-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.origin-search-card-title a:hover {
+  text-decoration: underline;
+}
+
+.origin-search-card-excerpt {
+  font-size: 13px;
+  line-height: 1.54;
+  color: #5e5d59;
+  margin: 10px 0 0;
+}
+
+.origin-search-card-cta {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 4px 16px;
+  border-radius: 8px;
+  background: #141413;
+  color: #faf9f5;
+  font-size: 13px;
+  line-height: 1.54;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.origin-search-card-cta:hover {
+  background: #30302e;
+}
+
+/* ---- 404 particle page ---- */
+
+.origin-404 {
+  min-height: calc(100lvh - var(--header-nav-height, 84px));
+  display: grid;
+  place-items: center;
+  padding: 48px var(--grid-margin);
+}
+
+.origin-404-inner {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 6px;
+}
+
+.origin-404-title {
+  font-size: clamp(26px, 3vw, 34px);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 8px;
+}
+
+.origin-404-body {
+  font-size: 16px;
+  color: #5e5d59;
+  margin: 0 0 24px;
+  max-width: 44ch;
+}
+
+.origin-404-button {
+  display: inline-flex;
+  padding: 12px 26px;
+  border-radius: 999px;
+  background: #141413;
+  color: #faf9f5;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.origin-404-button:hover {
+  background: #30302e;
+}
+
+@media (max-width: 900px) {
+  /* Mobile header: logo wrapper ka dead space (collapse-morph ka 170px) hatao
+     — warna search input squeeze ho jaata hai. */
+  .UTJ3Tq_root .ZrbDXq_logo-wrapper {
+    width: 82px !important;
+  }
+
+  /* Mobile header: desktop dropdowns hide (hamburger me sab hai) — warna
+     Try Origin search input ke upar overlap karta hai. */
+  .UTJ3Tq_bar .nav-dropdown {
+    display: none !important;
+  }
+
+  /* Search input available width le leta hai — tap karne se focus hota hai. */
+  .UTJ3Tq_root .vk8Wka_root,
+  .UTJ3Tq_root .vk8Wka_swap,
+  .UTJ3Tq_root .Z2kMRa_root {
+    flex: 1 1 auto;
+    min-inline-size: 0 !important;
+  }
+
+  .UTJ3Tq_root .TGeX9W_root {
+    inline-size: 100% !important;
+  }
+
+  .Z2kMRa_root[data-open="true"] .TGeX9W_input {
+    background-color: var(--theme-button-tertiary-background);
+    border-color: var(--theme-button-tertiary-border);
+  }
+
+  .origin-search-stage {
+    grid-template-columns: 1fr;
+    padding-block: 24px 32px;
+    align-content: start;
+  }
+
+  .origin-search-panel {
+    grid-column: 1;
+    width: auto;
+    height: auto;
+    min-height: 0;
+  }
+
+  .origin-search-scroll {
+    max-height: 56vh;
+    padding-block: 16px 32px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .origin-search-landing {
+    min-height: 0;
+    padding-block: 8px 24px;
+  }
+}

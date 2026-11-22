@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import {
   CloseIcon,
@@ -24,7 +24,7 @@ const commitmentsMenu = resolvedHeaderMenus.find(
 );
 const companyMenu = resolvedHeaderMenus.find((menu) => menu.label === "Company");
 const tryOriginMenu = resolvedHeaderMenus.find(
-  (menu) => menu.label === "Try Origin",
+  (menu) => menu.label === "Try Code",
 );
 
 const DROPDOWN_CLOSE_MS = 200;
@@ -37,7 +37,34 @@ export function SiteHeader({
   overlay?: boolean;
 }) {
   const router = useRouter();
-  const [searchOpen, setSearchOpen] = useState(false);
+  const pathname = usePathname();
+  // Search bar /search par hamesha khula rehta hai (derived). Baaki pages par
+  // search button IN-PLACE kholta hai — live Anthropic jaisa: URL wahi rehta
+  // hai, box right→left wipe hota hai (Z2kMRa CSS animation), idle fade.
+  const [overlaySearchOpen, setOverlaySearchOpen] = useState(false);
+  const searchOpen =
+    pathname?.startsWith("/search") || overlaySearchOpen;
+  const onSearchRoute = pathname?.startsWith("/search") ?? false;
+  const searchNavTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Live naapa: search button par wipe (~0.3s) ke baad ~1s par /search
+  // navigate hota hai (box khula rehta hai, peeche search landing aati hai).
+  // Timer X / Escape / route-change par cancel hota hai.
+  const clearSearchNavTimer = () => {
+    if (searchNavTimerRef.current) {
+      clearTimeout(searchNavTimerRef.current);
+      searchNavTimerRef.current = null;
+    }
+  };
+
+  // Route badle to overlay state reset (header shared layout me persist ho to
+  // bhi clean rahe) + delayed auto-navigation timer clear (Enter se pehle hi
+  // navigate ho gaya to double-push na ho).
+  useEffect(() => {
+    clearSearchNavTimer();
+    setOverlaySearchOpen(false);
+  }, [pathname]);
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [revealed, setRevealed] = useState(true);
@@ -112,6 +139,8 @@ export function SiteHeader({
 
   useEffect(() => clearDropdownTimer, []);
 
+  useEffect(() => () => clearSearchNavTimer(), []);
+
   useEffect(() => {
     if (hideOnScroll) {
       lastScrollY.current = window.scrollY;
@@ -132,27 +161,32 @@ export function SiteHeader({
     return () => window.removeEventListener("scroll", onScroll);
   }, [hideOnScroll]);
 
+  // /search route par input auto-focus hota hai; homepage overlay open par
+  // NAHI (live jaisa — focus BODY par rehta hai, koi focus-ring flash nahi).
   useEffect(() => {
-    if (!searchOpen) return;
+    if (!onSearchRoute) return;
     inputRef.current?.focus();
     inputRef.current?.select();
-  }, [searchOpen]);
+  }, [onSearchRoute]);
 
   useEffect(() => {
     if (!searchOpen) return;
-    const onPointerDown = (event: PointerEvent) => {
-      if (!searchRootRef.current?.contains(event.target as Node)) setSearchOpen(false);
-    };
+    // /search par Escape = home; homepage overlay par Escape = sirf close.
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setSearchOpen(false);
+      if (event.key === "Escape") {
+        if (onSearchRoute) {
+          router.push("/");
+        } else {
+          clearSearchNavTimer();
+          setOverlaySearchOpen(false);
+        }
+      }
     };
-    document.addEventListener("pointerdown", onPointerDown);
     document.addEventListener("keydown", onKeyDown);
     return () => {
-      document.removeEventListener("pointerdown", onPointerDown);
       document.removeEventListener("keydown", onKeyDown);
     };
-  }, [searchOpen]);
+  }, [searchOpen, onSearchRoute, router]);
 
   const closeMenu = () => {
     setMenuOpen(false);
@@ -322,30 +356,47 @@ export function SiteHeader({
                     data-component="Button"
                     data-variant="primary"
                     className="f9ZZrG_button f9ZZrG_corner-small f9ZZrG_variant-primary f9ZZrG_size-small f9ZZrG_icon-format-icon-only"
-                    onClick={() => setSearchOpen(false)}
+                    onClick={() => {
+                      // /search par: pehla close = query clear karke /search
+                      // (bar khula rehta hai), doosra = home. Homepage overlay
+                      // par: box wipe-close + query clear, wahi page par.
+                      if (onSearchRoute) {
+                        if (window.location.search) {
+                          router.push("/search");
+                        } else {
+                          router.push("/");
+                        }
+                      } else {
+                        clearSearchNavTimer();
+                        if (inputRef.current) inputRef.current.value = "";
+                        setOverlaySearchOpen(false);
+                      }
+                    }}
                   >
                     <span className="f9ZZrG_icon">
                       <SearchCloseIcon className="lqbdHG_icon" />
                     </span>
                   </button>
                 ) : (
-                  <Link
+                  <button
                     aria-label="Search"
-                    data-component="AnchorButton"
+                    data-component="Button"
                     data-variant="tertiary"
                     className="f9ZZrG_button f9ZZrG_corner-small f9ZZrG_variant-tertiary f9ZZrG_size-small f9ZZrG_icon-format-icon-only"
-                    rel="nofollow"
-                    href="/search"
-                    prefetch={false}
-                    onClick={(event) => {
-                      event.preventDefault();
-                      setSearchOpen(true);
+                    onClick={() => {
+                      setOverlaySearchOpen(true);
+                      // Live jaisa: wipe complete hone ke baad ~1s par /search.
+                      clearSearchNavTimer();
+                      searchNavTimerRef.current = setTimeout(() => {
+                        searchNavTimerRef.current = null;
+                        router.push("/search");
+                      }, 1000);
                     }}
                   >
                     <span className="f9ZZrG_icon">
                       <SearchIcon className="lqbdHG_icon" />
                     </span>
-                  </Link>
+                  </button>
                 )}
                 <button
                   ref={menuButtonRef}
@@ -356,7 +407,6 @@ export function SiteHeader({
                   data-variant="tertiary"
                   className="f9ZZrG_button f9ZZrG_corner-small f9ZZrG_variant-tertiary f9ZZrG_size-small f9ZZrG_icon-format-icon-only"
                   onClick={() => {
-                    setSearchOpen(false);
                     setMenuOpen(true);
                   }}
                 >

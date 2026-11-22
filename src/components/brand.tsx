@@ -341,6 +341,26 @@ export function YouTubeIcon({ className, ...props }: IconProps) {
   );
 }
 
+export function InstagramIcon({ className, ...props }: IconProps) {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 32 32"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      className={className}
+      {...props}
+    >
+      <path
+        fillRule="evenodd"
+        d="M12 4 H20 A8 8 0 0 1 28 12 V20 A8 8 0 0 1 20 28 H12 A8 8 0 0 1 4 20 V12 A8 8 0 0 1 12 4 Z M12 7 H20 A5 5 0 0 1 25 12 V20 A5 5 0 0 1 20 25 H12 A5 5 0 0 1 7 20 V12 A5 5 0 0 1 12 7 Z M9 16 a7 7 0 1 0 14 0 a7 7 0 1 0 -14 0 Z M12 16 a4 4 0 1 0 8 0 a4 4 0 1 0 -8 0 Z M22 8.3 a1.7 1.7 0 1 0 3.4 0 a1.7 1.7 0 1 0 -3.4 0 Z"
+      />
+    </svg>
+  );
+}
+
 export function XIcon({ className, ...props }: IconProps) {
   return (
     <svg width="24" height="24" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true" className={className} {...props}>

@@ -22,13 +22,12 @@ export function isLiveHref(href: string): boolean {
 
 /**
  * Expired or unowned destinations stay visible as explicit placeholders
- * instead of being removed from the page.
+ * instead of being removed from the page: every one of them opens the shared
+ * internal coming-soon page, wherever the link is used.
  */
 export function placeholderHref(href: string): string {
-  if (href.startsWith("/")) return isLiveHref(href) ? href : "https://~.ai";
-  if (href.startsWith("http")) {
-    return href.includes("claude") ? "https://~.ai" : "https://-.ai";
-  }
+  if (href.startsWith("/")) return isLiveHref(href) ? href : "/coming-soon";
+  if (href.startsWith("http")) return "/coming-soon";
   return href;
 }
 

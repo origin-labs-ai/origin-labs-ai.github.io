@@ -89,3 +89,16 @@ export type ComingSoonNote = {
     href: string;
   };
 };
+
+export type SearchTopic = {
+  slug: string;
+  label: string;
+  description: string;
+};
+
+export type SearchArticle = {
+  topic: string;
+  date: string;
+  title: string;
+  excerpt: string;
+};

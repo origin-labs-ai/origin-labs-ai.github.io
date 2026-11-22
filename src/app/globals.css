@@ -4,6 +4,7 @@
 @import "../styles/origin.css";
 @import "../styles/origin-pages.css";
 @import "../styles/coming-soon.css";
+@import "../styles/search.css";
 @import "../styles/home-report.css";
 @import "../styles/brand.css";
 
@@ -173,15 +174,154 @@ body:where(:has(> #main-content ~ footer)) > * {
   display: flex;
 }
 
-/* report card server-side grow defaults */
+/* report card server-side grow defaults — naya mapping: grow = scrollY /
+   (0.3 × vh); load par scrollY=0 → card REST state (inset + rounded) jaise
+   Anthropic live pe. */
 .rLIPjq_card {
-  --scroll-grow: 0.7233333333333334;
+  --scroll-grow: 0;
 }
 
-@media (max-width: 767px) {
-  .rLIPjq_card {
-    --scroll-grow: 0.1225296442687747;
-  }
+/* ---- tiny-more related-articles popup (connection map) ---- */
+/* Exact live spec (Anthropic 1280 pe naapa): 320×392 box, white bg, 1px
+   #dedcd1 border, 16px radius, 16px padding, shadow rgba(0,0,0,.07) 0 4px
+   5px. Layout: header 28 + 12 + summary 20 + 16 + diagram 107 + 16 + card
+   119 + 12 + CTA 28. */
+
+.origin-related-popup {
+  position: fixed;
+  width: 320px;
+  z-index: 70;
+}
+
+.origin-related-tooltip {
+  background: #fff;
+  border: 1px solid #dedcd1;
+  border-radius: 16px;
+  box-shadow: 0 4px 5px rgb(0 0 0 / 7%);
+  padding: 16px;
+}
+
+.origin-related-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.origin-related-header h3 {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Captured f9ZZrG_button ka ::after hit-area (inset:0) nearest POSITIONED
+   ancestor ko cover karta hai — button static hai to poora popup dhak leta
+   hai. Relative par ::after sirf button ke apne 28×28 box tak simat jaata
+   hai. */
+.origin-related-header .f9ZZrG_button {
+  position: relative;
+}
+
+.origin-related-summary {
+  font-size: 13px;
+  line-height: 20px;
+  color: #5e5d59;
+  margin: 0 0 16px;
+}
+
+.origin-related-diagram {
+  margin-bottom: 16px;
+}
+
+.origin-related-diagram svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.origin-related-edge {
+  stroke: #dedcd1;
+  stroke-width: 1.5;
+}
+
+.origin-related-node {
+  cursor: pointer;
+}
+
+.origin-related-node circle {
+  transition: fill 0.2s ease;
+}
+
+.origin-related-node-ring {
+  fill: #f5f4ed;
+  stroke: #c2c0b6;
+  stroke-width: 1.5;
+}
+
+.origin-related-node-dot {
+  fill: #87867f;
+}
+
+.origin-related-node[data-hovered] .origin-related-node-ring {
+  fill: #141413;
+  stroke: #141413;
+}
+
+.origin-related-node[data-hovered] .origin-related-node-dot {
+  fill: #faf9f5;
+}
+
+.origin-related-card {
+  display: block;
+  min-height: 119px;
+  padding: 16px;
+  margin: 0 0 12px;
+  background: #f4f2ec;
+  border: 1px solid #e8e6dc;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
+.origin-related-card-meta {
+  display: flex;
+  gap: 10px;
+  font-size: 11px;
+  line-height: 17px;
+  color: #5e5d59;
+}
+
+.origin-related-card-title {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #141413;
+}
+
+.origin-related-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px 8px 16px;
+  border-radius: 8px;
+  background: #faf9f5;
+  color: #3d3d3a;
+  font-size: 13px;
+  line-height: 12px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.origin-related-cta:hover {
+  background: #e8e6dc;
+}
+
+.origin-related-cta-icon {
+  width: 12px;
+  height: 12px;
 }
 
 /* site menu scrolling */

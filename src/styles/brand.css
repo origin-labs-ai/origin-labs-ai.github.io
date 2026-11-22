@@ -7,6 +7,13 @@
   fill: #ec6b19;
 }
 
+/* The wordmark's G-counter mask path must stay black in every color context —
+   the captured currentColor rule otherwise fills it white on dark surfaces and
+   the "g" ka hole solid ho jaata hai. */
+.ZrbDXq_logo-lottie svg mask path {
+  fill: #000 !important;
+}
+
 .ZrbDXq_logo-lottie svg {
   top: 50%;
   left: 50%;
@@ -54,4 +61,35 @@
 
 .ZrbDXq_logo-wrapper[data-collapsed] {
   transform: none !important;
+}
+
+/* The footer always shows the full Origin wordmark — never the standalone O.
+   The captured styles swap in the abbreviated logo below 1280px; mirror the
+   header overrides above so the wordmark renders at every width. */
+.dU5k9q_logo .dU5k9q_logoWordmark {
+  display: inline !important;
+}
+
+.dU5k9q_logo .dU5k9q_logoAbbreviated {
+  display: none !important;
+}
+
+/* The header wordmark never collapses to the standalone O mark — the user
+   asked for the shift illusion without the A-mark conversion animation. */
+.UTJ3Tq_root .ZrbDXq_logo-wrapper {
+  transform: none !important;
+  opacity: 1 !important;
+}
+
+.UTJ3Tq_root[data-scrolled="true"] .UTJ3Tq_logo a > svg:last-child {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+/* Left-align the header wordmark inside its lottie wrapper so its O starts at
+   the same x as the footer wordmark (the source centers it for the collapse
+   morph we don't use). */
+.UTJ3Tq_logo .ZrbDXq_logo-lottie svg {
+  left: 0;
+  transform: translateY(-50%);
 }

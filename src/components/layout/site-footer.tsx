@@ -1,11 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { useState, type CSSProperties } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
+
+import { SiteHeader } from "@/components/layout/site-header";
 
 import {
   ChevronDown,
   ExternalArrow,
+  InstagramIcon,
   LinkedInIcon,
   LogoA,
   Wordmark,
@@ -25,19 +28,24 @@ const resolvedFooterSections = footerSections.map((section) => ({
 
 const socials = [
   {
-    label: "~ (~.ai)",
-    href: "https://~.ai",
+    label: "YouTube",
+    href: "https://www.youtube.com/@origin_labs_ai",
     Icon: YouTubeIcon,
   },
   {
-    label: "- (-.ai)",
-    href: "https://-.ai",
+    label: "X",
+    href: "https://x.com/samxmaxx",
     Icon: XIcon,
   },
   {
-    label: "~ (https://~.ai)",
-    href: "https://~.ai",
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/satyam-thakur-9266b4434/",
     Icon: LinkedInIcon,
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/samxmaxx/?__pwa=1",
+    Icon: InstagramIcon,
   },
 ];
 
@@ -58,15 +66,57 @@ function FooterLinkLabel({ label }: { label: string }) {
 
 export function SiteFooter() {
   const [openSection, setOpenSection] = useState<string | null>(null);
+  const footerRef = useRef<HTMLElement>(null);
+
+  // Anthropic jaisa exact behavior (live site pe naapa): header logo KABHI
+  // nahi hilta — sirf footer ka logo header ke paas aate hi fade hota hai.
+  // Hysteresis threshold se flicker nahi hota.
+  useEffect(() => {
+    const footer = footerRef.current;
+    if (!footer) return;
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      const footerLogo = footer.querySelector<HTMLElement>(".dU5k9q_logo");
+      if (!footerLogo) return;
+      const footerLogoY = footerLogo.getBoundingClientRect().top;
+      const under = footer.hasAttribute("data-under-nav")
+        ? footerLogoY < 260
+        : footerLogoY < 220;
+      if (under) {
+        footer.setAttribute("data-under-nav", "");
+      } else {
+        footer.removeAttribute("data-under-nav");
+      }
+    };
+    const onScroll = (event: Event) => {
+      void event;
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      if (frame) cancelAnimationFrame(frame);
+    };
+  }, []);
 
   return (
-    <footer className="theme-slate dU5k9q_footer">
+    <footer className="theme-slate dU5k9q_footer" ref={footerRef}>
       <span hidden />
       <div
         data-clip-path-nav="true"
         className="WXQxba_overlayNav theme-slate"
         aria-hidden="true"
-      />
+      >
+        {/* Footer ke top par header ki dark-theme replica — footer header ke
+            neeche aane par yahi nav dikhta hai (search bar, X, hamburger,
+            wordmark). INTERACTIVE hai: search input click/type/enter sab
+            chalta hai, Anthropic ke bottom state jaisa. */}
+        <div className="origin-header-mirror">
+          <SiteHeader />
+        </div>
+      </div>
       <span aria-hidden="true" className="dU5k9q_underNavEdge" />
 
       <div className="dU5k9q_footerLayout">
@@ -189,10 +239,14 @@ export function SiteFooter() {
             <div className="dU5k9q_copySectionText">
               <ul>
                 <li>
-                  <span className="kJj2WW_link">~ (~.ai)</span>
+                  <Link className="kJj2WW_link" href="/coming-soon">
+                    Code
+                  </Link>
                 </li>
                 <li>
-                  <span className="kJj2WW_link">- (-.ai)</span>
+                  <Link className="kJj2WW_link" href="/coming-soon">
+                    Console
+                  </Link>
                 </li>
               </ul>
             </div>
