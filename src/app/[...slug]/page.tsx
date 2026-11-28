@@ -32,19 +32,18 @@ export async function generateMetadata({
 
 export default async function SectionPage({
   params,
-  searchParams,
 }: {
   params: Promise<{ slug: string[] }>;
-  searchParams: Promise<Record<string, string | string[] | undefined>>;
+  // searchParams INTENTIONALLY await nahi karte — static export (GitHub
+  // Pages) ke liye page fully static rehta hai; search query client-side
+  // SearchExperience khud parse karta hai (useSearchParams).
 }) {
   const { slug } = await params;
   const page = findSectionPage(slug);
   if (!page) notFound();
 
   if (slug[0] === "search" && slug.length === 1) {
-    const sp = await searchParams;
-    const topic = typeof sp.topic === "string" ? sp.topic : undefined;
-    return <SearchPage topic={topic} />;
+    return <SearchPage />;
   }
 
   return <ComingSoonPage label={page.label} note={comingSoonNote(page)} />;

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 
 import {
@@ -24,8 +25,12 @@ const formatDate = (iso: string) =>
 const topicLabel = (slug: string) =>
   searchTopics.find((topic) => topic.slug === slug)?.label ?? slug;
 
-export function SearchExperience({ topic }: { topic?: string }) {
-  const topicSlug = topic ?? "";
+export function SearchExperience() {
+  // Static-export safe: query params useSearchParams se reactively milte
+  // hain (client-side navigation par bhi update hoti hain).
+  const params = useSearchParams();
+  const topicSlug = params.get("topic") ?? "";
+  const query = params.get("q") ?? "";
   const activeTopic =
     searchTopics.find((item) => item.slug === topicSlug) ?? null;
 
@@ -45,13 +50,12 @@ export function SearchExperience({ topic }: { topic?: string }) {
       "header .TGeX9W_input",
     );
     if (!inputs.length) return;
-    const params = new URLSearchParams(window.location.search);
     const label = searchTopics.find((t) => t.slug === topicSlug)?.label ?? "";
-    const value = label || params.get("q") || "";
+    const value = label || query;
     inputs.forEach((input) => {
       input.value = value;
     });
-  }, [topicSlug]);
+  }, [topicSlug, query]);
 
   // GLOBAL RULING: panel ka content header ke search input ke left edge se
   // start hota hai — Anthropic jaisa (unke 2560 pe input/eyebrow/card teeno
